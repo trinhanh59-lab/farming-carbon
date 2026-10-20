@@ -1,5 +1,0 @@
-system,response,response_label,depth_cm,contrast,effect_scale,effect,lower_95,upper_95,p_value,symbol,adjustment
-orchards,cumulative_c_stock,Cumulative C stock,0-10,(20-year-old orchard) / (60-year-old orchard),ratio,0.8222328893018459,0.5757833217581196,1.174168995005503,0.2816055141551861,,none
-orchards,cumulative_c_stock,Cumulative C stock,10-20,(20-year-old orchard) / (60-year-old orchard),ratio,0.9402884899655682,0.6585078955334829,1.3426451685069778,0.7347855465872377,,none
-orchards,cumulative_c_stock,Cumulative C stock,20-50,(20-year-old orchard) / (60-year-old orchard),ratio,1.0987644910944767,0.7694883852342904,1.568942988687888,0.6042974769423195,,none
-orchards,cumulative_c_stock,Cumulative C stock,50-75,(20-year-old orchard) / (60-year-old orchard),ratio,1.1923558141721278,0.835015127794144,1.7026187194306401,0.33307019648210223,,none

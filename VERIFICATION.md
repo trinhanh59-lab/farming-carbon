@@ -1,5 +1,7 @@
 # Numerical reproduction check
 
+Historical stock-profile, orchard covariance and superseded figure files are now stored at their original relative paths inside the [history ZIP](archive/Analysis_History_2026-10-20.zip). The ZIP manifest records their original sizes and hashes. Current analyses and publication assets remain outside the archive.
+
 ## Current endpoint selection, 20 October
 
 The current non-root GLMMs cover C concentration and Δ¹⁴C only: six models, with 18 omnibus tests, 64 fitted means, 44 pairwise contrasts, 28 figure-marker tests and six diagnostic summaries. Those non-stock output fields are unchanged.

@@ -1,2 +1,0 @@
-system,response,observations,cores,simulations,precall_seed,DHARMa_seed_argument,refit,simulation_method
-orchards,cumulative_c_stock,24,6,500,7302035,123,FALSE,Selected simulateResiduals defaults; DHARMa 0.5.0

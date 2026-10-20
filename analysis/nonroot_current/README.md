@@ -1,5 +1,7 @@
 # Current non-root analysis
 
+Historical stock profiles and the preceding hedgerow checkpoint are preserved at their original relative paths in the [history ZIP](../../archive/Analysis_History_2026-10-20.zip). Historical paths and commands below are records of those earlier runs, not current entrypoints. Current saved results and inputs remain here.
+
 This module runs six selected GLMMs for C concentration and bulk-soil Δ¹⁴C. Annual fields cover 0–100 cm; orchards and hedgerows cover 0–75 cm. The unchanged input is `../../data/processed/sample_level_analysis_96_current.csv`: 36 annual, 24 orchard and 36 hedgerow observations. Deeper measurements remain in the full data and historical inputs.
 
 `saved_results/` contains 18 omnibus tests, 64 fitted means, 44 pairwise contrasts, 28 figure-marker tests and six diagnostic summaries. All retained non-stock fields match the preceding tables. Cumulative-stock profile results and the exact previous driver are preserved under `historical_cumulative_profile_2026-10-20/`. Current stock inference and plotting summaries are in `../stock_endpoints_2026-10-20/`.

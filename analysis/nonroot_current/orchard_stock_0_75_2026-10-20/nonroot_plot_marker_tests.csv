@@ -1,5 +1,0 @@
-system,response,response_label,depth_cm,marker_test,contrast,df1,df2,statistic,p_value,symbol,adjustment
-orchards,cumulative_c_stock,Cumulative C stock,0-10,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.2816055141551861,,none
-orchards,cumulative_c_stock,Cumulative C stock,10-20,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.7347855465872377,,none
-orchards,cumulative_c_stock,Cumulative C stock,20-50,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.6042974769423195,,none
-orchards,cumulative_c_stock,Cumulative C stock,50-75,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.33307019648210223,,none

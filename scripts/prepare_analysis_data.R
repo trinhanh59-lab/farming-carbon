@@ -480,13 +480,9 @@ perennial <- read_csv(file.path(ROOT_DIR,"analysis/current_perennial_root/input/
 perennial_actual <- current_full %>% filter(system %in% c("orchards","hedgerows"),nominal_depth_bottom_cm<=75) %>%
   transmute(sample_code,system=as.character(system),site_type=as.character(site_type),core=as.character(core),top_cm=nominal_depth_top_cm,bottom_cm=nominal_depth_bottom_cm,root_weight_raw,root_weight,volume_cm3)
 compare_data(perennial_actual,perennial,"current60_perennial_module_input",key="sample_code")
-orchard <- read_csv(file.path(ROOT_DIR,"analysis/orchard_cumulative_correlation/inputs/orchard_cumulative_stock.csv"),show_col_types=FALSE)
-# Validate orchard module values by sample code if present; otherwise core and depth.
-if("sample_code" %in% names(orchard)) {
-  reference <- current_analysis %>% filter(system=="orchards")
-  columns <- intersect(names(orchard),names(reference))
-  compare_data(reference,orchard,"current24_orchard_module_shared_columns",columns,key="sample_code")
-}
+# Current orchard measurements are covered by the 96-row input comparison above
+# and the publication-workbook comparison below. The superseded covariance
+# archive is not an input to current data preparation.
 # Full111 preserves its historical105 inclusion flags for byte-stable history.
 # The separately keyed scope table records the current96 inclusion decision.
 current_full <- current_full %>% left_join(current_analysis %>% select(sample_id,cumulative_c_stock),by="sample_id",relationship="one-to-one") %>%

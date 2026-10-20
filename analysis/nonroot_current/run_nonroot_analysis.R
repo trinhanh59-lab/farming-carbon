@@ -158,6 +158,12 @@ make_system_data <- function(system_name) {
 
 fit_one <- function(system_name, spec, model_index) {
   data_system <- make_system_data(system_name)
+  # Retain the term labels used in the saved hedgerow table.
+  display_terms <- term_names
+  if (system_name == "hedgerows") {
+    display_terms[c("site_type", "depth_cm:site_type")] <-
+      c("Management", "Depth \u00d7 Management")
+  }
   response_name <- spec$response[[1]]
   response_label <- as.character(spec$response_label[[1]])
   family_label <- spec$family_label[[1]]
@@ -193,7 +199,7 @@ fit_one <- function(system_name, spec, model_index) {
       response = response_name,
       response_label = response_label,
       family = family_label,
-      term = unname(term_names[term]),
+      term = unname(display_terms[term]),
       statistic = Chisq,
       df = Df,
       p_value = `Pr(>Chisq)`,

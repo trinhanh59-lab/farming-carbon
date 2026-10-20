@@ -1,4 +1,0 @@
-system,response,response_label,family,term,statistic,df,p_value,symbol
-orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth,296.3983946165613,3,5.9874550562160256e-64,***
-orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),Management,3.527689125217851e-4,1,0.9850148987751101,
-orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth × Management,15.572637872882446,3,0.001387268970202954,**

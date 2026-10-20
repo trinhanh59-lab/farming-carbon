@@ -1,3 +1,7 @@
+CURRENT LAYOUT, 20 OCTOBER 2026
+
+Current paper modules, source inputs and required July bulk-density files remain in the analysis folders. Optional stock checkpoints, selected older mixed-model files and the orchard covariance workflow are preserved at their original relative paths in ../archive/Analysis_History_2026-10-20.zip. Its FILE_MANIFEST.csv records original file hashes. Paths in the dated description below may refer to those archive members; the repository root README and REPRODUCIBILITY.md give current commands.
+
 HISTORICAL ARCHIVE README, 16 OCTOBER 2026
 
 The description below records the original 84-file archive. It predates the

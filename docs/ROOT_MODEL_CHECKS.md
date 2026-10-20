@@ -1,5 +1,7 @@
 # Root-model sensitivity and diagnostics
 
+Historical stock-profile, orchard covariance and superseded figure files are now stored at their original relative paths inside the [history ZIP](../archive/Analysis_History_2026-10-20.zip). The ZIP manifest records their original sizes and hashes. Current analyses and publication assets remain outside the archive.
+
 These detailed checks accompany the root-density results in the paper. The tables, diagnostic image and supporting notes are retained here after shortening the manuscript and supplement. They were previously presented as Supplemental Table S3 and Supplemental Figure S2. No models were rerun for this documentation change.
 
 ## Details retained from Statistical analysis

@@ -1,2 +1,0 @@
-cumulative_c_stock ~ depth_cm * site_type + (1 | core)
-<environment: 0xc3c878e40>

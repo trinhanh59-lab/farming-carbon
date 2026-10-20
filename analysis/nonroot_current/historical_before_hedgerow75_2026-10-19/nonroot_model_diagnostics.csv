@@ -1,9 +1,0 @@
-system,response,response_label,family,observations,cores,fixed_parameters,convergence_code,positive_definite_hessian,core_random_sd,singular_random_effect,dharma_uniformity_p,dharma_dispersion_p,dharma_outlier_p,warnings,dharma_error
-annual vegetables,c_percent,C concentration,Gamma(log),36,6,12,0,TRUE,0.1668391608957174,FALSE,0.3763810347520613,0.568,1,,
-annual vegetables,cumulative_c_stock,Cumulative C stock,Gamma(log),36,6,12,0,TRUE,0.12896295409141295,FALSE,0.9630860430322141,0.376,1,,
-annual vegetables,del14c,Delta^14 * C,Gaussian(identity),36,6,12,0,TRUE,23.09159825629684,FALSE,0.5836363340330987,0.604,1,,
-orchards,c_percent,C concentration,Gamma(log),24,6,8,0,TRUE,0.10829742990863812,FALSE,0.9274808641445431,0.308,1,,
-orchards,del14c,Delta^14 * C,Gaussian(identity),24,6,8,0,TRUE,0.002639925925209747,TRUE,0.6195848584090498,0.832,0.09153610021495959,,
-hedgerows,c_percent,C concentration,Gamma(log),45,9,15,0,TRUE,0.08410481906558473,FALSE,0.8878012755186709,0.672,1,,
-hedgerows,cumulative_c_stock,Cumulative C stock,Gamma(log),45,9,15,0,TRUE,0.055411067793515956,FALSE,0.9271664404898509,0.968,1,,
-hedgerows,del14c,Delta^14 * C,Gaussian(identity),45,9,15,0,TRUE,39.571552084384784,FALSE,0.6436209298825148,0.512,0.1647299890540358,,

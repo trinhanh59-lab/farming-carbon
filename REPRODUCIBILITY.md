@@ -1,5 +1,7 @@
 # Reproducing the selected analyses
 
+Optional historical analyses are preserved in the [history archive](archive/Analysis_History_2026-10-20.zip), with [restoration instructions](archive/README.md). Paths in the historical sections below are original archive-member paths. Current fitting and figure commands use the files retained in the main folders.
+
 Use R 4.6.1 and the package versions in `renv.lock` for the checked environment. The original non-root records used R 4.6.0 and earlier glmmTMB/emmeans versions; those original records are preserved. An isolated rerun checks agreement with the supplied tables rather than assuming different software versions give identical results.
 
 Restore R packages with `renv::restore(lockfile = "renv.lock", library = "PATH_TO_LOCAL_R_LIBRARY")`, then point `R_LIBS_USER` to that library when invoking Rscript. Install renv from CRAN first if needed. `scripts/check_repository.R` reports missing package names without installing them.
@@ -15,7 +17,7 @@ Rscript --vanilla scripts/check_repository.R
 Rscript --vanilla scripts/check_saved_results.R
 ```
 
-The first checks file integrity and parses R syntax without evaluating the source. The second checks saved annual inputs, volume/density arithmetic, contrasts, Holm adjustment, Figure 2A display values, perennial inputs/floor counts, and all 999 orchard classification/likelihood records. These checks do not refit or validate a model. The checker also verifies the archived orchard evidence; its historical S4 labels refer to the 17 October record, not a table in the current PDF.
+The first checks file integrity and parses R syntax without evaluating the source. The second checks current saved annual inputs, volume/density arithmetic, contrasts, Holm adjustment, Figure 2A display values and perennial inputs/floor counts. It does not load the optional orchard history by default. Use `Rscript --vanilla scripts/check_saved_results.R --archive` to include the saved historical orchard checks from the ZIP. These checks do not refit or validate a model; historical S4 labels refer to the 17 October record, not a table in the current PDF.
 
 ## Execution order
 
@@ -75,7 +77,7 @@ The 19 October run fitted three hedgerow primary-response models and the support
 
 ### Optional secondary archive
 
-The separate orchard covariance/bootstrap workflow is excluded from the current paper and supplement. It is distinct from the current Welch endpoint comparisons. To reproduce that secondary archived analysis in a new directory:
+The separate orchard covariance/bootstrap workflow is excluded from the current paper and supplement. It is distinct from the current Welch endpoint comparisons. To reproduce that secondary archived analysis, first restore its original paths into a separate repository copy as described in `archive/README.md`, then use a new output directory:
 
 ```sh
 Rscript --vanilla analysis/orchard_cumulative_correlation/run_new_reproduction.R outputs_rerun/orchard

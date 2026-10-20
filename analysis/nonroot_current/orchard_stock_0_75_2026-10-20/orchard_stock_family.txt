@@ -1,4 +1,0 @@
-
-Family: Gamma 
-Link function: log 
-

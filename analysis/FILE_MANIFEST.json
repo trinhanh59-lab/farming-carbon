@@ -1,8 +1,8 @@
 [
   {
     "path": "README.txt",
-    "bytes": 4718,
-    "sha256": "ea36dd701c52945113190f3418aa60de7636f095c47aeba18658e3533a2f33f8"
+    "bytes": 5247,
+    "sha256": "d0cb2fccf69116fbc5514677f249145d78e52dc0f0932472709115fb56ff0f1a"
   },
   {
     "path": "corrected_annual_gamma_2026-10-16/input/annual_corrected_root_profiles.csv",
@@ -386,8 +386,8 @@
   },
   {
     "path": "hedgerow_0_75/README.md",
-    "bytes": 4398,
-    "sha256": "398a3407f544612efad2ccfb2414e5ec10e0091617942e4a56b678c72a6bef82"
+    "bytes": 4543,
+    "sha256": "e2cafd40c82e82253beebf83ed22d95125eb62de994708d3a9ecb1e247f3748e"
   },
   {
     "path": "hedgerow_0_75/bulk_density_results/R_session_info.txt",
@@ -521,193 +521,13 @@
   },
   {
     "path": "nonroot_current/README.md",
-    "bytes": 3552,
-    "sha256": "ecb7740686a50188febd5995fdf25a7466229eb864ae0899b62df706df4295a1"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/Figure_4.png",
-    "bytes": 235418,
-    "sha256": "56445e0b310b0666c43bcaa7d08bd4556f83e0e0f3e14fd378a5fe8cf494585a"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_model_diagnostics.csv",
-    "bytes": 1261,
-    "sha256": "4eaf0650a44184dc5249a635f733556ef2d7c2085e78ea711dc5d6df301054e9"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_omnibus.csv",
-    "bytes": 2826,
-    "sha256": "d0665683b765d72ca7f642f01be75bb7895fe73ae4bcefef247b184a402368e8"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_pairwise_contrasts.csv",
-    "bytes": 12672,
-    "sha256": "78d16c9bbd6c97ad32a2892fd34360cd47640d2f2645efa586de9d670bea6ad4"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_plot_marker_tests.csv",
-    "bytes": 5825,
-    "sha256": "51ac87c13b9a05010d5e60900994af3af777c3e6d3fcf65f48f41bbb02357270"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_plot_values.csv",
-    "bytes": 15047,
-    "sha256": "2b4641c1f5dceab6ce007570f4823ee4bfdfe47247103e0780e356ecf142c8bd"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/orchard_endpoint_Welch_saved.csv",
-    "bytes": 249,
-    "sha256": "fa41f6d4beac0ea6a802a6b0c9fdeee87e099c3c4c8a753a717cc2900da7f019"
-  },
-  {
-    "path": "nonroot_current/historical_before_hedgerow75_2026-10-19/run_nonroot_analysis.R",
-    "bytes": 12060,
-    "sha256": "2c076e42fd94a1414f7cf54b3dc9d9e9d8c7a55d23e60e1cd8e3d6d479180ee1"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/README.md",
-    "bytes": 747,
-    "sha256": "eee3764fa5a2cb1d2c2c18693b0634bf24845ab9e7bfd70a43d19719c8d94815"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_model_diagnostics.csv",
-    "bytes": 1358,
-    "sha256": "3b723dc08bb75b68f6b32ea28ec20b7fb73271a0d2ec61b67b4726d1048cd6fb"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_omnibus.csv",
-    "bytes": 3126,
-    "sha256": "ac2472fe20ef3fc7e69d311bd5d8a161dd6119894f736da0e8a0445984111539"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_pairwise_contrasts.csv",
-    "bytes": 11726,
-    "sha256": "771cfc694d9ffa565bdfa30c05ec7303a1ae6b0c6d28b0222f2f7c6db3869871"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_plot_marker_tests.csv",
-    "bytes": 5914,
-    "sha256": "7779c8b57e527c296c7a1cb9b381d8d50133b711c1d024ff1be6650841152ea4"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_plot_values.csv",
-    "bytes": 14828,
-    "sha256": "767129703791c0e51e10d50f85f1abf5ab2da44286d00d5f720e3db278b1197e"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/render_nonroot_panels_before_endpoints.R",
-    "bytes": 5544,
-    "sha256": "85ce848533cab746eef79a19ce289386d4f5df4767e6c63fcd3bf6f4a192a985"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/render_profile_figures_before_endpoints.R",
-    "bytes": 13316,
-    "sha256": "6e3b6048e5911795389589c9be951e6c43724f39942d4eb979880fc8b7756f3a"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/run_nonroot_analysis_before_endpoints.R",
-    "bytes": 14523,
-    "sha256": "e7dbe24bef3215df0679cbb12188a087c7c67e50def919efa1c8f4837b93e406"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/workbook_stock_S1_before_endpoints.csv",
-    "bytes": 6391,
-    "sha256": "9d4f87a8e2f976ec56f42a2c43ad4d55ca126efde408eb57c64286154f014337"
-  },
-  {
-    "path": "nonroot_current/historical_cumulative_profile_2026-10-20/workbook_stock_fitted_values_before_endpoints.csv",
-    "bytes": 8462,
-    "sha256": "5b184a9d7f88b4aa55413a96716313e06c085e217375221eee463ac0c6a8629d"
-  },
-  {
-    "path": "nonroot_current/historical_endpoint_2026-10-16/orchard_endpoint_Welch_saved.csv",
-    "bytes": 249,
-    "sha256": "fa41f6d4beac0ea6a802a6b0c9fdeee87e099c3c4c8a753a717cc2900da7f019"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/R_session_info.txt",
-    "bytes": 1836,
-    "sha256": "442f7278d1d4e2eb109c2d5d70cd24b3e24314747ed08ae4a2840836235234d3"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/diagnostic_settings.csv",
-    "bytes": 210,
-    "sha256": "5aec54b94b117f3828e37573c4718f232be63385e51aa04e2c7e1ce5b9f1ccb1"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/export_selected_summary.R",
-    "bytes": 932,
-    "sha256": "43ecf0b353467eb9212bc4441d08f98d65d1b0a12673e3efc42cdc9ad8610271"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_DHARMa_objects.rds",
-    "bytes": 128864,
-    "sha256": "1a193ed514a2402341b765bdcd24cbf4bf561290e4d96ca0f0b51fb9f4b5e649"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_DHARMa_residuals.csv",
-    "bytes": 2086,
-    "sha256": "50d5ca42e18e930b48ffbfcec82205acbbff2355fd80a56e54a06baaae271703"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_model_diagnostics.csv",
-    "bytes": 361,
-    "sha256": "77f415ce69bd37d377b7c6d9b2c21cdab0d5bb6f90bad328ff86830e47af4e48"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_model_objects.rds",
-    "bytes": 128844,
-    "sha256": "cf8d2b104eeaa9c6000db1206d4ed9f9599ba358cf022739a9887a22e46da4fc"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_omnibus.csv",
-    "bytes": 417,
-    "sha256": "4fdba2c473ac5aa5ebb7b0c06a874d2a9ec829ed3f0ad67c01ec257b34e5a7cc"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_pairwise_contrasts.csv",
-    "bytes": 858,
-    "sha256": "d6ef0282955f621083afebba92f5f4e164166e2f8e0f47a33364d58e66ca463f"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_plot_marker_tests.csv",
-    "bytes": 705,
-    "sha256": "d325a82abb76a18ebf4276ff6ee06e959c25e0018ec478fb3c1ef9061ec13c34"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_plot_values.csv",
-    "bytes": 1363,
-    "sha256": "d1f890b320e8263ffeb7f6980750655aa1ccab3d0d99274b63a7488631fa68aa"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/orchard_input_24.csv",
-    "bytes": 8124,
-    "sha256": "e1486e935e8055a62c5b31e34946a133fcdd75fe704cccf41da9287f5afdd387"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_EMM_full.csv",
-    "bytes": 888,
-    "sha256": "f3fe5b1aa63bf0a4be71b84862980a823ee4fb97b2aeb1f543a5b27d115c6d47"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_family.txt",
-    "bytes": 37,
-    "sha256": "5566f25015a492076b50160c3d50e539705b5e384bd0ba1869a9f7e63eba8c3f"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_formula.txt",
-    "bytes": 82,
-    "sha256": "af573b94a2679971a97435aea407f2bbca9e7e6e20731b8c6872d3aff3a42df5"
-  },
-  {
-    "path": "nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_pairwise_full.csv",
-    "bytes": 761,
-    "sha256": "bc910b2fd8e51f07d371f93beccabdaddc4b766cc223dcde05f537a22cd8c98d"
+    "bytes": 3875,
+    "sha256": "eea6e29456be1e751fa11a9b3aa26953a86398c72c17ac437a78b9c8a48a18d4"
   },
   {
     "path": "nonroot_current/run_nonroot_analysis.R",
-    "bytes": 13488,
-    "sha256": "40001adc02c3a5035e1961d7be8284bc42cc94a75f71cd87aa681617a21efc39"
+    "bytes": 13730,
+    "sha256": "bd987e5a7470339d60a937094025049587c364376f1558967c56675dc4b52a57"
   },
   {
     "path": "nonroot_current/saved_results/nonroot_model_diagnostics.csv",
@@ -735,179 +555,14 @@
     "sha256": "a38d82895d165da026c0605e9eed98e0c8c3c11aea3b593e9b510de57c7eac6d"
   },
   {
-    "path": "observed_profile_figures/observed_orchard_cumulative_stocks_24.csv",
-    "bytes": 3979,
-    "sha256": "288421616465cff267a9ab11a994758fd8513bc9dbb996f01643ffac771d8bdf"
-  },
-  {
     "path": "observed_profile_figures/observed_perennial_root_profiles_60.csv",
     "bytes": 10080,
     "sha256": "a2ad84776d8ac63a62142262e8a8742295071d28e1a2993f691529edd47df402"
   },
   {
-    "path": "observed_profile_figures/render_observed_orchard_stock_panel.R",
-    "bytes": 2097,
-    "sha256": "1592feaa4937e85947e74963ff08de2a236114a629cf1800df0c582e8afbb8fb"
-  },
-  {
     "path": "observed_profile_figures/render_observed_perennial_panels.R",
     "bytes": 3077,
     "sha256": "270ba8504275585cc2b7d4dc639397d829059b41cb5512d51a7a7d3821c7fc6e"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/00_inputs.R",
-    "bytes": 1802,
-    "sha256": "9e0a8bd03e4f0424704efd7eea79149eebf2524b92e0b8dacff085524099210b"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/01_observed_generator_fit.R",
-    "bytes": 4784,
-    "sha256": "619e9f4273042992d3d9e0e3d92ca345d759db26676596bda2c6d822bf092d2a"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/02_profile_diagnostics.R",
-    "bytes": 8279,
-    "sha256": "faa33695453b847cd6fc4a3bb83e5d2543585ec7df20b810c6fd59fc4f9021be"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/03_final_boundary_functions.R",
-    "bytes": 13185,
-    "sha256": "e701e9a34f802162047d3b1cac32eb846f62cf7275112185f08ae28e3079ab4a"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/04_new_reproduction_driver.R",
-    "bytes": 2563,
-    "sha256": "84e19d66dc854c44e593ac92adeb51697456323f79e78479d54bb43fde733040"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/05_final_all_index_audit.R",
-    "bytes": 5083,
-    "sha256": "582f10c8f5c368888b4fcebc69a6126dbaf9c0cb8b0bc040b79fe4e06d3a9175"
-  },
-  {
-    "path": "orchard_cumulative_correlation/R/06_export_new_reproduction.R",
-    "bytes": 6138,
-    "sha256": "f6cd62d8796bbad26ba624880259c5c5b06ab03536f8ec7436f4778e41283107"
-  },
-  {
-    "path": "orchard_cumulative_correlation/README.md",
-    "bytes": 6523,
-    "sha256": "df8c93521a0ee6d895a5c3ca3a3159f02196ed439e592b98e075a79f050903fb"
-  },
-  {
-    "path": "orchard_cumulative_correlation/SOURCE_MAP.tsv",
-    "bytes": 2664,
-    "sha256": "32d6ae1164fa62daf5fd98ed759a6da5aac46b6867fcc4c4a46639aac9d0b537"
-  },
-  {
-    "path": "orchard_cumulative_correlation/environment/recorded_session_info.txt",
-    "bytes": 1861,
-    "sha256": "92b70f4f46bbf1e7c4b72d9b65c6249a8700c9e8f1abf706a1d4728810ddc008"
-  },
-  {
-    "path": "orchard_cumulative_correlation/environment/recorded_versions.tsv",
-    "bytes": 110,
-    "sha256": "93616392956443db56c09582d141bfaec5888732a9ff5a9467e1ed3d779298c9"
-  },
-  {
-    "path": "orchard_cumulative_correlation/inputs/orchard_cumulative_stock.csv",
-    "bytes": 1700,
-    "sha256": "89ff8448a94702771a59e57c49d622a6471bda3a1a6b3470da281c3ebdee1a6f"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/comparison_to_frozen_counts.csv",
-    "bytes": 335,
-    "sha256": "c06d6709552a7549c245ebd9b8db184a1c03306847b526fa3374e40d5be7f564"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/fit_selection_changes.csv",
-    "bytes": 1797,
-    "sha256": "633eca6de2c7e86e7492de5e123a615994736583228fb67e782f1cc9a9f5b7a2"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_all999_fit_audit.csv",
-    "bytes": 452306,
-    "sha256": "76cf7534457a3848804394302e508fe889320a6e8f0baf9af046a9db9b230def"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_profile_diagnostic_20000.csv",
-    "bytes": 322,
-    "sha256": "b5bb9192e0efaa0912373269347db3ff38409bbc92f3a612e7483687296b3f7c"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_summary.csv",
-    "bytes": 244,
-    "sha256": "15b776235cefb2ec56a283ae9db947ba884b9613863fe4cd199a26c9700cbc83"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/new_simulated_null_responses_999.csv",
-    "bytes": 468961,
-    "sha256": "49d2e3e845a49300b69f4aac9749c7636ae7388ea3f994fe222425f96ca7216a"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/new_simulated_null_responses_999.rds",
-    "bytes": 180342,
-    "sha256": "0d87eca8d9e7c387526f0c22c6f235f669ab170617ceb348790f1f789682b713"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/observation_order_and_inputs.csv",
-    "bytes": 1948,
-    "sha256": "47acd410faa2088e4692725b9d12c16b393cdb7246c9c24631d73f53ac617021"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/tail_classification_changes.csv",
-    "bytes": 1914,
-    "sha256": "0134ed66a9882663ac18e0a9eb374539ea4ef9fda0b5d7e94d3d5e9e9c117d8f"
-  },
-  {
-    "path": "orchard_cumulative_correlation/reproduction_2026-10-17/verification_summary.json",
-    "bytes": 8336,
-    "sha256": "8861c722008f23c3a3b49dbd160655971f0e0c2555303f1b1860c7cf34cbaec4"
-  },
-  {
-    "path": "orchard_cumulative_correlation/run_new_reproduction.R",
-    "bytes": 4559,
-    "sha256": "92affb3f2ae1cf7cba875cbf10b08a86ef383fd6a698c8df36d98accec59afa7"
-  },
-  {
-    "path": "orchard_cumulative_correlation/saved_results/final_fit_audit_notes.txt",
-    "bytes": 7778,
-    "sha256": "cbf6ae09c91645bd5eef501d9a95ff32032cf6e9f1a7c54c6e8a97f5925a2133"
-  },
-  {
-    "path": "orchard_cumulative_correlation/saved_results/frozen_all999_fit_audit.csv",
-    "bytes": 452505,
-    "sha256": "04f384c53f877e4d170a5ba2c950634561af25236ad62ffbd51395ca984ca0ce"
-  },
-  {
-    "path": "orchard_cumulative_correlation/saved_results/frozen_profile_diagnostic_20000.csv",
-    "bytes": 344,
-    "sha256": "c61979a0d4e9090832771368f8511100a0be05682b6dbe24e3f6e133f582aa4c"
-  },
-  {
-    "path": "orchard_cumulative_correlation/saved_results/frozen_profile_smoothness.png",
-    "bytes": 39141,
-    "sha256": "cf7f86e2d95b5dc5cab56b9d17a63a4b21a35ef69487ae8c4f38e57cf1ae886b"
-  },
-  {
-    "path": "orchard_cumulative_correlation/saved_results/frozen_summary.json",
-    "bytes": 1828,
-    "sha256": "d8b0d23e6f3ad3530c86788eb5f9dc18b46720924941512f107cf41def1548ec"
-  },
-  {
-    "path": "selected_reference_2026-07-30/code/render_primary_figures_4panel.R",
-    "bytes": 5858,
-    "sha256": "d2a94e38b31da27f638f2fa7ea623eaa36631c021f672a22396e880e8deaae40"
-  },
-  {
-    "path": "selected_reference_2026-07-30/code/run_aidee_method_corrected_data.R",
-    "bytes": 16601,
-    "sha256": "2d835a97d637bbf0f49c93df859569c4f7897787b6a6ffdb7007ef0f234e3fbe"
-  },
-  {
-    "path": "selected_reference_2026-07-30/code/run_aidee_method_corrected_data_restoration_copy.R",
-    "bytes": 16207,
-    "sha256": "faf5405070db2fb846027897df9962279b4e43e9edc1ec2902a5fd5ce43836f9"
   },
   {
     "path": "selected_reference_2026-07-30/code/run_bulk_density_aidee_wald.R",
@@ -923,36 +578,6 @@
     "path": "selected_reference_2026-07-30/data/sample_level_full_111.csv",
     "bytes": 32735,
     "sha256": "a1f244132013722abbd0ddd0b99e0f23f2ac72629564e8079d3d9bc7701d7cd5"
-  },
-  {
-    "path": "selected_reference_2026-07-30/outputs/aidee_corrected_model_diagnostics.csv",
-    "bytes": 2088,
-    "sha256": "38e4476352371d5fa506a1efca452556fd2acc097785ed8429cc628d9f421ebd"
-  },
-  {
-    "path": "selected_reference_2026-07-30/outputs/aidee_corrected_model_objects.rds",
-    "bytes": 2047936,
-    "sha256": "6332be0722c41fd71f01e67b04dce6ed02f0edb811e8bb24b7197bdcceeb2069"
-  },
-  {
-    "path": "selected_reference_2026-07-30/outputs/aidee_corrected_omnibus.csv",
-    "bytes": 5059,
-    "sha256": "e0a3a08c7ab26d25e24ae3f4dfeadf7a15806ade724c14a625b3f3d972988850"
-  },
-  {
-    "path": "selected_reference_2026-07-30/outputs/aidee_corrected_pairwise_contrasts.csv",
-    "bytes": 21926,
-    "sha256": "4c205b0bc5f721d309441e340fb0e33ff36acb91e8533f1547890c600d1a0a47"
-  },
-  {
-    "path": "selected_reference_2026-07-30/outputs/aidee_corrected_plot_marker_tests.csv",
-    "bytes": 10404,
-    "sha256": "c4a6ae4c083df1c9115540f75f83991cc7cf763737305cb29ba8aaa08dbf9db0"
-  },
-  {
-    "path": "selected_reference_2026-07-30/outputs/aidee_corrected_plot_values.csv",
-    "bytes": 26560,
-    "sha256": "324f8c4d74a3448ebdc73b65ed810c77a54c3e45b99543291e89e4ceae46fa4b"
   },
   {
     "path": "selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv",
