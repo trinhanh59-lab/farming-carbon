@@ -11,6 +11,7 @@ All 111 sample records are included. The current analysis input has 96 records: 
 - [COVERAGE_MAP.md](COVERAGE_MAP.md) links each paper figure, table and supplement item to its inputs, results and current code.
 - [docs/ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md) contains the detailed root-model sensitivity tables and residual diagnostics, formerly Table S3 and Figure S2 in the supplement.
 - [data/Supplementary_Data.xlsx](data/Supplementary_Data.xlsx) contains the publication data, statistical tables, figure values and variable/source definitions. Its SHA-256 is `2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c`.
+- [Current analysis data](data/processed/sample_level_analysis_96_current.csv) contains the 96 observations used in the paper. [Sample inclusion](data/processed/sample_level_scope_111_current.csv) identifies current and historical inclusion across all 111 records.
 - [REPRODUCIBILITY.md](REPRODUCIBILITY.md) gives run order, software setup and rerun status.
 - [data/DATA_AVAILABILITY.md](data/DATA_AVAILABILITY.md) describes the original measurement records, corrected working spreadsheets and processed inputs, including records that were not located.
 - [CITATION.md](CITATION.md) identifies the unpublished manuscript; no public DOI is supplied.

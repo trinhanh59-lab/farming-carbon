@@ -8,4 +8,4 @@ The manuscript and original scientific figures retain their selected CC BY 4.0 t
 
 Third-party software retains its own licenses. Package and contributor information in `renv.lock` and software environment records remains unchanged. U.S. Census Bureau boundary ZIPs/XML and other source metadata under `figures/map/` retain their original terms and acknowledgement requirements; they are not relicensed by the project. See [THIRD_PARTY_MAP_SOURCES.md](figures/map/THIRD_PARTY_MAP_SOURCES.md).
 
-The full license texts are included locally. Official references: [MIT](https://opensource.org/license/mit) and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The private draft repository is https://github.com/trinhanh59-lab/farming-carbon. No DOI or public release has been created.
+The full license texts are included. Official references: [MIT](https://opensource.org/license/mit) and [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The repository is publicly available at https://github.com/trinhanh59-lab/farming-carbon. No DOI has been created.

@@ -2,6 +2,8 @@
 
 The supplied data retain all 111 sample records. Current analysis coverage includes 96 records: 36 annual, 24 orchard and 36 hedgerow observations. Six deepest orchard and nine deepest hedgerow records remain visible in the full table and are excluded from the current primary analyses. The historical 105-row input remains supplied for the earlier five-interval hedgerow analysis. Available original records are included alongside the working spreadsheets; these are different stages of the data history.
 
+Use `processed/sample_level_analysis_96_current.csv` for the paper. In `processed/sample_level_full_111_current.csv`, `analysis_included` describes the historical 105-row scope. Current inclusion flags are in `processed/sample_level_scope_111_current.csv` and the publication workbook.
+
 ## Included records
 
 | Location | Contents and role |
