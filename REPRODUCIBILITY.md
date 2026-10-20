@@ -1,6 +1,6 @@
 # Reproducing the selected analyses
 
-Optional historical analyses are preserved in the [history archive](archive/Analysis_History_2026-10-20.zip), with [restoration instructions](archive/README.md). Paths in the historical sections below are original archive-member paths. Current fitting and figure commands use the files retained in the main folders.
+Optional historical analyses are preserved in the [history archive](archive/Analysis_History_2026-10-20.zip), with [restoration instructions](archive/README.md). Paths in the historical sections below are original archive-member paths. Current fitting and figure commands use the files retained in the main folders. The separate [support ZIP](archive/Supporting_Files_2026-10-20.zip) holds duplicate snapshots and optional plotters; restore it into a separate repository copy before using those helpers.
 
 Use R 4.6.1 and the package versions in `renv.lock` for the checked environment. The original non-root records used R 4.6.0 and earlier glmmTMB/emmeans versions; those original records are preserved. An isolated rerun checks agreement with the supplied tables rather than assuming different software versions give identical results.
 

@@ -11,8 +11,9 @@ suppressPackageStartupMessages(library(emmeans))
 suppressPackageStartupMessages(library(DHARMa))
 options(digits = 10)
 
-# read.csv() imports the exact input independently rechecked against the live sheet.
-d <- read.csv(file.path(task_dir, "input", "annual_corrected_root_profiles.csv"), stringsAsFactors = FALSE)
+# Use the same corrected input as the annual fit, instead of a duplicate copy.
+# Its measurements were independently rechecked against the live sheet.
+d <- read.csv(file.path(prior_dir, "input", "annual_corrected_root_profiles.csv"), stringsAsFactors = FALSE)
 depth_levels <- c("0-10", "10-20", "20-30", "30-40", "40-50", "50-100")
 core_levels <- c("IKON.1", "IKON.3", "IKON.5", "LAHE.1", "LAHE.3", "LAHE.5")
 d$management <- factor(d$management, levels = c("monoculture", "polyculture"))

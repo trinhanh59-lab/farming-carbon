@@ -10,7 +10,7 @@ The current hedgerow comparisons use four common intervals: 0–10, 10–20, 20�
 
 `bulk_density_results/` contains the supporting Gaussian(identity) fit with the same interaction and core random intercept, retaining the selected default glmmTMB optimizer controls. It includes within-depth means, contrasts and joint tests, equal-depth group averages and contrasts, model status and the fitted object. `current_bulk_density/` combines updated hedgerow rows with byte-identical annual and orchard supporting rows from the selected reference. The reference files are unchanged.
 
-`scope_comparison_omnibus.csv` compares the earlier five-interval and current four-interval tests. `scope_comparison_retained_means.csv` compares fitted means at shared intervals. These tables describe the scope change; they do not select another model.
+The [support archive](../../archive/Supporting_Files_2026-10-20.zip) retains `scope_comparison_omnibus.csv` and `scope_comparison_retained_means.csv` at their original paths in this module. These historical five-versus-four-interval comparisons describe the scope change; current figures and statistical tables use the active selected results.
 
 All four fits returned convergence code 0 and positive-definite Hessians. Primary-model DHARMa diagnostics use 500 simulations, the selected pre-call seeds 7302038, 7302040 and 7302041, and the unchanged `simulateResiduals()` default `seed = 123`, `refit = FALSE`. The pre-call seed and the function's seed argument are distinct. The selected supporting bulk-density code used convergence and Hessian checks without DHARMa simulations, which is retained here. Session records give actual package versions.
 

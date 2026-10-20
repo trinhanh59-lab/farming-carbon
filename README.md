@@ -26,7 +26,7 @@ These commands check files and saved calculations without fitting models. Run an
 
 The [data documentation](data/DATA_AVAILABILITY.md) describes the original and compiled records, corrections and unavailable laboratory exports. It also explains the author-confirmed diameter and estimated mass for sample 108.
 
-[Earlier analyses](archive/README.md) are preserved in a separate [history archive](archive/Analysis_History_2026-10-20.zip). They are outside the current paper's selected workflow.
+[Earlier analyses and supporting files](archive/README.md) are preserved in two archives. Duplicate snapshots and optional plotters are kept there; current data, selected analyses and publication figures remain in the main folders.
 
 ## License and citation
 

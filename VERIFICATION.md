@@ -1,6 +1,6 @@
 # Numerical reproduction check
 
-Historical stock-profile, orchard covariance and superseded figure files are now stored at their original relative paths inside the [history ZIP](archive/Analysis_History_2026-10-20.zip). The ZIP manifest records their original sizes and hashes. Current analyses and publication assets remain outside the archive.
+Historical stock-profile, orchard covariance and superseded figure files are now stored at their original relative paths inside the [history ZIP](archive/Analysis_History_2026-10-20.zip). The ZIP manifest records their original sizes and hashes. Current analyses and publication assets remain outside the archive. Duplicate snapshots and optional plotters are in the separate [support ZIP](archive/Supporting_Files_2026-10-20.zip); restore it into a separate repository copy before running those helpers.
 
 ## Current endpoint selection, 20 October
 
@@ -9,6 +9,8 @@ The current non-root GLMMs cover C concentration and Δ¹⁴C only: six models, 
 Cumulative stocks use the author-selected Welch endpoints: annual fields at 0–100 cm, orchards at 0–75 cm, and hedgerows at 0–20 and 0–75 cm. All six hedgerow contrasts share one Holm family; the reported 95% Welch intervals are unadjusted. Independent arithmetic checks agree with all eight tests. The 30 endpoint records, ten three-core groups and 32 observed stock means/SEs match the supplied inputs; all twelve direct-source hashes and existing stock calculations are preserved. No profile model was refitted for this selection.
 
 The previous profile driver and complete CSVs remain under `analysis/nonroot_current/historical_cumulative_profile_2026-10-20/`. The workbook retains all 111 samples and now has ten sheets, including Endpoint Welch. Figure values distinguish 12 annual root EMMs, 64 non-stock EMMs and 32 observed stock means. Stock panels contain no old joint-test stars.
+
+The endpoint `saved_results/source_sha256.csv` records the code used for the selected run. Current `reproducibility/FILE_CHECKSUMS.csv` records the cleanup versions. The data-preparation code changed only its optional-history cross-check; the calculated inputs and saved scientific results are unchanged.
 
 ## Author confirmations, 20 October
 

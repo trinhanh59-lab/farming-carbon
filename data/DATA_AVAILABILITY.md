@@ -1,6 +1,6 @@
 # Measurement records and analysis inputs
 
-Optional historical analysis files are preserved in the [history ZIP](../archive/Analysis_History_2026-10-20.zip). Historical paths in the workbook provenance and dated records refer to ZIP members where listed in `FILE_MANIFEST.csv`. All source workbooks, processing tables, current inputs and the publication workbook remain in the main folders.
+Optional historical analysis files are preserved in the [history ZIP](../archive/Analysis_History_2026-10-20.zip). Historical paths in the workbook provenance and dated records refer to ZIP members where listed in `FILE_MANIFEST.csv`. All source workbooks, processing tables, current inputs and the publication workbook remain in the main folders. Duplicate preparation snapshots and optional helper files are in the separate [support ZIP](../archive/Supporting_Files_2026-10-20.zip); each archived duplicate has an active canonical copy.
 
 The supplied data retain all 111 sample records. Current analysis coverage includes 96 records: 36 annual, 24 orchard and 36 hedgerow observations. Six deepest orchard and nine deepest hedgerow records remain visible in the full table and are excluded from the current primary analyses. The historical 105-row input remains supplied for the earlier five-interval hedgerow analysis. Available original records are included alongside the working spreadsheets; these are different stages of the data history.
 

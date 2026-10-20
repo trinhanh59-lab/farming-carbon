@@ -4,24 +4,20 @@
 
 ## Commands
 
-Run from the repository root. Each command requires a new output directory and leaves supplied assets unchanged.
+Run from the repository root, using a new output directory:
 
 ```sh
-python figures/export_publication_assets.py
-python figures/assemble_profile_figures.py
-Rscript --vanilla figures/render_profile_figures.R
-python figures/map/render_figure1.py
-Rscript --vanilla figures/render_nonroot_panels.R
-Rscript --vanilla figures/render_saved_annual_diagnostics.R
+Rscript --vanilla figures/render_profile_figures.R [NEW_OUTPUT_DIR]
+python figures/map/render_figure1.py [NEW_OUTPUT_DIR]
 ```
 
-Defaults are separate subdirectories of `figures/regenerated/`. An explicit output directory may be supplied as the first argument. `assemble_profile_figures.py` exports the complete current Figures 2–4 unchanged. Its old `--panel-dir` option now reports an error because the legacy crops would restore inconsistent typography. The old crops and superseded hedgerow helper are preserved at their original paths in the [history archive](../archive/Analysis_History_2026-10-20.zip). They are not current rendering commands.
+Brackets indicate an optional argument, not literal shell syntax. Defaults are separate subdirectories of `figures/regenerated/`. Both commands leave supplied assets unchanged.
 
-`render_profile_figures.R` is the current saved-data renderer for complete Figures 2–4. It reads corrected annual-root display values, observed perennial-root profiles, current C-concentration/Δ¹⁴C EMMs/markers and the 32 observed stock-profile summaries in `analysis/stock_endpoints_2026-10-20/saved_results/stock_profile_summary.csv`. It writes plotting-data readbacks with each render. Axis labels use 9 pt Arial, ticks and legends use 8.5 pt, and panel letters use 11 pt. All panel frames and categorical depth intervals retain the existing layout. No models or statistical tests are run.
+`render_profile_figures.R` redraws complete Figures 2–4 from corrected annual-root display values, observed perennial-root profiles, current C-concentration/Δ¹⁴C EMMs/markers and 32 observed stock means ±1SE. It writes plotting-data readbacks and runs no models or statistical tests. Arial axes use 9 pt, ticks and legends 8.5 pt, and panel letters 11 pt. The required annual fit-to-display helper remains at `analysis/figure2_review/render_corrected_figure2a.R`.
 
-`render_nonroot_panels.R` separately draws all nine non-root panels: six C-concentration/Δ¹⁴C panels from 64 saved EMMs and three stock panels from 32 observed mean ±SE summaries. Only the C-concentration/Δ¹⁴C panels use the saved marker tests. It preserves the selected data and plotting rules; its separate-panel layout is not the current publication composite. Required annual-root display data remain in `analysis/figure2_review/`, and observed perennial-root data remain in `analysis/observed_profile_figures/`. The separate older orchard-stock renderer and its input are in the history archive. Their macOS Quartz device calls need a device/layout check on other platforms.
+The [support archive](../archive/Supporting_Files_2026-10-20.zip) preserves alternate panel renderers, copy-only asset exporters and optional annual diagnostic plotters at their original paths. Restore it into a separate repository copy before using these helpers. In particular, `figures/render_saved_annual_diagnostics.R` redraws the former Figure S2 from saved residuals without fitting or simulation. Its fixed PNG, underlying residuals and detailed checks remain active in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
 
-`render_saved_annual_diagnostics.R` draws the former Figure S2 from saved residuals, without simulations or model fitting. The existing annual analysis and diagnostic scripts supply the former Table S3's mass-sensitivity and Holm results. These detailed checks, both full tables and the figure caption are now in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
+The older panel crops and superseded hedgerow helper remain in the separate [analysis history](../archive/Analysis_History_2026-10-20.zip). They are not current rendering inputs.
 
 ## Figure-specific limits
 

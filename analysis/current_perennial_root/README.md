@@ -52,6 +52,8 @@ Before any fitting, the workflow normalizes the output path and requires a new o
 
 ## Recovery status
 
+The recovered notebook cell extracts and duplicate readbacks are preserved at their original `analysis/current_perennial_source/` paths in the [support archive](../../archive/Supporting_Files_2026-10-20.zip). The current portable code, inputs and saved results remain in this module.
+
 The portable code was recovered and checked against the saved notebook and paper/S1. An isolated execution on 17 October 2026 then completed the selected fits, all five mass-addition scenarios and conditional diagnostics. Numerical changes were below the precision reported in the paper; diagnostic p-values and floor counts reproduced. The supplied reference results remain unchanged. See the repository verification report for the measured differences and checked environment.
 
 The original fitted model objects and full 1,000-draw simulation matrices were not retained in the source archive. The isolated execution produced new fitted and simulation objects separately. The supplied results retain model-status summaries, tests, contrasts, per-observation residuals and below-floor probabilities. The exact methods and seeds are present for a future rerun. These missing historical objects are not missing analysis specifications.
