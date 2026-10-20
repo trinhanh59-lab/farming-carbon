@@ -1,0 +1,28 @@
+system,response,response_label,family,term,statistic,df,p_value,symbol
+annual vegetables,c_percent,C concentration,Gamma(log),Depth,73.80807503067554,5,1.649242598055815e-14,***
+annual vegetables,c_percent,C concentration,Gamma(log),Comparison group,4.151918988999348,1,0.041587367663381246,*
+annual vegetables,c_percent,C concentration,Gamma(log),Depth × comparison group,7.102344328978882,5,0.21313943318557332,
+annual vegetables,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth,1210.9974341751513,5,1.2185895287927624e-259,***
+annual vegetables,cumulative_c_stock,Cumulative C stock,Gamma(log),Comparison group,9.290536375766008,1,0.0023034070646297997,**
+annual vegetables,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth × comparison group,3.4567724842493974,5,0.6299383590853537,
+annual vegetables,del14c,Delta^14 * C,Gaussian(identity),Depth,79.21460972424954,5,1.2249943356738764e-15,***
+annual vegetables,del14c,Delta^14 * C,Gaussian(identity),Comparison group,1.9773639655064084,1,0.15966838316309673,
+annual vegetables,del14c,Delta^14 * C,Gaussian(identity),Depth × comparison group,1.9908074854628017,5,0.8504155294856868,
+orchards,c_percent,C concentration,Gamma(log),Depth,351.30388369187705,3,7.786520977901071e-76,***
+orchards,c_percent,C concentration,Gamma(log),Comparison group,7.27530799651558,1,0.006990890472803368,**
+orchards,c_percent,C concentration,Gamma(log),Depth × comparison group,10.601840018674515,3,0.014085734920352812,*
+orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth,296.3983946165613,3,5.9874550562160256e-64,***
+orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),Comparison group,3.527689125217851e-4,1,0.9850148987751101,
+orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth × comparison group,15.572637872882446,3,0.001387268970202954,**
+orchards,del14c,Delta^14 * C,Gaussian(identity),Depth,101.12437926982987,3,8.906780306855675e-22,***
+orchards,del14c,Delta^14 * C,Gaussian(identity),Comparison group,9.705639450916767,1,0.0018370339007177784,**
+orchards,del14c,Delta^14 * C,Gaussian(identity),Depth × comparison group,10.463377324308144,3,0.015011398941111547,*
+hedgerows,c_percent,C concentration,Gamma(log),Depth,648.3394383598791,3,3.337254716064894e-140,***
+hedgerows,c_percent,C concentration,Gamma(log),Management,17.187727802474516,2,1.8523895804913393e-4,***
+hedgerows,c_percent,C concentration,Gamma(log),Depth × Management,67.28807013332616,6,1.469500923377931e-12,***
+hedgerows,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth,2439.477326485388,3,0,***
+hedgerows,cumulative_c_stock,Cumulative C stock,Gamma(log),Management,19.88920200358596,2,4.7986012211146005e-5,***
+hedgerows,cumulative_c_stock,Cumulative C stock,Gamma(log),Depth × Management,82.21506175853486,6,1.2449749244472078e-15,***
+hedgerows,del14c,Delta^14 * C,Gaussian(identity),Depth,296.1212524283896,3,6.874183972217564e-64,***
+hedgerows,del14c,Delta^14 * C,Gaussian(identity),Management,4.098071103732566,2,0.1288591216166082,
+hedgerows,del14c,Delta^14 * C,Gaussian(identity),Depth × Management,24.627061306255445,6,4.0022237730647463e-4,***

@@ -1,0 +1,4 @@
+system,response,observations,cores,simulations,precall_seed,DHARMa_seed_argument,refit,simulation_method
+hedgerows,c_percent,36,9,500,7302038,123,FALSE,Unchanged simulateResiduals defaults in DHARMa0.5.0
+hedgerows,cumulative_c_stock,36,9,500,7302040,123,FALSE,Unchanged simulateResiduals defaults in DHARMa0.5.0
+hedgerows,del14c,36,9,500,7302041,123,FALSE,Unchanged simulateResiduals defaults in DHARMa0.5.0

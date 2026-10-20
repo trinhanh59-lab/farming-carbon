@@ -1,0 +1,61 @@
+system,management,sample_id,sample_code,core,depth_interval_cm,depth_top_cm,depth_bottom_cm,volume_cm3,working_root_mass_g,observed_density_mg_cm3,addition_g,value_role,profile_symbol_index
+hedgerows,10-year-old hedgerow,197,197_HRDY2_1_A1,HRDY2.1,0-10,0.0,10.0,114.009182796937,0.1114,0.9771142750704193,0,observed core increment; not a fitted mean,1
+hedgerows,10-year-old hedgerow,198,198_HRDY2_1_A2,HRDY2.1,10-20,10.0,20.0,114.009182796937,0.001,0.0087712232950666,0,observed core increment; not a fitted mean,1
+hedgerows,10-year-old hedgerow,199,199_HRDY2_1_A3,HRDY2.1,20-50,20.0,50.0,342.027548390811,0.0773,0.2260051869028827,0,observed core increment; not a fitted mean,1
+hedgerows,10-year-old hedgerow,200,200_HRDY2_1_A4,HRDY2.1,50-75,50.0,75.0,285.0229569923425,0.0,0.0,0,observed core increment; not a fitted mean,1
+hedgerows,10-year-old hedgerow,202,202_HRDY2_2_A1,HRDY2.2,0-10,0.0,10.0,114.009182796937,0.0093,0.08157237664411937,0,observed core increment; not a fitted mean,2
+hedgerows,10-year-old hedgerow,203,203_HRDY2_2_A2,HRDY2.2,10-20,10.0,20.0,114.009182796937,0.0031,0.02719079221470646,0,observed core increment; not a fitted mean,2
+hedgerows,10-year-old hedgerow,204,204_HRDY2_2_A3,HRDY2.2,20-50,20.0,50.0,342.027548390811,0.0356,0.104085183101457,0,observed core increment; not a fitted mean,2
+hedgerows,10-year-old hedgerow,205,205_HRDY2_2_A4,HRDY2.2,50-75,50.0,75.0,285.0229569923425,0.0625,0.219280582376665,0,observed core increment; not a fitted mean,2
+hedgerows,10-year-old hedgerow,207,207_HRDY2_3_A1,HRDY2.3,0-10,0.0,10.0,114.009182796937,0.0024,0.02105093590815984,0,observed core increment; not a fitted mean,3
+hedgerows,10-year-old hedgerow,208,208_HRDY2_3_A2,HRDY2.3,10-20,10.0,20.0,114.009182796937,0.9132,8.009881113054819,0,observed core increment; not a fitted mean,3
+hedgerows,10-year-old hedgerow,209,209_HRDY2_3_A3,HRDY2.3,20-50,20.0,50.0,342.027548390811,0.0237,0.06929266403102613,0,observed core increment; not a fitted mean,3
+hedgerows,10-year-old hedgerow,210,210_HRDY2_3_A4,HRDY2.3,50-75,50.0,75.0,285.0229569923425,0.0013,0.004561036113434632,0,observed core increment; not a fitted mean,3
+hedgerows,30-year-old hedgerow,182,182_HRDY1_1_A1,HRDY1.1,0-10,0.0,10.0,114.009182796937,0.0297,0.260505331863478,0,observed core increment; not a fitted mean,1
+hedgerows,30-year-old hedgerow,183,183_HRDY1_1_A2,HRDY1.1,10-20,10.0,20.0,114.009182796937,0.0017,0.014911079601613218,0,observed core increment; not a fitted mean,1
+hedgerows,30-year-old hedgerow,184,184_HRDY1_1_A3,HRDY1.1,20-50,20.0,50.0,342.027548390811,0.0772,0.22571281279304717,0,observed core increment; not a fitted mean,1
+hedgerows,30-year-old hedgerow,185,185_HRDY1_1_A4,HRDY1.1,50-75,50.0,75.0,285.0229569923425,0.0128,0.044908663270740994,0,observed core increment; not a fitted mean,1
+hedgerows,30-year-old hedgerow,187,187_HRDY1_2_A1,HRDY1.2,0-10,0.0,10.0,114.009182796937,0.0,0.0,0,observed core increment; not a fitted mean,2
+hedgerows,30-year-old hedgerow,188,188_HRDY1_2_A2,HRDY1.2,10-20,10.0,20.0,114.009182796937,0.3547,3.111152902760123,0,observed core increment; not a fitted mean,2
+hedgerows,30-year-old hedgerow,189,189_HRDY1_2_A3,HRDY1.2,20-50,20.0,50.0,342.027548390811,0.3405,0.9955338439900591,0,observed core increment; not a fitted mean,2
+hedgerows,30-year-old hedgerow,190,190_HRDY1_2_A4,HRDY1.2,50-75,50.0,75.0,285.0229569923425,0.0109,0.03824253356649038,0,observed core increment; not a fitted mean,2
+hedgerows,30-year-old hedgerow,192,192_HRDY1_3_A1,HRDY1.3,0-10,0.0,10.0,114.009182796937,0.0013,0.01140259028358658,0,observed core increment; not a fitted mean,3
+hedgerows,30-year-old hedgerow,193,193_HRDY1_3_A2,HRDY1.3,10-20,10.0,20.0,114.009182796937,0.0128,0.11227165817685247,0,observed core increment; not a fitted mean,3
+hedgerows,30-year-old hedgerow,194,194_HRDY1_3_A3,HRDY1.3,20-50,20.0,50.0,342.027548390811,0.3305,0.9662964330065037,0,observed core increment; not a fitted mean,3
+hedgerows,30-year-old hedgerow,195,195_HRDY1_3_A4,HRDY1.3,50-75,50.0,75.0,285.0229569923425,0.4594,1.6117999927014384,0,observed core increment; not a fitted mean,3
+hedgerows,bare field margin,212,212_HRDY3_1_A1,HRDY3.1,0-10,0.0,10.0,114.009182796937,0.0012,0.01052546795407992,0,observed core increment; not a fitted mean,1
+hedgerows,bare field margin,213,213_HRDY3_1_A2,HRDY3.1,10-20,10.0,20.0,114.009182796937,0.0051,0.04473323880483966,0,observed core increment; not a fitted mean,1
+hedgerows,bare field margin,214,214_HRDY3_1_A3,HRDY3.1,20-50,20.0,50.0,342.027548390811,0.0056,0.016372950150790985,0,observed core increment; not a fitted mean,1
+hedgerows,bare field margin,215,215_HRDY3_1_A4,HRDY3.1,50-75,50.0,75.0,285.0229569923425,0.0003,0.001052546795407992,0,observed core increment; not a fitted mean,1
+hedgerows,bare field margin,217,217_HRDY3_2_A1,HRDY3.2,0-10,0.0,10.0,114.009182796937,0.0227,0.19910676879801184,0,observed core increment; not a fitted mean,2
+hedgerows,bare field margin,218,218_HRDY3_2_A2,HRDY3.2,10-20,10.0,20.0,114.009182796937,0.0052,0.04561036113434632,0,observed core increment; not a fitted mean,2
+hedgerows,bare field margin,219,219_HRDY3_2_A3,HRDY3.2,20-50,20.0,50.0,342.027548390811,0.0003,0.00087712232950666,0,observed core increment; not a fitted mean,2
+hedgerows,bare field margin,220,220_HRDY3_2_A4,HRDY3.2,50-75,50.0,75.0,285.0229569923425,0.0,0.0,0,observed core increment; not a fitted mean,2
+hedgerows,bare field margin,222,222_HRDY3_3_A1,HRDY3.3,0-10,0.0,10.0,114.009182796937,0.014,0.1227971261309324,0,observed core increment; not a fitted mean,3
+hedgerows,bare field margin,223,223_HRDY3_3_A2,HRDY3.3,10-20,10.0,20.0,114.009182796937,0.0021,0.018419568919639858,0,observed core increment; not a fitted mean,3
+hedgerows,bare field margin,224,224_HRDY3_3_A3,HRDY3.3,20-50,20.0,50.0,342.027548390811,0.003,0.0087712232950666,0,observed core increment; not a fitted mean,3
+hedgerows,bare field margin,225,225_HRDY3_3_A4,HRDY3.3,50-75,50.0,75.0,285.0229569923425,0.0,0.0,0,observed core increment; not a fitted mean,3
+orchards,20-year-old orchard,122,122_MAS2_1_A1,MAS2.1,0-10,0.0,10.0,114.009182796937,0.027800000000000047,0.24384000760285188,0,observed core increment; not a fitted mean,1
+orchards,20-year-old orchard,123,123_MAS2_1_A2,MAS2.1,10-20,10.0,20.0,114.009182796937,0.0,0.0,0,observed core increment; not a fitted mean,1
+orchards,20-year-old orchard,124,124_MAS2_1_A3,MAS2.1,20-50,20.0,50.0,342.027548390811,0.007800000000000029,0.022805180567173244,0,observed core increment; not a fitted mean,1
+orchards,20-year-old orchard,125,125_MAS2_1_A4,MAS2.1,50-75,50.0,75.0,285.0229569923425,0.008099999999999996,0.02841876347601577,0,observed core increment; not a fitted mean,1
+orchards,20-year-old orchard,142,142_MAS2_3_A1,MAS2.3,0-10,0.0,10.0,114.009182796937,0.032399999999999984,0.2841876347601577,0,observed core increment; not a fitted mean,2
+orchards,20-year-old orchard,143,143_MAS2_3_A2,MAS2.3,10-20,10.0,20.0,114.009182796937,0.0086,0.07543252033757275,0,observed core increment; not a fitted mean,2
+orchards,20-year-old orchard,144,144_MAS2_3_A3,MAS2.3,20-50,20.0,50.0,342.027548390811,0.0,0.0,0,observed core increment; not a fitted mean,2
+orchards,20-year-old orchard,145,145_MAS2_3_A4,MAS2.3,50-75,50.0,75.0,285.0229569923425,0.00039999999999995595,0.0014033957272105014,0,observed core increment; not a fitted mean,2
+orchards,20-year-old orchard,162,162_MAS2_5_A1,MAS2.5,0-10,0.0,10.0,114.009182796937,0.038799999999999946,0.3403234638485836,0,observed core increment; not a fitted mean,3
+orchards,20-year-old orchard,163,163_MAS2_5_A2,MAS2.5,10-20,10.0,20.0,114.009182796937,0.0484,0.4245272074812234,0,observed core increment; not a fitted mean,3
+orchards,20-year-old orchard,164,164_MAS2_5_A3,MAS2.5,20-50,20.0,50.0,342.027548390811,0.01869999999999994,0.054673958539248294,0,observed core increment; not a fitted mean,3
+orchards,20-year-old orchard,165,165_MAS2_5_A4,MAS2.5,50-75,50.0,75.0,285.0229569923425,0.03499999999999992,0.12279712613093213,0,observed core increment; not a fitted mean,3
+orchards,60-year-old orchard,67,67_MAS1_1_A1,MAS1.1,0-10,0.0,10.0,114.009182796937,0.08079999999999998,0.708714842241381,0,observed core increment; not a fitted mean,1
+orchards,60-year-old orchard,68,68_MAS1_1_A2,MAS1.1,10-20,10.0,20.0,114.009182796937,0.009300000000000086,0.08157237664412013,0,observed core increment; not a fitted mean,1
+orchards,60-year-old orchard,69,69_MAS1_1_A3,MAS1.1,20-50,20.0,50.0,342.027548390811,0.0035000000000000586,0.010233093844244538,0,observed core increment; not a fitted mean,1
+orchards,60-year-old orchard,70,70_MAS1_1_A4,MAS1.1,50-75,50.0,75.0,285.0229569923425,0.013500000000000068,0.047364605793359875,0,observed core increment; not a fitted mean,1
+orchards,60-year-old orchard,87,87_MAS1_3_A1,MAS1.3,0-10,0.0,10.0,114.009182796937,0.007200000000000095,0.06315280772448036,0,observed core increment; not a fitted mean,2
+orchards,60-year-old orchard,88,88_MAS1_3_A2,MAS1.3,10-20,10.0,20.0,114.009182796937,0.0005999999999999339,0.00526273397703938,0,observed core increment; not a fitted mean,2
+orchards,60-year-old orchard,89,89_MAS1_3_A3,MAS1.3,20-50,20.0,50.0,342.027548390811,0.0,0.0,0,observed core increment; not a fitted mean,2
+orchards,60-year-old orchard,90,90_MAS1_3_A4,MAS1.3,50-75,50.0,75.0,285.0229569923425,0.00019999999999997797,0.0007016978636052507,0,observed core increment; not a fitted mean,2
+orchards,60-year-old orchard,107,107_MAS1_5_A1,MAS1.5,0-10,0.0,10.0,114.009182796937,0.01980000000000004,0.173670221242319,0,observed core increment; not a fitted mean,3
+orchards,60-year-old orchard,108,108_MAS1_5_A2,MAS1.5,10-20,10.0,20.0,114.009182796937,0.0028999999999999027,0.025436547555692284,0,observed core increment; not a fitted mean,3
+orchards,60-year-old orchard,109,109_MAS1_5_A3,MAS1.5,20-50,20.0,50.0,342.027548390811,0.001100000000000101,0.0032161152081913815,0,observed core increment; not a fitted mean,3
+orchards,60-year-old orchard,110,110_MAS1_5_A4,MAS1.5,50-75,50.0,75.0,285.0229569923425,0.0,0.0,0,observed core increment; not a fitted mean,3

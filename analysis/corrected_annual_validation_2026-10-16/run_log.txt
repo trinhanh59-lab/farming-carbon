@@ -1,0 +1,129 @@
+Residual simulations complete: half_conditional 
+Residual simulations complete: half_unconditional 
+Residual simulations complete: original_conditional 
+Residual simulations complete: original_unconditional 
+Residual simulations complete: double_conditional 
+Residual simulations complete: double_unconditional 
+Core deletion complete: half_IKON.1 
+Core deletion complete: half_IKON.3 
+Core deletion complete: half_IKON.5 
+Core deletion complete: half_LAHE.1 
+Core deletion complete: half_LAHE.3 
+Core deletion complete: half_LAHE.5 
+Core deletion complete: original_IKON.1 
+Core deletion complete: original_IKON.3 
+Core deletion complete: original_IKON.5 
+Core deletion complete: original_LAHE.1 
+Core deletion complete: original_LAHE.3 
+Core deletion complete: original_LAHE.5 
+Core deletion complete: double_IKON.1 
+Core deletion complete: double_IKON.3 
+Core deletion complete: double_IKON.5 
+Core deletion complete: double_LAHE.1 
+Core deletion complete: double_LAHE.3 
+Core deletion complete: double_LAHE.5 
+
+RESIDUAL TESTS
+ constant added_mass_g    simulation       test    statistic p_diagnostic
+     half      8.5e-05   conditional uniformity 0.1718333333 0.2382403747
+     half      8.5e-05   conditional dispersion 0.4544665358 0.3950000000
+     half      8.5e-05   conditional   outliers 0.0000000000 1.0000000000
+     half      8.5e-05 unconditional uniformity 0.1531111111 0.3674837303
+     half      8.5e-05 unconditional dispersion 0.3787939074 0.5580000000
+     half      8.5e-05 unconditional   outliers 0.0000000000 1.0000000000
+ original      1.7e-04   conditional uniformity 0.1398333333 0.4421857493
+ original      1.7e-04   conditional dispersion 0.4898080646 0.4370000000
+ original      1.7e-04   conditional   outliers 0.0000000000 1.0000000000
+ original      1.7e-04 unconditional uniformity 0.1121666667 0.7555829286
+ original      1.7e-04 unconditional dispersion 0.4036988725 0.6690000000
+ original      1.7e-04 unconditional   outliers 0.0000000000 1.0000000000
+   double      3.4e-04   conditional uniformity 0.1395000000 0.4852779207
+   double      3.4e-04   conditional dispersion 0.5565363209 0.5200000000
+   double      3.4e-04   conditional   outliers 0.0000000000 1.0000000000
+   double      3.4e-04 unconditional uniformity 0.1103333333 0.7320360277
+   double      3.4e-04 unconditional dispersion 0.4943648747 0.8400000000
+   double      3.4e-04 unconditional   outliers 0.0000000000 1.0000000000
+ simulations     seed
+        2000 20261117
+        2000 20261117
+        2000 20261117
+        2000 20261118
+        2000 20261118
+        2000 20261118
+        2000 20261217
+        2000 20261217
+        2000 20261217
+        2000 20261218
+        2000 20261218
+        2000 20261218
+        2000 20261317
+        2000 20261317
+        2000 20261317
+        2000 20261318
+        2000 20261318
+        2000 20261318
+
+BELOW-FLOOR PREDICTIONS
+ constant    simulation observed_below_floor mean_simulated_below_floor
+     half   conditional                    0                     3.5640
+     half unconditional                    0                     3.4590
+ original   conditional                    0                     3.4680
+ original unconditional                    0                     3.3800
+   double   conditional                    0                     3.4660
+   double unconditional                    0                     3.4155
+ lower95_simulated_count upper95_simulated_count
+                       1                       6
+                       1                       6
+                       1                       6
+                       1                       6
+                       1                       6
+                       1                       7
+ fraction_simulations_with_none_below_floor monte_carlo_lower_tail
+                                     0.0030         0.003498250875
+                                     0.0165         0.016991504248
+                                     0.0035         0.003998001000
+                                     0.0165         0.016991504248
+                                     0.0050         0.005497251374
+                                     0.0195         0.019990004998
+
+HOLM ADJUSTMENT
+ constant comparison    p_unadjusted p_Holm_six_depths
+     half       0-10 2.149538611e-01   2.149538611e-01
+     half      10-20 9.676638705e-02   1.935327741e-01
+     half      20-30 2.896209476e-02   8.688628428e-02
+     half      30-40 1.599590024e-03   6.398360097e-03
+     half      40-50 7.265689099e-07   4.359413460e-06
+     half     50-100 7.402921292e-06   3.701460646e-05
+ original       0-10 1.715717939e-01   1.715717939e-01
+ original      10-20 7.465946575e-02   1.493189315e-01
+ original      20-30 2.093091935e-02   6.279275805e-02
+ original      30-40 1.049515293e-03   4.198061173e-03
+ original      40-50 1.464673130e-05   8.788038782e-05
+ original     50-100 1.200188870e-04   6.000944348e-04
+   double       0-10 1.372947784e-01   1.372947784e-01
+   double      10-20 5.465160821e-02   1.093032164e-01
+   double      20-30 1.428464304e-02   4.285392911e-02
+   double      30-40 6.223530254e-04   3.111765127e-03
+   double      40-50 1.902676108e-04   1.141605665e-03
+   double     50-100 1.230938438e-03   4.923753751e-03
+
+CORE DELETION: DEPTH-AVERAGED LOG COMPARISONS
+ constant omitted_core poly_over_mono    lower_95    upper_95    p_unadjusted
+     half       IKON.1   13.566200893 4.914579428 37.44812946 4.819162016e-07
+     half       IKON.3    8.063198558 2.919309477 22.27073611 5.654761962e-05
+     half       IKON.5    8.181597913 2.955925360 22.64554624 5.199341211e-05
+     half       LAHE.1   13.958759101 7.735542615 25.18853109 2.079401485e-18
+     half       LAHE.3    6.148095911 2.208831519 17.11270552 5.066097285e-04
+     half       LAHE.5    7.721869317 2.249061381 26.51206688 1.163094498e-03
+ original       IKON.1   10.615642980 3.907944315 28.83661250 3.599819731e-06
+ original       IKON.3    6.324728767 2.284700247 17.50872747 3.847077139e-04
+ original       IKON.5    6.412937798 2.312063791 17.78747255 3.567092717e-04
+ original       LAHE.1   11.018173174 6.078005141 19.97368170 2.658424988e-15
+ original       LAHE.3    4.904561369 1.806830378 13.31321552 1.801992540e-03
+ original       LAHE.5    6.134231375 1.834225473 20.51481407 3.231614893e-03
+   double       IKON.1    8.252475015 3.178458333 21.42653348 1.454596347e-05
+   double       IKON.3    4.985349647 1.848752424 13.44350427 1.502989203e-03
+   double       IKON.5    5.047160452 1.868505895 13.63326105 1.408035782e-03
+   double       LAHE.1    8.597572686 4.761042519 15.52564503 9.685437473e-13
+   double       LAHE.3    3.957435925 1.545837931 10.13126848 4.129191565e-03
+   double       LAHE.5    4.910614701 1.560293888 15.45486842 6.518948144e-03

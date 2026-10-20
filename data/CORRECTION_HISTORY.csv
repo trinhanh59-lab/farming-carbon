@@ -1,0 +1,6 @@
+item,sample_ids,earlier_value,current_working_value,evidence,status
+root143,143,-1.4427 g,0.0086 g,Source worksheet records 0.0086 in root field but subtraction yields impossible negative mass; retained selected correction,Original handwritten weighing note not located
+annual_working_roots,18 annual samples,See processed/root_working_correction_ledger.csv,See processed/root_working_correction_ledger.csv,Corrected annual input reviewed in October 2026; original source masses preserved,Author-confirmed transcription; original handwritten notes not located
+moisture_M118,108,352.68 g,104.40 g,Current working moisture workbook and preserved earlier version; June record describes B/C-core-informed correction,Author-approved neighboring-core estimate retained 2026-10-20; original same-core measurement unverified
+envelope_tare,13,1.4368 g,1.4210 g,Current envelope workbook and preserved before-correction copy; net root mass remains 0.002 g,Working source correction retained without changing recorded net root mass
+orchard_radiocarbon,142 and 143,Swapped in earlier received compilation,142=-11.5 per mil; 143=13.2 per mil,Primary CAMS report and corrected compiled input agree at retained precision,Source report verified

@@ -1,0 +1,17 @@
+# Local rerun outputs and session files
+results/
+**/outputs_rerun/
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.DS_Store
+__pycache__/
+*.pyc
+
+# Local dependency environments and regenerated figures
+reproducibility/r-library/
+.venv/
+renv/library/
+renv/staging/
+figures/regenerated/

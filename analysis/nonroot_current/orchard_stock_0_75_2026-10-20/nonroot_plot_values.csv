@@ -1,0 +1,9 @@
+estimate,se,lower_one_se,upper_one_se,system,response,response_label,family,site_type,depth_cm
+9.61201048915893,1.2354638422115218,8.376546646947409,10.847474331370451,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),20-year-old orchard,0-10
+11.690131365725886,1.5027670734910874,10.187364292234799,13.192898439216973,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),60-year-old orchard,0-10
+13.802595904269019,1.7737641284915968,12.028831775777423,15.576360032760615,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),20-year-old orchard,10-20
+14.679107584071826,1.8864930619970395,12.792614522074786,16.565600646068866,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),60-year-old orchard,10-20
+20.503829694600423,2.6350386488031634,17.86879104579726,23.138868343403587,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),20-year-old orchard,20-50
+18.660804804655278,2.398164300102943,16.262640504552337,21.05896910475822,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),60-year-old orchard,20-50
+26.31217560739842,3.3817100386085435,22.930465568789877,29.69388564600696,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),20-year-old orchard,50-75
+22.067385670163734,2.83610084366671,19.231284826497024,24.903486513830444,orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),60-year-old orchard,50-75

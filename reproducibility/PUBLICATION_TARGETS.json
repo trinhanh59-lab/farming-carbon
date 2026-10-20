@@ -1,0 +1,800 @@
+{
+  "revision_date": "2026-10-20",
+  "title": "Soil Carbon Stocks and Radiocarbon Profiles in Three Agricultural Systems of California’s Central Valley",
+  "reference_PDF": {
+    "filename": "Farming_Carbon_EarthArXiv.pdf",
+    "sha256": "d3ade4ff6a749a8fa81bc846ef3af10d6be5af58a5895449bd471d1e1bad9e11",
+    "pages": 30,
+    "supplement_pages": [
+      29,
+      30
+    ],
+    "bytes": 1061712
+  },
+  "workbook": {
+    "path": "data/Supplementary_Data.xlsx",
+    "sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
+    "note_revision": "Current endpoint Welch table and observed stock summaries; raw measurements and native workbook features preserved.",
+    "bytes": 141361
+  },
+  "selected_methods": {
+    "annual_root": "Corrected Gamma full interaction: 1000 * (root mass in g + 0.00017 g) / volume in cm3. Half/original/double sensitivity; six-test Holm results separate from unadjusted contrasts.",
+    "perennial_root": "B_shift_gamma full interaction at 0–75 cm, recorded zeros retained; five constant scenarios, conditional residual diagnostics and predictive-floor checks.",
+    "nonroot": "Six retained Type III Wald GLMMs for C concentration and bulk radiocarbon; supporting bulk-density models remain unchanged.",
+    "hedgerow_scope_cm": [
+      0,
+      75
+    ],
+    "cumulative_C_stock": "Welch endpoints: annual0–100, orchard0–75, hedgerow0–20/75; one core value per endpoint, unadjusted pointwise95% CI, Holm adjustment across all six hedgerow pairwise tests."
+  },
+  "no_new_analysis_selected": false,
+  "fresh_selected_analysis_rerun_completed": true,
+  "exact_original_orchard_bootstrap_replay": false,
+  "paper_reference_result_set": "The author selected cumulative C-stock Welch endpoint comparisons using one value per core: annual fields 0–100 cm, orchards 0–75 cm, and hedgerows 0–20 and 0–75 cm. The six hedgerow pairwise p values are Holm-adjusted as one family. Table 1 separates unchanged non-stock Wald tests in panel A from eight stock endpoint comparisons in panel B. Figures 2–4c show observed means ±1 sample SE with no profile-model stock stars. All measurements, root/C-concentration/radiocarbon results and historical stock analyses are retained.",
+  "orchard_reference": {
+    "run_date": "2026-10-17",
+    "classification_file": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_all999_fit_audit.csv",
+    "summary_file": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_summary.csv",
+    "definite_exceedances": 125,
+    "definite_nonexceedances": 870,
+    "failed_fits": 3,
+    "ambiguous_comparisons": 1,
+    "p_value_bounds": [
+      0.126,
+      0.13
+    ],
+    "Monte_Carlo_95_envelope": [
+      0.105236125639516,
+      0.151520977138336
+    ],
+    "full_infinite_shape": 671,
+    "null_infinite_shape": 682,
+    "scope": "secondary_archive_not_current_paper"
+  },
+  "licenses": {
+    "original_project_code": "MIT",
+    "project_data_and_numerical_results": "CC-BY-4.0"
+  },
+  "presentation_revision": {
+    "date": "2026-10-20",
+    "scope": "Only the last Table1B header changes from p to p value (Holm for hedgerows), with one manual line break and the existing 11-point bold style. All numbers, notes, manuscript prose, scientific results/code, figures, supplement and workbook are unchanged.",
+    "models_refit": 0,
+    "endpoint_Welch_tests_computed": 8,
+    "author_selected_method": true,
+    "PDF_sha256": "d3ade4ff6a749a8fa81bc846ef3af10d6be5af58a5895449bd471d1e1bad9e11",
+    "PDF_pages": 30,
+    "supplement_pages": [
+      29,
+      30
+    ],
+    "workbook_sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
+    "combined_DOCX_sha256": "d9b5c2b702ec389d6dfbc9f9ee0c1740e56b2194769eb5e4942b1d4e80e2248a",
+    "S1_DOCX_sha256": "b9dadb3f4775f5dba38193679f21272c5aaeef7e1fed4a33eb169bfc32daf782",
+    "standalone_supplement_pages": 3,
+    "Table1_panel_A_widths_inches": [
+      2.4,
+      2.2,
+      2.2,
+      2.2
+    ],
+    "Table1_panel_B_widths_inches": [
+      2.25,
+      2.1,
+      1.9,
+      1.35,
+      1.4
+    ],
+    "Table1_body_font_pt": 11,
+    "current_revision_models_refit": 0,
+    "current_revision_tests_computed": 0,
+    "Table1B_p_header": "p value\n(Holm for hedgerows)"
+  },
+  "distribution": {
+    "private_draft_repository": "https://github.com/trinhanh59-lab/farming-carbon",
+    "repository_visibility": "private",
+    "public_code_release": false,
+    "public_code_url": null,
+    "preprint_submitted": false,
+    "scope": "Author-approved snapshot for the existing private repository; remote upload verification is recorded separately.",
+    "upload_authorized": true,
+    "public_visibility_change_authorized": false
+  },
+  "data_code_revision_date": "2026-10-20",
+  "data_preparation": {
+    "source_workbooks": 23,
+    "direct_inputs": 12,
+    "current_full_samples": 111,
+    "current_analysis_rows": 96,
+    "script": "scripts/prepare_analysis_data.R",
+    "availability": "data/DATA_AVAILABILITY.md",
+    "changes_publication_results": false,
+    "missing_native_CN_results": 68,
+    "original_handwritten_root_notes_located": false,
+    "sample108_original_same_core_confirmed": false,
+    "current_analysis_input": "data/processed/sample_level_analysis_96_current.csv",
+    "current_scope_table": "data/processed/sample_level_scope_111_current.csv",
+    "author_confirmation_2026_10_20": {
+      "date": "2026-10-20",
+      "confirmed_by": "Anh Trinh",
+      "sampling_diameter_cm": 3.81,
+      "calculation_radius_cm": 1.905,
+      "diameter_status": "Author confirmed retaining the existing diameter; actual fitted cutting-tip dimension not independently verified.",
+      "sample108_field_moist_bag_mass_g": 104.4,
+      "sample108_status": "Author approved retaining a neighboring-B/C-core-informed estimate.",
+      "sample108_original_same_core_measurement_confirmed": false,
+      "original_sample108_field_moist_bag_mass_g": 352.68,
+      "scientific_values_code_results_and_workbook_changed": false
+    }
+  },
+  "secondary_archived_analyses": {
+    "orchard_profile_sensitivity": "Six cores and 24 cumulative-stock endpoints, core intercept plus OU covariance; approved 17 October execution with 999 classifications, retained simulated responses and 20,000-dataset full-model diagnostic.",
+    "orchard_endpoint_Welch": "Earlier orchard endpoint record retained historically; the same endpoint now participates in the selected cross-system endpoint module.",
+    "cumulative_stock_profile_models": "All three formerly selected stock profile model tables/code retained in analysis/nonroot_current/historical_cumulative_profile_2026-10-20/; not current inference."
+  },
+  "historical_presentation_revision_2026_10_18": {
+    "date": "2026-10-18",
+    "scope": "Supplement organization and repeated front matter, followed by seven wording, grammar and spacing edits; scientific content, figures, code and numerical results unchanged",
+    "standalone_supplement_pages": 6,
+    "new_analyses_run": false,
+    "editorial_edit_count": 7,
+    "combined_DOCX_sha256": "248cca6bd67f7beded136ce86e814a564a631e2162cb944fb294e6552d821631"
+  },
+  "historical_presentation_before_annual_stock_sentence_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Approved point4 only: orchard profile/bootstrap Methods, result and S4 removed with dependent references. All roots, concentration findings, figures, Table1 data and other supplements remain.",
+    "standalone_supplement_pages": 5,
+    "new_analyses_run": false,
+    "combined_DOCX_sha256": "4262e8cee70718564981f98e2fd257e5b835c1747de56fa201740550c7d77e76",
+    "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+  },
+  "historical_presentation_before_hedgerow_stock_sentence_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Approved annual Results sentence adds existing Figure 2c cumulative 0–100 cm stock magnitudes and model SEs. All other manuscript text, figures, tables, supplement, measurements and analyses are unchanged.",
+    "standalone_supplement_pages": 5,
+    "new_analyses_run": false,
+    "combined_DOCX_sha256": "1883c40dc156a841938a56a2741a195b2e7dbc438ded322f90475da7cfe2a0f8",
+    "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+  },
+  "historical_presentation_before_karis_cleanup_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Approved hedgerow Results expansion adds existing Figure 4c cumulative 0–20 cm stock magnitudes and model SEs. The annual Results and all other manuscript text, figures, tables, supplement, measurements and analyses are unchanged.",
+    "standalone_supplement_pages": 5,
+    "new_analyses_run": false,
+    "combined_DOCX_sha256": "dd563f919df0b266cbec3b3355daadb4785fc08b29c8da98aacde6af77250386",
+    "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+  },
+  "historical_presentation_before_hedgerow75_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Five approved editorial cuts for Karis comments 48/194, 435 and 501: redundant annual interaction narration, the hedgerow overall-management sentence and the detailed annual Tautges comparison. All analysis scope, retained statistical results, figures, tables, supplement, measurements and code are unchanged. Comments24/355 await a depth-scope decision; four legacy comments remain parked.",
+    "standalone_supplement_pages": 5,
+    "new_analyses_run": false,
+    "combined_DOCX_sha256": "7f8061a2c170f059659080e226fbb0c4fa7c66d73f3bee20a4fef37fad7b5891",
+    "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+  },
+  "historical_data_preparation_before_hedgerow75_2026_10_19": {
+    "source_workbooks": 23,
+    "direct_inputs": 12,
+    "current_full_samples": 111,
+    "current_analysis_rows": 105,
+    "script": "scripts/prepare_analysis_data.R",
+    "availability": "data/DATA_AVAILABILITY.md",
+    "changes_publication_results": false,
+    "missing_native_CN_results": 68,
+    "original_handwritten_root_notes_located": false,
+    "sample108_original_same_core_confirmed": false
+  },
+  "hedgerow_0_75_revision_2026_10_19": {
+    "scope": "Author-approved hedgerow comparisons restricted to 0–75 cm; annual fields remain at 0–100 cm. Three non-root and one supporting bulk-density model rerun; dependent figure, tables, workbook and text refreshed. All measured values and annual/orchard/root results preserved.",
+    "models_executed": 4,
+    "hedgerow_observations": 36,
+    "hedgerow_cores": 9,
+    "current_combined_analysis_rows": 96,
+    "retained_measured_rows": 111,
+    "deeper_hedgerow_rows_retained": 9,
+    "results": "analysis/hedgerow_0_75/",
+    "annual_orchard_root_models_rerun_this_revision": false,
+    "measurements_changed": false,
+    "upload_performed": false
+  },
+  "historical_presentation_before_root_checks_trim_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Author-approved hedgerow comparisons restricted to 0–75 cm; annual fields remain at 0–100 cm. Three non-root and one supporting bulk-density model rerun; dependent figure, tables, workbook and text refreshed. All measured values and annual/orchard/root results preserved.",
+    "standalone_supplement_pages": 5,
+    "new_analyses_run": true,
+    "combined_DOCX_sha256": "945dc50e223f03111f6c3b4f4d551f91b0abda425dbe6ceb082e70874fdf15d9",
+    "S1_DOCX_sha256": "46f896348a1d1ebcd0ef3bc929bfa3cc02ddfa1250413da555d099ef2fddeeb5",
+    "workbook_sha256": "b1df345a68fdf218e434bc42758386926201e01c18b54fb41b9093cd31bf5b4f",
+    "PDF_pages": 36,
+    "supplement_pages": [
+      33,
+      34,
+      35,
+      36
+    ]
+  },
+  "root_model_checks": {
+    "summary": "Supplemental Material",
+    "complete_details": "docs/ROOT_MODEL_CHECKS.md",
+    "detailed_tables_and_diagnostic_plot_in_paper": false,
+    "source_results_unchanged": true
+  },
+  "historical_presentation_before_statistics_trim_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Author-approved presentation trim: root-model checks summarized in the paper supplement; full sensitivity tables and residual diagnostics retained in docs/ROOT_MODEL_CHECKS.md. Main Results, statistical values, measurements, scientific code, saved results and figure assets unchanged. No model execution or upload.",
+    "new_analyses_run": false,
+    "PDF_sha256": "c5219481e1c4150591e0793e61b103decd3f5895099ecbdffd00ef5e62d0bc7c",
+    "PDF_pages": 32,
+    "supplement_pages": [
+      31,
+      32
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "0b259a96df47610195dba18c88dec535b968c85f49b5898efcc52b4e16f3ae7d",
+    "S1_DOCX_sha256": "a3c4263899289d2d41e7ae7bda833b73b9b047b505445e61c8eec3f2b6c8df67",
+    "standalone_supplement_pages": 3
+  },
+  "historical_before_full_formatting_2026_10_19": {
+    "date": "2026-10-19",
+    "scope": "Author-approved preprint presentation revision: statistical Methods shortened using existing wording, bulk-density findings moved to the supplement, Table 1 placed in Results with all values and stars retained, and Figures 2–4 typography standardized from saved values. No model, measurement or numerical result changed. No upload.",
+    "new_analyses_run": false,
+    "PDF_sha256": "182b974511b58f78fad02ecd694903127c7b7c13b5688194d018972cf2214e81",
+    "PDF_pages": 31,
+    "supplement_pages": [
+      30,
+      31
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "95560a890f76ef653ac63a87dd51d0e4984d66f9b84c0d1f1908ede3a2bf212e",
+    "S1_DOCX_sha256": "9dae92484adde42a21ac8bdc93aa3580884d3643fb05d41d9ce533d8679ba378",
+    "standalone_supplement_pages": 3
+  },
+  "historical_before_caption_flow_2026_10_20": {
+    "date": "2026-10-19",
+    "scope": "Formatting correction only: all figure captions use matching 10-point single spacing and label-only bold; dedicated figure pages keep captions attached. Main body spacing, headings and reference fonts are consistent; literal extra spaces removed. Wording, all table values/stars, figure assets, data and saved analysis results are preserved. No model rerun or upload.",
+    "new_analyses_run": false,
+    "PDF_sha256": "1404b93cf34eb19b237231a56c660e9b57e1748fdc5909fea1988b1710095703",
+    "PDF_pages": 30,
+    "supplement_pages": [
+      29,
+      30
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "77c9a3fcba32cbbad9aaaa2c66e9e48bba9c1a675f391201b0949e97f22be5a8",
+    "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+    "standalone_supplement_pages": 3
+  },
+  "historical_before_orchard_table_block_2026_10_20": {
+    "date": "2026-10-20",
+    "scope": "Figures 2–4 precede their Results explanations. One shared key states panel definitions, units, sampling, error bars and symbol thresholds; short captions retain figure-specific fitted/observed distinctions and tests. Non-caption manuscript wording, Conclusion, Table 1, figure assets, data and saved results are unchanged. No rerun or upload.",
+    "new_analyses_run": false,
+    "PDF_sha256": "e38dcace452f068563a089e818c0f53dc66b83ba568ad072885c2afe954b38c1",
+    "PDF_pages": 29,
+    "supplement_pages": [
+      28,
+      29
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "a50e35a7d1a6c4ebda5494e95fd00ec4f80707b39b6ca815927160f668fd60b0",
+    "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+    "standalone_supplement_pages": 3
+  },
+  "historical_before_table_spacing_2026_10_20": {
+    "date": "2026-10-20",
+    "scope": "Table 1 presents the existing orchard 0–75 cm cumulative-stock endpoint in one merged summary block, including the field means, SDs, difference, confidence interval and Welch result. The separate mostly-empty Welch row is removed. Caption and note identify the block. All other manuscript wording, Conclusion, figures, supplement, workbook, measurements, analysis code and saved results are unchanged. No models were rerun.",
+    "new_analyses_run": false,
+    "PDF_sha256": "ea0540e5f0b9c1bb4d371dac63d7d518b2064f5ac4ac66d4cc31c334eae43e02",
+    "PDF_pages": 29,
+    "supplement_pages": [
+      28,
+      29
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "e67078cae053d9ee25ff00df7a326c60c444ef04d5888568caee99a83b295740",
+    "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+    "standalone_supplement_pages": 3
+  },
+  "historical_before_standalone_captions_2026_10_20": {
+    "date": "2026-10-20",
+    "scope": "Table 1 spacing is increased to 3.5-point top/bottom cell padding, a 4-point gap before the note, and a 2-point gap after the orchard mean/SD/sample-size line. All text, 11-point table body type, column widths, numerical values and stars are preserved. The Conclusion, figures, supplement, workbook, measurements, analysis code and saved results are unchanged. No models were rerun.",
+    "new_analyses_run": false,
+    "PDF_sha256": "299b8efbf7689c09e2f0b093c15893f1e6486ec92386be08b663ca718707adbd",
+    "PDF_pages": 29,
+    "supplement_pages": [
+      28,
+      29
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "8049981e9e117cef7ef2c8e1956f26f38dab415ee1cfe916bf07c8468d7c2e3c",
+    "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+    "standalone_supplement_pages": 3
+  },
+  "historical_before_aidee_orchard_sentence_2026_10_20": {
+    "date": "2026-10-20",
+    "scope": "Each of Figures 2–4 has one complete self-contained caption; the separate shared-key paragraph is removed. The three exact approved captions total 266 words and retain 10-point single spacing with only the figure labels bold. Table 1, all other manuscript prose, the Conclusion, figures, supplement, workbook, measurements, scientific code and saved results are unchanged. No models were rerun.",
+    "new_analyses_run": false,
+    "PDF_sha256": "4ed8841a22e789069a7b1cbe5d8a8eb22c81e7fb6a0992a814d798309fa85782",
+    "PDF_pages": 29,
+    "supplement_pages": [
+      28,
+      29
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "9d189bc44c1fa780dd06b80c4f85f8aef3c34062eae35b7620c22c5a7068c809",
+    "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+    "standalone_supplement_pages": 3
+  },
+  "orchard_stock_profile_revision_2026_10_20": {
+    "selection": "Author explicitly restored the existing corrected July 0–75 cm Gamma(log)/core profile model.",
+    "formula": "cumulative_c_stock ~ depth_cm * site_type + (1 | core)",
+    "family": "Gamma(log)",
+    "observations": 24,
+    "cores": 6,
+    "depth_intervals_cm": [
+      "0-10",
+      "10-20",
+      "20-50",
+      "50-75"
+    ],
+    "current_input": "data/processed/sample_level_analysis_96_current.csv",
+    "current_input_matches_July_orchard_rows": true,
+    "models_executed": 1,
+    "other_models_rerun": false,
+    "measurements_changed": false,
+    "all_selected_July_numerical_outputs_reproduced_exactly": true,
+    "results": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/",
+    "omnibus_chisq": [
+      296.3983946165613,
+      0.0003527689125217851,
+      15.572637872882446
+    ],
+    "omnibus_df": [
+      3,
+      1,
+      3
+    ],
+    "omnibus_p": [
+      5.9874550562160256e-64,
+      0.9850148987751101,
+      0.001387268970202954
+    ],
+    "convergence_code": 0,
+    "positive_definite_hessian": true,
+    "singular_random_effect": false,
+    "profile_plot": "Figure 3c response-scale EMM +/-1SE; no within-depth stock contrast p<0.10",
+    "previous_endpoint_inference": "historical, not selected main",
+    "upload_performed": false,
+    "current_status": "Superseded by later author-selected endpoint tests; complete results and code retained as history."
+  },
+  "historical_before_orchard_profile_restoration_2026_10_20": {
+    "date": "2026-10-20",
+    "scope": "One approved sentence at the opening of Discussion 4.2 is replaced to state that the orchard stock result did not confirm the original age hypothesis within 0–75 cm. The remainder of that paragraph and every other manuscript paragraph, Table 1, captions, Conclusion, figures, supplement, workbook, measurements, scientific code and saved results are unchanged. No models were rerun.",
+    "new_analyses_run": false,
+    "PDF_sha256": "4cae73a1e7bfe6c06a1c6dc4d33eb7d920896e9307844757906b2ca1bcb21583",
+    "PDF_pages": 29,
+    "supplement_pages": [
+      28,
+      29
+    ],
+    "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+    "combined_DOCX_sha256": "90348db62906f52c5c4026513d5d3820f08c082c07cbf0fa907a9121dbdeb787",
+    "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+    "standalone_supplement_pages": 3
+  },
+  "author_selected_existing_July_profile_model": false,
+  "historical_before_endpoint_selection_2026_10_20": {
+    "revision_date": "2026-10-20",
+    "title": "Soil Carbon Stocks and Radiocarbon Profiles in Three Agricultural Systems of California’s Central Valley",
+    "reference_PDF": {
+      "filename": "Farming_Carbon_EarthArXiv.pdf",
+      "sha256": "63c0567ac06e84007fd08c1b7a9834805c9b14f74ff6ce3dbd825fe234b25330",
+      "pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "bytes": 1026538
+    },
+    "workbook": {
+      "path": "data/Supplementary_Data.xlsx",
+      "sha256": "cd512e4fa0a0d262d26473d21a39cbe329dedf8d948924fd6cc5a633d1dcdc5e",
+      "note_revision": "20 October 2026: restored orchard-stock model contrasts and fitted values added; current/history source roles synchronized. All measurement cells and existing formulas are preserved.",
+      "bytes": 118251
+    },
+    "selected_methods": {
+      "annual_root": "Corrected Gamma full interaction: 1000 * (root mass in g + 0.00017 g) / volume in cm3. Half/original/double sensitivity; six-test Holm results separate from unadjusted contrasts.",
+      "perennial_root": "B_shift_gamma full interaction at 0–75 cm, recorded zeros retained; five constant scenarios, conditional residual diagnostics and predictive-floor checks.",
+      "nonroot": "Selected Type III Wald specification for C concentration, cumulative C stock and bulk radiocarbon in all systems. Orchard cumulative stock uses the existing July Gamma(log) depth-by-field model with a core random intercept over 0–75 cm, restored by author selection on 20 October.",
+      "hedgerow_scope_cm": [
+        0,
+        75
+      ]
+    },
+    "no_new_analysis_selected": false,
+    "local_only": true,
+    "fresh_selected_analysis_rerun_completed": true,
+    "exact_original_orchard_bootstrap_replay": false,
+    "paper_reference_result_set": "Current annual fields use 0–100 cm and orchards/hedgerows use 0–75 cm. The existing July orchard cumulative-stock profile model is restored and its isolated 20 October rerun exactly reproduces the saved July values. All other current model rows and measurements are preserved. The previous endpoint Welch result and separate covariance/bootstrap analysis remain historical/supporting records.",
+    "orchard_reference": {
+      "run_date": "2026-10-17",
+      "classification_file": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_all999_fit_audit.csv",
+      "summary_file": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_summary.csv",
+      "definite_exceedances": 125,
+      "definite_nonexceedances": 870,
+      "failed_fits": 3,
+      "ambiguous_comparisons": 1,
+      "p_value_bounds": [
+        0.126,
+        0.13
+      ],
+      "Monte_Carlo_95_envelope": [
+        0.105236125639516,
+        0.151520977138336
+      ],
+      "full_infinite_shape": 671,
+      "null_infinite_shape": 682,
+      "scope": "secondary_archive_not_current_paper"
+    },
+    "licenses": {
+      "original_project_code": "MIT",
+      "project_data_and_numerical_results": "CC-BY-4.0"
+    },
+    "presentation_revision": {
+      "date": "2026-10-20",
+      "scope": "The author restored the existing July Gamma(log) cumulative C-stock profile model over 0–75 cm, with categorical depth-by-field effects and a core random intercept. An isolated single-model rerun exactly reproduced its saved July results. Table 1 now has three orchard-stock Wald rows, Figure 3c shows fitted EMM ±1 SE, and the necessary eight manuscript paragraphs, form abstract and workbook results are synchronized. All measurements, observed profiles and all other model results are preserved. The previous endpoint Welch comparison remains in a clearly identified historical directory. No upload or submission was performed.",
+      "existing_selected_model_rerun": true,
+      "models_rerun": 1,
+      "new_methods_selected_by_agent": false,
+      "PDF_sha256": "63c0567ac06e84007fd08c1b7a9834805c9b14f74ff6ce3dbd825fe234b25330",
+      "PDF_pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "workbook_sha256": "cd512e4fa0a0d262d26473d21a39cbe329dedf8d948924fd6cc5a633d1dcdc5e",
+      "combined_DOCX_sha256": "7d2721c4e73529c1700d26c4eea16d19c6738c0c4557d728fa6192acd1910acc",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3,
+      "Table1_column_widths_inches": [
+        2.2,
+        1.7,
+        1.7,
+        1.7,
+        1.7
+      ],
+      "Table1_body_font_pt": 11
+    },
+    "distribution": {
+      "private_draft_repository": "https://github.com/trinhanh59-lab/farming-carbon",
+      "repository_visibility": "private",
+      "public_code_release": false,
+      "public_code_url": null,
+      "preprint_submitted": false,
+      "scope": "Local author-review package and scientific repository draft; no public upload, release or sharing change.",
+      "upload_status": "on_hold_by_author",
+      "files_uploaded": 0
+    },
+    "data_code_revision_date": "2026-10-19",
+    "data_preparation": {
+      "source_workbooks": 23,
+      "direct_inputs": 12,
+      "current_full_samples": 111,
+      "current_analysis_rows": 96,
+      "script": "scripts/prepare_analysis_data.R",
+      "availability": "data/DATA_AVAILABILITY.md",
+      "changes_publication_results": false,
+      "missing_native_CN_results": 68,
+      "original_handwritten_root_notes_located": false,
+      "sample108_original_same_core_confirmed": false,
+      "current_analysis_input": "data/processed/sample_level_analysis_96_current.csv",
+      "current_scope_table": "data/processed/sample_level_scope_111_current.csv"
+    },
+    "secondary_archived_analyses": {
+      "orchard_profile_sensitivity": "Six cores and 24 cumulative-stock endpoints, core intercept plus OU covariance; approved 17 October execution with 999 classifications, retained simulated responses and 20,000-dataset full-model diagnostic.",
+      "orchard_endpoint_Welch": "Previous 0–75 cm endpoint comparison of six observed core totals, retained under analysis/nonroot_current/historical_endpoint_2026-10-16/; not the selected main comparison."
+    },
+    "historical_presentation_revision_2026_10_18": {
+      "date": "2026-10-18",
+      "scope": "Supplement organization and repeated front matter, followed by seven wording, grammar and spacing edits; scientific content, figures, code and numerical results unchanged",
+      "standalone_supplement_pages": 6,
+      "new_analyses_run": false,
+      "editorial_edit_count": 7,
+      "combined_DOCX_sha256": "248cca6bd67f7beded136ce86e814a564a631e2162cb944fb294e6552d821631"
+    },
+    "historical_presentation_before_annual_stock_sentence_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Approved point4 only: orchard profile/bootstrap Methods, result and S4 removed with dependent references. All roots, concentration findings, figures, Table1 data and other supplements remain.",
+      "standalone_supplement_pages": 5,
+      "new_analyses_run": false,
+      "combined_DOCX_sha256": "4262e8cee70718564981f98e2fd257e5b835c1747de56fa201740550c7d77e76",
+      "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+    },
+    "historical_presentation_before_hedgerow_stock_sentence_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Approved annual Results sentence adds existing Figure 2c cumulative 0–100 cm stock magnitudes and model SEs. All other manuscript text, figures, tables, supplement, measurements and analyses are unchanged.",
+      "standalone_supplement_pages": 5,
+      "new_analyses_run": false,
+      "combined_DOCX_sha256": "1883c40dc156a841938a56a2741a195b2e7dbc438ded322f90475da7cfe2a0f8",
+      "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+    },
+    "historical_presentation_before_karis_cleanup_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Approved hedgerow Results expansion adds existing Figure 4c cumulative 0–20 cm stock magnitudes and model SEs. The annual Results and all other manuscript text, figures, tables, supplement, measurements and analyses are unchanged.",
+      "standalone_supplement_pages": 5,
+      "new_analyses_run": false,
+      "combined_DOCX_sha256": "dd563f919df0b266cbec3b3355daadb4785fc08b29c8da98aacde6af77250386",
+      "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+    },
+    "historical_presentation_before_hedgerow75_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Five approved editorial cuts for Karis comments 48/194, 435 and 501: redundant annual interaction narration, the hedgerow overall-management sentence and the detailed annual Tautges comparison. All analysis scope, retained statistical results, figures, tables, supplement, measurements and code are unchanged. Comments24/355 await a depth-scope decision; four legacy comments remain parked.",
+      "standalone_supplement_pages": 5,
+      "new_analyses_run": false,
+      "combined_DOCX_sha256": "7f8061a2c170f059659080e226fbb0c4fa7c66d73f3bee20a4fef37fad7b5891",
+      "S1_DOCX_sha256": "52c8e169aca305fc10a43679f949df8e63bf167b53ad8137eff5d24f7406a666"
+    },
+    "historical_data_preparation_before_hedgerow75_2026_10_19": {
+      "source_workbooks": 23,
+      "direct_inputs": 12,
+      "current_full_samples": 111,
+      "current_analysis_rows": 105,
+      "script": "scripts/prepare_analysis_data.R",
+      "availability": "data/DATA_AVAILABILITY.md",
+      "changes_publication_results": false,
+      "missing_native_CN_results": 68,
+      "original_handwritten_root_notes_located": false,
+      "sample108_original_same_core_confirmed": false
+    },
+    "hedgerow_0_75_revision_2026_10_19": {
+      "scope": "Author-approved hedgerow comparisons restricted to 0–75 cm; annual fields remain at 0–100 cm. Three non-root and one supporting bulk-density model rerun; dependent figure, tables, workbook and text refreshed. All measured values and annual/orchard/root results preserved.",
+      "models_executed": 4,
+      "hedgerow_observations": 36,
+      "hedgerow_cores": 9,
+      "current_combined_analysis_rows": 96,
+      "retained_measured_rows": 111,
+      "deeper_hedgerow_rows_retained": 9,
+      "results": "analysis/hedgerow_0_75/",
+      "annual_orchard_root_models_rerun_this_revision": false,
+      "measurements_changed": false,
+      "upload_performed": false
+    },
+    "historical_presentation_before_root_checks_trim_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Author-approved hedgerow comparisons restricted to 0–75 cm; annual fields remain at 0–100 cm. Three non-root and one supporting bulk-density model rerun; dependent figure, tables, workbook and text refreshed. All measured values and annual/orchard/root results preserved.",
+      "standalone_supplement_pages": 5,
+      "new_analyses_run": true,
+      "combined_DOCX_sha256": "945dc50e223f03111f6c3b4f4d551f91b0abda425dbe6ceb082e70874fdf15d9",
+      "S1_DOCX_sha256": "46f896348a1d1ebcd0ef3bc929bfa3cc02ddfa1250413da555d099ef2fddeeb5",
+      "workbook_sha256": "b1df345a68fdf218e434bc42758386926201e01c18b54fb41b9093cd31bf5b4f",
+      "PDF_pages": 36,
+      "supplement_pages": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "root_model_checks": {
+      "summary": "Supplemental Material",
+      "complete_details": "docs/ROOT_MODEL_CHECKS.md",
+      "detailed_tables_and_diagnostic_plot_in_paper": false,
+      "source_results_unchanged": true
+    },
+    "historical_presentation_before_statistics_trim_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Author-approved presentation trim: root-model checks summarized in the paper supplement; full sensitivity tables and residual diagnostics retained in docs/ROOT_MODEL_CHECKS.md. Main Results, statistical values, measurements, scientific code, saved results and figure assets unchanged. No model execution or upload.",
+      "new_analyses_run": false,
+      "PDF_sha256": "c5219481e1c4150591e0793e61b103decd3f5895099ecbdffd00ef5e62d0bc7c",
+      "PDF_pages": 32,
+      "supplement_pages": [
+        31,
+        32
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "0b259a96df47610195dba18c88dec535b968c85f49b5898efcc52b4e16f3ae7d",
+      "S1_DOCX_sha256": "a3c4263899289d2d41e7ae7bda833b73b9b047b505445e61c8eec3f2b6c8df67",
+      "standalone_supplement_pages": 3
+    },
+    "historical_before_full_formatting_2026_10_19": {
+      "date": "2026-10-19",
+      "scope": "Author-approved preprint presentation revision: statistical Methods shortened using existing wording, bulk-density findings moved to the supplement, Table 1 placed in Results with all values and stars retained, and Figures 2–4 typography standardized from saved values. No model, measurement or numerical result changed. No upload.",
+      "new_analyses_run": false,
+      "PDF_sha256": "182b974511b58f78fad02ecd694903127c7b7c13b5688194d018972cf2214e81",
+      "PDF_pages": 31,
+      "supplement_pages": [
+        30,
+        31
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "95560a890f76ef653ac63a87dd51d0e4984d66f9b84c0d1f1908ede3a2bf212e",
+      "S1_DOCX_sha256": "9dae92484adde42a21ac8bdc93aa3580884d3643fb05d41d9ce533d8679ba378",
+      "standalone_supplement_pages": 3
+    },
+    "historical_before_caption_flow_2026_10_20": {
+      "date": "2026-10-19",
+      "scope": "Formatting correction only: all figure captions use matching 10-point single spacing and label-only bold; dedicated figure pages keep captions attached. Main body spacing, headings and reference fonts are consistent; literal extra spaces removed. Wording, all table values/stars, figure assets, data and saved analysis results are preserved. No model rerun or upload.",
+      "new_analyses_run": false,
+      "PDF_sha256": "1404b93cf34eb19b237231a56c660e9b57e1748fdc5909fea1988b1710095703",
+      "PDF_pages": 30,
+      "supplement_pages": [
+        29,
+        30
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "77c9a3fcba32cbbad9aaaa2c66e9e48bba9c1a675f391201b0949e97f22be5a8",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3
+    },
+    "historical_before_orchard_table_block_2026_10_20": {
+      "date": "2026-10-20",
+      "scope": "Figures 2–4 precede their Results explanations. One shared key states panel definitions, units, sampling, error bars and symbol thresholds; short captions retain figure-specific fitted/observed distinctions and tests. Non-caption manuscript wording, Conclusion, Table 1, figure assets, data and saved results are unchanged. No rerun or upload.",
+      "new_analyses_run": false,
+      "PDF_sha256": "e38dcace452f068563a089e818c0f53dc66b83ba568ad072885c2afe954b38c1",
+      "PDF_pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "a50e35a7d1a6c4ebda5494e95fd00ec4f80707b39b6ca815927160f668fd60b0",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3
+    },
+    "historical_before_table_spacing_2026_10_20": {
+      "date": "2026-10-20",
+      "scope": "Table 1 presents the existing orchard 0–75 cm cumulative-stock endpoint in one merged summary block, including the field means, SDs, difference, confidence interval and Welch result. The separate mostly-empty Welch row is removed. Caption and note identify the block. All other manuscript wording, Conclusion, figures, supplement, workbook, measurements, analysis code and saved results are unchanged. No models were rerun.",
+      "new_analyses_run": false,
+      "PDF_sha256": "ea0540e5f0b9c1bb4d371dac63d7d518b2064f5ac4ac66d4cc31c334eae43e02",
+      "PDF_pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "e67078cae053d9ee25ff00df7a326c60c444ef04d5888568caee99a83b295740",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3
+    },
+    "historical_before_standalone_captions_2026_10_20": {
+      "date": "2026-10-20",
+      "scope": "Table 1 spacing is increased to 3.5-point top/bottom cell padding, a 4-point gap before the note, and a 2-point gap after the orchard mean/SD/sample-size line. All text, 11-point table body type, column widths, numerical values and stars are preserved. The Conclusion, figures, supplement, workbook, measurements, analysis code and saved results are unchanged. No models were rerun.",
+      "new_analyses_run": false,
+      "PDF_sha256": "299b8efbf7689c09e2f0b093c15893f1e6486ec92386be08b663ca718707adbd",
+      "PDF_pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "8049981e9e117cef7ef2c8e1956f26f38dab415ee1cfe916bf07c8468d7c2e3c",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3
+    },
+    "historical_before_aidee_orchard_sentence_2026_10_20": {
+      "date": "2026-10-20",
+      "scope": "Each of Figures 2–4 has one complete self-contained caption; the separate shared-key paragraph is removed. The three exact approved captions total 266 words and retain 10-point single spacing with only the figure labels bold. Table 1, all other manuscript prose, the Conclusion, figures, supplement, workbook, measurements, scientific code and saved results are unchanged. No models were rerun.",
+      "new_analyses_run": false,
+      "PDF_sha256": "4ed8841a22e789069a7b1cbe5d8a8eb22c81e7fb6a0992a814d798309fa85782",
+      "PDF_pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "9d189bc44c1fa780dd06b80c4f85f8aef3c34062eae35b7620c22c5a7068c809",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3
+    },
+    "orchard_stock_profile_revision_2026_10_20": {
+      "selection": "Author explicitly restored the existing corrected July 0–75 cm Gamma(log)/core profile model.",
+      "formula": "cumulative_c_stock ~ depth_cm * site_type + (1 | core)",
+      "family": "Gamma(log)",
+      "observations": 24,
+      "cores": 6,
+      "depth_intervals_cm": [
+        "0-10",
+        "10-20",
+        "20-50",
+        "50-75"
+      ],
+      "current_input": "data/processed/sample_level_analysis_96_current.csv",
+      "current_input_matches_July_orchard_rows": true,
+      "models_executed": 1,
+      "other_models_rerun": false,
+      "measurements_changed": false,
+      "all_selected_July_numerical_outputs_reproduced_exactly": true,
+      "results": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/",
+      "omnibus_chisq": [
+        296.3983946165613,
+        0.0003527689125217851,
+        15.572637872882446
+      ],
+      "omnibus_df": [
+        3,
+        1,
+        3
+      ],
+      "omnibus_p": [
+        5.9874550562160256e-64,
+        0.9850148987751101,
+        0.001387268970202954
+      ],
+      "convergence_code": 0,
+      "positive_definite_hessian": true,
+      "singular_random_effect": false,
+      "profile_plot": "Figure 3c response-scale EMM +/-1SE; no within-depth stock contrast p<0.10",
+      "previous_endpoint_inference": "historical, not selected main",
+      "upload_performed": false
+    },
+    "historical_before_orchard_profile_restoration_2026_10_20": {
+      "date": "2026-10-20",
+      "scope": "One approved sentence at the opening of Discussion 4.2 is replaced to state that the orchard stock result did not confirm the original age hypothesis within 0–75 cm. The remainder of that paragraph and every other manuscript paragraph, Table 1, captions, Conclusion, figures, supplement, workbook, measurements, scientific code and saved results are unchanged. No models were rerun.",
+      "new_analyses_run": false,
+      "PDF_sha256": "4cae73a1e7bfe6c06a1c6dc4d33eb7d920896e9307844757906b2ca1bcb21583",
+      "PDF_pages": 29,
+      "supplement_pages": [
+        28,
+        29
+      ],
+      "workbook_sha256": "ebf8d6c194f80fa8ba1188215a67d1c200576448a1548092702d2ebc1cdab7c7",
+      "combined_DOCX_sha256": "90348db62906f52c5c4026513d5d3820f08c082c07cbf0fa907a9121dbdeb787",
+      "S1_DOCX_sha256": "404ec12a57097db63bf5fb126bd45aa1972593f5f5f7bd09c988d50fa6d03ba3",
+      "standalone_supplement_pages": 3
+    },
+    "author_selected_existing_July_profile_model": true
+  },
+  "stock_endpoint_revision_2026_10_20": {
+    "results": "analysis/stock_endpoints_2026-10-20/saved_results/",
+    "code": "analysis/stock_endpoints_2026-10-20/run_stock_endpoints.R",
+    "comparisons": 8,
+    "endpoint_core_values": 30,
+    "group_summaries": 10,
+    "observed_profile_means": 32,
+    "hedgerow_Holm_family_tests": 6,
+    "CI_adjustment": "unadjusted pointwise95%",
+    "measurements_changed": false,
+    "other_models_refit": false
+  },
+  "historical_before_endpoint_header_2026_10_20": {
+    "date": "2026-10-20",
+    "scope": "The author selected cumulative C-stock Welch endpoint comparisons using one value per core: annual fields 0–100 cm, orchards 0–75 cm, and hedgerows 0–20 and 0–75 cm. The six hedgerow pairwise p values are Holm-adjusted as one family. Table 1 separates unchanged non-stock Wald tests in panel A from eight stock endpoint comparisons in panel B. Figures 2–4c show observed means ±1 sample SE with no profile-model stock stars. All measurements, root/C-concentration/radiocarbon results and historical stock analyses are retained.",
+    "models_refit": 0,
+    "endpoint_Welch_tests_computed": 8,
+    "author_selected_method": true,
+    "PDF_sha256": "7b1c9bebff4e7998fa87a4107e8c42109eb4fb3b7c9c879efdd3dbc08be8e1bb",
+    "PDF_pages": 30,
+    "supplement_pages": [
+      29,
+      30
+    ],
+    "workbook_sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
+    "combined_DOCX_sha256": "e2d57af23eed97e144e62d7c35ee6b4e41a6b5d914a6f52ecb2feef4aa072f5a",
+    "S1_DOCX_sha256": "b9dadb3f4775f5dba38193679f21272c5aaeef7e1fed4a33eb169bfc32daf782",
+    "standalone_supplement_pages": 3,
+    "Table1_panel_A_widths_inches": [
+      2.4,
+      2.2,
+      2.2,
+      2.2
+    ],
+    "Table1_panel_B_widths_inches": [
+      2.25,
+      2.1,
+      1.9,
+      1.35,
+      1.4
+    ],
+    "Table1_body_font_pt": 11
+  },
+  "source_confirmation_2026_10_20": {
+    "date": "2026-10-20",
+    "confirmed_by": "Anh Trinh",
+    "sampling_diameter_cm": 3.81,
+    "calculation_radius_cm": 1.905,
+    "diameter_status": "Author confirmed retaining the existing diameter; actual fitted cutting-tip dimension not independently verified.",
+    "sample108_field_moist_bag_mass_g": 104.4,
+    "sample108_status": "Author approved retaining a neighboring-B/C-core-informed estimate.",
+    "sample108_original_same_core_measurement_confirmed": false,
+    "original_sample108_field_moist_bag_mass_g": 352.68,
+    "scientific_values_code_results_and_workbook_changed": false
+  }
+}

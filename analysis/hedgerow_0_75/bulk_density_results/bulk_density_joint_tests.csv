@@ -1,0 +1,5 @@
+model term,depth_cm,df1,df2,F.ratio,Chisq,p.value,system,response
+site_type,0-10,2,Inf,5.849,11.698,0.0028817424792238907,hedgerows,bulk_density
+site_type,10-20,2,Inf,5.147,10.294,0.005816993179012422,hedgerows,bulk_density
+site_type,20-50,2,Inf,7.778,15.556,4.186681936102493e-4,hedgerows,bulk_density
+site_type,50-75,2,Inf,6.019,12.038,0.00243191507198029,hedgerows,bulk_density

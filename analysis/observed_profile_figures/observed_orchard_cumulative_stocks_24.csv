@@ -1,0 +1,25 @@
+system,management,sample_id,sample_code,core,depth_interval_cm,depth_top_cm,depth_bottom_cm,layer_c_stock_t_C_ha,cumulative_c_stock_t_C_ha,value_role,profile_symbol_index
+orchards,20-year-old orchard,122,122_MAS2_1_A1,MAS2.1,0-10,0.0,10.0,10.099708533512864,10.099708533512864,observed cumulative core stock; not a fitted mean,1
+orchards,20-year-old orchard,123,123_MAS2_1_A2,MAS2.1,10-20,10.0,20.0,2.592781830503839,12.692490364016702,observed cumulative core stock; not a fitted mean,1
+orchards,20-year-old orchard,124,124_MAS2_1_A3,MAS2.1,20-50,20.0,50.0,5.024074092527139,17.716564456543843,observed cumulative core stock; not a fitted mean,1
+orchards,20-year-old orchard,125,125_MAS2_1_A4,MAS2.1,50-75,50.0,75.0,5.7627713159400145,23.479335772483857,observed cumulative core stock; not a fitted mean,1
+orchards,20-year-old orchard,142,142_MAS2_3_A1,MAS2.3,0-10,0.0,10.0,9.912078658904356,9.912078658904356,observed cumulative core stock; not a fitted mean,2
+orchards,20-year-old orchard,143,143_MAS2_3_A2,MAS2.3,10-20,10.0,20.0,4.866954188611068,14.779032847515424,observed cumulative core stock; not a fitted mean,2
+orchards,20-year-old orchard,144,144_MAS2_3_A3,MAS2.3,20-50,20.0,50.0,6.668785286565528,21.447818134080954,observed cumulative core stock; not a fitted mean,2
+orchards,20-year-old orchard,145,145_MAS2_3_A4,MAS2.3,50-75,50.0,75.0,3.699883908951993,25.147702043032947,observed cumulative core stock; not a fitted mean,2
+orchards,20-year-old orchard,162,162_MAS2_5_A1,MAS2.5,0-10,0.0,10.0,8.701223819746659,8.701223819746659,observed cumulative core stock; not a fitted mean,3
+orchards,20-year-old orchard,163,163_MAS2_5_A2,MAS2.5,10-20,10.0,20.0,5.256146782386075,13.957370602132734,observed cumulative core stock; not a fitted mean,3
+orchards,20-year-old orchard,164,164_MAS2_5_A3,MAS2.5,20-50,20.0,50.0,8.5590820342949,22.516452636427633,observed cumulative core stock; not a fitted mean,3
+orchards,20-year-old orchard,165,165_MAS2_5_A4,MAS2.5,50-75,50.0,75.0,7.963765789723164,30.4802184261508,observed cumulative core stock; not a fitted mean,3
+orchards,60-year-old orchard,67,67_MAS1_1_A1,MAS1.1,0-10,0.0,10.0,13.942235754431298,13.942235754431298,observed cumulative core stock; not a fitted mean,1
+orchards,60-year-old orchard,68,68_MAS1_1_A2,MAS1.1,10-20,10.0,20.0,4.657823986393648,18.600059740824946,observed cumulative core stock; not a fitted mean,1
+orchards,60-year-old orchard,69,69_MAS1_1_A3,MAS1.1,20-50,20.0,50.0,3.927698987159346,22.527758727984292,observed cumulative core stock; not a fitted mean,1
+orchards,60-year-old orchard,70,70_MAS1_1_A4,MAS1.1,50-75,50.0,75.0,4.195297709431791,26.723056437416083,observed cumulative core stock; not a fitted mean,1
+orchards,60-year-old orchard,87,87_MAS1_3_A1,MAS1.3,0-10,0.0,10.0,6.721923919652653,6.721923919652653,observed cumulative core stock; not a fitted mean,2
+orchards,60-year-old orchard,88,88_MAS1_3_A2,MAS1.3,10-20,10.0,20.0,2.4240056107525336,9.145929530405187,observed cumulative core stock; not a fitted mean,2
+orchards,60-year-old orchard,89,89_MAS1_3_A3,MAS1.3,20-50,20.0,50.0,4.221816946904141,13.367746477309328,observed cumulative core stock; not a fitted mean,2
+orchards,60-year-old orchard,90,90_MAS1_3_A4,MAS1.3,50-75,50.0,75.0,2.7932302235559625,16.16097670086529,observed cumulative core stock; not a fitted mean,2
+orchards,60-year-old orchard,107,107_MAS1_5_A1,MAS1.5,0-10,0.0,10.0,16.60005071704035,16.60005071704035,observed cumulative core stock; not a fitted mean,3
+orchards,60-year-old orchard,108,108_MAS1_5_A2,MAS1.5,10-20,10.0,20.0,1.8573111002107658,18.457361817251115,observed cumulative core stock; not a fitted mean,3
+orchards,60-year-old orchard,109,109_MAS1_5_A3,MAS1.5,20-50,20.0,50.0,2.977701056300736,21.43506287355185,observed cumulative core stock; not a fitted mean,3
+orchards,60-year-old orchard,110,110_MAS1_5_A4,MAS1.5,50-75,50.0,75.0,3.1885456229775113,24.62360849652936,observed cumulative core stock; not a fitted mean,3

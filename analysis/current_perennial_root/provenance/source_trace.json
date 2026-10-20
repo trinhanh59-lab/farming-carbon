@@ -1,0 +1,93 @@
+{
+  "source_notebook": "Farming Carbon - Root density Tweedie models - 2026-10-14.ipynb",
+  "source_notebook_sha256": "44798bd98219021f3e31c2152118c1e9663e75b5138cc47bb9a8af9956d87333",
+  "selected_stage": "B_shift_gamma",
+  "selected_structure": "full",
+  "scope": {
+    "orchards": {
+      "observations": 24,
+      "cores": 6,
+      "zeros": 4
+    },
+    "hedgerows": {
+      "observations": 36,
+      "cores": 9,
+      "zeros": 4
+    },
+    "depth_intervals_cm": [
+      "0-10",
+      "10-20",
+      "20-50",
+      "50-75"
+    ]
+  },
+  "source_cells_zero_based": {
+    "2": {
+      "source_sha256": "91bc9d37816e485641595e3359955d793c32b37fe8a8f8e695151fa2c75d5ef2",
+      "output_text_sha256": "8b52a0543c267c3bc210501a719655c0e2c33b6819d6f59efa31bec939a2b564"
+    },
+    "3": {
+      "source_sha256": "cafb0cc5cae9c0f2c63b39cd51e0cccac7f3b286a540e8f1354db001456d31fe",
+      "output_text_sha256": "e25a55c1a395ad6d59487717bbfdffa9f42090c5d8f3c9d028de000fbb871c79"
+    },
+    "19": {
+      "source_sha256": "fc7bc33c3b53f6a6a47ba83749c9014392c75f707b956b9f39ba53f2680694bb",
+      "output_text_sha256": "6220f7876cdfeb8ec22386a9bbb2b48349973d0335e92e76f42dd27d12919b6b"
+    },
+    "20": {
+      "source_sha256": "adc7ae8db7a3bbb2a167a3b7d8051b68ab16dfbf16e09c5a30ae24b0fa831a60",
+      "output_text_sha256": "78b62e62dd082b7100a81d0c955237f9ce1b9b7e52ff172a8a1870ca257097bc"
+    },
+    "21": {
+      "source_sha256": "b772728068228ba694b05e56659118fe2dde0658bb71e1fead24ded4fa5c8066",
+      "output_text_sha256": "ef7e17755a6ea697d1f392f82f3eca5915ac1e2f7133b6e95e95af47490a2376"
+    },
+    "22": {
+      "source_sha256": "748da23dbd21875bdf7cf10d25f2a9214e05372f5297338ace3c71d8a4ae6edc",
+      "output_text_sha256": "bf8edd996247fa18b73d6b4854d82398e5932f697c2ff553f34ef26364a437d9"
+    },
+    "24": {
+      "source_sha256": "fadf0cfbbd439ebbb4217d26092e09dc1a53e01a3d37ca7c17cb5f629cb8471b",
+      "output_text_sha256": "01f0c1db2b212a7b45674e9b817987acbe6fc4eed4bb0031329803913b9c53a7"
+    },
+    "25": {
+      "source_sha256": "a0ab689ce12ac324d6b0089192e6f446d42d14f84694d69d1dc64c3a42633d57",
+      "output_text_sha256": "9c149780ae2e5de91ff2e341519ea66adb35cf5709894919486b7d6b687d22e5"
+    },
+    "26": {
+      "source_sha256": "380733355a9a7e2808b07d2124ff0f088bc0a386b298b6b92385d8872d92c969",
+      "output_text_sha256": "82e7fb793da70f36f44db451e3da225136e156cb749e450ccd71367548bdebd6"
+    },
+    "28": {
+      "source_sha256": "b048fa9a789b1db3061c26f702f2e21271dc891cebf96d9c6dadf1d64b73fc43",
+      "output_text_sha256": "fb64f1e092607d24a5c52901b9add9629822fc7f17ff19a3028c638149f20f19"
+    },
+    "29": {
+      "source_sha256": "0a9d3843877e7c8a07143d8c07825f8b43f6278b715a06251530205606e9afcc",
+      "output_text_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "30": {
+      "source_sha256": "a79267ce18c7766d7ff68c91dcc979069920c5efc54c78621ebe639710de264d",
+      "output_text_sha256": "51bdc7d42e6f8fe12cc21aa4b18c580d712d82188c3dc98bdf1330b7c0e834c5"
+    }
+  },
+  "input_origin": "Perennial rows from the source notebook embedded CSV, using effective depth bottoms and excluding hedgerow intervals deeper than 75 cm.",
+  "input_record_check": "The 60 source mass and volume pairs match input/perennial_notebook_input.json.",
+  "correction_preserved": {
+    "sample_code": "143_MAS2_3_A2",
+    "root_weight_raw_g": -1.4427,
+    "root_weight_used_g": 0.0086,
+    "note": "The previously corrected working mass is retained; the negative raw subtraction is preserved for provenance and is not used for modeling."
+  },
+  "baseline_saved_results": "Four B_shift_gamma/full JSON files copied byte-for-byte from the archived selected outputs.",
+  "sensitivity_saved_results": "Perennial rows extracted without recomputation from the JSON payload in source cell 26 output.",
+  "diagnostic_saved_results": "Perennial rows extracted without recomputation from the JSON payload in source cell 30 output.",
+  "portable_adaptations": [
+    "Read the bundled CSV instead of relying on prior session objects or embedded annual data.",
+    "Retain the full Gamma model and mass-scale starting anchor; omit historical additive and Tweedie comparisons.",
+    "Restrict sensitivity functions to the two perennial systems and the five original mass additions.",
+    "Use the original explicit perennial diagnostic seeds (20261116 and 20261117), retaining conditional simulations and the floor check.",
+    "Define functions without fitting or simulation on source; new results use a separate outputs_rerun directory."
+  ],
+  "verification_scope": "Source recovery, saved-result readback, input checks and syntax checks only. No model fitting, residual simulation or end-to-end rerun was performed."
+}

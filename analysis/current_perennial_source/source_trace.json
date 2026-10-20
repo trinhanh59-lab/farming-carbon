@@ -1,0 +1,48 @@
+{
+  "notebook_name": "Farming Carbon - Root density Tweedie models - 2026-10-14.ipynb",
+  "notebook_sha256": "44798bd98219021f3e31c2152118c1e9663e75b5138cc47bb9a8af9956d87333",
+  "zero_based_cells": {
+    "19": {
+      "archive_path": "current_perennial_source/source_cells/cell_19.R",
+      "source_sha256": "fc7bc33c3b53f6a6a47ba83749c9014392c75f707b956b9f39ba53f2680694bb"
+    },
+    "20": {
+      "archive_path": "current_perennial_source/source_cells/cell_20.R",
+      "source_sha256": "adc7ae8db7a3bbb2a167a3b7d8051b68ab16dfbf16e09c5a30ae24b0fa831a60"
+    },
+    "21": {
+      "archive_path": "current_perennial_source/source_cells/cell_21.R",
+      "source_sha256": "b772728068228ba694b05e56659118fe2dde0658bb71e1fead24ded4fa5c8066"
+    },
+    "22": {
+      "archive_path": "current_perennial_source/source_cells/cell_22.R",
+      "source_sha256": "748da23dbd21875bdf7cf10d25f2a9214e05372f5297338ace3c71d8a4ae6edc"
+    },
+    "24": {
+      "archive_path": "current_perennial_source/source_cells/cell_24.R",
+      "source_sha256": "fadf0cfbbd439ebbb4217d26092e09dc1a53e01a3d37ca7c17cb5f629cb8471b"
+    },
+    "25": {
+      "archive_path": "current_perennial_source/source_cells/cell_25.R",
+      "source_sha256": "a0ab689ce12ac324d6b0089192e6f446d42d14f84694d69d1dc64c3a42633d57"
+    }
+  },
+  "selected_stage": "B_shift_gamma",
+  "selected_structure": "full",
+  "systems": {
+    "orchards": {
+      "n": 24,
+      "cores": 6,
+      "depth_scope_cm": "0-75",
+      "source_output_cell": 21,
+      "source_output_sha256": "69754ba9854f67bd6001c654120f4ef5e7fea1a36091c57da0be126ecd0550ad"
+    },
+    "hedgerows": {
+      "n": 36,
+      "cores": 9,
+      "depth_scope_cm": "0-75",
+      "source_output_cell": 22,
+      "source_output_sha256": "8361ca34cd3e212de0b549020d7f7372814f1ec1da71c314ee987db344dd76ec"
+    }
+  }
+}

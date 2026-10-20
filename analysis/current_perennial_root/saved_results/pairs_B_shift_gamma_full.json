@@ -1,0 +1,58 @@
+[
+  {
+    "system": "orchards",
+    "stage": "B_shift_gamma",
+    "structure": "full",
+    "comparison": "20-year-old orchard / 60-year-old orchard",
+    "depth": "equal-layer log average",
+    "log_ratio": 1.335349164076528,
+    "SE": 0.8484701995586278,
+    "ratio": 3.801323000160976,
+    "lower_95": 0.7206354627906364,
+    "upper_95": 20.051825503556948,
+    "p_unadjusted": 0.1155263994372309,
+    "_row": "full B"
+  },
+  {
+    "system": "hedgerows",
+    "stage": "B_shift_gamma",
+    "structure": "full",
+    "comparison": "bare field margin / 10-year-old hedgerow",
+    "depth": "equal-layer log average",
+    "log_ratio": -3.1215623991726154,
+    "SE": 0.5305777382225827,
+    "ratio": 0.04408823116406799,
+    "lower_95": 0.015584543501389353,
+    "upper_95": 0.12472435442225238,
+    "p_unadjusted": 4.02100064771711e-09,
+    "_row": "full B.1"
+  },
+  {
+    "system": "hedgerows",
+    "stage": "B_shift_gamma",
+    "structure": "full",
+    "comparison": "bare field margin / 30-year-old hedgerow",
+    "depth": "equal-layer log average",
+    "log_ratio": -3.481320070091655,
+    "SE": 0.5305776321112454,
+    "ratio": 0.030766769921304993,
+    "lower_95": 0.010875604470778455,
+    "upper_95": 0.08703830062355719,
+    "p_unadjusted": 5.331300814204787e-11,
+    "_row": "full B.2"
+  },
+  {
+    "system": "hedgerows",
+    "stage": "B_shift_gamma",
+    "structure": "full",
+    "comparison": "10-year-old hedgerow / 30-year-old hedgerow",
+    "depth": "equal-layer log average",
+    "log_ratio": -0.35975767091903965,
+    "SE": 0.5305776671534358,
+    "ratio": 0.6978454138205477,
+    "lower_95": 0.24667815960577802,
+    "upper_95": 1.9741845908394906,
+    "p_unadjusted": 0.49774060839699147,
+    "_row": "full B.3"
+  }
+]

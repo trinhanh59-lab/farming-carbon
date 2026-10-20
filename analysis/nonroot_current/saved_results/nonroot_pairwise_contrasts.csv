@@ -1,0 +1,45 @@
+system,response,response_label,depth_cm,contrast,effect_scale,effect,lower_95,upper_95,p_value,symbol,adjustment
+annual vegetables,c_percent,C concentration,0-10,monoculture / polyculture,ratio,0.5983774275801274,0.34790053466031257,1.0291894095161802,0.06345643049021338,†,none
+annual vegetables,c_percent,C concentration,10-20,monoculture / polyculture,ratio,0.6281823602634682,0.3649143994573141,1.0813853285401573,0.0934188578080625,†,none
+annual vegetables,c_percent,C concentration,20-30,monoculture / polyculture,ratio,0.95471804489054,0.5548172213076079,1.6428591439382498,0.8671099972648715,,none
+annual vegetables,c_percent,C concentration,30-40,monoculture / polyculture,ratio,1.0755751331911734,0.6228476677642903,1.8573752893572868,0.7937994713761324,,none
+annual vegetables,c_percent,C concentration,40-50,monoculture / polyculture,ratio,0.5187013246602573,0.3008416323223853,0.8943278964660965,0.01818677470161014,*,none
+annual vegetables,c_percent,C concentration,50-100,monoculture / polyculture,ratio,0.6394137179018361,0.3700449689737461,1.1048654539877176,0.10902401627898574,,none
+annual vegetables,del14c,Delta^14 * C,0-10,monoculture - polyculture,estimate,-22.066662107193245,-88.01959573341477,43.88627151902829,0.5119730222613319,,none
+annual vegetables,del14c,Delta^14 * C,10-20,monoculture - polyculture,estimate,-14.433335224029314,-80.38626885023885,51.51959840218023,0.6679783008328135,,none
+annual vegetables,del14c,Delta^14 * C,20-30,monoculture - polyculture,estimate,-16.666666670195177,-82.61960029645488,49.28626695606453,0.6203928826839268,,none
+annual vegetables,del14c,Delta^14 * C,30-40,monoculture - polyculture,estimate,-26.833324746024875,-92.78625837224367,39.11960888019392,0.42520572370370113,,none
+annual vegetables,del14c,Delta^14 * C,40-50,monoculture - polyculture,estimate,-50.63330463501637,-116.58623826124364,15.319628991210891,0.13240093342539147,,none
+annual vegetables,del14c,Delta^14 * C,50-100,monoculture - polyculture,estimate,-55.16664568307011,-121.11957930952019,10.786287943379968,0.10112556597871893,,none
+orchards,c_percent,C concentration,0-10,(20-year-old orchard) / (60-year-old orchard),ratio,0.8753598768468956,0.6087219208760144,1.2587930345775813,0.472620878786312,,none
+orchards,c_percent,C concentration,10-20,(20-year-old orchard) / (60-year-old orchard),ratio,1.6850681478510823,1.1707111412437678,2.425410131388713,0.00498236850575582,**,none
+orchards,c_percent,C concentration,20-50,(20-year-old orchard) / (60-year-old orchard),ratio,1.5728115829708942,1.0934522850326533,2.2623175326333858,0.014620517046255539,*,none
+orchards,c_percent,C concentration,50-75,(20-year-old orchard) / (60-year-old orchard),ratio,1.577738129172247,1.096323730364211,2.2705497795044374,0.0140846487256253,*,none
+orchards,del14c,Delta^14 * C,0-10,(20-year-old orchard) - (60-year-old orchard),estimate,-17.33331700030086,-62.27374539865131,27.60711139804959,0.4496797051953075,,none
+orchards,del14c,Delta^14 * C,10-20,(20-year-old orchard) - (60-year-old orchard),estimate,35.60002487427978,-9.340403524063277,80.54045327262284,0.12051735610721097,,none
+orchards,del14c,Delta^14 * C,20-50,(20-year-old orchard) - (60-year-old orchard),estimate,87.53336658750182,42.59293818917848,132.47379498582515,1.3478452853160297e-4,***,none
+orchards,del14c,Delta^14 * C,50-75,(20-year-old orchard) - (60-year-old orchard),estimate,37.06668544306814,-7.873742955250265,82.00711384138654,0.10597103510299612,,none
+hedgerows,c_percent,C concentration,0-10,bare field margin / (10-year-old hedgerow),ratio,0.47500143820800456,0.3841369442877975,0.5873591948256668,6.32737558345983e-12,***,none
+hedgerows,c_percent,C concentration,0-10,bare field margin / (30-year-old hedgerow),ratio,0.4754075492176741,0.3845232360344527,0.5877729007588629,6.4627621273503265e-12,***,none
+hedgerows,c_percent,C concentration,0-10,(10-year-old hedgerow) / (30-year-old hedgerow),ratio,1.0008549679579952,0.8092738629445699,1.2377894712198438,0.993710079243642,,none
+hedgerows,c_percent,C concentration,10-20,bare field margin / (10-year-old hedgerow),ratio,0.8640743763323118,0.6988475527400203,1.068365375118981,0.1772604484716969,,none
+hedgerows,c_percent,C concentration,10-20,bare field margin / (30-year-old hedgerow),ratio,0.8352525010700886,0.6755548105117737,1.032701906178906,0.09636259340431555,†,none
+hedgerows,c_percent,C concentration,10-20,(10-year-old hedgerow) / (30-year-old hedgerow),ratio,0.9666442194657342,0.7817910496848641,1.195205608203331,0.7540684936411345,,none
+hedgerows,c_percent,C concentration,20-50,bare field margin / (10-year-old hedgerow),ratio,0.937587408985995,0.7583961298015464,1.159117399134279,0.5515016453590407,,none
+hedgerows,c_percent,C concentration,20-50,bare field margin / (30-year-old hedgerow),ratio,1.1506212495792238,0.9306518814744357,1.422582693203981,0.19495603888734334,,none
+hedgerows,c_percent,C concentration,20-50,(10-year-old hedgerow) / (30-year-old hedgerow),ratio,1.2272149119660491,0.9926319929071774,1.5172354416473772,0.05853900357747476,†,none
+hedgerows,c_percent,C concentration,50-75,bare field margin / (10-year-old hedgerow),ratio,0.7426266115112357,0.600685624358596,0.9181080115135731,0.005970164223923443,**,none
+hedgerows,c_percent,C concentration,50-75,bare field margin / (30-year-old hedgerow),ratio,0.9795691484207562,0.7922484160793657,1.2111803533623462,0.8488171171852242,,none
+hedgerows,c_percent,C concentration,50-75,(10-year-old hedgerow) / (30-year-old hedgerow),ratio,1.3190601215156368,1.0667658350740936,1.6310229920814798,0.010567672828878,*,none
+hedgerows,del14c,Delta^14 * C,0-10,bare field margin - (10-year-old hedgerow),estimate,-78.53300737272198,-149.7733811415074,-7.292633603936579,0.030726344235596392,*,none
+hedgerows,del14c,Delta^14 * C,0-10,bare field margin - (30-year-old hedgerow),estimate,-100.76360399909821,-172.00397776783262,-29.523230230363794,0.005567768543842579,**,none
+hedgerows,del14c,Delta^14 * C,0-10,(10-year-old hedgerow) - (30-year-old hedgerow),estimate,-22.230596626376226,-93.47097039523685,49.009777142484396,0.5407972718368534,,none
+hedgerows,del14c,Delta^14 * C,10-20,bare field margin - (10-year-old hedgerow),estimate,-11.148415389894843,-82.38878915884254,60.09195837905285,0.7590602963572094,,none
+hedgerows,del14c,Delta^14 * C,10-20,bare field margin - (30-year-old hedgerow),estimate,-22.264887084571857,-93.5052608535769,48.97548668443319,0.5401731305508288,,none
+hedgerows,del14c,Delta^14 * C,10-20,(10-year-old hedgerow) - (30-year-old hedgerow),estimate,-11.11647169467701,-82.35684546351061,60.1239020741566,0.7597293757625327,,none
+hedgerows,del14c,Delta^14 * C,20-50,bare field margin - (10-year-old hedgerow),estimate,-20.963476729739007,-92.20385049864569,50.27689703916767,0.5641104956574239,,none
+hedgerows,del14c,Delta^14 * C,20-50,bare field margin - (30-year-old hedgerow),estimate,50.703226878013574,-20.537146890796727,121.94360064682388,0.16303202188230964,,none
+hedgerows,del14c,Delta^14 * C,20-50,(10-year-old hedgerow) - (30-year-old hedgerow),estimate,71.66670360775258,0.42632983901309274,142.90707737649205,0.04864464449557867,*,none
+hedgerows,del14c,Delta^14 * C,50-75,bare field margin - (10-year-old hedgerow),estimate,-108.87762718202487,-180.11800095082086,-37.637253413228876,0.0027404967989987416,**,none
+hedgerows,del14c,Delta^14 * C,50-75,bare field margin - (30-year-old hedgerow),estimate,-14.47759945020231,-85.71797321892424,56.762774318519625,0.6904035499526258,,none
+hedgerows,del14c,Delta^14 * C,50-75,(10-year-old hedgerow) - (30-year-old hedgerow),estimate,94.40002773182255,23.159653963192497,165.64040150045258,0.009400579028096111,**,none

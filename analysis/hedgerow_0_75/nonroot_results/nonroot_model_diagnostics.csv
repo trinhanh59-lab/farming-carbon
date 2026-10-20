@@ -1,0 +1,4 @@
+system,response,response_label,family,observations,cores,fixed_parameters,convergence_code,positive_definite_hessian,core_random_sd,singular_random_effect,dharma_uniformity_p,dharma_dispersion_p,dharma_outlier_p,warnings,dharma_error
+hedgerows,c_percent,C concentration,Gamma(log),36,9,12,0,TRUE,0.07652835544648882,FALSE,0.988870685556593,0.344,1,,
+hedgerows,cumulative_c_stock,Cumulative C stock,Gamma(log),36,9,12,0,TRUE,0.0681000591869764,FALSE,0.7571970030027136,0.84,1,,
+hedgerows,del14c,Delta^14 * C,Gaussian(identity),36,9,12,0,TRUE,28.822879025551455,FALSE,0.8797619502820867,0.524,1,,

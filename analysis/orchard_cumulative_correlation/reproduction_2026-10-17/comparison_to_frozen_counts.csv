@@ -1,0 +1,9 @@
+"metric","frozen","new_reproduction","difference"
+"observed_LR",8.7784597675772,8.77845976765033,7.31290583644295e-11
+"definite_exceedances",123,125,2
+"definite_nonexceedances",871,870,-1
+"failed_refits",4,3,-1
+"numerically_ambiguous",1,1,0
+"full_shape_infinity",671,671,0
+"null_shape_infinity",683,682,-1
+"smoothness_count",524,524,0

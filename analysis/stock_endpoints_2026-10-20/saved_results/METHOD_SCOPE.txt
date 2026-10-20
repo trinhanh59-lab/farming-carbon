@@ -1,0 +1,9 @@
+Author-selected Welch endpoint comparisons; no profile model or sensitivity fit.
+Annual:0-100cm;orchard:0-75cm;hedgerows:0-20cm and0-75cm.
+All endpoint groups contain3cores from one field or field-margin location.
+Differences are first_group minus second_group; stock units:t C ha^-1.
+Hedgerow p values use one Holm family of6; all CIs are unadjusted pointwise95%.
+Profiles show observed core means+/-1SE, not fitted means or confidence intervals.
+Welch permits unequal variances; independence/approximate normality remain assumptions.
+Field-level management effects are not identifiable from one location per category.
+No raw measurement, stock calculation, source file, profile model or other analysis changed.

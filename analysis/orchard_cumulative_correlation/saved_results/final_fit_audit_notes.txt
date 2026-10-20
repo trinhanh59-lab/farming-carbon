@@ -1,0 +1,127 @@
+FINAL OBSERVED LR REVALIDATED: 8.77845976761 
+Selected-fit metadata flagged for final review: 522 561 672 911 955 36 
+All-response boundary audit flags: 253 522 672 
+Final same-response expanded retries: 36 253 522 561 672 911 955 
+Remaining all-response boundary flags: 253 522 672 
+FINAL ALL-999 AUDITED SIMULATION RESULT
+ simulations   observed_LR exceedances failed_refits numerically_ambiguous
+         999 8.77845976758         123             4                     1
+ bootstrap_p_lower bootstrap_p_upper Monte_Carlo_95_lower Monte_Carlo_95_upper
+             0.124             0.129        0.10338138802       0.150454445628
+Remaining selected-fit quality flags:  
+Selected model-family counts by full/null
+      kind
+model  LOGNORMAL_LIMIT  OU  RI RI_OU
+  full             671 248  24    56
+  null             683 247  15    54
+Simulation indices retained in exact order: 999 
+Earlier numerical boundary rescues: 84,114,178,183 (same responses retained).
+Additional final-audit rescue count: 7 
+Ambiguity band around observed LR: 0.0041 
+ORCHARD_ALL999_FINAL_AUDIT_COMPLETE_STOCKS_UNCHANGED_NO_MANUSCRIPT_EDITS
+
+Unresolved numerical fits: 253 522 672 911 
+Numerically ambiguous tail comparisons: 328 
+ index failed approximate_LR       null_kind       full_kind null_gap
+   253   TRUE   -1.669228535 LOGNORMAL_LIMIT LOGNORMAL_LIMIT        0
+   328  FALSE    8.775860840              OU              OU        0
+   522   TRUE   -3.068263509              OU              RI        0
+   672   TRUE   -3.302461583 LOGNORMAL_LIMIT              RI        0
+   911   TRUE   17.729785251              OU LOGNORMAL_LIMIT        0
+      full_gap
+ 2.86585698446
+ 0.00000000000
+ 3.66362519693
+ 4.75393694060
+ 0.04550191329
+FAILED RESPONSE 253 candidate diagnostics
+null highest finite candidate attempts
+              label kind     logLik convergence pdHess      gradient core_SD
+ auditOU 10000 0.03   OU -46.670219           0   TRUE 0.00031192212       0
+   auditOU 100 0.03   OU -46.670219           0   TRUE 0.00031197806       0
+      auditOU 100 1   OU -46.670219           0   TRUE 0.00031186029       0
+      OU_SD  range_cm gamma_shape warnings
+ 0.17227817 157.02628       1e+06         
+ 0.17227842 157.02671       1e+06         
+ 0.17227950 157.02853       1e+06         
+full highest finite candidate attempts
+             label  kind     logLik convergence pdHess      gradient
+    audit 100 0.03 RI_OU -44.638788           0   TRUE 0.00021499501
+ interior_small_RI RI_OU -44.638795           0  FALSE 0.00024790363
+  audit 10000 0.03 RI_OU -44.638804           0  FALSE 0.00041046025
+      core_SD      OU_SD  range_cm gamma_shape
+ 0.0194704608 0.16784052 188.64422       1e+06
+ 0.0130708016 0.16847663 190.17642       1e+06
+ 0.0042432991 0.16894170 191.30100       1e+06
+                                                                                         warnings
+                                                                                                 
+ Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+ Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+FAILED RESPONSE 522 candidate diagnostics
+null highest finite candidate attempts
+              label kind     logLik convergence pdHess      gradient core_SD
+       OU_shape5000   OU -45.528362           0   TRUE 6.9502203e-05       0
+ auditOU 10000 0.03   OU -45.528362           0   TRUE 1.2115149e-05       0
+      auditOU 100 1   OU -45.528362           0   TRUE 4.3997950e-05       0
+      OU_SD  range_cm gamma_shape warnings
+ 0.18774389 226.81755   1287.0524         
+ 0.18774389 226.81775   1287.0546         
+ 0.18774385 226.81787   1287.0518         
+full highest finite candidate attempts
+             label  kind     logLik convergence pdHess      gradient
+ interior_small_RI RI_OU -43.399013           0  FALSE 0.00318554931
+    audit 100 0.03 RI_OU -43.399017           0  FALSE 0.00073427423
+  audit 10000 0.03 RI_OU -43.399030           0  FALSE 0.00046391433
+      core_SD      OU_SD  range_cm gamma_shape
+ 0.0211847285 0.18902352 229.64156       1e+06
+ 0.0188586021 0.18927187 230.27582       1e+06
+ 0.0090716076 0.18999760 232.13275       1e+06
+                                                                                         warnings
+ Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+ Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+ Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+FAILED RESPONSE 672 candidate diagnostics
+null highest finite candidate attempts
+              label kind     logLik convergence pdHess      gradient core_SD
+        OU_shape500   OU -43.298574           0   TRUE 0.00085455927       0
+ auditOU 10000 0.03   OU -43.298574           0   TRUE 0.00085457192       0
+    auditOU 10000 1   OU -43.298574           0   TRUE 0.00085456999       0
+      OU_SD  range_cm gamma_shape warnings
+ 0.20235235 206.93683       1e+06         
+ 0.20235269 206.93857       1e+06         
+ 0.20235221 206.93741       1e+06         
+full highest finite candidate attempts
+             label  kind     logLik convergence pdHess     gradient     core_SD
+ interior_small_RI RI_OU -40.196036           0   TRUE 0.0010229616 0.038858953
+  audit 10000 0.03 RI_OU -40.196036           0   TRUE 0.0010229667 0.038831007
+    audit 100 0.03 RI_OU -40.196036           0   TRUE 0.0010230802 0.038801962
+      OU_SD  range_cm gamma_shape warnings
+ 0.19167243 262.16222       1e+06         
+ 0.19167780 262.17746       1e+06         
+ 0.19168283 262.19138       1e+06         
+FAILED RESPONSE 911 candidate diagnostics
+null highest finite candidate attempts
+              label kind     logLik convergence pdHess      gradient core_SD
+ auditOU 10000 0.03   OU -38.611195           0   TRUE 7.6423448e-05       0
+    auditOU 10000 1   OU -38.611195           0   TRUE 9.7244692e-05       0
+       OU_shape5000   OU -38.611195           0   TRUE 2.5336258e-05       0
+      OU_SD  range_cm gamma_shape warnings
+ 0.14226000 234.86309   1531.0508         
+ 0.14225992 234.86323   1531.0540         
+ 0.14225995 234.86343   1531.0462         
+full highest finite candidate attempts
+            label  kind     logLik convergence pdHess      gradient   core_SD
+   audit 100 0.03 RI_OU -29.700801           0  FALSE 9.6300212e-06 0.1344036
+     retry_active RI_OU -29.700801          52  FALSE 9.6300203e-06 0.1344036
+ audit 10000 0.03 RI_OU -29.700801           0  FALSE 8.6482056e-07 0.1344036
+         OU_SD  range_cm gamma_shape
+ 1.9359108e-05 14818.232   945.78326
+ 1.9359108e-05 14818.232   945.78326
+ 1.1147480e-05  3691.516   945.78328
+                                                                                                                                                                                                               warnings
+                                                                                                                       Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+ Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting') | Model convergence problem; ERROR: ABNORMAL_TERMINATION_IN_LNSRCH. See vignette('troubleshooting'), help('diagnose')
+                                                                                                                       Model convergence problem; non-positive-definite Hessian matrix. See vignette('troubleshooting')
+Initial fast-fit retries: 2 
+Final-audit retries: 7 
+No extension to 4999 is needed: the final Monte Carlo interval is above 0.05.

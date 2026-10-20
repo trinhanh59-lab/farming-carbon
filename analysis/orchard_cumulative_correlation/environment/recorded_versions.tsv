@@ -1,0 +1,8 @@
+component	version
+R	4.6.1
+glmmTMB	1.1.15.2
+TMB	1.9.25
+Matrix	1.7-6
+RTMB	2.0
+numDeriv	2016.8-1.1
+digest	0.6.39

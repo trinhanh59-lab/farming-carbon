@@ -1,0 +1,3 @@
+system,n,cores,original_zeros,simulations,seed,uniformity_D,uniformity_p,dispersion_ratio,dispersion_p,outliers,outlier_p,analytic_PIT_max_gap,expected_below_added_floor,conditional_verified,simulation_codes_restored,messages,warnings,_row
+orchards,24,6,4,1000,20261116,0.25633333333333336,0.07051986643966679,0.2326281747573123,0.512,0,1,0.04075603582177678,1.17,True,True,,,orchards
+hedgerows,36,9,4,1000,20261117,0.12266666666666659,0.6507663120936433,1.1442918934884199,0.45,0,1,0.03841106030827843,3.31,True,True,,,hedgerows

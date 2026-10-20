@@ -1,0 +1,4 @@
+feature,observed_as_printed,lower_2.5_as_printed,upper_97.5_as_printed,lower_tail_as_printed,upper_tail_as_printed
+smoothness,0.784663473,0.781237284,2.34299976,0.0262486876,0.973801310
+spread_ratio,9.505018190,1.483464929,26.74420771,0.8469076546,0.153142343
+decreasing_profiles,0.000000000,0.000000000,1.00000000,0.8170091495,1.000000000

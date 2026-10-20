@@ -1,0 +1,4 @@
+system,term,statistic,df,p_value
+hedgerows,Depth,33.46770229266958,3,2.566097505619559e-7
+hedgerows,Comparison group,32.212798971735864,2,1.0117648326839947e-7
+hedgerows,Depth × comparison group,5.853355512271743,6,0.43981634956698606

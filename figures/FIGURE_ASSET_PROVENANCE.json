@@ -1,0 +1,198 @@
+{
+  "manuscript": "Farming_Carbon_EarthArXiv_REVIEW.docx",
+  "manuscript_sha256": "56e57e8659217142e9b021f579ffc78e34c22947441e5a188d5162bca3dc9ba3",
+  "assets": {
+    "Figure_4.png": {
+      "bytes": 185399,
+      "sha256": "324f5311d162646d250a923e7e2648ee27aa50b90c9f8706109f39eb7b16d053"
+    },
+    "Figure_2.png": {
+      "bytes": 166854,
+      "sha256": "2f74e154e507bf7c85244eb6fa1c4ac6b4627541e47963511d5133c4d46102f8"
+    },
+    "Figure_3.png": {
+      "bytes": 166348,
+      "sha256": "8438b397b6ee2457ea96a26982b6849a61a09f4ca223c4aad45679e369001abf"
+    },
+    "Figure_1.png": {
+      "bytes": 411276,
+      "sha256": "09f3605a4b24b38265f506e72524c5eb727913ceb494bd7e84dcdb8c944a3d5b"
+    },
+    "Figure_S1.png": {
+      "bytes": 113596,
+      "sha256": "4270f0c3847c6eadc446d89c43c744461f2a7e0e35143f48ebec7fd9f82f176e"
+    },
+    "Figure_S2.png": {
+      "bytes": 337292,
+      "sha256": "c22e06465b84aebf1d0b6eee816ea4c1061ec01f8c7dd425ef67ddb6083ff9a4"
+    }
+  },
+  "Figure_1_source": "Recovered render_study_site_map_v4.py; decoded output matches current asset exactly.",
+  "Figure_S1_source": "Exact current scientific illustration and caption preserved. Editable drawing source not located.",
+  "profile_composite_scope": "Figures2–4 use the existing Arial typography/canvas. Only cumulative-stock panel c pixels change to observed mean±sampleSE, with no stock profile markers; a/b/d and legends remain pixel-exact. Saved-value renderer reproduces all complete assets without fits.",
+  "manuscript_hash_scope": "Historical extraction checkpoint; asset hashes remain the publication reference.",
+  "current_manuscript_sha256": "d9b5c2b702ec389d6dfbc9f9ee0c1740e56b2194769eb5e4942b1d4e80e2248a",
+  "current_asset_membership_verified": "2026-10-19 font revision: Figures 2–4 use the new complete saved-data renders. Figure 1, Figure S1 and the repository diagnostic Figure S2 remain unchanged. Legacy panel crops remain as source history and are not default assembly inputs.",
+  "historical_assets_before_hedgerow75_2026_10_19": {
+    "Figure_4.png": {
+      "sha256": "56445e0b310b0666c43bcaa7d08bd4556f83e0e0f3e14fd378a5fe8cf494585a",
+      "bytes": 235418
+    },
+    "Figure_2.png": {
+      "sha256": "57685cd59553b93d03d5c613294d74eb69e9f701abab071f3c1e0547a2142b3a",
+      "bytes": 219890
+    },
+    "Figure_3.png": {
+      "sha256": "541de77704f4f1f10a5d70f58ca8fc190b562b3b39a777fe1e3570ce33aaff1a",
+      "bytes": 224190
+    },
+    "Figure_1.png": {
+      "sha256": "09f3605a4b24b38265f506e72524c5eb727913ceb494bd7e84dcdb8c944a3d5b",
+      "bytes": 411276
+    },
+    "Figure_S1.png": {
+      "sha256": "4270f0c3847c6eadc446d89c43c744461f2a7e0e35143f48ebec7fd9f82f176e",
+      "bytes": 113596
+    },
+    "Figure_S2.png": {
+      "sha256": "c22e06465b84aebf1d0b6eee816ea4c1061ec01f8c7dd425ef67ddb6083ff9a4",
+      "bytes": 337292
+    }
+  },
+  "historical_assets_before_font_consistency_2026_10_19": {
+    "Figure_2.png": {
+      "sha256": "57685cd59553b93d03d5c613294d74eb69e9f701abab071f3c1e0547a2142b3a",
+      "bytes": 219890
+    },
+    "Figure_3.png": {
+      "sha256": "541de77704f4f1f10a5d70f58ca8fc190b562b3b39a777fe1e3570ce33aaff1a",
+      "bytes": 224190
+    },
+    "Figure_4.png": {
+      "sha256": "d8cf27055596c5fe1df29b20da1c3d7744c41777467e75931b670390ba3e4d56",
+      "bytes": 203566
+    }
+  },
+  "profile_renderer": "figures/render_profile_figures.R",
+  "profile_typography": {
+    "family": "Arial",
+    "canvas_inches": [
+      6.5,
+      6.1
+    ],
+    "dimensions_px": [
+      1950,
+      1830
+    ],
+    "dpi": 300,
+    "axis_labels_pt": 9,
+    "ticks_pt": 8.5,
+    "legend_pt": 8.5,
+    "panel_letters_pt": 11
+  },
+  "historical_before_orchard_profile_2026_10_20": {
+    "bytes": 183833,
+    "sha256": "25586432a6d8dd0c3d803fa33c24036d957c0e22a0a47ac401b327ecc230c905"
+  },
+  "orchard_stock_profile_source": "Historical model outputs are no longer the current panel c source.",
+  "historical_before_endpoint_selection_2026_10_20": {
+    "manuscript": "Farming_Carbon_EarthArXiv_REVIEW.docx",
+    "manuscript_sha256": "56e57e8659217142e9b021f579ffc78e34c22947441e5a188d5162bca3dc9ba3",
+    "assets": {
+      "Figure_4.png": {
+        "bytes": 185745,
+        "sha256": "1a4fac03200366062ed556a9310714a402558057d6490c3119f64b9f1876a395"
+      },
+      "Figure_2.png": {
+        "bytes": 168423,
+        "sha256": "4b10772dd1de633185e4d4204e7c8c3b85c1a23d823545080c89ad8025727d9c"
+      },
+      "Figure_3.png": {
+        "bytes": 160048,
+        "sha256": "d02b1d946c49510b41259e940ccd89d01bf1a51b786afdf0ef1de075557a0b25"
+      },
+      "Figure_1.png": {
+        "bytes": 411276,
+        "sha256": "09f3605a4b24b38265f506e72524c5eb727913ceb494bd7e84dcdb8c944a3d5b"
+      },
+      "Figure_S1.png": {
+        "bytes": 113596,
+        "sha256": "4270f0c3847c6eadc446d89c43c744461f2a7e0e35143f48ebec7fd9f82f176e"
+      },
+      "Figure_S2.png": {
+        "bytes": 337292,
+        "sha256": "c22e06465b84aebf1d0b6eee816ea4c1061ec01f8c7dd425ef67ddb6083ff9a4"
+      }
+    },
+    "Figure_1_source": "Recovered render_study_site_map_v4.py; decoded output matches current asset exactly.",
+    "Figure_S1_source": "Exact current scientific illustration and caption preserved. Editable drawing source not located.",
+    "profile_composite_scope": "Figures 2–4 use consistent Arial typography on a 6.5 × 6.1 inch, 300 dpi canvas. Figure 3c now shows the restored orchard-stock model EMM ±1 SE. Complete panels a/b/d and the legend are pixel-exact to the prior figure. The default saved-value renderer reproduces all three current composites pixel-for-pixel without fitting models or tests.",
+    "manuscript_hash_scope": "Historical extraction checkpoint; asset hashes remain the publication reference.",
+    "current_manuscript_sha256": "7d2721c4e73529c1700d26c4eea16d19c6738c0c4557d728fa6192acd1910acc",
+    "current_asset_membership_verified": "2026-10-19 font revision: Figures 2–4 use the new complete saved-data renders. Figure 1, Figure S1 and the repository diagnostic Figure S2 remain unchanged. Legacy panel crops remain as source history and are not default assembly inputs.",
+    "historical_assets_before_hedgerow75_2026_10_19": {
+      "Figure_4.png": {
+        "sha256": "56445e0b310b0666c43bcaa7d08bd4556f83e0e0f3e14fd378a5fe8cf494585a",
+        "bytes": 235418
+      },
+      "Figure_2.png": {
+        "sha256": "57685cd59553b93d03d5c613294d74eb69e9f701abab071f3c1e0547a2142b3a",
+        "bytes": 219890
+      },
+      "Figure_3.png": {
+        "sha256": "541de77704f4f1f10a5d70f58ca8fc190b562b3b39a777fe1e3570ce33aaff1a",
+        "bytes": 224190
+      },
+      "Figure_1.png": {
+        "sha256": "09f3605a4b24b38265f506e72524c5eb727913ceb494bd7e84dcdb8c944a3d5b",
+        "bytes": 411276
+      },
+      "Figure_S1.png": {
+        "sha256": "4270f0c3847c6eadc446d89c43c744461f2a7e0e35143f48ebec7fd9f82f176e",
+        "bytes": 113596
+      },
+      "Figure_S2.png": {
+        "sha256": "c22e06465b84aebf1d0b6eee816ea4c1061ec01f8c7dd425ef67ddb6083ff9a4",
+        "bytes": 337292
+      }
+    },
+    "historical_assets_before_font_consistency_2026_10_19": {
+      "Figure_2.png": {
+        "sha256": "57685cd59553b93d03d5c613294d74eb69e9f701abab071f3c1e0547a2142b3a",
+        "bytes": 219890
+      },
+      "Figure_3.png": {
+        "sha256": "541de77704f4f1f10a5d70f58ca8fc190b562b3b39a777fe1e3570ce33aaff1a",
+        "bytes": 224190
+      },
+      "Figure_4.png": {
+        "sha256": "d8cf27055596c5fe1df29b20da1c3d7744c41777467e75931b670390ba3e4d56",
+        "bytes": 203566
+      }
+    },
+    "profile_renderer": "figures/render_profile_figures.R",
+    "profile_typography": {
+      "family": "Arial",
+      "canvas_inches": [
+        6.5,
+        6.1
+      ],
+      "dimensions_px": [
+        1950,
+        1830
+      ],
+      "dpi": 300,
+      "axis_labels_pt": 9,
+      "ticks_pt": 8.5,
+      "legend_pt": 8.5,
+      "panel_letters_pt": 11
+    },
+    "historical_before_orchard_profile_2026_10_20": {
+      "bytes": 183833,
+      "sha256": "25586432a6d8dd0c3d803fa33c24036d957c0e22a0a47ac401b327ecc230c905"
+    },
+    "orchard_stock_profile_source": "analysis/nonroot_current/saved_results/nonroot_plot_values.csv"
+  },
+  "stock_profile_source": "analysis/stock_endpoints_2026-10-20/saved_results/stock_profile_summary.csv",
+  "historical_manuscript_sha256_before_endpoint_header_2026_10_20": "e2d57af23eed97e144e62d7c35ee6b4e41a6b5d914a6f52ecb2feef4aa072f5a"
+}

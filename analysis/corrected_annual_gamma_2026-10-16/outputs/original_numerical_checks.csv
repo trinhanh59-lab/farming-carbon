@@ -1,0 +1,3 @@
+"constant","added_mass_g","optimizer","convergence","positive_definite_Hessian","finite_covariance","logLik","max_abs_gradient","core_SD","sigma","warning_text"
+"original",0.00017,"nlminb",0,TRUE,TRUE,97.4813554294116,8.91077249951799e-05,0.503150282578612,0.672713610013606,""
+"original",0.00017,"BFGS",0,TRUE,TRUE,97.4813554299103,1.90655253204386e-06,0.503149693353747,0.672713494921911,""

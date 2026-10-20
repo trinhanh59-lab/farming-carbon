@@ -1,0 +1,4 @@
+system,observations,cores,convergence_code,positive_definite_hessian,core_random_sd
+annual vegetables,36,6,0,TRUE,0.008472477816557899
+orchards,24,6,0,TRUE,1.8816594636468737e-6
+hedgerows,45,9,0,TRUE,0.02631384599272086

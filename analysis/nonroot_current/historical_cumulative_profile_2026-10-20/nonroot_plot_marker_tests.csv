@@ -1,0 +1,43 @@
+system,response,response_label,depth_cm,marker_test,contrast,df1,df2,statistic,p_value,symbol,adjustment
+annual vegetables,c_percent,C concentration,0-10,pairwise contrast,monoculture / polyculture,1,NA,NA,0.06345643049021338,†,none
+annual vegetables,c_percent,C concentration,10-20,pairwise contrast,monoculture / polyculture,1,NA,NA,0.0934188578080625,†,none
+annual vegetables,c_percent,C concentration,20-30,pairwise contrast,monoculture / polyculture,1,NA,NA,0.8671099972648715,,none
+annual vegetables,c_percent,C concentration,30-40,pairwise contrast,monoculture / polyculture,1,NA,NA,0.7937994713761324,,none
+annual vegetables,c_percent,C concentration,40-50,pairwise contrast,monoculture / polyculture,1,NA,NA,0.01818677470161014,*,none
+annual vegetables,c_percent,C concentration,50-100,pairwise contrast,monoculture / polyculture,1,NA,NA,0.10902401627898574,,none
+annual vegetables,cumulative_c_stock,Cumulative C stock,0-10,pairwise contrast,monoculture / polyculture,1,NA,NA,0.0035900988578927173,**,none
+annual vegetables,cumulative_c_stock,Cumulative C stock,10-20,pairwise contrast,monoculture / polyculture,1,NA,NA,0.0012251898706985033,**,none
+annual vegetables,cumulative_c_stock,Cumulative C stock,20-30,pairwise contrast,monoculture / polyculture,1,NA,NA,0.024452781977892225,*,none
+annual vegetables,cumulative_c_stock,Cumulative C stock,30-40,pairwise contrast,monoculture / polyculture,1,NA,NA,0.06721144033394827,†,none
+annual vegetables,cumulative_c_stock,Cumulative C stock,40-50,pairwise contrast,monoculture / polyculture,1,NA,NA,0.02597058303620368,*,none
+annual vegetables,cumulative_c_stock,Cumulative C stock,50-100,pairwise contrast,monoculture / polyculture,1,NA,NA,0.007734136249704841,**,none
+annual vegetables,del14c,Delta^14 * C,0-10,pairwise contrast,monoculture - polyculture,1,NA,NA,0.5119730222613319,,none
+annual vegetables,del14c,Delta^14 * C,10-20,pairwise contrast,monoculture - polyculture,1,NA,NA,0.6679783008328135,,none
+annual vegetables,del14c,Delta^14 * C,20-30,pairwise contrast,monoculture - polyculture,1,NA,NA,0.6203928826839268,,none
+annual vegetables,del14c,Delta^14 * C,30-40,pairwise contrast,monoculture - polyculture,1,NA,NA,0.42520572370370113,,none
+annual vegetables,del14c,Delta^14 * C,40-50,pairwise contrast,monoculture - polyculture,1,NA,NA,0.13240093342539147,,none
+annual vegetables,del14c,Delta^14 * C,50-100,pairwise contrast,monoculture - polyculture,1,NA,NA,0.10112556597871893,,none
+orchards,c_percent,C concentration,0-10,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.472620878786312,,none
+orchards,c_percent,C concentration,10-20,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.00498236850575582,**,none
+orchards,c_percent,C concentration,20-50,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.014620517046255539,*,none
+orchards,c_percent,C concentration,50-75,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.0140846487256253,*,none
+orchards,cumulative_c_stock,Cumulative C stock,0-10,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.2816055141551861,,none
+orchards,cumulative_c_stock,Cumulative C stock,10-20,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.7347855465872377,,none
+orchards,cumulative_c_stock,Cumulative C stock,20-50,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.6042974769423195,,none
+orchards,cumulative_c_stock,Cumulative C stock,50-75,pairwise contrast,(20-year-old orchard) / (60-year-old orchard),1,NA,NA,0.33307019648210223,,none
+orchards,del14c,Delta^14 * C,0-10,pairwise contrast,(20-year-old orchard) - (60-year-old orchard),1,NA,NA,0.4496797051953075,,none
+orchards,del14c,Delta^14 * C,10-20,pairwise contrast,(20-year-old orchard) - (60-year-old orchard),1,NA,NA,0.12051735610721097,,none
+orchards,del14c,Delta^14 * C,20-50,pairwise contrast,(20-year-old orchard) - (60-year-old orchard),1,NA,NA,1.3478452853160297e-4,***,none
+orchards,del14c,Delta^14 * C,50-75,pairwise contrast,(20-year-old orchard) - (60-year-old orchard),1,NA,NA,0.10597103510299612,,none
+hedgerows,c_percent,C concentration,0-10,joint management test within depth,(all management categories),2,Inf,31.492,2.1037630263542328e-14,***,none
+hedgerows,c_percent,C concentration,10-20,joint management test within depth,(all management categories),2,Inf,1.561,0.20986622960077628,,none
+hedgerows,c_percent,C concentration,20-50,joint management test within depth,(all management categories),2,Inf,1.871,0.15401063957887376,,none
+hedgerows,c_percent,C concentration,50-75,joint management test within depth,(all management categories),2,Inf,4.711,0.008991337334731469,**,none
+hedgerows,cumulative_c_stock,Cumulative C stock,0-10,joint management test within depth,(all management categories),2,Inf,32.679,6.4203319552207726e-15,***,none
+hedgerows,cumulative_c_stock,Cumulative C stock,10-20,joint management test within depth,(all management categories),2,Inf,10.533,2.662998837180958e-5,***,none
+hedgerows,cumulative_c_stock,Cumulative C stock,20-50,joint management test within depth,(all management categories),2,Inf,0.825,0.4383581289807379,,none
+hedgerows,cumulative_c_stock,Cumulative C stock,50-75,joint management test within depth,(all management categories),2,Inf,1.11,0.329693303953709,,none
+hedgerows,del14c,Delta^14 * C,0-10,joint management test within depth,(all management categories),2,Inf,4.242,0.014372189135351654,*,none
+hedgerows,del14c,Delta^14 * C,10-20,joint management test within depth,(all management categories),2,Inf,0.188,0.8289382465031538,,none
+hedgerows,del14c,Delta^14 * C,20-50,joint management test within depth,(all management categories),2,Inf,2.055,0.12804646915706858,,none
+hedgerows,del14c,Delta^14 * C,50-75,joint management test within depth,(all management categories),2,Inf,5.292,0.005031014052752904,**,none

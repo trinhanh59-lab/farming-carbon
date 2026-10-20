@@ -1,0 +1,362 @@
+[
+  {
+    "sample_code": "67_MAS1_1_A1",
+    "root_weight": 0.08079999999999998,
+    "volume_cm3": 114.009182796937,
+    "density": 0.708714842241381
+  },
+  {
+    "sample_code": "68_MAS1_1_A2",
+    "root_weight": 0.009300000000000086,
+    "volume_cm3": 114.009182796937,
+    "density": 0.08157237664412013
+  },
+  {
+    "sample_code": "69_MAS1_1_A3",
+    "root_weight": 0.0035000000000000586,
+    "volume_cm3": 342.027548390811,
+    "density": 0.010233093844244538
+  },
+  {
+    "sample_code": "70_MAS1_1_A4",
+    "root_weight": 0.013500000000000068,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.047364605793359875
+  },
+  {
+    "sample_code": "87_MAS1_3_A1",
+    "root_weight": 0.007200000000000095,
+    "volume_cm3": 114.009182796937,
+    "density": 0.06315280772448036
+  },
+  {
+    "sample_code": "88_MAS1_3_A2",
+    "root_weight": 0.0005999999999999339,
+    "volume_cm3": 114.009182796937,
+    "density": 0.00526273397703938
+  },
+  {
+    "sample_code": "89_MAS1_3_A3",
+    "root_weight": 0,
+    "volume_cm3": 342.027548390811,
+    "density": 0
+  },
+  {
+    "sample_code": "90_MAS1_3_A4",
+    "root_weight": 0.00019999999999997797,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.0007016978636052507
+  },
+  {
+    "sample_code": "107_MAS1_5_A1",
+    "root_weight": 0.01980000000000004,
+    "volume_cm3": 114.009182796937,
+    "density": 0.173670221242319
+  },
+  {
+    "sample_code": "108_MAS1_5_A2",
+    "root_weight": 0.0028999999999999027,
+    "volume_cm3": 114.009182796937,
+    "density": 0.025436547555692284
+  },
+  {
+    "sample_code": "109_MAS1_5_A3",
+    "root_weight": 0.001100000000000101,
+    "volume_cm3": 342.027548390811,
+    "density": 0.0032161152081913815
+  },
+  {
+    "sample_code": "110_MAS1_5_A4",
+    "root_weight": 0,
+    "volume_cm3": 285.0229569923425,
+    "density": 0
+  },
+  {
+    "sample_code": "122_MAS2_1_A1",
+    "root_weight": 0.027800000000000047,
+    "volume_cm3": 114.009182796937,
+    "density": 0.24384000760285188
+  },
+  {
+    "sample_code": "123_MAS2_1_A2",
+    "root_weight": 0,
+    "volume_cm3": 114.009182796937,
+    "density": 0
+  },
+  {
+    "sample_code": "124_MAS2_1_A3",
+    "root_weight": 0.007800000000000029,
+    "volume_cm3": 342.027548390811,
+    "density": 0.022805180567173244
+  },
+  {
+    "sample_code": "125_MAS2_1_A4",
+    "root_weight": 0.008099999999999996,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.02841876347601577
+  },
+  {
+    "sample_code": "142_MAS2_3_A1",
+    "root_weight": 0.032399999999999984,
+    "volume_cm3": 114.009182796937,
+    "density": 0.2841876347601577
+  },
+  {
+    "sample_code": "143_MAS2_3_A2",
+    "root_weight": 0.0086,
+    "volume_cm3": 114.009182796937,
+    "density": 0.07543252033757275
+  },
+  {
+    "sample_code": "144_MAS2_3_A3",
+    "root_weight": 0,
+    "volume_cm3": 342.027548390811,
+    "density": 0
+  },
+  {
+    "sample_code": "145_MAS2_3_A4",
+    "root_weight": 0.00039999999999995595,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.0014033957272105014
+  },
+  {
+    "sample_code": "162_MAS2_5_A1",
+    "root_weight": 0.038799999999999946,
+    "volume_cm3": 114.009182796937,
+    "density": 0.3403234638485836
+  },
+  {
+    "sample_code": "163_MAS2_5_A2",
+    "root_weight": 0.0484,
+    "volume_cm3": 114.009182796937,
+    "density": 0.4245272074812234
+  },
+  {
+    "sample_code": "164_MAS2_5_A3",
+    "root_weight": 0.01869999999999994,
+    "volume_cm3": 342.027548390811,
+    "density": 0.054673958539248294
+  },
+  {
+    "sample_code": "165_MAS2_5_A4",
+    "root_weight": 0.03499999999999992,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.12279712613093213
+  },
+  {
+    "sample_code": "182_HRDY1_1_A1",
+    "root_weight": 0.0297,
+    "volume_cm3": 114.009182796937,
+    "density": 0.260505331863478
+  },
+  {
+    "sample_code": "183_HRDY1_1_A2",
+    "root_weight": 0.0017,
+    "volume_cm3": 114.009182796937,
+    "density": 0.014911079601613218
+  },
+  {
+    "sample_code": "184_HRDY1_1_A3",
+    "root_weight": 0.0772,
+    "volume_cm3": 342.027548390811,
+    "density": 0.22571281279304717
+  },
+  {
+    "sample_code": "185_HRDY1_1_A4",
+    "root_weight": 0.0128,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.044908663270740994
+  },
+  {
+    "sample_code": "187_HRDY1_2_A1",
+    "root_weight": 0,
+    "volume_cm3": 114.009182796937,
+    "density": 0
+  },
+  {
+    "sample_code": "188_HRDY1_2_A2",
+    "root_weight": 0.3547,
+    "volume_cm3": 114.009182796937,
+    "density": 3.111152902760123
+  },
+  {
+    "sample_code": "189_HRDY1_2_A3",
+    "root_weight": 0.3405,
+    "volume_cm3": 342.027548390811,
+    "density": 0.9955338439900591
+  },
+  {
+    "sample_code": "190_HRDY1_2_A4",
+    "root_weight": 0.0109,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.03824253356649038
+  },
+  {
+    "sample_code": "192_HRDY1_3_A1",
+    "root_weight": 0.0013,
+    "volume_cm3": 114.009182796937,
+    "density": 0.01140259028358658
+  },
+  {
+    "sample_code": "193_HRDY1_3_A2",
+    "root_weight": 0.0128,
+    "volume_cm3": 114.009182796937,
+    "density": 0.11227165817685247
+  },
+  {
+    "sample_code": "194_HRDY1_3_A3",
+    "root_weight": 0.3305,
+    "volume_cm3": 342.027548390811,
+    "density": 0.9662964330065037
+  },
+  {
+    "sample_code": "195_HRDY1_3_A4",
+    "root_weight": 0.4594,
+    "volume_cm3": 285.0229569923425,
+    "density": 1.6117999927014384
+  },
+  {
+    "sample_code": "197_HRDY2_1_A1",
+    "root_weight": 0.1114,
+    "volume_cm3": 114.009182796937,
+    "density": 0.9771142750704193
+  },
+  {
+    "sample_code": "198_HRDY2_1_A2",
+    "root_weight": 0.001,
+    "volume_cm3": 114.009182796937,
+    "density": 0.0087712232950666
+  },
+  {
+    "sample_code": "199_HRDY2_1_A3",
+    "root_weight": 0.0773,
+    "volume_cm3": 342.027548390811,
+    "density": 0.2260051869028827
+  },
+  {
+    "sample_code": "200_HRDY2_1_A4",
+    "root_weight": 0,
+    "volume_cm3": 285.0229569923425,
+    "density": 0
+  },
+  {
+    "sample_code": "202_HRDY2_2_A1",
+    "root_weight": 0.0093,
+    "volume_cm3": 114.009182796937,
+    "density": 0.08157237664411937
+  },
+  {
+    "sample_code": "203_HRDY2_2_A2",
+    "root_weight": 0.0031,
+    "volume_cm3": 114.009182796937,
+    "density": 0.02719079221470646
+  },
+  {
+    "sample_code": "204_HRDY2_2_A3",
+    "root_weight": 0.0356,
+    "volume_cm3": 342.027548390811,
+    "density": 0.104085183101457
+  },
+  {
+    "sample_code": "205_HRDY2_2_A4",
+    "root_weight": 0.0625,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.219280582376665
+  },
+  {
+    "sample_code": "207_HRDY2_3_A1",
+    "root_weight": 0.0024,
+    "volume_cm3": 114.009182796937,
+    "density": 0.02105093590815984
+  },
+  {
+    "sample_code": "208_HRDY2_3_A2",
+    "root_weight": 0.9132,
+    "volume_cm3": 114.009182796937,
+    "density": 8.009881113054819
+  },
+  {
+    "sample_code": "209_HRDY2_3_A3",
+    "root_weight": 0.0237,
+    "volume_cm3": 342.027548390811,
+    "density": 0.06929266403102613
+  },
+  {
+    "sample_code": "210_HRDY2_3_A4",
+    "root_weight": 0.0013,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.004561036113434632
+  },
+  {
+    "sample_code": "212_HRDY3_1_A1",
+    "root_weight": 0.0012,
+    "volume_cm3": 114.009182796937,
+    "density": 0.01052546795407992
+  },
+  {
+    "sample_code": "213_HRDY3_1_A2",
+    "root_weight": 0.0051,
+    "volume_cm3": 114.009182796937,
+    "density": 0.04473323880483966
+  },
+  {
+    "sample_code": "214_HRDY3_1_A3",
+    "root_weight": 0.0056,
+    "volume_cm3": 342.027548390811,
+    "density": 0.016372950150790985
+  },
+  {
+    "sample_code": "215_HRDY3_1_A4",
+    "root_weight": 0.0003,
+    "volume_cm3": 285.0229569923425,
+    "density": 0.001052546795407992
+  },
+  {
+    "sample_code": "217_HRDY3_2_A1",
+    "root_weight": 0.0227,
+    "volume_cm3": 114.009182796937,
+    "density": 0.19910676879801184
+  },
+  {
+    "sample_code": "218_HRDY3_2_A2",
+    "root_weight": 0.0052,
+    "volume_cm3": 114.009182796937,
+    "density": 0.04561036113434632
+  },
+  {
+    "sample_code": "219_HRDY3_2_A3",
+    "root_weight": 0.0003,
+    "volume_cm3": 342.027548390811,
+    "density": 0.00087712232950666
+  },
+  {
+    "sample_code": "220_HRDY3_2_A4",
+    "root_weight": 0,
+    "volume_cm3": 285.0229569923425,
+    "density": 0
+  },
+  {
+    "sample_code": "222_HRDY3_3_A1",
+    "root_weight": 0.014,
+    "volume_cm3": 114.009182796937,
+    "density": 0.1227971261309324
+  },
+  {
+    "sample_code": "223_HRDY3_3_A2",
+    "root_weight": 0.0021,
+    "volume_cm3": 114.009182796937,
+    "density": 0.018419568919639858
+  },
+  {
+    "sample_code": "224_HRDY3_3_A3",
+    "root_weight": 0.003,
+    "volume_cm3": 342.027548390811,
+    "density": 0.0087712232950666
+  },
+  {
+    "sample_code": "225_HRDY3_3_A4",
+    "root_weight": 0,
+    "volume_cm3": 285.0229569923425,
+    "density": 0
+  }
+]

@@ -1,0 +1,7 @@
+"constant","simulation","observed_below_floor","mean_simulated_below_floor","lower95_simulated_count","upper95_simulated_count","fraction_simulations_with_none_below_floor","monte_carlo_lower_tail"
+"half","conditional",0,3.564,1,6,0.003,0.00349825087456272
+"half","unconditional",0,3.459,1,6,0.0165,0.0169915042478761
+"original","conditional",0,3.468,1,6,0.0035,0.00399800099950025
+"original","unconditional",0,3.38,1,6,0.0165,0.0169915042478761
+"double","conditional",0,3.466,1,6,0.005,0.00549725137431284
+"double","unconditional",0,3.4155,1,7,0.0195,0.0199900049975013

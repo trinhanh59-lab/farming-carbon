@@ -1,0 +1,2 @@
+family,formula,logLik,AIC,warnings,DHARMa_simulations
+Gaussian(identity),bulk_density ~ depth_cm * site_type + (1 | core),36.94427117109048,-45.888542342180955,,0

@@ -1,0 +1,9 @@
+check,rows,columns,maximum_absolute_numeric_error,status
+historical111_reconstructed_from_working_sources,111,37,5.684341886080802e-14,PASS
+historical105_reconstructed_from_working_sources,105,38,5.684341886080802e-14,PASS
+current111_nonroot_columns_unchanged,111,36,5.684341886080802e-14,PASS
+current105_nonroot_columns_unchanged,105,37,5.684341886080802e-14,PASS
+current36_annual_module_input,36,7,8.673617379884035e-18,PASS
+current60_perennial_module_input,60,9,9.540979117872439e-18,PASS
+current24_orchard_module_shared_columns,24,6,3.552713678800501e-15,PASS
+current111_publication_workbook_sample_data,111,39,8.673617379884035e-18,PASS

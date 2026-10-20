@@ -1,0 +1,10 @@
+"constant","added_mass_g","term","chisq","df","p_unadjusted"
+"half",8.5e-05,"Management_equal_depth_log_average",21.9787022186035,1,2.75692846275547e-06
+"half",8.5e-05,"Depth_equal_field_average",176.808849872022,5,2.56961876900527e-36
+"half",8.5e-05,"Management_by_depth",13.1377955466409,5,0.0221211310929929
+"original",0.00017,"Management_equal_depth_log_average",17.7303733972301,1,2.54529928368794e-05
+"original",0.00017,"Depth_equal_field_average",183.592585783797,5,9.14229275564393e-38
+"original",0.00017,"Management_by_depth",8.57219021229289,5,0.127393701125814
+"double",0.00034,"Management_equal_depth_log_average",14.6463138930312,1,0.000129688028378319
+"double",0.00034,"Depth_equal_field_average",196.793517056195,5,1.37806371107974e-40
+"double",0.00034,"Management_by_depth",5.44474883979005,5,0.364042414351698

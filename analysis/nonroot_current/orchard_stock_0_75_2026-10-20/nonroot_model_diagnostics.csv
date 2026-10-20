@@ -1,0 +1,2 @@
+system,response,response_label,family,observations,cores,fixed_parameters,convergence_code,positive_definite_hessian,core_random_sd,singular_random_effect,dharma_uniformity_p,dharma_dispersion_p,dharma_outlier_p,warnings,dharma_error
+orchards,cumulative_c_stock,Cumulative C stock,Gamma(log),24,6,8,0,TRUE,0.20419474679355362,FALSE,0.9994032841438661,0.508,1,,
