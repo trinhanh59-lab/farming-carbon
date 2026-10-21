@@ -1,7 +1,0 @@
-import_name,distribution,checked_local_version
-PIL,Pillow,13.0.0
-matplotlib,matplotlib,3.11.2
-numpy,numpy,2.5.4
-pyproj,pyproj,3.8.0
-shapefile,pyshp,3.1.6
-shapely,shapely,2.2.0

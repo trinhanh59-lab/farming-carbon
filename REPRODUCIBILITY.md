@@ -6,7 +6,16 @@ Use a writable repository copy and new output directories. Preserve the supplied
 
 Use R 4.6.1 and the package versions in `renv.lock`. Restore them with `renv::restore(lockfile = "renv.lock", library = "PATH_TO_LOCAL_R_LIBRARY")`, then point `R_LIBS_USER` to that library when invoking Rscript. Install renv from CRAN first if needed. Original non-root records used R 4.6.0 and earlier glmmTMB/emmeans versions; those records remain archived. The perennial diagnostic code requires the recorded glmmTMB 1.1.15.2 and DHARMa 0.5.0 versions because it checks internal conditional-simulation behavior.
 
-For Python figures, use a separate environment and install `reproducibility/python-requirements.txt`. The checked interpreter/platform is recorded in `reproducibility/PYTHON_ENVIRONMENT.txt`. Bundled Census boundaries allow the map renderer to work without downloading map data.
+For Python figures, use a separate environment and install `reproducibility/python-requirements.txt`. The checked interpreter is Python 3.12.14 on darwin. Bundled Census boundaries allow the map renderer to work without downloading map data. The recorded import/distribution versions are:
+
+| Import | Distribution | Version |
+| --- | --- | --- |
+| PIL | Pillow | 13.0.0 |
+| matplotlib | matplotlib | 3.11.2 |
+| numpy | numpy | 2.5.4 |
+| pyproj | pyproj | 3.8.0 |
+| shapefile | pyshp | 3.1.6 |
+| shapely | shapely | 2.2.0 |
 
 From the repository root:
 
@@ -42,7 +51,7 @@ The annual selected-fit RDS remains active so validation can also run without a 
 
 ## Perennial root density
 
-`analysis/current_perennial_root/` contains 24 orchard observations from six cores and 36 hedgerow observations from nine cores, all through 75 cm. Each system has four no-root-recovery observations. The active input is `input/perennial_root_input.csv`; notebook readbacks and original source cells remain archived. The source trace retains their hashes and locations.
+`analysis/current_perennial_root/` contains 24 orchard observations from six cores and 36 hedgerow observations from nine cores, all through 75 cm. Each system has four no-root-recovery observations. The active input is `input/perennial_root_input.csv`; notebook readbacks and original source cells remain archived. The source trace retains their hashes and locations. The recorded perennial environment is R 4.6.1 (2026-06-24), glmmTMB 1.1.15.2, emmeans 2.0.4, DHARMa 0.5.0 and jsonlite 2.0.0. Its original `source_cells_zero_based` values are `[0, 1, 30]`.
 
 The response is `1000 * (root_weight + 0.00017) / volume_cm3`, in mg/cm³. The full management-by-depth model uses Gamma(log), a core random intercept, constant dispersion and no zero-inflation component. It is fitted by maximum likelihood. The original mass-scale starting fit and depth-specific conversion to density are retained; nlminb and BFGS use the original controls/agreement thresholds. The selected model is `B_shift_gamma`, not the older Tweedie alternatives named in the source notebook.
 
@@ -97,7 +106,7 @@ The retained July bulk-density driver is `analysis/selected_reference_2026-07-30
 
 ## Observed carbon-stock endpoints
 
-The current endpoint module uses one observed total per core: annual 0–100 cm, orchard 0–75 cm and hedgerow 0–20/0–75 cm, with three cores per group. It fits no stock-profile model:
+The current endpoint module uses one observed total per core: annual 0–100 cm, orchard 0–75 cm and hedgerow 0–20/0–75 cm, with three cores per group. These author-selected comparisons fit no stock-profile or sensitivity model:
 
 ```sh
 Rscript --vanilla analysis/stock_endpoints_2026-10-20/run_stock_endpoints.R --run-analysis outputs_rerun/stock_endpoints
@@ -105,7 +114,7 @@ Rscript --vanilla analysis/stock_endpoints_2026-10-20/run_stock_endpoints.R --ru
 
 The script checks identities, endpoint depths, core counts, twelve source hashes and preserved layer/cumulative-stock arithmetic without changing measurements or supplied stocks. It saves 30 endpoint records, ten three-core group summaries and eight two-sided unpaired Welch comparisons. Differences are first group minus second group, in t C ha⁻¹. All six hedgerow p values share one Holm family; annual/orchard values are unadjusted. Every 95% interval is an unadjusted pointwise interval, not a simultaneous Holm interval.
 
-`stock_profile_summary.csv` supplies 32 observed means, sample SDs and SEs with source core/sample identifiers. SE is SD/√3; plotted mean ±1SE is descriptive, not a fitted mean or confidence interval. Welch allows unequal variances; independence and approximate normality remain assumptions with three cores per field. One location represents each management category, so these comparisons describe sampled fields/margins rather than replicated field-level management effects.
+`stock_profile_summary.csv` supplies 32 observed means, sample SDs and SEs with source core/sample identifiers. SE is SD/√3; plotted mean ±1SE is descriptive, not a fitted mean or confidence interval. Welch allows unequal variances; independence and approximate normality remain assumptions with three cores per field. One location represents each management category, so these comparisons describe sampled fields/margins rather than replicated field-level management effects. Selecting these endpoints changed no raw measurement, supplied stock calculation, source file, profile model or other analysis. New reruns continue to write `METHOD_SCOPE.txt` in their output directory.
 
 ## Figures and archived records
 
@@ -120,3 +129,13 @@ Use [figures/README.md](figures/README.md) for the map and profile renderers. Re
 Preparation and endpoint source checks validate paths, regular files, sizes, SHA-256 and MD5 before using temporary extracted files. Temporary sources are cleaned on exit. Preparation still accepts an explicit loose source directory as its third `RAW_DIR` argument; both scripts also support the original restored directory layout when the source ZIP is absent. For manual inspection, extract the ZIP into a new directory, preserving folders. The loose source directory is then `NEW_DIRECTORY/data/source_measurements/`.
 
 Saved source tables retain original semantic filenames and workbook hashes. A new endpoint run records the current preparation/endpoint code hashes, which differ only because of source-access packaging. The supplied `saved_results/source_sha256.csv` remains the dated selected-run record; current code identities are in `FILE_CHECKSUMS.csv`.
+
+## Method records and map sources
+
+[Method_and_Environment_Records.zip](reproducibility/Method_and_Environment_Records.zip) preserves five original method/environment records at their original paths, plus a size/SHA-256/MD5 manifest. The current instructions above retain their software and endpoint scope; the original files remain available for inspection.
+
+The July 30 selected reference records `analysis/selected_reference_2026-07-30/data/sample_level_analysis_105.csv` as its input, with 105 rows and 21 cores. Sample 142 has Δ¹⁴C = −11.5; sample 143 has Δ¹⁴C = 13.2 and root weight 0.0086 g. That reference contains zero orchard 75–100 cm rows, uses a 0.00017 g root offset, records the pairwise adjustment as `none (Fisher LSD)`, and restricts orchards to 0–75 cm. These are dated reference settings; current sample scope and selected analyses are described above.
+
+[Census_Basemaps_2023_500k.zip](figures/map/basemap/Census_Basemaps_2023_500k.zip) holds the original state and county ZIPs at their original `figures/map/basemap/...` paths, plus an integrity manifest. The map renderer verifies their recorded sizes/hashes and ZIP contents before creating its output directory, then reads shapefile components in memory. If the wrapper is absent, it also accepts the original two loose ZIPs in `figures/map/basemap/`. [Census credits and use limits](figures/map/THIRD_PARTY_MAP_SOURCES.md) still apply.
+
+To inspect either bundle, extract it into a separate directory while preserving its folders. These bundles change access to existing records, not the measurements, statistical methods or map specifications.

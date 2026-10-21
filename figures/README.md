@@ -13,7 +13,7 @@ Rscript --vanilla figures/render_profile_figures.R [NEW_OUTPUT_DIR]
 python figures/map/render_figure1.py [NEW_OUTPUT_DIR]
 ```
 
-Brackets indicate an optional argument, not literal shell syntax. Defaults are separate subdirectories of `figures/regenerated/`. Both commands leave supplied assets unchanged.
+Brackets indicate an optional argument, not literal shell syntax. Defaults are separate subdirectories of `figures/regenerated/`. Both commands leave supplied assets unchanged. Figure 1 reads the verified original Census ZIPs inside `map/basemap/Census_Basemaps_2023_500k.zip`; the two original loose ZIPs are also supported when that wrapper is absent. See [source credits](map/THIRD_PARTY_MAP_SOURCES.md).
 
 `render_profile_figures.R` redraws complete Figures 2–4 from corrected annual-root display values, observed perennial-root profiles, current C-concentration/Δ¹⁴C EMMs/markers and 32 observed stock means ±1SE. It writes plotting-data readbacks and runs no models or statistical tests. Arial axes use 9 pt, ticks and legends 8.5 pt, and panel letters 11 pt. The required annual fit-to-display helper remains at `analysis/figure2_review/render_corrected_figure2a.R`.
 

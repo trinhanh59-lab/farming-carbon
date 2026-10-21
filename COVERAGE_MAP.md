@@ -67,3 +67,7 @@ The [additional support ZIP](archive/History_and_Support_2026-10-21.zip) contain
 ## Current source workbook container
 
 All 23 original source workbooks are in [data/Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) at their original full relative paths, with an integrity manifest. `data/source_measurements/SOURCE_FILES.csv` maps every original path/hash to its ZIP member. Preparation and endpoint source checks open verified temporary members automatically; current CSV inputs, published outputs and 13 script paths remain active. Recorded workbook identities and the frozen selected-run source-hash table are unchanged.
+
+## Bundled method records and basemaps
+
+The five original method/environment records are preserved in [Method_and_Environment_Records.zip](reproducibility/Method_and_Environment_Records.zip). Their essential context is retained in [REPRODUCIBILITY.md](REPRODUCIBILITY.md#method-records-and-map-sources). The two original Census ZIPs are preserved in [Census_Basemaps_2023_500k.zip](figures/map/basemap/Census_Basemaps_2023_500k.zip); [map credits](figures/map/THIRD_PARTY_MAP_SOURCES.md) identify each original source. All seven retain their original full relative paths as members, with byte sizes and SHA-256/MD5 manifests.

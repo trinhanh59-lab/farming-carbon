@@ -2365,5 +2365,99 @@
     "endpoint_new_run_only_two_current_code_fingerprints_change": true,
     "selected_run_source_hashes_preserved_as_historical": true,
     "current_code_hashes_in_FILE_CHECKSUMS": true
+  },
+  "metadata_basemap_packaging_2026_10_21": {
+    "scope": "Five original method/environment records in one ZIP; two original Census source ZIP byte streams in one wrapper. Essential metadata remain readable in REPRODUCIBILITY.md. Map source access only; statistical code, published results, source workbooks, fixed assets and paper unchanged.",
+    "active_tree_files": 93,
+    "all13script_paths_retained": true,
+    "archives": [
+      {
+        "kind": "method_environment",
+        "archive_path": "reproducibility/Method_and_Environment_Records.zip",
+        "archive": {
+          "bytes": 2633,
+          "sha256": "519ec994caf7c15f0a3d3f5992b8a1fea524030a7b22ee6595cc2eaeac5a03f4"
+        },
+        "members": [
+          {
+            "path": "analysis/current_perennial_root/provenance/software_versions.json",
+            "bytes": 180,
+            "sha256": "7fcff341c1e732bf09ed1f6029d3bd80934b16c1300f4de098201f31817ccedb",
+            "md5": "dbc53f82f25dbd3a07b6a612879a3b50"
+          },
+          {
+            "path": "analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv",
+            "bytes": 315,
+            "sha256": "9e6ef30aae40a20a084a469aa9d07b645255e286a6c8c9179ac2b84d74a2f6b3",
+            "md5": "e3280fd78273d8e9202c0b0efb8f6e72"
+          },
+          {
+            "path": "analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt",
+            "bytes": 713,
+            "sha256": "efdb00e2a09acd95af908df5f9d6ad4e59e1181ec27ea74f448936413d137854",
+            "md5": "982bcf2e505ad0fd499c5648b655683a"
+          },
+          {
+            "path": "reproducibility/PYTHON_ENVIRONMENT.txt",
+            "bytes": 77,
+            "sha256": "1705b5043d2b3e034154e536f27a9bee430002f63bac52b54d484fc69b391265",
+            "md5": "c91673ce5a0238a101cc02f0d7424d90"
+          },
+          {
+            "path": "reproducibility/PYTHON_REQUIREMENTS.csv",
+            "bytes": 183,
+            "sha256": "a247b6175481d4f326e552579fa0a2ae84675076681a18ef20269043b3f6f6a2",
+            "md5": "9ed301a7c8dffdb20131781025f37c37"
+          }
+        ]
+      },
+      {
+        "kind": "basemaps",
+        "archive_path": "figures/map/basemap/Census_Basemaps_2023_500k.zip",
+        "archive": {
+          "bytes": 14880087,
+          "sha256": "a95ae458cebb909b52287b9ba90cb09b54dd3be66fda9ade4b4cdeeb8a7cfa90"
+        },
+        "members": [
+          {
+            "path": "figures/map/basemap/cb_2023_us_county_500k.zip",
+            "bytes": 11630077,
+            "sha256": "99d6597b1fc7767deef62e01d28d8b5dcbd578e151855f7dc0d173cbf5bf0868",
+            "md5": "81d0b3b19d460b342c7354226ba4d567"
+          },
+          {
+            "path": "figures/map/basemap/cb_2023_us_state_500k.zip",
+            "bytes": 3249332,
+            "sha256": "4a9b4f5cf993cd23738ac49b58fbb556f1f097fcf5e404a9dc10348dd41f7432",
+            "md5": "3ac2c59dd7708dc9960fdc10c039095b"
+          }
+        ]
+      }
+    ],
+    "original_path_resolvers": {
+      "analysis/current_perennial_root/provenance/software_versions.json": "reproducibility/Method_and_Environment_Records.zip!analysis/current_perennial_root/provenance/software_versions.json",
+      "analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv": "reproducibility/Method_and_Environment_Records.zip!analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv",
+      "analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt": "reproducibility/Method_and_Environment_Records.zip!analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt",
+      "reproducibility/PYTHON_ENVIRONMENT.txt": "reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_ENVIRONMENT.txt",
+      "reproducibility/PYTHON_REQUIREMENTS.csv": "reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_REQUIREMENTS.csv",
+      "figures/map/basemap/cb_2023_us_county_500k.zip": "figures/map/basemap/Census_Basemaps_2023_500k.zip!figures/map/basemap/cb_2023_us_county_500k.zip",
+      "figures/map/basemap/cb_2023_us_state_500k.zip": "figures/map/basemap/Census_Basemaps_2023_500k.zip!figures/map/basemap/cb_2023_us_state_500k.zip"
+    },
+    "map_drawing_body_unchanged": true,
+    "other12scripts_byte_exact": true,
+    "source_workbook_archive_unchanged": {
+      "bytes": 535154,
+      "sha256": "e29a7e08077be96866997ff55df90d9edbed678855d0f894302a129d04917a0a"
+    },
+    "history_container_unchanged": {
+      "bytes": 10591363,
+      "sha256": "499d45a2fa45e65cfb63702089dad29a3be090181fa00008d3e2e3adaeb743cd"
+    },
+    "current_code_hashes_in_FILE_CHECKSUMS": true,
+    "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "source_manifest_and_workbook_hashes_preserved": true,
+    "all_R_scripts_byte_exact": true
   }
 }

@@ -194,5 +194,27 @@
     "orchard_stock_profile_source": "analysis/nonroot_current/saved_results/nonroot_plot_values.csv"
   },
   "stock_profile_source": "analysis/stock_endpoints_2026-10-20/saved_results/stock_profile_summary.csv",
-  "historical_manuscript_sha256_before_endpoint_header_2026_10_20": "e2d57af23eed97e144e62d7c35ee6b4e41a6b5d914a6f52ecb2feef4aa072f5a"
+  "historical_manuscript_sha256_before_endpoint_header_2026_10_20": "e2d57af23eed97e144e62d7c35ee6b4e41a6b5d914a6f52ecb2feef4aa072f5a",
+  "basemap_source_packaging_2026_10_21": {
+    "archive_path": "figures/map/basemap/Census_Basemaps_2023_500k.zip",
+    "archive": {
+      "bytes": 14880087,
+      "sha256": "a95ae458cebb909b52287b9ba90cb09b54dd3be66fda9ade4b4cdeeb8a7cfa90"
+    },
+    "original_members": [
+      {
+        "path": "figures/map/basemap/cb_2023_us_county_500k.zip",
+        "bytes": 11630077,
+        "sha256": "99d6597b1fc7767deef62e01d28d8b5dcbd578e151855f7dc0d173cbf5bf0868",
+        "md5": "81d0b3b19d460b342c7354226ba4d567"
+      },
+      {
+        "path": "figures/map/basemap/cb_2023_us_state_500k.zip",
+        "bytes": 3249332,
+        "sha256": "4a9b4f5cf993cd23738ac49b58fbb556f1f097fcf5e404a9dc10348dd41f7432",
+        "md5": "3ac2c59dd7708dc9960fdc10c039095b"
+      }
+    ],
+    "source_bytes_and_drawing_specification_unchanged": true
+  }
 }

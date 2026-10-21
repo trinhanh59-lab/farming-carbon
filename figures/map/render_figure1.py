@@ -6,6 +6,10 @@ Adapted from the reviewed V4 scientific map renderer. No statistical analysis.
 """
 from pathlib import Path
 import hashlib
+import csv
+import io
+import stat
+from zipfile import ZipFile
 import json
 import re
 import sys
@@ -25,6 +29,70 @@ HERE = Path(__file__).resolve().parent
 OUTPUT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else HERE.parent / "regenerated" / "map"
 if OUTPUT.exists():
     raise SystemExit("Output already exists; choose a new directory.")
+# Source ZIP handling only; the original boundary bytes and drawing remain unchanged.
+BASEMAP_IDENTITIES = {'county': {'path': 'figures/map/basemap/cb_2023_us_county_500k.zip', 'bytes': 11630077, 'sha256': '99d6597b1fc7767deef62e01d28d8b5dcbd578e151855f7dc0d173cbf5bf0868', 'md5': '81d0b3b19d460b342c7354226ba4d567'}, 'state': {'path': 'figures/map/basemap/cb_2023_us_state_500k.zip', 'bytes': 3249332, 'sha256': '4a9b4f5cf993cd23738ac49b58fbb556f1f097fcf5e404a9dc10348dd41f7432', 'md5': '3ac2c59dd7708dc9960fdc10c039095b'}}
+
+def safe_regular_zip_members(archive):
+    entries = archive.infolist()
+    names = [entry.filename for entry in entries]
+    if len({name.casefold() for name in names}) != len(names):
+        raise ValueError("Duplicate basemap archive member path.")
+    for entry in entries:
+        name = entry.filename
+        mode = (entry.external_attr >> 16) & 0xFFFF
+        if (not name or name.startswith("/") or re.match(r"^[A-Za-z]:", name)
+                or "\\" in name or re.search(r"[\x00-\x1f\x7f]", name)
+                or any(part in ("", ".", "..") for part in name.split("/"))
+                or entry.is_dir() or stat.S_IFMT(mode) not in (0, stat.S_IFREG)):
+            raise ValueError("Unsafe or nonregular basemap archive member.")
+    return names
+
+
+def verified_basemap_readers():
+    wrapper = HERE / "basemap" / "Census_Basemaps_2023_500k.zip"
+    payloads = {}
+    if wrapper.is_file():
+        with ZipFile(wrapper) as archive:
+            names = safe_regular_zip_members(archive)
+            expected_names = {record["path"] for record in BASEMAP_IDENTITIES.values()}
+            if set(names) != expected_names | {"FILE_MANIFEST.csv"}:
+                raise ValueError("Basemap wrapper must contain the two original ZIPs and manifest.")
+            if archive.testzip() is not None:
+                raise ValueError("Basemap wrapper CRC check failed.")
+            manifest = list(csv.DictReader(io.StringIO(archive.read("FILE_MANIFEST.csv").decode("utf-8"))))
+            if len(manifest) != 2 or {row["path"] for row in manifest} != expected_names:
+                raise ValueError("Basemap manifest identities differ.")
+            manifest_by_path = {row["path"]: row for row in manifest}
+            for kind, record in BASEMAP_IDENTITIES.items():
+                row = manifest_by_path[record["path"]]
+                if (int(row["bytes"]) != record["bytes"] or row["sha256"] != record["sha256"]
+                        or row["md5"] != record["md5"]):
+                    raise ValueError("Basemap manifest differs from the recorded source identity.")
+                payloads[kind] = archive.read(record["path"])
+    else:
+        for kind, record in BASEMAP_IDENTITIES.items():
+            payloads[kind] = (HERE / "basemap" / Path(record["path"]).name).read_bytes()
+    readers = {}
+    for kind, raw in payloads.items():
+        record = BASEMAP_IDENTITIES[kind]
+        if (len(raw) != record["bytes"] or hashlib.sha256(raw).hexdigest() != record["sha256"]
+                or hashlib.md5(raw).hexdigest() != record["md5"]):
+            raise ValueError("Basemap source bytes differ from the recorded ZIP.")
+        with ZipFile(io.BytesIO(raw)) as archive:
+            names = safe_regular_zip_members(archive)
+            if archive.testzip() is not None:
+                raise ValueError("Original Census ZIP CRC check failed.")
+            buffers = {}
+            for suffix in ("shp", "shx", "dbf"):
+                matches = [name for name in names if Path(name).suffix.lower() == "." + suffix]
+                if len(matches) != 1 or Path(matches[0]).stem != Path(record["path"]).stem:
+                    raise ValueError("Original Census ZIP lacks its expected shapefile components.")
+                buffers[suffix] = io.BytesIO(archive.read(matches[0]))
+            readers[kind] = shapefile.Reader(**buffers)
+    return readers
+
+
+BASEMAP_READERS = verified_basemap_readers()
 OUTPUT.mkdir(parents=True)
 SITES = [
     {"label": "Hedgerow", "lon": -122.001, "lat": 38.633, "color": "#D4A017"},
@@ -41,7 +109,7 @@ inverse = Transformer.from_crs(3310, 4326, always_xy=True)
 geod = Geod(ellps="GRS80")
 
 def read_ca(kind):
-    reader = shapefile.Reader(str(HERE / "basemap" / f"cb_2023_us_{kind}_500k.zip"))
+    reader = BASEMAP_READERS[kind]
     return {r.record["NAME"]: transform(boundary_transform.transform, shape(r.shape.__geo_interface__))
             for r in reader.iterShapeRecords() if r.record["STATEFP"] == "06"}
 

@@ -1,3 +1,0 @@
-Python 3.12.14
-Platform: darwin
-Dependency versions: python-requirements.txt
