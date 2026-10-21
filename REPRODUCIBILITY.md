@@ -73,7 +73,7 @@ Rscript --vanilla analysis/nonroot_current/run_nonroot_analysis.R --run-hedgerow
 Rscript --vanilla analysis/hedgerow_0_75/run_bulk_density_hedgerow75.R --run-analysis outputs_rerun/hedgerow_bulk_density
 ```
 
-The 19 October run fitted three hedgerow primary-response models and the supporting bulk-density model, with the existing model specifications. Its CSV results, fitted objects, diagnostics and session records are under `analysis/hedgerow_0_75/`. Other current output rows remain unchanged. Earlier five-interval hedgerow outputs remain labeled historical.
+The 19 October run fitted three hedgerow primary-response models and the supporting bulk-density model, with the existing model specifications. The dated non-root checkpoint and extra bulk-density outputs are now in `archive/Run_Support_History_2026-10-21.zip` at their original `analysis/hedgerow_0_75/` paths. Current non-root results, combined bulk-density tables and the supplement's equal-depth means/contrasts remain active. Other current output rows remain unchanged. Earlier five-interval hedgerow outputs remain labeled historical.
 
 ### Optional secondary archive
 
@@ -111,3 +111,9 @@ The execution record is in `analysis/nonroot_current/orchard_stock_0_75_2026-10-
 ## Current endpoint verification, 20 October
 
 The current endpoint module and saved results are under `analysis/stock_endpoints_2026-10-20/`. All 30 endpoint records, ten three-core groups, eight Welch results and 32 observed profile summaries were verified in isolation. The existing orchard p value of 0.381241 was reproduced. All source measurements and non-stock model outputs are unchanged. Current `nonroot_current/saved_results/` contains 18 omnibus rows, 64 EMMs, 44 pairwise rows, 28 marker tests and six diagnostic summaries. The previous cumulative-profile driver and complete CSVs are preserved as dated history.
+
+## Run-support archive, 21 October
+
+[Run_Support_History_2026-10-21.zip](archive/Run_Support_History_2026-10-21.zip) preserves 51 extra run records, cached objects and detailed diagnostic outputs at their original paths. The current source data, published result tables and all 13 scripts remain active. Default saved-result checks and current figure renderers do not read this archive. The annual selected-fit object used by validation and the July bulk-density reference outputs remain active.
+
+The optional plotters in `Supporting_Files_2026-10-20.zip` may use caches from the run-support ZIP. Restore both support archives into a separate repository copy before using those recorded objects, or regenerate them with the documented analysis order. Version-table `source_record` paths retain their original names; `source_archive` identifies records now stored in a ZIP.

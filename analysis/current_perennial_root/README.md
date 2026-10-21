@@ -7,7 +7,7 @@ This module contains the orchard and hedgerow root-density analysis reported in 
 - `perennial_root_workflow.R`: input checks, the current Gamma model, Wald tests and contrasts, mass-addition sensitivity, conditional residual diagnostics and scientific residual plots.
 - `input/perennial_root_input.csv`: the 60 modeled observations, including system, field, core, depth, working root mass and sampled volume.
 - `input/perennial_notebook_input.json`: the previously archived mass, volume and observed-density readback, preserved without changes.
-- `saved_results/`: frozen results recovered from the original saved notebook. These are supplied evidence, not results from executing the portable script.
+- `saved_results/`: frozen tests, contrasts, diagnostic and sensitivity CSVs recovered from the original saved notebook. The larger recovered `conditional_gamma_diagnostics.json` and `zero_adjustment_sensitivity.json` payloads are in the [run-support archive](../../archive/Run_Support_History_2026-10-21.zip). These are supplied evidence, not results from executing the portable script.
 - `provenance/`: source hashes, the selected analysis and recorded software versions.
 
 `root_weight` is the working dry mass in g. `root_weight_raw` preserves the earlier subtraction for provenance. In sample `143_MAS2_3_A2`, the working mass is the previously corrected 0.0086 g; the raw subtraction was −1.4427 g. The model uses the working value, with no new correction or clipping.

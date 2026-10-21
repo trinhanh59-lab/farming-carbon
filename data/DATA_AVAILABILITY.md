@@ -39,3 +39,7 @@ The selected historical 111- and 105-row CSVs remain at their existing paths bec
 - The editable drawing source for Figure S1. Its exact publication image and caption are supplied.
 
 The data-preparation check establishes agreement between the available measurement workbooks and the selected analysis inputs. It does not recover missing records or establish that the scientific models are adequate.
+
+## Saved run records
+
+The [run-support ZIP](../archive/Run_Support_History_2026-10-21.zip) holds derived diagnostic detail and cached/run records. These are not additional source measurements. All 23 source workbooks, current input tables, published result tables and publication workbook remain active.

@@ -50,3 +50,7 @@ R session files record the software used for the saved results. Earlier outputs 
 One field or margin represents each management category. The comparisons cannot separate management from field identity. Equal-depth log averages are not integrated profile root mass. The orchard correlated-depth carbon-stock analysis remains an external dependency; its final code and inference are not included here.
 
 FILE_MANIFEST.json lists the files in this resource and their hashes. No submission, public posting or final author approval is established by this archive.
+
+RUN-SUPPORT ARCHIVE, 21 OCTOBER 2026
+
+../archive/Run_Support_History_2026-10-21.zip now contains the dated hedgerow nonroot checkpoint, extra bulk-density outputs, unused model/simulation caches, session logs and diagnostic detail at their original relative paths. The dated descriptions above may refer to archive members. All 13 active scripts, original source data, current published numerical tables and figure inputs remain in the main folders. The annual selected-fit RDS and July bulk-density outputs were not moved.

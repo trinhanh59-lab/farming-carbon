@@ -29,3 +29,7 @@ The older panel crops and superseded hedgerow helper remain in the separate [ana
 The 19 October hedgerow revision rendered Figure 4 panels b–d from the restricted model results. The later font revision redrew complete Figures 2–4 from those saved values and the other approved display sources. The preceding isolated analysis verification was completed on 17 October 2026. Code/data release and licensing choices remain separate from the manuscript license. Census source conditions remain attached to its boundary files.
 
 The earlier 20 October orchard-stock restoration and its fitted panel are historical. The current endpoint revision replaces only panels 2c, 3c and 4c with observed means ±1SE; all a/b/d and legend pixels are preserved. The 32 means and SEs retain their source sample/core IDs. No old stock joint-test stars are used, and rendering fits no model or test.
+
+## Optional cached-object plots
+
+Some diagnostic helpers in `Supporting_Files_2026-10-20.zip` use objects now stored in [Run_Support_History_2026-10-21.zip](../archive/Run_Support_History_2026-10-21.zip). Restore both support archives into the same separate copy before using those saved objects. Current Figures 1–4 and the fixed S1/S2 assets do not read the run-support ZIP.

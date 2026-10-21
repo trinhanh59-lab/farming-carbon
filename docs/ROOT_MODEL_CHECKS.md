@@ -80,3 +80,7 @@ Supplemental Figure S2. Residual diagnostics for the corrected annual Gamma mode
 - Perennial sensitivity and conditional diagnostics: [current perennial root module](../analysis/current_perennial_root/), with the input table, five-constant results and diagnostic settings in its saved files.
 - Diagnostic rendering from saved residuals: the [support archive](../archive/Supporting_Files_2026-10-20.zip) retains `figures/render_saved_annual_diagnostics.R` at its original path. Restore it into a separate repository copy before use. This optional renderer runs no model fits or simulations; the current diagnostic PNG and all numerical checks remain active.
 - The publication workbook retains the unadjusted Table S1 contrasts, observed perennial profiles and current figure values. [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) describes execution and software versions.
+
+### Additional archived detail
+
+The [run-support archive](../archive/Run_Support_History_2026-10-21.zip) preserves unused optimizer/simulation caches, per-sample floor-detail files, optional diagnostic graphics and the two larger recovered perennial diagnostic/sensitivity JSON containers. The tables and figure above, their published summary CSVs and source residuals remain active. Restore the archive into a separate repository copy when inspecting the additional records or using optional cached-object plotters.

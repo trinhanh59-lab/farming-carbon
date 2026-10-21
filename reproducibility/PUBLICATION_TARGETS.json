@@ -989,5 +989,28 @@
     "restored_saved_residual_helper_matches_fixed_PNG": true,
     "selected_run_source_hashes_preserved_as_historical": true,
     "current_code_hashes_in_FILE_CHECKSUMS": true
+  },
+  "run_support_cleanup_2026_10_21": {
+    "active_tree_files": 143,
+    "relocated_originals": 51,
+    "archive_path": "archive/Run_Support_History_2026-10-21.zip",
+    "archive": {
+      "bytes": 6367394,
+      "sha256": "861298bf632e803d2649df57a644ea3e311f25220ccc5814504577f722bdeaa8"
+    },
+    "all13scripts_unchanged": true,
+    "all23source_workbooks_unchanged": true,
+    "published_results_and_paper_unchanged": true,
+    "four_conditional_and_two_documentation_options_excluded": true,
+    "source_record_paths_in_archive_are_original_names": true,
+    "current_default_and_preparation_checks_pass_without_all_three_archives": true,
+    "source_reconstruction_CSVs_byte_identical": 8,
+    "annual_selected_and_validation_CSVs_byte_identical": 8,
+    "nonroot_and_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "restored_saved_residual_helper_PNG_byte_identical": true,
+    "selected_run_source_hashes_preserved_as_historical": true,
+    "current_code_hashes_in_FILE_CHECKSUMS": true
   }
 }

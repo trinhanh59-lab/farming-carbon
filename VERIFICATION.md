@@ -51,3 +51,7 @@ MIT covers original project code, and CC BY 4.0 covers project data/results. Mac
 ## Historical orchard stock selection, earlier 20 October
 
 The author restored the existing July Gamma(log) cumulative-stock model over 0–75 cm, with depth-by-field fixed effects and a core random intercept. At that earlier checkpoint, the tables and Figure 3c used the profile model. It is now superseded by the selected endpoints. The earlier orchard-only endpoint record is preserved; its test is reproduced within the current all-system endpoint module. The isolated execution, settings, sample-linked residuals and session information are in `analysis/nonroot_current/orchard_stock_0_75_2026-10-20/`. Other model results and all measurements are unchanged. Reproduction does not validate the cumulative-depth covariance assumptions.
+
+## Run-support cleanup, 21 October
+
+The [run-support ZIP](archive/Run_Support_History_2026-10-21.zip) retains 51 extra diagnostic/cache and run-record files at their original paths, with their original hashes. All source data, current published tables, figures and 13 scripts remain active and unchanged. Current `FILE_CHECKSUMS.csv` describes the active repository; the archive's manifest describes its saved records. Numerical reproduction and model adequacy remain separate checks.
