@@ -7,7 +7,7 @@
 # contains sample 108's recorded 104.40 g working source-cell value. This script does not
 # apply that prior correction again or resolve the same-core evidence question.
 # Usage: Rscript --vanilla prepare_analysis_data.R ROOT_DIR NEW_OUTPUT_DIR [RAW_DIR]
-# RAW_DIR defaults to ROOT_DIR/data/source_measurements (original subfolders retained).
+# Sources default to data/Original_Source_Workbooks.zip; RAW_DIR keeps legacy loose-folder support.
 
 suppressPackageStartupMessages({
   library(dplyr)
@@ -26,7 +26,69 @@ ROOT_DIR <- normalizePath(args[[1]], mustWork=TRUE)
 OUTPUT_DIR <- path.expand(args[[2]])
 if (!grepl("^(/|[A-Za-z]:[/\\\\])", OUTPUT_DIR)) OUTPUT_DIR <- file.path(getwd(), OUTPUT_DIR)
 if (file.exists(OUTPUT_DIR) || dir.exists(OUTPUT_DIR)) stop("Output exists; choose a new directory.")
-DATA_DIR <- normalizePath(if(length(args)==3L) args[[3]] else file.path(ROOT_DIR,"data/source_measurements"), mustWork=TRUE)
+# Open original source workbooks from the current ZIP, or an explicitly supplied
+# legacy directory. Only temporary files are extracted; source bytes stay intact.
+resolve_source_workbooks <- function(repository, raw_dir = NULL) {
+  if (!is.null(raw_dir)) {
+    path <- normalizePath(raw_dir, mustWork = TRUE)
+    if (!dir.exists(path)) stop("RAW_DIR must be an existing source directory.")
+    return(list(directory = path, cleanup = NULL))
+  }
+  archive <- file.path(repository, "data/Original_Source_Workbooks.zip")
+  if (!file.exists(archive)) {
+    path <- normalizePath(file.path(repository, "data/source_measurements"), mustWork = TRUE)
+    if (!dir.exists(path)) stop("The source ZIP or restored source directory is required.")
+    return(list(directory = path, cleanup = NULL))
+  }
+  expected <- read.csv(file.path(repository, "data/source_measurements/SOURCE_FILES.csv"),
+    stringsAsFactors = FALSE, check.names = FALSE)
+  stopifnot(nrow(expected) == 23L, !anyDuplicated(expected$file),
+    all(startsWith(expected$file, "data/source_measurements/")),
+    all(grepl("\\.xlsx$", expected$file)))
+  entries <- utils::unzip(archive, list = TRUE)$Name
+  unsafe <- vapply(entries, function(entry) {
+    parts <- strsplit(entry, "/", fixed = TRUE)[[1]]
+    !nzchar(entry) || startsWith(entry, "/") ||
+      grepl("^[A-Za-z]:", entry) || grepl("\\\\", entry) ||
+      grepl("[[:cntrl:]]", entry) || any(parts %in% c("", ".", ".."))
+  }, logical(1))
+  if (any(unsafe) || anyDuplicated(tolower(entries)))
+    stop("Unsafe or duplicate source ZIP member path; nothing was extracted.")
+  if (!setequal(entries, c("FILE_MANIFEST.csv", expected$file)))
+    stop("The source ZIP must contain exactly the 23 recorded workbooks and manifest.")
+  temporary <- tempfile("farming-carbon-sources-")
+  if (!dir.create(temporary)) stop("Cannot create isolated source directory.")
+  success <- FALSE
+  on.exit(if (!success) unlink(temporary, recursive = TRUE), add = TRUE)
+  utils::unzip(archive, files = c("FILE_MANIFEST.csv", expected$file), exdir = temporary)
+  extracted <- file.path(temporary, c("FILE_MANIFEST.csv", expected$file))
+  resolved <- normalizePath(extracted, mustWork = TRUE)
+  if (any(nzchar(Sys.readlink(extracted))) || any(!file_test("-f", extracted)) ||
+      any(!startsWith(resolved, paste0(normalizePath(temporary), "/"))))
+    stop("Source ZIP members must be regular files inside the temporary directory.")
+  manifest <- read.csv(extracted[1], stringsAsFactors = FALSE, check.names = FALSE)
+  stopifnot(all(c("path", "bytes", "sha256", "md5") %in% names(manifest)),
+    nrow(manifest) == 23L, !anyDuplicated(manifest$path),
+    setequal(manifest$path, expected$file))
+  index <- match(expected$file, manifest$path)
+  paths <- extracted[-1]
+  actual_sha <- vapply(paths, function(path)
+    digest::digest(file = path, algo = "sha256", serialize = FALSE), character(1))
+  stopifnot(identical(as.numeric(file.info(paths)$size), as.numeric(expected$bytes)),
+    identical(as.numeric(manifest$bytes[index]), as.numeric(expected$bytes)),
+    identical(unname(actual_sha), expected$sha256),
+    identical(manifest$sha256[index], expected$sha256),
+    identical(unname(tools::md5sum(paths)), manifest$md5[index]))
+  # Keep the token alive for the script; cleanup also runs on normal/error exit.
+  cleanup <- new.env(parent = emptyenv())
+  cleanup$directory <- temporary
+  reg.finalizer(cleanup, function(token) unlink(token$directory, recursive = TRUE), onexit = TRUE)
+  success <- TRUE
+  list(directory = file.path(temporary, "data/source_measurements"), cleanup = cleanup)
+}
+
+source_inputs <- resolve_source_workbooks(ROOT_DIR, if (length(args) == 3L) args[[3]] else NULL)
+DATA_DIR <- source_inputs$directory
 # Resolve a future output path without creating it, including any .. components.
 resolve_future <- function(path) {
   ancestor <- path; rest <- character()

@@ -29,7 +29,7 @@ This extracts only the outer manifest and the original analysis-history ZIP to a
 Rscript --vanilla scripts/prepare_analysis_data.R . outputs_rerun/data_preparation
 ```
 
-Preparation reads twelve working measurement spreadsheets and preserves their original root masses separately from recorded working-mass corrections. It rebuilds the full 111-record table, current 96-row input and inclusion flags, and compares them with the publication workbook. The retained diameter is the author-confirmed 3.81 cm. Sample 108 uses the author-approved 104.40 g neighboring-core estimate; neither confirmation independently verifies the original cutting-tip measurement or same-core mass. See [DATA_AVAILABILITY.md](data/DATA_AVAILABILITY.md) for source records, corrections and missing laboratory exports. Preparation creates CSVs and checks, not Word or Excel files.
+Preparation opens `data/Original_Source_Workbooks.zip` automatically, verifies its 23 members against the manifest and `SOURCE_FILES.csv`, and extracts them only to a temporary directory. It reads twelve working measurement spreadsheets and preserves their original root masses separately from recorded working-mass corrections. It rebuilds the full 111-record table, current 96-row input and inclusion flags, and compares them with the publication workbook. The retained diameter is the author-confirmed 3.81 cm. Sample 108 uses the author-approved 104.40 g neighboring-core estimate; neither confirmation independently verifies the original cutting-tip measurement or same-core mass. See [DATA_AVAILABILITY.md](data/DATA_AVAILABILITY.md) for source records, corrections and missing laboratory exports. Preparation creates CSVs and checks, not Word or Excel files.
 
 Run the annual model before its validation script, which reads the selected saved fits and contrasts:
 
@@ -112,3 +112,11 @@ The script checks identities, endpoint depths, core counts, twelve source hashes
 Use [figures/README.md](figures/README.md) for the map and profile renderers. Rendering uses supplied tables without fitting models. The five publication images and root diagnostic image remain active; S1's editable drawing source was not located, so its exact image/caption are preserved.
 
 [archive/README.md](archive/README.md) identifies the four inner ZIPs, 187 original records and original module guides. Restore the outer container and then the needed inner ZIP into a separate copy before using optional helpers. The separate orchard covariance/bootstrap workflow remains historical and excluded from the current paper/supplement. Current `reproducibility/PUBLICATION_TARGETS.json` identifies selected results and nested locations; `FILE_CHECKSUMS.csv` is the active integrity list. Dated hashes/source versions remain labeled history. Numerical reproduction checks agreement with supplied results; it does not recover missing original measurements or establish model validity.
+
+## Original source workbook packaging
+
+[Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) contains the 23 complete source workbooks at their original `data/source_measurements/...` paths, plus a 23-row integrity manifest. Their bytes and original SHA-256 values are unchanged. This is current input data; the separate history/support container remains optional.
+
+Preparation and endpoint source checks validate paths, regular files, sizes, SHA-256 and MD5 before using temporary extracted files. Temporary sources are cleaned on exit. Preparation still accepts an explicit loose source directory as its third `RAW_DIR` argument; both scripts also support the original restored directory layout when the source ZIP is absent. For manual inspection, extract the ZIP into a new directory, preserving folders. The loose source directory is then `NEW_DIRECTORY/data/source_measurements/`.
+
+Saved source tables retain original semantic filenames and workbook hashes. A new endpoint run records the current preparation/endpoint code hashes, which differ only because of source-access packaging. The supplied `saved_results/source_sha256.csv` remains the dated selected-run record; current code identities are in `FILE_CHECKSUMS.csv`.

@@ -2194,5 +2194,176 @@
     "malformed_container_guards_pass": true,
     "selected_run_source_hashes_preserved_as_historical": true,
     "current_code_hashes_in_FILE_CHECKSUMS": true
+  },
+  "source_workbook_packaging_2026_10_21": {
+    "active_tree_files": 98,
+    "archive_path": "data/Original_Source_Workbooks.zip",
+    "archive": {
+      "bytes": 535154,
+      "sha256": "e29a7e08077be96866997ff55df90d9edbed678855d0f894302a129d04917a0a"
+    },
+    "workbook_members": 23,
+    "manifest_rows": 23,
+    "all_workbook_bytes_and_original_source_hashes_unchanged": true,
+    "all13script_paths_retained": true,
+    "history_container_unchanged": {
+      "bytes": 10591363,
+      "sha256": "499d45a2fa45e65cfb63702089dad29a3be090181fa00008d3e2e3adaeb743cd"
+    },
+    "frozen_selected_source_sha_table_preserved_as_historical": true,
+    "current_source_locations": {
+      "data/source_measurements/14C/HRDY_21Nov2024.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/14C/HRDY_21Nov2024.xlsx",
+        "bytes": 46032,
+        "sha256": "c4954a619c068dcd46975dfb82378010e780247a03f3bc8c69dbd8799c7b007e"
+      },
+      "data/source_measurements/14C/IKON-LAHE_21Nov_2024.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/14C/IKON-LAHE_21Nov_2024.xlsx",
+        "bytes": 43367,
+        "sha256": "fa1f7d34be63f12ca0dd8f7775ab5ced400b66cdae2ee7fcb49f6197fceb02bd"
+      },
+      "data/source_measurements/14C/MAS_21Nov_2024.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/14C/MAS_21Nov_2024.xlsx",
+        "bytes": 25930,
+        "sha256": "75558bcba951301bc38b6b93b24d02aea5a062cf3aa9172fb1c5b888f3804333"
+      },
+      "data/source_measurements/core cutting/core measurements - hedgerows.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/core cutting/core measurements - hedgerows.xlsx",
+        "bytes": 14039,
+        "sha256": "81eb8194908d980783934fefae37efdccf8162a86321c3693f71d3d82f3742fb"
+      },
+      "data/source_measurements/core cutting/core measurements copy.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/core cutting/core measurements copy.xlsx",
+        "bytes": 14102,
+        "sha256": "2b0efb6568126d0f2ca822eb2c80c371fc2a6705bec1ab4500c50eaf152214c7"
+      },
+      "data/source_measurements/metadata/depth increments.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/metadata/depth increments.xlsx",
+        "bytes": 9372,
+        "sha256": "430d8d3b9a55598271b20663d3f5a97c561095cff04f06f14b3610532d597946"
+      },
+      "data/source_measurements/metadata/metadata - final.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/metadata/metadata - final.xlsx",
+        "bytes": 26182,
+        "sha256": "bc8edfc7a26e6bb9670115edcd2203bcb93a9e6bb7237647d129b4657b5b3727"
+      },
+      "data/source_measurements/metadata/metadata - hedgerows - final.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/metadata/metadata - hedgerows - final.xlsx",
+        "bytes": 15003,
+        "sha256": "94cd67c9adf6e83ff7ce78f40368eb9b52345349340af52251e416863e8bfad1"
+      },
+      "data/source_measurements/original_records/Fresno_field_hole_and_core_lengths_June2024.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/original_records/Fresno_field_hole_and_core_lengths_June2024.xlsx",
+        "bytes": 16080,
+        "sha256": "9ab9e87c8b1c5d9f9527649f8211b005ab1d68e44c2d2125f607bdbf61916608"
+      },
+      "data/source_measurements/original_records/Fresno_root_envelope_before_sample13_tare_correction.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/original_records/Fresno_root_envelope_before_sample13_tare_correction.xlsx",
+        "bytes": 19207,
+        "sha256": "2a6cb706bd657f152d03b9b34282e073c11b0f9899bfcd648c099cef9a84968d"
+      },
+      "data/source_measurements/original_records/Fresno_soil_moisture_before_M118_correction.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/original_records/Fresno_soil_moisture_before_M118_correction.xlsx",
+        "bytes": 59982,
+        "sha256": "11c76241541003ef34776de8d821d7e658e21ef7fef27663794a451e70c0d1de"
+      },
+      "data/source_measurements/original_records/hedgerow_field_core_collection.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/original_records/hedgerow_field_core_collection.xlsx",
+        "bytes": 14044,
+        "sha256": "4224153afa3aa204c3f4a09f669569348d40fb5bc859fadcd017009efbf8650d"
+      },
+      "data/source_measurements/primary_reports/CAMS/Guzman_PettRidge_Finstad_FNreport_09162024.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/CAMS/Guzman_PettRidge_Finstad_FNreport_09162024.xlsx",
+        "bytes": 12854,
+        "sha256": "7c118d7e7a82cc168605db704e94b25e3f5024d57dc4314504834fb625cba2f5"
+      },
+      "data/source_measurements/primary_reports/CAMS/Guzman_PettRidge_Finstad_report_091824.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/CAMS/Guzman_PettRidge_Finstad_report_091824.xlsx",
+        "bytes": 14050,
+        "sha256": "f4607e99b056af60b2cebcc34cd3e6e1ab5ccd790fe051541af57d23245bc503"
+      },
+      "data/source_measurements/primary_reports/CAMS/Guzman_PettRidge_Finstad_report_110624.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/CAMS/Guzman_PettRidge_Finstad_report_110624.xlsx",
+        "bytes": 13242,
+        "sha256": "468c837cd4fbc93c26c3c182b51878d0ecea9e35db24772f296f44ab379ca549"
+      },
+      "data/source_measurements/primary_reports/CAMS/Guzman_Pettridge_Finstad_report_081824.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/CAMS/Guzman_Pettridge_Finstad_report_081824.xlsx",
+        "bytes": 13840,
+        "sha256": "609d8603c4e9c21a5241e170ea77b4455b88fb3a6b611ecec7fde14d4949ef50"
+      },
+      "data/source_measurements/primary_reports/CAMS/Guzman_Pettridge_Finstad_report_082724.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/CAMS/Guzman_Pettridge_Finstad_report_082724.xlsx",
+        "bytes": 14071,
+        "sha256": "72a37e70d0d9226226004f61738ae9c17353f82e85349020698a422e35b529ae"
+      },
+      "data/source_measurements/primary_reports/CAMS/Guzman_Pettridge_Finstad_report_090624.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/CAMS/Guzman_Pettridge_Finstad_report_090624.xlsx",
+        "bytes": 14029,
+        "sha256": "22af664531016918fb692fa987fd685f3a1fa0fb636ab3df84f8df1b55c55a7d"
+      },
+      "data/source_measurements/primary_reports/EA/Fresno_Davis_foilball.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/primary_reports/EA/Fresno_Davis_foilball.xlsx",
+        "bytes": 25632,
+        "sha256": "1e630020837663e8ac9a41dbbad071e7280d6af9600fb113c9f07ba216afa86b"
+      },
+      "data/source_measurements/roots/Davis - Root Envelope.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/roots/Davis - Root Envelope.xlsx",
+        "bytes": 11305,
+        "sha256": "409c495c921b9962571f198860f3c324402c2c374a90049fbca4d222aedfc892"
+      },
+      "data/source_measurements/roots/Envelope Weight - Fresno.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/roots/Envelope Weight - Fresno.xlsx",
+        "bytes": 23840,
+        "sha256": "37504418d0045a0f5e3e2395f1249ade05aa6c8ade1a3e1c6da2a536e3309f68"
+      },
+      "data/source_measurements/soil moisture/soil moisture - Fresno.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/soil moisture/soil moisture - Fresno.xlsx",
+        "bytes": 50659,
+        "sha256": "b7fe217c26c0448d19ce746d9c5b5dd5ae122d992b853b8cba64ca4feeea6ffa"
+      },
+      "data/source_measurements/soil moisture/soil moisture - hedgerows.xlsx": {
+        "archive": "data/Original_Source_Workbooks.zip",
+        "member": "data/source_measurements/soil moisture/soil moisture - hedgerows.xlsx",
+        "bytes": 31140,
+        "sha256": "e2b24af03efee790f1916523602dcbf7600bcce42c3fc411a648a8c206a25202"
+      }
+    },
+    "code_changes": [
+      "Preparation resolves verified ZIP members to a temporary source directory, retaining explicit RAW_DIR/legacy directory support.",
+      "Endpoint source identity/provenance reads verified temporary members while retaining17original semantic source paths."
+    ],
+    "ZIP_source_preparation_and_legacy_RAW_DIR_agree": true,
+    "source_reconstruction_CSVs_byte_identical": 8,
+    "annual_selected_and_validation_CSVs_byte_identical": 8,
+    "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "source_manifest_and_workbook_hashes_preserved": true,
+    "endpoint_new_run_only_two_current_code_fingerprints_change": true,
+    "selected_run_source_hashes_preserved_as_historical": true,
+    "current_code_hashes_in_FILE_CHECKSUMS": true
   }
 }

@@ -24,7 +24,7 @@ These commands check files and saved calculations without fitting models. Run an
 
 ## Source records and history
 
-The [data documentation](data/DATA_AVAILABILITY.md) describes the original and compiled records, corrections and unavailable laboratory exports. It also explains the author-confirmed diameter and estimated mass for sample 108.
+[Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) contains all 23 supplied source workbooks at their original paths. The [data documentation](data/DATA_AVAILABILITY.md) describes these records, corrections and unavailable laboratory exports. It also explains the author-confirmed diameter and estimated mass for sample 108.
 
 [Earlier analyses and supporting files](archive/README.md) are preserved in one container. It holds the four original history ZIPs and module guides; original source data, selected analyses and published results remain in the main folders.
 

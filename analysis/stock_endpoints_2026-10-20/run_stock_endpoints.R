@@ -104,7 +104,69 @@ source_manifest_relative <- "data/processed/source_measurement_manifest.csv"
 source_manifest <- read_input(source_manifest_relative)
 stopifnot(nrow(source_manifest) == 12L)
 raw_relative <- paste0("data/source_measurements/", source_manifest$file)
-raw_paths <- file.path(repository, raw_relative)
+# Open original source workbooks from the current ZIP, or an explicitly supplied
+# legacy directory. Only temporary files are extracted; source bytes stay intact.
+resolve_source_workbooks <- function(repository, raw_dir = NULL) {
+  if (!is.null(raw_dir)) {
+    path <- normalizePath(raw_dir, mustWork = TRUE)
+    if (!dir.exists(path)) stop("RAW_DIR must be an existing source directory.")
+    return(list(directory = path, cleanup = NULL))
+  }
+  archive <- file.path(repository, "data/Original_Source_Workbooks.zip")
+  if (!file.exists(archive)) {
+    path <- normalizePath(file.path(repository, "data/source_measurements"), mustWork = TRUE)
+    if (!dir.exists(path)) stop("The source ZIP or restored source directory is required.")
+    return(list(directory = path, cleanup = NULL))
+  }
+  expected <- read.csv(file.path(repository, "data/source_measurements/SOURCE_FILES.csv"),
+    stringsAsFactors = FALSE, check.names = FALSE)
+  stopifnot(nrow(expected) == 23L, !anyDuplicated(expected$file),
+    all(startsWith(expected$file, "data/source_measurements/")),
+    all(grepl("\\.xlsx$", expected$file)))
+  entries <- utils::unzip(archive, list = TRUE)$Name
+  unsafe <- vapply(entries, function(entry) {
+    parts <- strsplit(entry, "/", fixed = TRUE)[[1]]
+    !nzchar(entry) || startsWith(entry, "/") ||
+      grepl("^[A-Za-z]:", entry) || grepl("\\\\", entry) ||
+      grepl("[[:cntrl:]]", entry) || any(parts %in% c("", ".", ".."))
+  }, logical(1))
+  if (any(unsafe) || anyDuplicated(tolower(entries)))
+    stop("Unsafe or duplicate source ZIP member path; nothing was extracted.")
+  if (!setequal(entries, c("FILE_MANIFEST.csv", expected$file)))
+    stop("The source ZIP must contain exactly the 23 recorded workbooks and manifest.")
+  temporary <- tempfile("farming-carbon-sources-")
+  if (!dir.create(temporary)) stop("Cannot create isolated source directory.")
+  success <- FALSE
+  on.exit(if (!success) unlink(temporary, recursive = TRUE), add = TRUE)
+  utils::unzip(archive, files = c("FILE_MANIFEST.csv", expected$file), exdir = temporary)
+  extracted <- file.path(temporary, c("FILE_MANIFEST.csv", expected$file))
+  resolved <- normalizePath(extracted, mustWork = TRUE)
+  if (any(nzchar(Sys.readlink(extracted))) || any(!file_test("-f", extracted)) ||
+      any(!startsWith(resolved, paste0(normalizePath(temporary), "/"))))
+    stop("Source ZIP members must be regular files inside the temporary directory.")
+  manifest <- read.csv(extracted[1], stringsAsFactors = FALSE, check.names = FALSE)
+  stopifnot(all(c("path", "bytes", "sha256", "md5") %in% names(manifest)),
+    nrow(manifest) == 23L, !anyDuplicated(manifest$path),
+    setequal(manifest$path, expected$file))
+  index <- match(expected$file, manifest$path)
+  paths <- extracted[-1]
+  actual_sha <- vapply(paths, function(path)
+    digest::digest(file = path, algo = "sha256", serialize = FALSE), character(1))
+  stopifnot(identical(as.numeric(file.info(paths)$size), as.numeric(expected$bytes)),
+    identical(as.numeric(manifest$bytes[index]), as.numeric(expected$bytes)),
+    identical(unname(actual_sha), expected$sha256),
+    identical(manifest$sha256[index], expected$sha256),
+    identical(unname(tools::md5sum(paths)), manifest$md5[index]))
+  # Keep the token alive for the script; cleanup also runs on normal/error exit.
+  cleanup <- new.env(parent = emptyenv())
+  cleanup$directory <- temporary
+  reg.finalizer(cleanup, function(token) unlink(token$directory, recursive = TRUE), onexit = TRUE)
+  success <- TRUE
+  list(directory = file.path(temporary, "data/source_measurements"), cleanup = cleanup)
+}
+
+source_inputs <- resolve_source_workbooks(repository)
+raw_paths <- file.path(source_inputs$directory, source_manifest$file)
 stopifnot(all(file.exists(raw_paths)))
 raw_sha <- vapply(raw_paths, sha256, character(1))
 stopifnot(identical(unname(raw_sha), source_manifest$sha256))
@@ -218,9 +280,11 @@ write_exact(markers, "endpoint_marker_tests.csv")
 source_relative <- c(input_relative, "data/processed/sample_level_full_111_current.csv",
   source_manifest_relative, "scripts/prepare_analysis_data.R",
   sub(paste0(repository, "/"), "", script, fixed = TRUE), raw_relative)
+source_paths <- file.path(repository, source_relative)
+source_paths[match(raw_relative, source_relative)] <- raw_paths
 sources <- data.frame(file = source_relative,
-  bytes = as.numeric(file.info(file.path(repository, source_relative))$size),
-  sha256 = vapply(file.path(repository, source_relative), sha256, character(1)))
+  bytes = as.numeric(file.info(source_paths)$size),
+  sha256 = vapply(source_paths, sha256, character(1)))
 write_exact(sources, "source_sha256.csv")
 capture.output(sessionInfo(), file = file.path(output, "R_session_info.txt"))
 writeLines(c(

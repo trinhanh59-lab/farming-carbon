@@ -63,3 +63,7 @@ The [run-support archive](archive/History_and_Support_2026-10-21.zip) contains t
 ## Additional archived records
 
 The [additional support ZIP](archive/History_and_Support_2026-10-21.zip) contains the duplicate CSV coverage map, old analysis README/hash list, dated verification audit, earlier Figure 2 review provenance, intermediate 105-row table, preparation-check snapshots, Sheets/notebook input readbacks and three July bulk-density outputs. Their original paths are retained inside the ZIP. The current map above, repository-wide checksum list and current result/input files remain active. Current annual/orchard bulk-density rows are retained in `analysis/hedgerow_0_75/current_bulk_density/`; current hedgerow support uses 0–75 cm. The active full 111-row table preserves every record in the archived intermediate 105-row table.
+
+## Current source workbook container
+
+All 23 original source workbooks are in [data/Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) at their original full relative paths, with an integrity manifest. `data/source_measurements/SOURCE_FILES.csv` maps every original path/hash to its ZIP member. Preparation and endpoint source checks open verified temporary members automatically; current CSV inputs, published outputs and 13 script paths remain active. Recorded workbook identities and the frozen selected-run source-hash table are unchanged.
