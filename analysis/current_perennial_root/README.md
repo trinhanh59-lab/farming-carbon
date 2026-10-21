@@ -6,7 +6,7 @@ This module contains the orchard and hedgerow root-density analysis reported in 
 
 - `perennial_root_workflow.R`: input checks, the current Gamma model, Wald tests and contrasts, mass-addition sensitivity, conditional residual diagnostics and scientific residual plots.
 - `input/perennial_root_input.csv`: the 60 modeled observations, including system, field, core, depth, working root mass and sampled volume.
-- `input/perennial_notebook_input.json`: the previously archived mass, volume and observed-density readback, preserved without changes.
+- [Additional support archive](../../archive/Additional_Support_2026-10-21.zip), member `analysis/current_perennial_root/input/perennial_notebook_input.json`: the mass, volume and observed-density readback, preserved without changes. The active input is `input/perennial_root_input.csv`.
 - `saved_results/`: frozen tests, contrasts, diagnostic and sensitivity CSVs recovered from the original saved notebook. The larger recovered `conditional_gamma_diagnostics.json` and `zero_adjustment_sensitivity.json` payloads are in the [run-support archive](../../archive/Run_Support_History_2026-10-21.zip). These are supplied evidence, not results from executing the portable script.
 - `provenance/`: source hashes, the selected analysis and recorded software versions.
 
@@ -54,6 +54,6 @@ Before any fitting, the workflow normalizes the output path and requires a new o
 
 The recovered notebook cell extracts and duplicate readbacks are preserved at their original `analysis/current_perennial_source/` paths in the [support archive](../../archive/Supporting_Files_2026-10-20.zip). The current portable code, inputs and saved results remain in this module.
 
-The portable code was recovered and checked against the saved notebook and paper/S1. An isolated execution on 17 October 2026 then completed the selected fits, all five mass-addition scenarios and conditional diagnostics. Numerical changes were below the precision reported in the paper; diagnostic p-values and floor counts reproduced. The supplied reference results remain unchanged. See the repository verification report for the measured differences and checked environment.
+The portable code was recovered and checked against the saved notebook and paper/S1. An isolated execution on 17 October 2026 then completed the selected fits, all five mass-addition scenarios and conditional diagnostics. Numerical changes were below the precision reported in the paper; diagnostic p-values and floor counts reproduced. The supplied reference results remain unchanged. The dated repository verification report is preserved in the additional support archive; the current environment and commands are in [REPRODUCIBILITY.md](../../REPRODUCIBILITY.md).
 
 The original fitted model objects and full 1,000-draw simulation matrices were not retained in the source archive. The isolated execution produced new fitted and simulation objects separately. The supplied results retain model-status summaries, tests, contrasts, per-observation residuals and below-floor probabilities. The exact methods and seeds are present for a future rerun. These missing historical objects are not missing analysis specifications.

@@ -72,7 +72,7 @@
     }
   },
   "input_origin": "Perennial rows from the source notebook embedded CSV, using effective depth bottoms and excluding hedgerow intervals deeper than 75 cm.",
-  "input_record_check": "The 60 source mass and volume pairs match input/perennial_notebook_input.json.",
+  "input_record_check": "The 60 source mass and volume pairs match the retained input/perennial_root_input.csv. The original input/perennial_notebook_input.json readback is preserved as analysis/current_perennial_root/input/perennial_notebook_input.json in archive/Additional_Support_2026-10-21.zip.",
   "correction_preserved": {
     "sample_code": "143_MAS2_3_A2",
     "root_weight_raw_g": -1.4427,
@@ -89,5 +89,9 @@
     "Use the original explicit perennial diagnostic seeds (20261116 and 20261117), retaining conditional simulations and the floor check.",
     "Define functions without fitting or simulation on source; new results use a separate outputs_rerun directory."
   ],
-  "verification_scope": "Source recovery, saved-result readback, input checks and syntax checks only. No model fitting, residual simulation or end-to-end rerun was performed."
+  "verification_scope": "Source recovery, saved-result readback, input checks and syntax checks only. No model fitting, residual simulation or end-to-end rerun was performed.",
+  "archived_input_readback": {
+    "archive": "archive/Additional_Support_2026-10-21.zip",
+    "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+  }
 }

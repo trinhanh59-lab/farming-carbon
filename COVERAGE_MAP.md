@@ -57,3 +57,7 @@ The isolated selected-analysis execution on 17 October is complete. Annual and r
 ## Archived run detail
 
 The [run-support archive](archive/Run_Support_History_2026-10-21.zip) contains the dated hedgerow non-root checkpoint, extra bulk-density outputs, unused model caches, run logs and detailed diagnostic payloads. Current publication tables and figure inputs remain at the paths listed above. Restore archive members into a separate repository copy when inspecting those historical records.
+
+## Additional archived records
+
+The [additional support ZIP](archive/Additional_Support_2026-10-21.zip) contains the duplicate CSV coverage map, old analysis README/hash list, dated verification audit, earlier Figure 2 review provenance, intermediate 105-row table, preparation-check snapshots, Sheets/notebook input readbacks and three July bulk-density outputs. Their original paths are retained inside the ZIP. The current map above, repository-wide checksum list and current result/input files remain active. Current annual/orchard bulk-density rows are retained in `analysis/hedgerow_0_75/current_bulk_density/`; current hedgerow support uses 0–75 cm. The active full 111-row table preserves every record in the archived intermediate 105-row table.

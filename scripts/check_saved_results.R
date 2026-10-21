@@ -263,4 +263,4 @@ if (archive_mode) {
   cat("Historical orchard archive checks were not requested; use --archive to include them.\n")
 }
 cat("The workbook is protected by the repository file checksums.\n")
-cat("These checks verify saved arithmetic only; see VERIFICATION.md for execution status and scientific limits.\n")
+cat("These checks verify saved arithmetic only; see REPRODUCIBILITY.md for execution status and scientific limits.\n")

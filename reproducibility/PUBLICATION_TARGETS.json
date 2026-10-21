@@ -1012,5 +1012,126 @@
     "restored_saved_residual_helper_PNG_byte_identical": true,
     "selected_run_source_hashes_preserved_as_historical": true,
     "current_code_hashes_in_FILE_CHECKSUMS": true
+  },
+  "additional_support_cleanup_2026_10_21": {
+    "active_tree_files": 127,
+    "relocated_originals": 17,
+    "archive_path": "archive/Additional_Support_2026-10-21.zip",
+    "archive": {
+      "bytes": 52324,
+      "sha256": "2c5e32e79f8dc207e37dae683a29785cae8010e3976e822f9ce4b48265955e45"
+    },
+    "all23source_workbooks_unchanged": true,
+    "all13script_paths_retained": true,
+    "published_results_and_paper_unchanged": true,
+    "historical_source_records_preserved": true,
+    "current_locations_for_archived_or_historical_paths": {
+      "COVERAGE_MAP.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "COVERAGE_MAP.csv"
+      },
+      "VERIFICATION.md": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "VERIFICATION.md"
+      },
+      "analysis/FILE_MANIFEST.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/FILE_MANIFEST.json"
+      },
+      "analysis/README.txt": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/README.txt"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt"
+      },
+      "analysis/current_perennial_root/input/perennial_notebook_input.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+      },
+      "analysis/figure2_review/figure2_corrected_provenance.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/figure2_review/figure2_corrected_provenance.json"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv"
+      },
+      "data/processed/depth_label_crosscheck.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/depth_label_crosscheck.csv"
+      },
+      "data/processed/missing_response_counts.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/missing_response_counts.csv"
+      },
+      "data/processed/preparation_validation.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation.csv"
+      },
+      "data/processed/preparation_validation_hedgerow75_2026-10-19.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv"
+      },
+      "data/processed/sample_level_analysis_105_current.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/sample_level_analysis_105_current.csv"
+      },
+      "reproducibility/verification_summary.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "reproducibility/verification_summary.json"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/input/live_root_density.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json"
+      },
+      "analysis/current_perennial_source/input/perennial_notebook_input.json": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+      },
+      "reproduction_2026-10-19/data_preparation/depth_label_crosscheck.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/depth_label_crosscheck.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/missing_response_counts.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/missing_response_counts.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/preparation_validation.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/sample_level_analysis_105_current.csv": {
+        "archive": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/sample_level_analysis_105_current.csv"
+      }
+    },
+    "code_changes": [
+      "Legacy bulk-density driver creates the missing output directory.",
+      "Saved-result checker printed guide reference now names REPRODUCIBILITY.md."
+    ],
+    "default_checks_and_preparation_pass_without_all_four_archives": true,
+    "source_reconstruction_CSVs_byte_identical": 8,
+    "annual_selected_and_validation_CSVs_byte_identical": 8,
+    "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "restored_saved_residual_helper_PNG_byte_identical": true,
+    "legacy_BD_driver_creates_missing_output_directory": true,
+    "selected_run_source_hashes_preserved_as_historical": true,
+    "current_code_hashes_in_FILE_CHECKSUMS": true
   }
 }

@@ -1,3 +1,0 @@
-Live Root density!A1:L37 matches all 36 corrected annual records: IDs, codes, management, cores, depths, volumes, original and working masses, densities and zero flags.
-Source workbook: https://docs.google.com/spreadsheets/d/1U6rKr-eYnzB5zhFS-mF4CqJ6im19iapc9O03pIfkgI8/edit#gid=232771901
-Snapshot SHA256: dbd8ac31d10140c9b0bc7fbd2f86da82fb15e5ad428d35ea1d4c2c3114796d96

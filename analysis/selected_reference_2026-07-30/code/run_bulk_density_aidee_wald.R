@@ -18,6 +18,10 @@ stopifnot(length(script_arg) == 1)
 script_dir <- dirname(normalizePath(sub("^--file=", "", script_arg), mustWork = TRUE))
 input_path <- file.path(script_dir, "..", "data", "sample_level_analysis_105.csv")
 output_dir <- file.path(script_dir, "..", "outputs")
+if (!dir.exists(output_dir)) {
+  dir.create(output_dir, recursive = TRUE)
+}
+stopifnot(dir.exists(output_dir))
 
 depth_levels <- list(
   "annual vegetables" = c("0-10", "10-20", "20-30", "30-40", "40-50", "50-100"),

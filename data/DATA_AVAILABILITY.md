@@ -1,6 +1,6 @@
 # Measurement records and analysis inputs
 
-Optional historical analysis files are preserved in the [history ZIP](../archive/Analysis_History_2026-10-20.zip). Historical paths in the workbook provenance and dated records refer to ZIP members where listed in `FILE_MANIFEST.csv`. All source workbooks, processing tables, current inputs and the publication workbook remain in the main folders. Duplicate preparation snapshots and optional helper files are in the separate [support ZIP](../archive/Supporting_Files_2026-10-20.zip); each archived duplicate has an active canonical copy.
+Optional historical analysis files are preserved in the [history ZIP](../archive/Analysis_History_2026-10-20.zip). Historical paths in the workbook provenance and dated records refer to ZIP members where listed in `FILE_MANIFEST.csv`. All source workbooks, current measurement/input tables and the publication workbook remain in the main folders. Duplicate preparation snapshots and optional helper files are in the separate [support ZIP](../archive/Supporting_Files_2026-10-20.zip); each archived duplicate has an active canonical copy.
 
 The supplied data retain all 111 sample records. Current analysis coverage includes 96 records: 36 annual, 24 orchard and 36 hedgerow observations. Six deepest orchard and nine deepest hedgerow records remain visible in the full table and are excluded from the current primary analyses. The historical 105-row input remains supplied for the earlier five-interval hedgerow analysis. Available original records are included alongside the working spreadsheets; these are different stages of the data history.
 
@@ -14,7 +14,7 @@ Use `processed/sample_level_analysis_96_current.csv` for the paper. In `processe
 | `source_measurements/primary_reports/CAMS/` | Six original CAMS reports covering 110 unique research samples, plus laboratory standards. Sample identities and retained radiocarbon values agree with the compiled inputs at their reported precision. Sample 111 has no radiocarbon result and is in the excluded orchard 75–100 cm interval. All 96 current analysis rows and all 105 historical analysis rows have radiocarbon values. |
 | `source_measurements/primary_reports/EA/Fresno_Davis_foilball.xlsx` | Original aliquot-weight list for 110 samples, with C/N results for 42 samples. Those 42 results agree with the compiled inputs. This file does not contain the other 68 samples' C/N results. |
 | `source_measurements/original_records/` | Two field measurement workbooks and preserved versions preceding the sample 108 moisture-cell and sample 13 envelope-tare corrections. These records document the earlier values; they are not current analysis inputs. |
-| `processed/` | Full 111-sample and current 96-row analysis CSV tables, preserved historical 105-row inputs, correction ledger and deterministic preparation checks. Source root-mass fields are retained separately from working masses. |
+| `processed/` | Full current 111-sample table, current 96-row paper input, inclusion flags, correction ledger and source manifest. Source root-mass fields are retained separately from working masses. The duplicate current 105-row table and older preparation-check snapshots are in the additional support ZIP. |
 | `Supplementary_Data.xlsx` | Publication workbook, with statistical tables, figure values, all 111 sample records, variable definitions and provenance. |
 | `../analysis/` | Current analysis-specific inputs, saved results and historical selected-reference data. The root README identifies the current code and labels superseded analyses. |
 
@@ -43,3 +43,9 @@ The data-preparation check establishes agreement between the available measureme
 ## Saved run records
 
 The [run-support ZIP](../archive/Run_Support_History_2026-10-21.zip) holds derived diagnostic detail and cached/run records. These are not additional source measurements. All 23 source workbooks, current input tables, published result tables and publication workbook remain active.
+
+## Archived duplicate readbacks and checks
+
+[Additional_Support_2026-10-21.zip](../archive/Additional_Support_2026-10-21.zip) preserves `data/processed/sample_level_analysis_105_current.csv`, two preparation-validation snapshots, `depth_label_crosscheck.csv` and `missing_response_counts.csv` at their original paths. All 105 records and fields remain in the full current 111-row table. The selected current inputs and original source workbooks are unchanged.
+
+The ZIP also preserves the annual `live_root_density.json` Sheets readback and its `source_verification.txt` receipt, plus the perennial `perennial_notebook_input.json` readback. Their source links and original hashes remain inside the archive. Models use the active annual/perennial CSVs; these archived readbacks are provenance records, not additional measurements.
