@@ -269,6 +269,19 @@ check_optional_archive <- function(zipfile) {
   entries <- listing$Name
   inner <- "archive/Analysis_History_2026-10-20.zip"
   if (!(inner %in% entries)) return(check_archive(zipfile))
+  legacy_members <- c(
+    "analysis/current_perennial_root/README.md",
+    "analysis/hedgerow_0_75/README.md",
+    "analysis/nonroot_current/README.md",
+    "analysis/stock_endpoints_2026-10-20/README.md",
+    "archive/Additional_Support_2026-10-21.zip",
+    "archive/Analysis_History_2026-10-20.zip",
+    "archive/Run_Support_History_2026-10-21.zip",
+    "archive/Supporting_Files_2026-10-20.zip")
+  metadata_member <- "reproducibility/Method_and_Environment_Records.zip"
+  expected_members <- if (metadata_member %in% entries) c(legacy_members, metadata_member) else legacy_members
+  if (!setequal(entries, c(expected_members, "FILE_MANIFEST.csv")))
+    stop("The container member set differs from the recorded eight or nine payloads.")
   unsafe <- vapply(entries, function(entry) {
     parts <- strsplit(entry, "/", fixed = TRUE)[[1]]
     !nzchar(entry) || startsWith(entry, "/") ||
@@ -290,7 +303,7 @@ check_optional_archive <- function(zipfile) {
     stop("Container evidence must be regular files inside the isolated directory.")
   manifest <- read.csv(extracted[1], stringsAsFactors = FALSE)
   stopifnot(all(c("path", "bytes", "sha256", "md5") %in% names(manifest)),
-    nrow(manifest) == 8L, !anyDuplicated(manifest$path),
+    nrow(manifest) == length(expected_members), !anyDuplicated(manifest$path),
     setequal(c(manifest$path, "FILE_MANIFEST.csv"), entries))
   index <- match(inner, manifest$path)
   stopifnot(!is.na(index),

@@ -2409,7 +2409,10 @@
             "sha256": "a247b6175481d4f326e552579fa0a2ae84675076681a18ef20269043b3f6f6a2",
             "md5": "9ed301a7c8dffdb20131781025f37c37"
           }
-        ]
+        ],
+        "archive_container": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "reproducibility/Method_and_Environment_Records.zip",
+        "archive_path_is_original_nested_member": true
       },
       {
         "kind": "basemaps",
@@ -2435,11 +2438,11 @@
       }
     ],
     "original_path_resolvers": {
-      "analysis/current_perennial_root/provenance/software_versions.json": "reproducibility/Method_and_Environment_Records.zip!analysis/current_perennial_root/provenance/software_versions.json",
-      "analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv": "reproducibility/Method_and_Environment_Records.zip!analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv",
-      "analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt": "reproducibility/Method_and_Environment_Records.zip!analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt",
-      "reproducibility/PYTHON_ENVIRONMENT.txt": "reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_ENVIRONMENT.txt",
-      "reproducibility/PYTHON_REQUIREMENTS.csv": "reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_REQUIREMENTS.csv",
+      "analysis/current_perennial_root/provenance/software_versions.json": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!analysis/current_perennial_root/provenance/software_versions.json",
+      "analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv",
+      "analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt",
+      "reproducibility/PYTHON_ENVIRONMENT.txt": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_ENVIRONMENT.txt",
+      "reproducibility/PYTHON_REQUIREMENTS.csv": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_REQUIREMENTS.csv",
       "figures/map/basemap/cb_2023_us_county_500k.zip": "figures/map/basemap/Census_Basemaps_2023_500k.zip!figures/map/basemap/cb_2023_us_county_500k.zip",
       "figures/map/basemap/cb_2023_us_state_500k.zip": "figures/map/basemap/Census_Basemaps_2023_500k.zip!figures/map/basemap/cb_2023_us_state_500k.zip"
     },
@@ -2458,6 +2461,55 @@
     "perennial_baseline_same_reported_results_and_decisions": true,
     "Figures1_2_3_4_decoded_pixels_identical": true,
     "source_manifest_and_workbook_hashes_preserved": true,
-    "all_R_scripts_byte_exact": true
+    "all_R_scripts_byte_exact": true,
+    "metadata_location_superseded_by": "metadata_nesting_2026_10_21"
+  },
+  "metadata_nesting_2026_10_21": {
+    "scope": "Only the standalone metadata ZIP moved into the existing history/support container. All eight previous outer payloads and the metadata ZIP retain their original bytes; the new outer manifest records nine payloads. Statistical checks and historical arithmetic are unchanged.",
+    "active_tree_files": 92,
+    "container_path": "archive/History_and_Support_2026-10-21.zip",
+    "container": {
+      "bytes": 10594273,
+      "sha256": "dffb229281bf482b3fd8a36c0975ba5fea4bd39ef15589f2437bd520f06372c7"
+    },
+    "prior_container": {
+      "bytes": 10591363,
+      "sha256": "499d45a2fa45e65cfb63702089dad29a3be090181fa00008d3e2e3adaeb743cd"
+    },
+    "outer_manifest_rows": 9,
+    "outer_member_count": 10,
+    "nested_metadata_ZIP": {
+      "path": "reproducibility/Method_and_Environment_Records.zip",
+      "bytes": 2633,
+      "sha256": "519ec994caf7c15f0a3d3f5992b8a1fea524030a7b22ee6595cc2eaeac5a03f4",
+      "md5": "e5db64e1cb24c08ed39adc41f1182cb3"
+    },
+    "preserved_eight_original_payloads": [
+      "analysis/current_perennial_root/README.md",
+      "analysis/hedgerow_0_75/README.md",
+      "analysis/nonroot_current/README.md",
+      "analysis/stock_endpoints_2026-10-20/README.md",
+      "archive/Additional_Support_2026-10-21.zip",
+      "archive/Analysis_History_2026-10-20.zip",
+      "archive/Run_Support_History_2026-10-21.zip",
+      "archive/Supporting_Files_2026-10-20.zip"
+    ],
+    "method_record_resolvers": {
+      "analysis/current_perennial_root/provenance/software_versions.json": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!analysis/current_perennial_root/provenance/software_versions.json",
+      "analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!analysis/selected_reference_2026-07-30/reproducibility/input_and_method_manifest.csv",
+      "analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!analysis/stock_endpoints_2026-10-20/saved_results/METHOD_SCOPE.txt",
+      "reproducibility/PYTHON_ENVIRONMENT.txt": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_ENVIRONMENT.txt",
+      "reproducibility/PYTHON_REQUIREMENTS.csv": "archive/History_and_Support_2026-10-21.zip!reproducibility/Method_and_Environment_Records.zip!reproducibility/PYTHON_REQUIREMENTS.csv"
+    },
+    "legacy_eight_payload_container_supported": true,
+    "source_workbook_and_Census_wrapper_bytes_unchanged": true,
+    "all13script_paths_retained": true,
+    "other12scripts_byte_exact": true,
+    "current_scientific_and_historical_arithmetic_byte_exact": true,
+    "paper_and_published_results_unchanged": true,
+    "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "source_manifest_and_workbook_hashes_preserved": true
   }
 }

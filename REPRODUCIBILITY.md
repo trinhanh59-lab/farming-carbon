@@ -1,6 +1,6 @@
 # Reproducing the selected analyses
 
-Use a writable repository copy and new output directories. Preserve the supplied results before rerunning scripts that write into their own `outputs/` folders. The [history and support container](archive/History_and_Support_2026-10-21.zip) preserves the four original ZIPs and module READMEs without changing their bytes. Current analyses use the inputs and results retained in the main folders.
+Use a writable repository copy and new output directories. Preserve the supplied results before rerunning scripts that write into their own `outputs/` folders. The [history and support container](archive/History_and_Support_2026-10-21.zip) preserves the four original history ZIPs, module READMEs and method/environment ZIP without changing their bytes. Current analyses use the inputs and results retained in the main folders.
 
 ## Environment and saved-file checks
 
@@ -30,7 +30,7 @@ The first checks file integrity, installed package names and R syntax without ev
 Rscript --vanilla scripts/check_saved_results.R --archive
 ```
 
-This extracts only the outer manifest and the original analysis-history ZIP to a temporary directory, checks that ZIP's size/MD5/SHA-256, then runs its unchanged historical checks. An explicit restored old ZIP also works: `Rscript --vanilla scripts/check_saved_results.R --archive PATH_TO_OLD_ZIP`. Ordinary checks do not read the optional container.
+This extracts only the outer manifest and the original analysis-history ZIP to a temporary directory, checks that ZIP's size/MD5/SHA-256, then runs its unchanged historical checks. An explicit restored old ZIP also works: `Rscript --vanilla scripts/check_saved_results.R --archive PATH_TO_OLD_ZIP`. Ordinary checks do not read the optional container. The optional route accepts the current nine-payload container and the preceding eight-payload version; explicit restored history ZIPs remain supported.
 
 ## Prepare the inputs and annual-root results
 
@@ -132,10 +132,10 @@ Saved source tables retain original semantic filenames and workbook hashes. A ne
 
 ## Method records and map sources
 
-[Method_and_Environment_Records.zip](reproducibility/Method_and_Environment_Records.zip) preserves five original method/environment records at their original paths, plus a size/SHA-256/MD5 manifest. The current instructions above retain their software and endpoint scope; the original files remain available for inspection.
+The [history/support container](archive/History_and_Support_2026-10-21.zip) includes `reproducibility/Method_and_Environment_Records.zip`, which preserves five original method/environment records at their original paths, plus a size/SHA-256/MD5 manifest. The current instructions above retain their software and endpoint scope; the original files remain available for inspection.
 
 The July 30 selected reference records `analysis/selected_reference_2026-07-30/data/sample_level_analysis_105.csv` as its input, with 105 rows and 21 cores. Sample 142 has Δ¹⁴C = −11.5; sample 143 has Δ¹⁴C = 13.2 and root weight 0.0086 g. That reference contains zero orchard 75–100 cm rows, uses a 0.00017 g root offset, records the pairwise adjustment as `none (Fisher LSD)`, and restricts orchards to 0–75 cm. These are dated reference settings; current sample scope and selected analyses are described above.
 
 [Census_Basemaps_2023_500k.zip](figures/map/basemap/Census_Basemaps_2023_500k.zip) holds the original state and county ZIPs at their original `figures/map/basemap/...` paths, plus an integrity manifest. The map renderer verifies their recorded sizes/hashes and ZIP contents before creating its output directory, then reads shapefile components in memory. If the wrapper is absent, it also accepts the original two loose ZIPs in `figures/map/basemap/`. [Census credits and use limits](figures/map/THIRD_PARTY_MAP_SOURCES.md) still apply.
 
-To inspect either bundle, extract it into a separate directory while preserving its folders. These bundles change access to existing records, not the measurements, statistical methods or map specifications.
+To inspect the method records, extract the history/support container into a separate directory, then extract its `reproducibility/Method_and_Environment_Records.zip` there. For Census sources, extract their wrapper into a separate directory. Preserve folders in either case. These bundles change access to existing records, not the measurements, statistical methods or map specifications.

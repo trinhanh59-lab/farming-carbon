@@ -96,9 +96,10 @@
     "archive_member": "archive/Additional_Support_2026-10-21.zip"
   },
   "software_environment_record_location": {
-    "archive": "reproducibility/Method_and_Environment_Records.zip",
+    "archive": "archive/History_and_Support_2026-10-21.zip",
     "member": "analysis/current_perennial_root/provenance/software_versions.json",
     "readable_context": "REPRODUCIBILITY.md#perennial-root-density",
-    "original_source_values_unchanged": true
+    "original_source_values_unchanged": true,
+    "inner_archive_member": "reproducibility/Method_and_Environment_Records.zip"
   }
 }
