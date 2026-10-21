@@ -1,127 +1,114 @@
 # Reproducing the selected analyses
 
-Optional historical analyses are preserved in the [history archive](archive/Analysis_History_2026-10-20.zip), with [restoration instructions](archive/README.md). Paths in the historical sections below are original archive-member paths. Current fitting and figure commands use the files retained in the main folders. The separate [support ZIP](archive/Supporting_Files_2026-10-20.zip) holds duplicate snapshots and optional plotters; restore it into a separate repository copy before using those helpers.
+Use a writable repository copy and new output directories. Preserve the supplied results before rerunning scripts that write into their own `outputs/` folders. The [history and support container](archive/History_and_Support_2026-10-21.zip) preserves the four original ZIPs and module READMEs without changing their bytes. Current analyses use the inputs and results retained in the main folders.
 
-Use R 4.6.1 and the package versions in `renv.lock` for the checked environment. The original non-root records used R 4.6.0 and earlier glmmTMB/emmeans versions; those original records are preserved. An isolated rerun checks agreement with the supplied tables rather than assuming different software versions give identical results.
+## Environment and saved-file checks
 
-Restore R packages with `renv::restore(lockfile = "renv.lock", library = "PATH_TO_LOCAL_R_LIBRARY")`, then point `R_LIBS_USER` to that library when invoking Rscript. Install renv from CRAN first if needed. `scripts/check_repository.R` reports missing package names without installing them.
+Use R 4.6.1 and the package versions in `renv.lock`. Restore them with `renv::restore(lockfile = "renv.lock", library = "PATH_TO_LOCAL_R_LIBRARY")`, then point `R_LIBS_USER` to that library when invoking Rscript. Install renv from CRAN first if needed. Original non-root records used R 4.6.0 and earlier glmmTMB/emmeans versions; those records remain archived. The perennial diagnostic code requires the recorded glmmTMB 1.1.15.2 and DHARMa 0.5.0 versions because it checks internal conditional-simulation behavior.
 
-For Python figures, create a separate Python environment and install `reproducibility/python-requirements.txt`. The checked Python version is recorded in `reproducibility/PYTHON_ENVIRONMENT.txt`. Census boundary archives are bundled, so the map renderer does not download map data.
+For Python figures, use a separate environment and install `reproducibility/python-requirements.txt`. The checked interpreter/platform is recorded in `reproducibility/PYTHON_ENVIRONMENT.txt`. Bundled Census boundaries allow the map renderer to work without downloading map data.
 
-## Safe checks
-
-Run from the repository root:
+From the repository root:
 
 ```sh
 Rscript --vanilla scripts/check_repository.R
 Rscript --vanilla scripts/check_saved_results.R
 ```
 
-The first checks file integrity and parses R syntax without evaluating the source. The second checks current saved annual inputs, volume/density arithmetic, contrasts, Holm adjustment, Figure 2A display values and perennial inputs/floor counts. It does not load the optional orchard history by default. Use `Rscript --vanilla scripts/check_saved_results.R --archive` to include the saved historical orchard checks from the ZIP. These checks do not refit or validate a model; historical S4 labels refer to the 17 October record, not a table in the current PDF.
+The first checks file integrity, installed package names and R syntax without evaluating analysis code. The second checks current inputs, stock/volume/density arithmetic, saved contrasts, Holm adjustment and figure mappings without fitting models. Add `--archive` to check the historical orchard evidence inside the container:
 
-## Execution order
+```sh
+Rscript --vanilla scripts/check_saved_results.R --archive
+```
 
-Start by reconstructing the current analysis inputs without fitting a model:
+This extracts only the outer manifest and the original analysis-history ZIP to a temporary directory, checks that ZIP's size/MD5/SHA-256, then runs its unchanged historical checks. An explicit restored old ZIP also works: `Rscript --vanilla scripts/check_saved_results.R --archive PATH_TO_OLD_ZIP`. Ordinary checks do not read the optional container.
+
+## Prepare the inputs and annual-root results
 
 ```sh
 Rscript --vanilla scripts/prepare_analysis_data.R . outputs_rerun/data_preparation
 ```
 
-The script reads the twelve working measurement spreadsheets in `data/source_measurements/`, preserves source root masses and applies the recorded working-mass corrections. It retains the author-confirmed 3.81 cm sampling diameter and the author-approved 104.40 g neighboring-core estimate for sample 108. These confirmations do not establish an independently measured cutting-tip dimension or the original same-core mass. It writes CSV files into a new directory and checks the rebuilt tables against the historical non-root inputs, current root inputs and publication workbook. It does not create Word or Excel files. See `data/DATA_AVAILABILITY.md` for the limits of the original records and `data/processed/` for the supplied current tables. Historical analysis inputs remain available at their existing paths.
+Preparation reads twelve working measurement spreadsheets and preserves their original root masses separately from recorded working-mass corrections. It rebuilds the full 111-record table, current 96-row input and inclusion flags, and compares them with the publication workbook. The retained diameter is the author-confirmed 3.81 cm. Sample 108 uses the author-approved 104.40 g neighboring-core estimate; neither confirmation independently verifies the original cutting-tip measurement or same-core mass. See [DATA_AVAILABILITY.md](data/DATA_AVAILABILITY.md) for source records, corrections and missing laboratory exports. Preparation creates CSVs and checks, not Word or Excel files.
 
-1. Copy the repository to a writable rerun directory. Preserve the supplied `outputs/` folders before running historical scripts, because those scripts write there.
-2. Run the annual Gamma script, then its validation script:
+Run the annual model before its validation script, which reads the selected saved fits and contrasts:
 
 ```sh
 Rscript --vanilla analysis/corrected_annual_gamma_2026-10-16/run_gamma_sensitivity.R
 Rscript --vanilla analysis/corrected_annual_validation_2026-10-16/run_gamma_checks.R
 ```
 
-3. Source the perennial module in R and call its explicit workflow. See its README for input-only checking and output protections:
+The annual selected-fit RDS remains active so validation can also run without a preceding new fit. Older preparation summaries, duplicate 105-row/current-input readbacks and verification narratives are preserved in the nested support archives. Their original paths identify archived snapshots, not additional measurements or current runtime inputs.
+
+## Perennial root density
+
+`analysis/current_perennial_root/` contains 24 orchard observations from six cores and 36 hedgerow observations from nine cores, all through 75 cm. Each system has four no-root-recovery observations. The active input is `input/perennial_root_input.csv`; notebook readbacks and original source cells remain archived. The source trace retains their hashes and locations.
+
+The response is `1000 * (root_weight + 0.00017) / volume_cm3`, in mg/cm³. The full management-by-depth model uses Gamma(log), a core random intercept, constant dispersion and no zero-inflation component. It is fitted by maximum likelihood. The original mass-scale starting fit and depth-specific conversion to density are retained; nlminb and BFGS use the original controls/agreement thresholds. The selected model is `B_shift_gamma`, not the older Tweedie alternatives named in the source notebook.
+
+Sourcing defines functions without fitting or writing. To check inputs:
 
 ```r
 module_dir <- "analysis/current_perennial_root"
 source(file.path(module_dir, "perennial_root_workflow.R"))
-run_perennial_root_workflow(module_dir, output_dir = "outputs_rerun/perennial")
+input <- read_perennial_root_input(file.path(module_dir, "input", "perennial_root_input.csv"))
+vapply(input, function(x) nrow(x$data), integer(1))
 ```
 
-4. Run the six selected C-concentration and Δ¹⁴C models into a new directory:
+To rerun the selected workflow:
+
+```r
+result <- run_perennial_root_workflow(
+  module_dir = module_dir,
+  output_dir = "outputs_rerun/perennial",
+  sensitivity = TRUE,
+  diagnostics = TRUE
+)
+```
+
+Output must be a new or empty directory outside the module, including aliases through symlinks. The path is checked before fitting and again before writing; supplied inputs/results/provenance are protected. `root_weight_raw` preserves the earlier subtraction, while `root_weight` is the working g mass. Sample `143_MAS2_3_A2` retains the corrected 0.0086 g working value and −1.4427 g raw subtraction, without a new correction or clipping.
+
+Management/depth comparisons average fitted log means equally across intervals/groups. Pairwise effects are ratios of the constant-adjusted response with unadjusted p values and 95% Wald intervals, not integrated root-mass ratios. Five mass additions use 0.1, 0.5, 1, 2 and 10 times 0.00017 g. Conditional DHARMa diagnostics use 1,000 draws without refitting, with seeds 20261116 and 20261117 for orchard and hedgerow. Below-floor predictions are counted without clipping; these checks do not establish model adequacy. [ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md) retains the detailed tables and figure. Original fitted objects/full simulation matrices were not retained; reruns produce new objects separately, while the supplied results remain the reference.
+
+## C concentration and radiocarbon
+
+`analysis/nonroot_current/` runs six models on the 96-row input: annual fields through 100 cm, orchards and hedgerows through 75 cm. The formula is `response ~ depth_cm * site_type + (1 | core)`. C concentration uses Gamma(log), and Δ¹⁴C uses Gaussian(identity). Type III Wald tests, sum-to-zero contrasts and unadjusted emmeans follow-ups retain the selected settings. Gamma effects are ratios, Gaussian effects are differences, and plotted model means ±1SE are on the response scale.
 
 ```sh
 Rscript --vanilla analysis/nonroot_current/run_nonroot_analysis.R --run-analysis outputs_rerun/nonroot
+Rscript --vanilla analysis/nonroot_current/run_nonroot_analysis.R --run-hedgerows75 outputs_rerun/hedgerow_nonroot
 ```
 
-5. Run the selected cumulative-stock endpoints into a new directory:
+The first fits all six models; the second fits only the two current hedgerow responses. Both retain 500-draw DHARMa checks and save model objects, sample-linked residuals and session information. Output must be new and outside protected source/results folders. Current saved results contain 18 omnibus rows, 64 fitted means, 44 pairwise contrasts, 28 marker tests and six diagnostic summaries. Stock inference is separate below; earlier profile-model commands/results remain historical archive records.
 
-~~~sh
-Rscript --vanilla analysis/stock_endpoints_2026-10-20/run_stock_endpoints.R --run-analysis outputs_rerun/stock_endpoints
-~~~
+## Hedgerow scope and supporting bulk density
 
-The endpoint module uses one observed total per core at the selected depths. It runs eight two-sided Welch tests, adjusts all six hedgerow p values together by Holm, and saves unadjusted pointwise 95% intervals. It also saves 32 observed stock means ±1SE for plotting. It fits no profile models.
+All nine hedgerow cores contribute the common 0–10, 10–20, 20–50 and 50–75 cm intervals, giving 36 observations. The nine deeper measurements, with actual bottoms of 86, 88 or 100 cm, remain in the full 111-record table and historical input. Current/historical inclusion is explicit in `data/processed/sample_level_scope_111_current.csv`.
 
-6. Use `figures/README.md` for publication-asset export, profile assembly, map reconstruction and saved-result plotting. Figure rendering/assembly does not itself refit the statistical models.
-
-
-### Historical hedgerow 0–75 cm revision, 19 October
-
-The current combined analysis input is `data/processed/sample_level_analysis_96_current.csv`. It preserves the annual 0–100 cm and orchard 0–75 cm observations and restricts hedgerows to the same four intervals through 75 cm. Full 111-record data and historical 105-row inputs remain supplied. The data-preparation entrypoint rebuilds these inputs without fitting models.
-
-The current bounded non-root command fits only the two retained hedgerow responses, C concentration and Δ¹⁴C. Cumulative stocks use the endpoint module; the following bulk-density command remains separate:
+The bounded non-root command above and the supporting bulk-density command use separate new output directories:
 
 ```sh
-Rscript --vanilla analysis/nonroot_current/run_nonroot_analysis.R --run-hedgerows75 outputs_rerun/hedgerow_nonroot
 Rscript --vanilla analysis/hedgerow_0_75/run_bulk_density_hedgerow75.R --run-analysis outputs_rerun/hedgerow_bulk_density
 ```
 
-The 19 October run fitted three hedgerow primary-response models and the supporting bulk-density model, with the existing model specifications. The dated non-root checkpoint and extra bulk-density outputs are now in `archive/Run_Support_History_2026-10-21.zip` at their original `analysis/hedgerow_0_75/` paths. Current non-root results, combined bulk-density tables and the supplement's equal-depth means/contrasts remain active. Other current output rows remain unchanged. Earlier five-interval hedgerow outputs remain labeled historical.
+Bulk density uses Gaussian(identity) with the same depth-by-group interaction and core random intercept, retaining selected default optimizer controls. It uses convergence/Hessian checks without DHARMa simulations. `analysis/hedgerow_0_75/current_bulk_density/` combines current 0–75 cm hedgerow rows with unchanged annual/orchard support rows. The two equal-depth group summaries remain in `bulk_density_results/`; the other dated checkpoint outputs are archived. These bounded commands do not refit annual, orchard or root models.
 
-### Optional secondary archive
+The retained July bulk-density driver is `analysis/selected_reference_2026-07-30/code/run_bulk_density_aidee_wald.R`. It creates its `outputs/` folder when needed. Use a separate repository copy: it reproduces the original annual/orchard rows and the older 100 cm hedgerow reference, which must not replace current hedgerow results. The earlier three-response hedgerow checkpoint included a cumulative-stock profile fit; that is historical, not the current stock method.
 
-The separate orchard covariance/bootstrap workflow is excluded from the current paper and supplement. It is distinct from the current Welch endpoint comparisons. To reproduce that secondary archived analysis, first restore its original paths into a separate repository copy as described in `archive/README.md`, then use a new output directory:
+## Observed carbon-stock endpoints
+
+The current endpoint module uses one observed total per core: annual 0–100 cm, orchard 0–75 cm and hedgerow 0–20/0–75 cm, with three cores per group. It fits no stock-profile model:
 
 ```sh
-Rscript --vanilla analysis/orchard_cumulative_correlation/run_new_reproduction.R outputs_rerun/orchard
+Rscript --vanilla analysis/stock_endpoints_2026-10-20/run_stock_endpoints.R --run-analysis outputs_rerun/stock_endpoints
 ```
 
-This runs the observed fits, 20,000-dataset full-model diagnostic, 999 null-dataset refits and final boundary/tail audit. Its README explains why a fresh execution is a new method reproduction rather than recovery of the original interactive execution history. It retains failed and ambiguous outcomes.
+The script checks identities, endpoint depths, core counts, twelve source hashes and preserved layer/cumulative-stock arithmetic without changing measurements or supplied stocks. It saves 30 endpoint records, ten three-core group summaries and eight two-sided unpaired Welch comparisons. Differences are first group minus second group, in t C ha⁻¹. All six hedgerow p values share one Holm family; annual/orchard values are unadjusted. Every 95% interval is an unadjusted pointwise interval, not a simultaneous Holm interval.
 
+`stock_profile_summary.csv` supplies 32 observed means, sample SDs and SEs with source core/sample identifiers. SE is SD/√3; plotted mean ±1SE is descriptive, not a fitted mean or confidence interval. Welch allows unequal variances; independence and approximate normality remain assumptions with three cores per field. One location represents each management category, so these comparisons describe sampled fields/margins rather than replicated field-level management effects.
 
-## Earlier verification history
+## Figures and archived records
 
-The 19 October 2026 editorial revision condensed Statistical analysis, moved Table 1 into Results and the bulk-density findings into the supplement, and preserved implementation details in [ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md); no models or numerical results changed.
+Use [figures/README.md](figures/README.md) for the map and profile renderers. Rendering uses supplied tables without fitting models. The five publication images and root diagnostic image remain active; S1's editable drawing source was not located, so its exact image/caption are preserved.
 
-The author-approved hedgerow depth revision was executed on 19 October 2026 as described above. The preceding selected-analysis rerun completed on 17 October 2026. The annual and retained non-root tables reproduced exactly, and perennial results agreed at reported precision. The orchard observed LR and 20,000-dataset smoothness count agreed; its new bootstrap bounds are 0.126–0.130. This run is retained in the secondary archive and is excluded from the current manuscript and supplement. The original bounds of 0.124–0.129 remain labeled historical. The dated `VERIFICATION.md` and `reproducibility/verification_summary.json` records are now in [Additional_Support_2026-10-21.zip](archive/Additional_Support_2026-10-21.zip) at their original paths. Numerical reproduction does not establish model adequacy or remove the paper's scientific limits.
-
-The source measurements, correction provenance and recorded zero handling are unchanged. The 19 October revision removed the separate orchard covariance/bootstrap analysis and S4. An earlier 20 October revision restored the July Gamma(log) cumulative-stock profile model. That selection has now been superseded by the endpoint comparisons; its exact driver and complete saved CSVs remain in `analysis/nonroot_current/historical_cumulative_profile_2026-10-20/`. The later hedgerow 0–75 cm revision updates the affected models, Figure 4, tables, workbook and dependent text. That hedgerow revision preserved annual, orchard and root results. The later orchard-stock restoration is recorded below. The supplement revision changed organization and repeated front matter only. A subsequent language review made seven wording, grammar and spacing edits; no analyses were rerun and no numerical results changed. The detailed root-model checks are now documented in [ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md), including the full former Table S3 and Figure S2; their code, saved results and image bytes are unchanged. The 17 October verification record retains its original checkpoint hashes, with the current document hashes recorded separately. The repository is https://github.com/trinhanh59-lab/farming-carbon. This execution history describes numerical checks; repository access and posting of the manuscript are separate distribution steps.
-
-The earlier 19 October data-preparation check added source coverage and deterministic import checks. The subsequent hedgerow revision separately records its four targeted fits; it does not extend the unchanged models’ 17 October verification. The R lockfile now includes required transitive dependencies and the spreadsheet-reading packages used by the data-preparation script. Original package-author and software-license information is retained.
-
-### Historical orchard stock profile restoration, earlier 20 October
-
-Before selecting the current endpoint tests, the author selected the existing July Gamma(log) orchard cumulative-stock model through 75 cm. The current 24 orchard observations match the July stock inputs exactly. Only this model was rerun, reproducing all saved omnibus, fitted-value, unadjusted contrast and diagnostic numbers exactly.
-
-The following is the historical command at the time of that run, not a current entrypoint:
-
-~~~sh
-Rscript --vanilla analysis/nonroot_current/run_nonroot_analysis.R --run-orchard-stock outputs_rerun/orchard_stock
-~~~
-
-The execution record is in `analysis/nonroot_current/orchard_stock_0_75_2026-10-20/`. Other current models and all measurements were preserved. The previous endpoint Welch result remains under `analysis/nonroot_current/historical_endpoint_2026-10-16/`; the separate covariance/bootstrap analysis remains a secondary archive.
-
-## Current endpoint verification, 20 October
-
-The current endpoint module and saved results are under `analysis/stock_endpoints_2026-10-20/`. All 30 endpoint records, ten three-core groups, eight Welch results and 32 observed profile summaries were verified in isolation. The existing orchard p value of 0.381241 was reproduced. All source measurements and non-stock model outputs are unchanged. Current `nonroot_current/saved_results/` contains 18 omnibus rows, 64 EMMs, 44 pairwise rows, 28 marker tests and six diagnostic summaries. The previous cumulative-profile driver and complete CSVs are preserved as dated history.
-
-## Run-support archive, 21 October
-
-[Run_Support_History_2026-10-21.zip](archive/Run_Support_History_2026-10-21.zip) preserves 51 extra run records, cached objects and detailed diagnostic outputs at their original paths. The current source data, published result tables and all 13 scripts remain active. Default saved-result checks and current figure renderers do not read this archive. The annual selected-fit object used by validation and the July bulk-density reference outputs remain active.
-
-The optional plotters in `Supporting_Files_2026-10-20.zip` may use caches from the run-support ZIP. Restore both support archives into a separate repository copy before using those recorded objects, or regenerate them with the documented analysis order. Version-table `source_record` paths retain their original names; `source_archive` identifies records now stored in a ZIP.
-
-## Additional support records, 21 October
-
-[Additional_Support_2026-10-21.zip](archive/Additional_Support_2026-10-21.zip) preserves 17 duplicate readbacks, older preparation checks and historical documentation/results. All original source workbooks, the full current 111-row table, the 96-row paper input, inclusion flags, published result tables and 13 scripts remain active. The preparation script regenerates its check summaries and intermediate 105-row table in a new output directory; it does not need their archived snapshots. Annual and perennial fits read their retained CSV inputs rather than the archived Sheets/notebook JSON readbacks.
-
-Current supporting bulk-density tables are in `analysis/hedgerow_0_75/current_bulk_density/`, with the two hedgerow group summaries retained under `analysis/hedgerow_0_75/bulk_density_results/`. The archived July outputs are comparison records. The July driver creates `analysis/selected_reference_2026-07-30/outputs/` when rerun; preserve supplied results and use a separate repository copy.
-
-The dated verification audit remains available in this ZIP. Current saved-result checks use `reproducibility/PUBLICATION_TARGETS.json`, and current file hashes are in `reproducibility/FILE_CHECKSUMS.csv`. Numerical reproduction checks agreement with supplied results; it does not establish model adequacy or verify missing original measurements.
+[archive/README.md](archive/README.md) identifies the four inner ZIPs, 187 original records and original module guides. Restore the outer container and then the needed inner ZIP into a separate copy before using optional helpers. The separate orchard covariance/bootstrap workflow remains historical and excluded from the current paper/supplement. Current `reproducibility/PUBLICATION_TARGETS.json` identifies selected results and nested locations; `FILE_CHECKSUMS.csv` is the active integrity list. Dated hashes/source versions remain labeled history. Numerical reproduction checks agreement with supplied results; it does not recover missing original measurements or establish model validity.

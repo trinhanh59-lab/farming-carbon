@@ -1,6 +1,8 @@
 # Root-model sensitivity and diagnostics
 
-Historical stock-profile, orchard covariance and superseded figure files are now stored at their original relative paths inside the [history ZIP](../archive/Analysis_History_2026-10-20.zip). The ZIP manifest records their original sizes and hashes. Current analyses and publication assets remain outside the archive.
+The history/support ZIPs named below are unchanged inner members of [History_and_Support_2026-10-21.zip](../archive/History_and_Support_2026-10-21.zip). Extract the outer container, then the relevant inner ZIP into a separate copy. The current tables, source residuals and diagnostic image remain active.
+
+Historical stock-profile, orchard covariance and superseded figure files are now stored at their original relative paths inside the [history ZIP](../archive/History_and_Support_2026-10-21.zip). The ZIP manifest records their original sizes and hashes. Current analyses and publication assets remain outside the archive.
 
 These detailed checks accompany the root-density results in the paper. The tables, diagnostic image and supporting notes are retained here after shortening the manuscript and supplement. They were previously presented as Supplemental Table S3 and Supplemental Figure S2. No models were rerun for this documentation change.
 
@@ -78,9 +80,9 @@ Supplemental Figure S2. Residual diagnostics for the corrected annual Gamma mode
 - Annual models and added-mass sensitivity: [corrected annual Gamma module](../analysis/corrected_annual_gamma_2026-10-16/). Its saved `field_contrasts.csv` and `omnibus_wald_tests.csv` supply table A above.
 - Annual diagnostics, six-depth Holm adjustment and whole-core deletion: [annual validation module](../analysis/corrected_annual_validation_2026-10-16/). Saved outputs include `Holm_six_depth_comparisons.csv`, `leave_one_core_out_contrasts.csv`, `residual_tests.csv`, `below_floor_prediction_check.csv` and `residuals_by_sample.csv`.
 - Perennial sensitivity and conditional diagnostics: [current perennial root module](../analysis/current_perennial_root/), with the input table, five-constant results and diagnostic settings in its saved files.
-- Diagnostic rendering from saved residuals: the [support archive](../archive/Supporting_Files_2026-10-20.zip) retains `figures/render_saved_annual_diagnostics.R` at its original path. Restore it into a separate repository copy before use. This optional renderer runs no model fits or simulations; the current diagnostic PNG and all numerical checks remain active.
+- Diagnostic rendering from saved residuals: the [support archive](../archive/History_and_Support_2026-10-21.zip) retains `figures/render_saved_annual_diagnostics.R` at its original path. Restore it into a separate repository copy before use. This optional renderer runs no model fits or simulations; the current diagnostic PNG and all numerical checks remain active.
 - The publication workbook retains the unadjusted Table S1 contrasts, observed perennial profiles and current figure values. [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) describes execution and software versions.
 
 ### Additional archived detail
 
-The [run-support archive](../archive/Run_Support_History_2026-10-21.zip) preserves unused optimizer/simulation caches, per-sample floor-detail files, optional diagnostic graphics and the two larger recovered perennial diagnostic/sensitivity JSON containers. The tables and figure above, their published summary CSVs and source residuals remain active. Restore the archive into a separate repository copy when inspecting the additional records or using optional cached-object plotters.
+The [run-support archive](../archive/History_and_Support_2026-10-21.zip) preserves unused optimizer/simulation caches, per-sample floor-detail files, optional diagnostic graphics and the two larger recovered perennial diagnostic/sensitivity JSON containers. The tables and figure above, their published summary CSVs and source residuals remain active. Restore the archive into a separate repository copy when inspecting the additional records or using optional cached-object plotters.

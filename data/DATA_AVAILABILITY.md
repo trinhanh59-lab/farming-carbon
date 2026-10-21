@@ -1,6 +1,8 @@
 # Measurement records and analysis inputs
 
-Optional historical analysis files are preserved in the [history ZIP](../archive/Analysis_History_2026-10-20.zip). Historical paths in the workbook provenance and dated records refer to ZIP members where listed in `FILE_MANIFEST.csv`. All source workbooks, current measurement/input tables and the publication workbook remain in the main folders. Duplicate preparation snapshots and optional helper files are in the separate [support ZIP](../archive/Supporting_Files_2026-10-20.zip); each archived duplicate has an active canonical copy.
+The four history/support ZIP names below refer to inner members of [History_and_Support_2026-10-21.zip](../archive/History_and_Support_2026-10-21.zip). Original source links, record paths and hashes are preserved there. Current measurements and model inputs remain active.
+
+Optional historical analysis files are preserved in the [history ZIP](../archive/History_and_Support_2026-10-21.zip). Historical paths in the workbook provenance and dated records refer to ZIP members where listed in `FILE_MANIFEST.csv`. All source workbooks, current measurement/input tables and the publication workbook remain in the main folders. Duplicate preparation snapshots and optional helper files are in the separate [support ZIP](../archive/History_and_Support_2026-10-21.zip); each archived duplicate has an active canonical copy.
 
 The supplied data retain all 111 sample records. Current analysis coverage includes 96 records: 36 annual, 24 orchard and 36 hedgerow observations. Six deepest orchard and nine deepest hedgerow records remain visible in the full table and are excluded from the current primary analyses. The historical 105-row input remains supplied for the earlier five-interval hedgerow analysis. Available original records are included alongside the working spreadsheets; these are different stages of the data history.
 
@@ -42,10 +44,10 @@ The data-preparation check establishes agreement between the available measureme
 
 ## Saved run records
 
-The [run-support ZIP](../archive/Run_Support_History_2026-10-21.zip) holds derived diagnostic detail and cached/run records. These are not additional source measurements. All 23 source workbooks, current input tables, published result tables and publication workbook remain active.
+The [run-support ZIP](../archive/History_and_Support_2026-10-21.zip) holds derived diagnostic detail and cached/run records. These are not additional source measurements. All 23 source workbooks, current input tables, published result tables and publication workbook remain active.
 
 ## Archived duplicate readbacks and checks
 
-[Additional_Support_2026-10-21.zip](../archive/Additional_Support_2026-10-21.zip) preserves `data/processed/sample_level_analysis_105_current.csv`, two preparation-validation snapshots, `depth_label_crosscheck.csv` and `missing_response_counts.csv` at their original paths. All 105 records and fields remain in the full current 111-row table. The selected current inputs and original source workbooks are unchanged.
+[Additional_Support_2026-10-21.zip](../archive/History_and_Support_2026-10-21.zip) preserves `data/processed/sample_level_analysis_105_current.csv`, two preparation-validation snapshots, `depth_label_crosscheck.csv` and `missing_response_counts.csv` at their original paths. All 105 records and fields remain in the full current 111-row table. The selected current inputs and original source workbooks are unchanged.
 
 The ZIP also preserves the annual `live_root_density.json` Sheets readback and its `source_verification.txt` receipt, plus the perennial `perennial_notebook_input.json` readback. Their source links and original hashes remain inside the archive. Models use the active annual/perennial CSVs; these archived readbacks are provenance records, not additional measurements.

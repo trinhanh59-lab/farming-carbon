@@ -1027,96 +1027,119 @@
     "historical_source_records_preserved": true,
     "current_locations_for_archived_or_historical_paths": {
       "COVERAGE_MAP.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "COVERAGE_MAP.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "COVERAGE_MAP.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "VERIFICATION.md": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "VERIFICATION.md"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "VERIFICATION.md",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/FILE_MANIFEST.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/FILE_MANIFEST.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/FILE_MANIFEST.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/README.txt": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/README.txt"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/README.txt",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/current_perennial_root/input/perennial_notebook_input.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/figure2_review/figure2_corrected_provenance.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/figure2_review/figure2_corrected_provenance.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/figure2_review/figure2_corrected_provenance.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "data/processed/depth_label_crosscheck.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/depth_label_crosscheck.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/depth_label_crosscheck.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "data/processed/missing_response_counts.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/missing_response_counts.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/missing_response_counts.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "data/processed/preparation_validation.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/preparation_validation.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "data/processed/preparation_validation_hedgerow75_2026-10-19.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "data/processed/sample_level_analysis_105_current.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/sample_level_analysis_105_current.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/sample_level_analysis_105_current.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "reproducibility/verification_summary.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "reproducibility/verification_summary.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "reproducibility/verification_summary.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/corrected_annual_validation_2026-10-16/input/live_root_density.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "analysis/current_perennial_source/input/perennial_notebook_input.json": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "reproduction_2026-10-19/data_preparation/depth_label_crosscheck.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/depth_label_crosscheck.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/depth_label_crosscheck.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "reproduction_2026-10-19/data_preparation/missing_response_counts.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/missing_response_counts.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/missing_response_counts.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "reproduction_2026-10-19/data_preparation/preparation_validation.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       },
       "reproduction_2026-10-19/data_preparation/sample_level_analysis_105_current.csv": {
-        "archive": "archive/Additional_Support_2026-10-21.zip",
-        "member": "data/processed/sample_level_analysis_105_current.csv"
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "data/processed/sample_level_analysis_105_current.csv",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip"
       }
     },
     "code_changes": [
@@ -1131,6 +1154,1044 @@
     "Figures1_2_3_4_decoded_pixels_identical": true,
     "restored_saved_residual_helper_PNG_byte_identical": true,
     "legacy_BD_driver_creates_missing_output_directory": true,
+    "selected_run_source_hashes_preserved_as_historical": true,
+    "current_code_hashes_in_FILE_CHECKSUMS": true
+  },
+  "final_organization_2026_10_21": {
+    "active_tree_files": 120,
+    "archive_path": "archive/History_and_Support_2026-10-21.zip",
+    "archive": {
+      "bytes": 10591363,
+      "sha256": "499d45a2fa45e65cfb63702089dad29a3be090181fa00008d3e2e3adaeb743cd"
+    },
+    "outer_original_members": 8,
+    "inner_original_records": 187,
+    "inner_manifests": 4,
+    "original_module_guides": [
+      "analysis/current_perennial_root/README.md",
+      "analysis/hedgerow_0_75/README.md",
+      "analysis/nonroot_current/README.md",
+      "analysis/stock_endpoints_2026-10-20/README.md"
+    ],
+    "original_inner_archives": {
+      "archive/Additional_Support_2026-10-21.zip": {
+        "bytes": 52324,
+        "sha256": "2c5e32e79f8dc207e37dae683a29785cae8010e3976e822f9ce4b48265955e45"
+      },
+      "archive/Analysis_History_2026-10-20.zip": {
+        "bytes": 3806053,
+        "sha256": "9c590054ab35e22aad9838e04d31dc8f3c893b74e7d2fc3c6b095f7de09c3565"
+      },
+      "archive/Run_Support_History_2026-10-21.zip": {
+        "bytes": 6367394,
+        "sha256": "861298bf632e803d2649df57a644ea3e311f25220ccc5814504577f722bdeaa8"
+      },
+      "archive/Supporting_Files_2026-10-20.zip": {
+        "bytes": 355913,
+        "sha256": "e9986a26a7aeab308940b12c58f63e0d23feb0b01de0e26e61240d508c0312d8"
+      }
+    },
+    "all_scientific_inputs_results_and_assets_unchanged": true,
+    "all13script_paths_retained": true,
+    "checker_change": "Optional nested archive I/O only; existing historical/current arithmetic checks unchanged.",
+    "current_locations": {
+      "archive/Additional_Support_2026-10-21.zip": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "archive/Additional_Support_2026-10-21.zip"
+      },
+      "COVERAGE_MAP.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "COVERAGE_MAP.csv"
+      },
+      "VERIFICATION.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "VERIFICATION.md"
+      },
+      "analysis/FILE_MANIFEST.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/FILE_MANIFEST.json"
+      },
+      "analysis/README.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/README.txt"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/source_verification.txt"
+      },
+      "analysis/current_perennial_root/input/perennial_notebook_input.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+      },
+      "analysis/figure2_review/figure2_corrected_provenance.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/figure2_review/figure2_corrected_provenance.json"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_contrasts.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_diagnostics.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/bulk_density_aidee_wald_omnibus.csv"
+      },
+      "data/processed/depth_label_crosscheck.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/depth_label_crosscheck.csv"
+      },
+      "data/processed/missing_response_counts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/missing_response_counts.csv"
+      },
+      "data/processed/preparation_validation.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation.csv"
+      },
+      "data/processed/preparation_validation_hedgerow75_2026-10-19.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv"
+      },
+      "data/processed/sample_level_analysis_105_current.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/sample_level_analysis_105_current.csv"
+      },
+      "reproducibility/verification_summary.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "reproducibility/verification_summary.json"
+      },
+      "archive/Additional_Support_2026-10-21.zip::FILE_MANIFEST.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "FILE_MANIFEST.csv"
+      },
+      "archive/Analysis_History_2026-10-20.zip": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "archive/Analysis_History_2026-10-20.zip"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/Figure_4.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/Figure_4.png"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_model_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_model_diagnostics.csv"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_omnibus.csv"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_pairwise_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_pairwise_contrasts.csv"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_plot_marker_tests.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_plot_marker_tests.csv"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_plot_values.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/nonroot_plot_values.csv"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/orchard_endpoint_Welch_saved.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/orchard_endpoint_Welch_saved.csv"
+      },
+      "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/run_nonroot_analysis.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_before_hedgerow75_2026-10-19/run_nonroot_analysis.R"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/README.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/README.md"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_model_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_model_diagnostics.csv"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_omnibus.csv"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_pairwise_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_pairwise_contrasts.csv"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_plot_marker_tests.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_plot_marker_tests.csv"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_plot_values.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/nonroot_plot_values.csv"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/render_nonroot_panels_before_endpoints.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/render_nonroot_panels_before_endpoints.R"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/render_profile_figures_before_endpoints.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/render_profile_figures_before_endpoints.R"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/run_nonroot_analysis_before_endpoints.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/run_nonroot_analysis_before_endpoints.R"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/workbook_stock_S1_before_endpoints.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/workbook_stock_S1_before_endpoints.csv"
+      },
+      "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/workbook_stock_fitted_values_before_endpoints.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_cumulative_profile_2026-10-20/workbook_stock_fitted_values_before_endpoints.csv"
+      },
+      "analysis/nonroot_current/historical_endpoint_2026-10-16/orchard_endpoint_Welch_saved.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/historical_endpoint_2026-10-16/orchard_endpoint_Welch_saved.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/R_session_info.txt"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/diagnostic_settings.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/diagnostic_settings.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/export_selected_summary.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/export_selected_summary.R"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_DHARMa_objects.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_DHARMa_objects.rds"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_DHARMa_residuals.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_DHARMa_residuals.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_model_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_model_diagnostics.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_model_objects.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_model_objects.rds"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_omnibus.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_pairwise_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_pairwise_contrasts.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_plot_marker_tests.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_plot_marker_tests.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_plot_values.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/nonroot_plot_values.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_input_24.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_input_24.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_EMM_full.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_EMM_full.csv"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_family.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_family.txt"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_formula.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_formula.txt"
+      },
+      "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_pairwise_full.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/nonroot_current/orchard_stock_0_75_2026-10-20/orchard_stock_pairwise_full.csv"
+      },
+      "analysis/observed_profile_figures/observed_orchard_cumulative_stocks_24.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/observed_profile_figures/observed_orchard_cumulative_stocks_24.csv"
+      },
+      "analysis/observed_profile_figures/render_observed_orchard_stock_panel.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/observed_profile_figures/render_observed_orchard_stock_panel.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/00_inputs.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/00_inputs.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/01_observed_generator_fit.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/01_observed_generator_fit.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/02_profile_diagnostics.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/02_profile_diagnostics.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/03_final_boundary_functions.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/03_final_boundary_functions.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/04_new_reproduction_driver.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/04_new_reproduction_driver.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/05_final_all_index_audit.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/05_final_all_index_audit.R"
+      },
+      "analysis/orchard_cumulative_correlation/R/06_export_new_reproduction.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/R/06_export_new_reproduction.R"
+      },
+      "analysis/orchard_cumulative_correlation/README.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/README.md"
+      },
+      "analysis/orchard_cumulative_correlation/SOURCE_MAP.tsv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/SOURCE_MAP.tsv"
+      },
+      "analysis/orchard_cumulative_correlation/environment/recorded_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/environment/recorded_session_info.txt"
+      },
+      "analysis/orchard_cumulative_correlation/environment/recorded_versions.tsv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/environment/recorded_versions.tsv"
+      },
+      "analysis/orchard_cumulative_correlation/inputs/orchard_cumulative_stock.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/inputs/orchard_cumulative_stock.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/comparison_to_frozen_counts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/comparison_to_frozen_counts.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/fit_selection_changes.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/fit_selection_changes.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_all999_fit_audit.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_all999_fit_audit.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_profile_diagnostic_20000.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_profile_diagnostic_20000.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_summary.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_summary.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_simulated_null_responses_999.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_simulated_null_responses_999.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_simulated_null_responses_999.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_simulated_null_responses_999.rds"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/observation_order_and_inputs.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/observation_order_and_inputs.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/tail_classification_changes.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/tail_classification_changes.csv"
+      },
+      "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/verification_summary.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/verification_summary.json"
+      },
+      "analysis/orchard_cumulative_correlation/run_new_reproduction.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/run_new_reproduction.R"
+      },
+      "analysis/orchard_cumulative_correlation/saved_results/final_fit_audit_notes.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/saved_results/final_fit_audit_notes.txt"
+      },
+      "analysis/orchard_cumulative_correlation/saved_results/frozen_all999_fit_audit.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/saved_results/frozen_all999_fit_audit.csv"
+      },
+      "analysis/orchard_cumulative_correlation/saved_results/frozen_profile_diagnostic_20000.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/saved_results/frozen_profile_diagnostic_20000.csv"
+      },
+      "analysis/orchard_cumulative_correlation/saved_results/frozen_profile_smoothness.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/saved_results/frozen_profile_smoothness.png"
+      },
+      "analysis/orchard_cumulative_correlation/saved_results/frozen_summary.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/orchard_cumulative_correlation/saved_results/frozen_summary.json"
+      },
+      "analysis/selected_reference_2026-07-30/code/render_primary_figures_4panel.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/code/render_primary_figures_4panel.R"
+      },
+      "analysis/selected_reference_2026-07-30/code/run_aidee_method_corrected_data.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/code/run_aidee_method_corrected_data.R"
+      },
+      "analysis/selected_reference_2026-07-30/code/run_aidee_method_corrected_data_restoration_copy.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/code/run_aidee_method_corrected_data_restoration_copy.R"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_model_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_model_diagnostics.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_model_objects.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_model_objects.rds"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_omnibus.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_pairwise_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_pairwise_contrasts.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_plot_marker_tests.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_plot_marker_tests.csv"
+      },
+      "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_plot_values.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "analysis/selected_reference_2026-07-30/outputs/aidee_corrected_plot_values.csv"
+      },
+      "figures/assets/current_panels/figure2a_corrected_REVIEW.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/figure2a_corrected_REVIEW.png"
+      },
+      "figures/assets/current_panels/hedgerows_0_75_b.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/hedgerows_0_75_b.png"
+      },
+      "figures/assets/current_panels/hedgerows_0_75_c.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/hedgerows_0_75_c.png"
+      },
+      "figures/assets/current_panels/hedgerows_0_75_d.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/hedgerows_0_75_d.png"
+      },
+      "figures/assets/current_panels/hedgerows_observed_root_panel_REVIEW.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/hedgerows_observed_root_panel_REVIEW.png"
+      },
+      "figures/assets/current_panels/orchards_observed_root_panel_REVIEW.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/orchards_observed_root_panel_REVIEW.png"
+      },
+      "figures/assets/current_panels/orchards_observed_stock_panel_REVIEW.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/assets/current_panels/orchards_observed_stock_panel_REVIEW.png"
+      },
+      "figures/hedgerow75_panels/hedgerows_0_75_b.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/hedgerow75_panels/hedgerows_0_75_b.png"
+      },
+      "figures/hedgerow75_panels/hedgerows_0_75_c.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/hedgerow75_panels/hedgerows_0_75_c.png"
+      },
+      "figures/hedgerow75_panels/hedgerows_0_75_d.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/hedgerow75_panels/hedgerows_0_75_d.png"
+      },
+      "figures/render_hedgerow75_panels.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "figures/render_hedgerow75_panels.R"
+      },
+      "archive/Analysis_History_2026-10-20.zip::FILE_MANIFEST.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Analysis_History_2026-10-20.zip",
+        "member": "FILE_MANIFEST.csv"
+      },
+      "archive/Run_Support_History_2026-10-21.zip": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "archive/Run_Support_History_2026-10-21.zip"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/R_session_info.txt"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/double_numerical_checks.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/double_numerical_checks.csv"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/double_optimizer_fits.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/double_optimizer_fits.rds"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/half_numerical_checks.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/half_numerical_checks.csv"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/half_optimizer_fits.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/half_optimizer_fits.rds"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/independent_checks.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/independent_checks.csv"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/numerical_checks.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/numerical_checks.csv"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/original_numerical_checks.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/original_numerical_checks.csv"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/outputs/original_optimizer_fits.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/outputs/original_optimizer_fits.rds"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/run_log.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/run_log.txt"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/DHARMa_simulations.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/DHARMa_simulations.rds"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/R_session_info.txt"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/double_conditional_below_floor_by_sample.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/double_conditional_below_floor_by_sample.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/double_residual_diagnostics.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/double_residual_diagnostics.png"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/double_unconditional_below_floor_by_sample.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/double_unconditional_below_floor_by_sample.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/half_conditional_below_floor_by_sample.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/half_conditional_below_floor_by_sample.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/half_residual_diagnostics.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/half_residual_diagnostics.png"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/half_unconditional_below_floor_by_sample.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/half_unconditional_below_floor_by_sample.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_comparison.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_comparison.png"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_models.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_models.rds"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_numerical_checks.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_numerical_checks.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/original_conditional_below_floor_by_sample.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/original_conditional_below_floor_by_sample.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/original_unconditional_below_floor_by_sample.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/original_unconditional_below_floor_by_sample.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/residual_group_summaries.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/residual_group_summaries.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/run_log.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/run_log.txt"
+      },
+      "analysis/current_perennial_root/saved_results/conditional_gamma_diagnostics.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/saved_results/conditional_gamma_diagnostics.json"
+      },
+      "analysis/current_perennial_root/saved_results/zero_adjustment_sensitivity.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/saved_results/zero_adjustment_sensitivity.json"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/R_session_info.txt"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_contrasts.csv"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_diagnostics.csv"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_fit_details.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_fit_details.csv"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_joint_tests.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_joint_tests.csv"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_means.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_means.csv"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_model.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_model.rds"
+      },
+      "analysis/hedgerow_0_75/bulk_density_results/bulk_density_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/bulk_density_results/bulk_density_omnibus.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/R_session_info.txt"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/diagnostic_settings.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/diagnostic_settings.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_DHARMa_objects.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_DHARMa_objects.rds"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_DHARMa_residuals.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_DHARMa_residuals.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_model_diagnostics.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_model_diagnostics.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_model_objects.rds": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_model_objects.rds"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_omnibus.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_pairwise_contrasts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_pairwise_contrasts.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_plot_marker_tests.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_plot_marker_tests.csv"
+      },
+      "analysis/hedgerow_0_75/nonroot_results/nonroot_plot_values.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/nonroot_results/nonroot_plot_values.csv"
+      },
+      "analysis/selected_reference_2026-07-30/reproducibility/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/reproducibility/R_session_info.txt"
+      },
+      "analysis/selected_reference_2026-07-30/reproducibility/bulk_density_R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/selected_reference_2026-07-30/reproducibility/bulk_density_R_session_info.txt"
+      },
+      "analysis/stock_endpoints_2026-10-20/saved_results/R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "analysis/stock_endpoints_2026-10-20/saved_results/R_session_info.txt"
+      },
+      "reproducibility/annual_R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "reproducibility/annual_R_session_info.txt"
+      },
+      "reproducibility/orchard_R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "reproducibility/orchard_R_session_info.txt"
+      },
+      "reproducibility/perennial_R_session_info.txt": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "reproducibility/perennial_R_session_info.txt"
+      },
+      "archive/Run_Support_History_2026-10-21.zip::FILE_MANIFEST.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Run_Support_History_2026-10-21.zip",
+        "member": "FILE_MANIFEST.csv"
+      },
+      "archive/Supporting_Files_2026-10-20.zip": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "archive/Supporting_Files_2026-10-20.zip"
+      },
+      "analysis/corrected_annual_gamma_2026-10-16/plot_sensitivity.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/plot_sensitivity.R"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/input/annual_corrected_root_profiles.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/input/annual_corrected_root_profiles.csv"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/input/live_root_density.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/corrected_annual_gamma_2026-10-16/input/live_root_density.json"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/outputs/original_residual_diagnostics.png": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/outputs/original_residual_diagnostics.png"
+      },
+      "analysis/corrected_annual_validation_2026-10-16/plot_checks.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/corrected_annual_validation_2026-10-16/plot_checks.R"
+      },
+      "analysis/current_perennial_source/input/perennial_notebook_input.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+      },
+      "analysis/current_perennial_source/outputs/layers_B_shift_gamma_full.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/outputs/layers_B_shift_gamma_full.json"
+      },
+      "analysis/current_perennial_source/outputs/pairs_B_shift_gamma_full.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/outputs/pairs_B_shift_gamma_full.json"
+      },
+      "analysis/current_perennial_source/outputs/status_B_shift_gamma_full.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/outputs/status_B_shift_gamma_full.json"
+      },
+      "analysis/current_perennial_source/outputs/tests_B_shift_gamma_full.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/outputs/tests_B_shift_gamma_full.json"
+      },
+      "analysis/current_perennial_source/source_cells/cell_19.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_cells/cell_19.R"
+      },
+      "analysis/current_perennial_source/source_cells/cell_20.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_cells/cell_20.R"
+      },
+      "analysis/current_perennial_source/source_cells/cell_21.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_cells/cell_21.R"
+      },
+      "analysis/current_perennial_source/source_cells/cell_22.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_cells/cell_22.R"
+      },
+      "analysis/current_perennial_source/source_cells/cell_24.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_cells/cell_24.R"
+      },
+      "analysis/current_perennial_source/source_cells/cell_25.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_cells/cell_25.R"
+      },
+      "analysis/current_perennial_source/source_trace.json": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/current_perennial_source/source_trace.json"
+      },
+      "analysis/hedgerow_0_75/scope_comparison_omnibus.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/hedgerow_0_75/scope_comparison_omnibus.csv"
+      },
+      "analysis/hedgerow_0_75/scope_comparison_retained_means.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/hedgerow_0_75/scope_comparison_retained_means.csv"
+      },
+      "analysis/observed_profile_figures/render_observed_perennial_panels.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "analysis/observed_profile_figures/render_observed_perennial_panels.R"
+      },
+      "figures/assemble_profile_figures.py": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "figures/assemble_profile_figures.py"
+      },
+      "figures/export_publication_assets.py": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "figures/export_publication_assets.py"
+      },
+      "figures/render_nonroot_panels.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "figures/render_nonroot_panels.R"
+      },
+      "figures/render_saved_annual_diagnostics.R": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "figures/render_saved_annual_diagnostics.R"
+      },
+      "reproduction_2026-10-19/data_preparation/depth_label_crosscheck.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/depth_label_crosscheck.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/missing_response_counts.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/missing_response_counts.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/preparation_validation.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/preparation_validation_hedgerow75_2026-10-19.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/root_working_correction_ledger.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "reproduction_2026-10-19/data_preparation/root_working_correction_ledger.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/sample_level_analysis_105_current.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Additional_Support_2026-10-21.zip",
+        "member": "data/processed/sample_level_analysis_105_current.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/sample_level_analysis_96_current.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "reproduction_2026-10-19/data_preparation/sample_level_analysis_96_current.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/sample_level_full_111_current.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "reproduction_2026-10-19/data_preparation/sample_level_full_111_current.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/sample_level_scope_111_current.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "reproduction_2026-10-19/data_preparation/sample_level_scope_111_current.csv"
+      },
+      "reproduction_2026-10-19/data_preparation/source_measurement_manifest.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "reproduction_2026-10-19/data_preparation/source_measurement_manifest.csv"
+      },
+      "archive/Supporting_Files_2026-10-20.zip::FILE_MANIFEST.csv": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "archive_member": "archive/Supporting_Files_2026-10-20.zip",
+        "member": "FILE_MANIFEST.csv"
+      },
+      "analysis/current_perennial_root/README.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/current_perennial_root/README.md"
+      },
+      "analysis/hedgerow_0_75/README.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/hedgerow_0_75/README.md"
+      },
+      "analysis/nonroot_current/README.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/nonroot_current/README.md"
+      },
+      "analysis/stock_endpoints_2026-10-20/README.md": {
+        "archive": "archive/History_and_Support_2026-10-21.zip",
+        "member": "analysis/stock_endpoints_2026-10-20/README.md"
+      }
+    },
+    "default_checks_and_preparation_pass_without_container": true,
+    "source_reconstruction_CSVs_byte_identical": 8,
+    "annual_selected_and_validation_CSVs_byte_identical": 8,
+    "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "restored_saved_residual_helper_PNG_byte_identical": true,
+    "nested_and_explicit_legacy_archive_checks_pass": true,
+    "malformed_container_guards_pass": true,
     "selected_run_source_hashes_preserved_as_historical": true,
     "current_code_hashes_in_FILE_CHECKSUMS": true
   }

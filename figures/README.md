@@ -1,5 +1,7 @@
 # Scientific figures
 
+The history/support ZIPs named below are unchanged inner members of [History_and_Support_2026-10-21.zip](../archive/History_and_Support_2026-10-21.zip). Restore the outer container, then the needed inner ZIP into the same separate copy before using an archived helper.
+
 `assets/` contains the five PNGs used in the current manuscript and supplement, plus the annual root diagnostic PNG documented in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md). Figures 2–4 were redrawn from the saved publication values to use consistent Arial fonts at 6.5 × 6.1 inches (1950 × 1830 pixels, 300 dpi). Panels a/b/d retain their data, uncertainty, significance markers and pixels. Stock panels c now show observed core means ±1SE, with no significance markers; their endpoint tests are in Table 1B. Figure 1, the static sampling diagram and the root diagnostic image are unchanged. Current and historical image hashes are recorded in `FIGURE_ASSET_PROVENANCE.json`.
 
 ## Commands
@@ -15,9 +17,9 @@ Brackets indicate an optional argument, not literal shell syntax. Defaults are s
 
 `render_profile_figures.R` redraws complete Figures 2–4 from corrected annual-root display values, observed perennial-root profiles, current C-concentration/Δ¹⁴C EMMs/markers and 32 observed stock means ±1SE. It writes plotting-data readbacks and runs no models or statistical tests. Arial axes use 9 pt, ticks and legends 8.5 pt, and panel letters 11 pt. The required annual fit-to-display helper remains at `analysis/figure2_review/render_corrected_figure2a.R`.
 
-The [support archive](../archive/Supporting_Files_2026-10-20.zip) preserves alternate panel renderers, copy-only asset exporters and optional annual diagnostic plotters at their original paths. Restore it into a separate repository copy before using these helpers. In particular, `figures/render_saved_annual_diagnostics.R` redraws the former Figure S2 from saved residuals without fitting or simulation. Its fixed PNG, underlying residuals and detailed checks remain active in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
+The [support archive](../archive/History_and_Support_2026-10-21.zip) preserves alternate panel renderers, copy-only asset exporters and optional annual diagnostic plotters at their original paths. Restore it into a separate repository copy before using these helpers. In particular, `figures/render_saved_annual_diagnostics.R` redraws the former Figure S2 from saved residuals without fitting or simulation. Its fixed PNG, underlying residuals and detailed checks remain active in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
 
-The older panel crops and superseded hedgerow helper remain in the separate [analysis history](../archive/Analysis_History_2026-10-20.zip). They are not current rendering inputs.
+The older panel crops and superseded hedgerow helper remain in the separate [analysis history](../archive/History_and_Support_2026-10-21.zip). They are not current rendering inputs.
 
 ## Figure-specific limits
 
@@ -32,4 +34,4 @@ The earlier 20 October orchard-stock restoration and its fitted panel are histor
 
 ## Optional cached-object plots
 
-Some diagnostic helpers in `Supporting_Files_2026-10-20.zip` use objects now stored in [Run_Support_History_2026-10-21.zip](../archive/Run_Support_History_2026-10-21.zip). Restore both support archives into the same separate copy before using those saved objects. Current Figures 1–4 and the fixed S1/S2 assets do not read the run-support ZIP.
+Some diagnostic helpers in `Supporting_Files_2026-10-20.zip` use objects now stored in [Run_Support_History_2026-10-21.zip](../archive/History_and_Support_2026-10-21.zip). Restore both support archives into the same separate copy before using those saved objects. Current Figures 1–4 and the fixed S1/S2 assets do not read the run-support ZIP.

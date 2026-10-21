@@ -9,8 +9,11 @@ usage <- "Usage: Rscript --vanilla scripts/check_saved_results.R [--archive [ARC
 if (identical(args, "--help")) { cat(usage, "\n"); quit(status = 0L) }
 if (length(args) > 2L || (length(args) > 0L && args[1] != "--archive")) stop(usage)
 archive_mode <- length(args) > 0L
-archive_path <- if (length(args) == 2L) path.expand(args[2]) else
-  file.path(repo, "archive/Analysis_History_2026-10-20.zip")
+archive_path <- if (length(args) == 2L) path.expand(args[2]) else {
+  combined <- file.path(repo, "archive/History_and_Support_2026-10-21.zip")
+  if (file.exists(combined)) combined else
+    file.path(repo, "archive/Analysis_History_2026-10-20.zip")
+}
 
 read_table <- function(relative) read.csv(file.path(repo, relative), stringsAsFactors = FALSE, check.names = FALSE)
 d <- read_table("analysis/corrected_annual_gamma_2026-10-16/input/annual_corrected_root_profiles.csv")
@@ -257,8 +260,49 @@ check_archive <- function(zipfile) {
 
   invisible(TRUE)
 }
+# The combined container preserves the four original ZIP byte streams.
+# Extract only the integrity manifest and the requested history ZIP, then reuse
+# the unchanged historical arithmetic checks above. Explicit old ZIP paths work.
+check_optional_archive <- function(zipfile) {
+  zipfile <- normalizePath(zipfile, mustWork = TRUE)
+  listing <- utils::unzip(zipfile, list = TRUE)
+  entries <- listing$Name
+  inner <- "archive/Analysis_History_2026-10-20.zip"
+  if (!(inner %in% entries)) return(check_archive(zipfile))
+  unsafe <- vapply(entries, function(entry) {
+    parts <- strsplit(entry, "/", fixed = TRUE)[[1]]
+    !nzchar(entry) || startsWith(entry, "/") ||
+      grepl("^[A-Za-z]:", entry) || grepl("\\\\", entry) ||
+      grepl("[[:cntrl:]]", entry) || any(parts %in% c("", ".", ".."))
+  }, logical(1))
+  if (any(unsafe) || anyDuplicated(tolower(entries)))
+    stop("Unsafe or duplicate container member path; nothing was extracted.")
+  if (!("FILE_MANIFEST.csv" %in% entries)) stop("The container lacks its integrity manifest.")
+  unpacked <- tempfile("farming-carbon-container-")
+  if (!dir.create(unpacked)) stop("Cannot create isolated container-check directory.")
+  on.exit(unlink(unpacked, recursive = TRUE), add = TRUE)
+  needed <- c("FILE_MANIFEST.csv", inner)
+  utils::unzip(zipfile, files = needed, exdir = unpacked)
+  extracted <- file.path(unpacked, needed)
+  resolved <- normalizePath(extracted, mustWork = TRUE)
+  if (any(nzchar(Sys.readlink(extracted))) || any(!file_test("-f", extracted)) ||
+      any(!startsWith(resolved, paste0(normalizePath(unpacked), "/"))))
+    stop("Container evidence must be regular files inside the isolated directory.")
+  manifest <- read.csv(extracted[1], stringsAsFactors = FALSE)
+  stopifnot(all(c("path", "bytes", "sha256", "md5") %in% names(manifest)),
+    nrow(manifest) == 8L, !anyDuplicated(manifest$path),
+    setequal(c(manifest$path, "FILE_MANIFEST.csv"), entries))
+  index <- match(inner, manifest$path)
+  stopifnot(!is.na(index),
+    identical(as.numeric(file.info(extracted[2])$size), as.numeric(manifest$bytes[index])),
+    identical(unname(tools::md5sum(extracted[2])), manifest$md5[index]))
+  if (!requireNamespace("digest", quietly = TRUE)) stop("Package digest is required for the archive integrity check.")
+  stopifnot(identical(digest::digest(file = extracted[2], algo = "sha256"), manifest$sha256[index]))
+  cat("Combined container manifest and nested history ZIP integrity: PASS\n")
+  check_archive(extracted[2])
+}
 if (archive_mode) {
-  check_archive(archive_path)
+  check_optional_archive(archive_path)
 } else {
   cat("Historical orchard archive checks were not requested; use --archive to include them.\n")
 }

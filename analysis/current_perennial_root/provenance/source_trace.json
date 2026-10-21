@@ -72,7 +72,7 @@
     }
   },
   "input_origin": "Perennial rows from the source notebook embedded CSV, using effective depth bottoms and excluding hedgerow intervals deeper than 75 cm.",
-  "input_record_check": "The 60 source mass and volume pairs match the retained input/perennial_root_input.csv. The original input/perennial_notebook_input.json readback is preserved as analysis/current_perennial_root/input/perennial_notebook_input.json in archive/Additional_Support_2026-10-21.zip.",
+  "input_record_check": "The 60 source mass and volume pairs match the retained input/perennial_root_input.csv. The original notebook JSON readback is preserved at its original path inside archive/Additional_Support_2026-10-21.zip, a byte-exact member of archive/History_and_Support_2026-10-21.zip.",
   "correction_preserved": {
     "sample_code": "143_MAS2_3_A2",
     "root_weight_raw_g": -1.4427,
@@ -91,7 +91,8 @@
   ],
   "verification_scope": "Source recovery, saved-result readback, input checks and syntax checks only. No model fitting, residual simulation or end-to-end rerun was performed.",
   "archived_input_readback": {
-    "archive": "archive/Additional_Support_2026-10-21.zip",
-    "member": "analysis/current_perennial_root/input/perennial_notebook_input.json"
+    "archive": "archive/History_and_Support_2026-10-21.zip",
+    "member": "analysis/current_perennial_root/input/perennial_notebook_input.json",
+    "archive_member": "archive/Additional_Support_2026-10-21.zip"
   }
 }
