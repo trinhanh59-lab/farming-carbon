@@ -15,3 +15,18 @@ Each inner ZIP retains its original `FILE_MANIFEST.csv`, paths and hashes. The f
 To inspect history or use an optional helper, extract the outer ZIP into a separate repository copy, preserving folders. Then extract the needed inner ZIP there. Some diagnostic helpers use records from both Supporting_Files and Run_Support_History, so restore both for those plots. Current paper analyses/figures do not need the container. `check_saved_results.R --archive` reads the nested history directly and extracts only required evidence into a temporary directory; an explicit old ZIP path also works after restoration. The current nine-payload and preceding eight-payload containers are both supported.
 
 The 23 current source workbooks are preserved in the separate [data/Original_Source_Workbooks.zip](../data/Original_Source_Workbooks.zip). Current CSV inputs, published results and fixed figures remain active. The [root checks](../docs/ROOT_MODEL_CHECKS.md) retain their public resource path. Original project code retains [MIT](../LICENSE), project data/results retain [CC BY 4.0](../DATA_LICENSE), and [third-party terms](../LICENSING.md) remain unchanged.
+
+## Current diagnostic results
+
+[Diagnostic_Results_2026-10-21.zip](Diagnostic_Results_2026-10-21.zip) contains six original supporting results, unchanged, plus a six-row size/SHA-256/MD5 manifest. The current numerical summaries remain in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
+
+| Original member path | Bytes |
+| --- | ---: |
+| `analysis/corrected_annual_validation_2026-10-16/outputs/below_floor_prediction_check.csv` | 571 |
+| `analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_contrasts.csv` | 27567 |
+| `analysis/corrected_annual_validation_2026-10-16/outputs/residual_tests.csv` | 1514 |
+| `analysis/corrected_annual_validation_2026-10-16/outputs/residuals_by_sample.csv` | 21972 |
+| `analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json` | 2299 |
+| `analysis/hedgerow_0_75/current_bulk_density/bulk_density_diagnostics.csv` | 221 |
+
+Extract this ZIP into a separate repository copy, preserving folders, before using the saved-residual helper. It restores the four annual validation CSVs, perennial selected-fit status and current hedgerow bulk-density diagnostics at their original paths. The [figure guide](../figures/README.md#restore-the-saved-residual-renderer) gives the full helper-restoration recipe. Current analysis scripts create these outputs on new runs; no statistical settings changed.

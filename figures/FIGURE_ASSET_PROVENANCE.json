@@ -216,5 +216,12 @@
       }
     ],
     "source_bytes_and_drawing_specification_unchanged": true
+  },
+  "saved_residual_diagnostic_source_location": {
+    "archive": "archive/Diagnostic_Results_2026-10-21.zip",
+    "member": "analysis/corrected_annual_validation_2026-10-16/outputs/residuals_by_sample.csv",
+    "source_sha256": "b97308488d32fed63b988bb08151252d3d24dbdd41d93281d4f31b1b0315abe2",
+    "restore_before_archived_helper": "figures/README.md#restore-the-saved-residual-renderer",
+    "image_bytes_and_scientific_caption_unchanged": true
   }
 }

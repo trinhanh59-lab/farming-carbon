@@ -101,5 +101,11 @@
     "readable_context": "REPRODUCIBILITY.md#perennial-root-density",
     "original_source_values_unchanged": true,
     "inner_archive_member": "reproducibility/Method_and_Environment_Records.zip"
+  },
+  "selected_status_result_archive_location": {
+    "archive": "archive/Diagnostic_Results_2026-10-21.zip",
+    "member": "analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json",
+    "original_result_sha256": "7478c1bd48bd03b55027c9ce1166d8ead8cbb65c8fa4924a9fc0ebed2b55d21e",
+    "result_values_unchanged": true
   }
 }

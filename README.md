@@ -26,7 +26,7 @@ These commands check files and saved calculations without fitting models. Run an
 
 [Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) contains all 23 supplied source workbooks at their original paths. The [data documentation](data/DATA_AVAILABILITY.md) describes these records, corrections and unavailable laboratory exports. It also explains the author-confirmed diameter and estimated mass for sample 108. Recorded method/environment details are in the [rerun guide](REPRODUCIBILITY.md#method-records-and-map-sources); their five original files remain in a ZIP inside the history/support container. Census sources are bundled separately with the map.
 
-[Earlier analyses and supporting files](archive/README.md) are preserved in one container. It holds the four original history ZIPs, module guides and method/environment ZIP; original source data, selected analyses and published results remain in the main folders.
+[Earlier analyses and supporting files](archive/README.md) are preserved in one container. It holds the four original history ZIPs, module guides and method/environment ZIP. Six supporting diagnostic records are preserved in [Diagnostic_Results_2026-10-21.zip](archive/Diagnostic_Results_2026-10-21.zip); their numerical summaries remain visible in [root checks](docs/ROOT_MODEL_CHECKS.md). Original source data and current analysis drivers remain in the main folders.
 
 ## License and citation
 

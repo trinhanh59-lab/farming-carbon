@@ -963,7 +963,7 @@
       "analysis/current_perennial_source/input/perennial_notebook_input.json": "analysis/current_perennial_root/input/perennial_notebook_input.json",
       "analysis/current_perennial_source/outputs/layers_B_shift_gamma_full.json": "analysis/current_perennial_root/saved_results/layers_B_shift_gamma_full.json",
       "analysis/current_perennial_source/outputs/pairs_B_shift_gamma_full.json": "analysis/current_perennial_root/saved_results/pairs_B_shift_gamma_full.json",
-      "analysis/current_perennial_source/outputs/status_B_shift_gamma_full.json": "analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json",
+      "analysis/current_perennial_source/outputs/status_B_shift_gamma_full.json": "archive/Diagnostic_Results_2026-10-21.zip!analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json",
       "analysis/current_perennial_source/outputs/tests_B_shift_gamma_full.json": "analysis/current_perennial_root/saved_results/tests_B_shift_gamma_full.json",
       "reproduction_2026-10-19/data_preparation/depth_label_crosscheck.csv": "data/processed/depth_label_crosscheck.csv",
       "reproduction_2026-10-19/data_preparation/missing_response_counts.csv": "data/processed/missing_response_counts.csv",
@@ -2507,6 +2507,85 @@
     "other12scripts_byte_exact": true,
     "current_scientific_and_historical_arithmetic_byte_exact": true,
     "paper_and_published_results_unchanged": true,
+    "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
+    "perennial_baseline_same_reported_results_and_decisions": true,
+    "Figures1_2_3_4_decoded_pixels_identical": true,
+    "source_manifest_and_workbook_hashes_preserved": true
+  },
+  "diagnostic_packaging_2026_10_21": {
+    "scope": "Six complete diagnostic results preserved byte-exact in one ZIP; visible ROOT_MODEL_CHECKS numerical summaries and primary publication values retained. Only result location/navigation changed; all13 script bytes and statistical methods unchanged.",
+    "active_tree_files": 87,
+    "archive_path": "archive/Diagnostic_Results_2026-10-21.zip",
+    "archive": {
+      "bytes": 16839,
+      "sha256": "72caab81b1b5990d7d7db6820f99e1b293c251e0a5f625175af3e9f73fa47698"
+    },
+    "manifest_rows": 6,
+    "member_count": 7,
+    "original_members": [
+      {
+        "path": "analysis/corrected_annual_validation_2026-10-16/outputs/below_floor_prediction_check.csv",
+        "bytes": 571,
+        "sha256": "304d257aa58d853291585fe2b425238440c796081dabee049a419fb65905809b",
+        "md5": "305208d8a74a07023f9502757dd3bcab"
+      },
+      {
+        "path": "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_contrasts.csv",
+        "bytes": 27567,
+        "sha256": "588bd3e5087b581ee0d89fa5759ba01c185c3fa1973349bc169b0aafad52ffdf",
+        "md5": "09f8ec0442eaba40e7c12f3398268543"
+      },
+      {
+        "path": "analysis/corrected_annual_validation_2026-10-16/outputs/residual_tests.csv",
+        "bytes": 1514,
+        "sha256": "a8a94d2f9caae1ae5f2c7661c7e60d550d8c522b6cdad398daecd3d66062b41d",
+        "md5": "dc304f0b25deaa20316f5d0ae8a65a99"
+      },
+      {
+        "path": "analysis/corrected_annual_validation_2026-10-16/outputs/residuals_by_sample.csv",
+        "bytes": 21972,
+        "sha256": "b97308488d32fed63b988bb08151252d3d24dbdd41d93281d4f31b1b0315abe2",
+        "md5": "11a14d9461aaa64cbd2cabbb7746a15b"
+      },
+      {
+        "path": "analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json",
+        "bytes": 2299,
+        "sha256": "7478c1bd48bd03b55027c9ce1166d8ead8cbb65c8fa4924a9fc0ebed2b55d21e",
+        "md5": "7511f0a35da08eefac92e4b254358c0f"
+      },
+      {
+        "path": "analysis/hedgerow_0_75/current_bulk_density/bulk_density_diagnostics.csv",
+        "bytes": 221,
+        "sha256": "a61aba6b1884fd3c237cbc70fb8931864592ebf8ebb1ce30fc059ba298e1da16",
+        "md5": "8aab7a20bfe182b0fc9ecf113b8b37ec"
+      }
+    ],
+    "original_path_resolvers": {
+      "analysis/corrected_annual_validation_2026-10-16/outputs/below_floor_prediction_check.csv": "archive/Diagnostic_Results_2026-10-21.zip!analysis/corrected_annual_validation_2026-10-16/outputs/below_floor_prediction_check.csv",
+      "analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_contrasts.csv": "archive/Diagnostic_Results_2026-10-21.zip!analysis/corrected_annual_validation_2026-10-16/outputs/leave_one_core_out_contrasts.csv",
+      "analysis/corrected_annual_validation_2026-10-16/outputs/residual_tests.csv": "archive/Diagnostic_Results_2026-10-21.zip!analysis/corrected_annual_validation_2026-10-16/outputs/residual_tests.csv",
+      "analysis/corrected_annual_validation_2026-10-16/outputs/residuals_by_sample.csv": "archive/Diagnostic_Results_2026-10-21.zip!analysis/corrected_annual_validation_2026-10-16/outputs/residuals_by_sample.csv",
+      "analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json": "archive/Diagnostic_Results_2026-10-21.zip!analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json",
+      "analysis/hedgerow_0_75/current_bulk_density/bulk_density_diagnostics.csv": "archive/Diagnostic_Results_2026-10-21.zip!analysis/hedgerow_0_75/current_bulk_density/bulk_density_diagnostics.csv"
+    },
+    "saved_residual_helper_restore_before_render": true,
+    "restore_recipe": "figures/README.md#restore-the-saved-residual-renderer",
+    "previous_three_archives_unchanged": {
+      "archive/History_and_Support_2026-10-21.zip": {
+        "bytes": 10594273,
+        "sha256": "dffb229281bf482b3fd8a36c0975ba5fea4bd39ef15589f2437bd520f06372c7"
+      },
+      "data/Original_Source_Workbooks.zip": {
+        "bytes": 535154,
+        "sha256": "e29a7e08077be96866997ff55df90d9edbed678855d0f894302a129d04917a0a"
+      },
+      "figures/map/basemap/Census_Basemaps_2023_500k.zip": {
+        "bytes": 14880087,
+        "sha256": "a95ae458cebb909b52287b9ba90cb09b54dd3be66fda9ade4b4cdeeb8a7cfa90"
+      }
+    },
+    "all13script_paths_and_bytes_unchanged": true,
+    "paper_and_current_figures_unchanged": true,
     "nonroot_stock_and_bulk_density_numeric_tables_exact": 21,
     "perennial_baseline_same_reported_results_and_decisions": true,
     "Figures1_2_3_4_decoded_pixels_identical": true,

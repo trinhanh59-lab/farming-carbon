@@ -17,7 +17,7 @@ Brackets indicate an optional argument, not literal shell syntax. Defaults are s
 
 `render_profile_figures.R` redraws complete Figures 2–4 from corrected annual-root display values, observed perennial-root profiles, current C-concentration/Δ¹⁴C EMMs/markers and 32 observed stock means ±1SE. It writes plotting-data readbacks and runs no models or statistical tests. Arial axes use 9 pt, ticks and legends 8.5 pt, and panel letters 11 pt. The required annual fit-to-display helper remains at `analysis/figure2_review/render_corrected_figure2a.R`.
 
-The [support archive](../archive/History_and_Support_2026-10-21.zip) preserves alternate panel renderers, copy-only asset exporters and optional annual diagnostic plotters at their original paths. Restore it into a separate repository copy before using these helpers. In particular, `figures/render_saved_annual_diagnostics.R` redraws the former Figure S2 from saved residuals without fitting or simulation. Its fixed PNG, underlying residuals and detailed checks remain active in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
+The [support archive](../archive/History_and_Support_2026-10-21.zip) preserves alternate panel renderers, copy-only asset exporters and optional annual diagnostic plotters at their original paths. Restore it into a separate repository copy before using these helpers. In particular, `figures/render_saved_annual_diagnostics.R` redraws the former Figure S2 from saved residuals without fitting or simulation. Its fixed PNG and detailed numerical summaries remain visible in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md); the underlying residuals are preserved in [Diagnostic_Results_2026-10-21.zip](../archive/Diagnostic_Results_2026-10-21.zip).
 
 The older panel crops and superseded hedgerow helper remain in the separate [analysis history](../archive/History_and_Support_2026-10-21.zip). They are not current rendering inputs.
 
@@ -35,3 +35,16 @@ The earlier 20 October orchard-stock restoration and its fitted panel are histor
 ## Optional cached-object plots
 
 Some diagnostic helpers in `Supporting_Files_2026-10-20.zip` use objects now stored in [Run_Support_History_2026-10-21.zip](../archive/History_and_Support_2026-10-21.zip). Restore both support archives into the same separate copy before using those saved objects. Current Figures 1–4 and the fixed S1/S2 assets do not read the run-support ZIP.
+
+## Restore the saved-residual renderer
+
+In a separate repository copy, run these commands from its root. They restore the original residuals and archived helper before drawing the diagnostic image:
+
+```sh
+python -m zipfile -e archive/Diagnostic_Results_2026-10-21.zip .
+python -m zipfile -e archive/History_and_Support_2026-10-21.zip .
+python -m zipfile -e archive/Supporting_Files_2026-10-20.zip .
+Rscript --vanilla figures/render_saved_annual_diagnostics.R outputs_rerun/saved_residual_figure
+```
+
+Use a new output directory. This renderer uses the restored saved residuals; it fits no models and generates no new simulations. Current Figures 1–4 do not require these restoration steps.
