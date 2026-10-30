@@ -24,7 +24,7 @@ Rscript --vanilla scripts/check_repository.R
 Rscript --vanilla scripts/check_saved_results.R
 ```
 
-The first checks file integrity, installed package names and R syntax without evaluating analysis code. The second checks current inputs, stock/volume/density arithmetic, saved contrasts, Holm adjustment and figure mappings without fitting models. Add `--archive` to check the historical orchard evidence inside the container:
+The first checks file integrity, installed package names and R syntax without evaluating analysis code. The second checks current inputs, stock/volume/density arithmetic, saved contrasts and figure mappings without fitting models. The earlier stock Holm adjustment is checked as history. Add `--archive` to check the historical orchard evidence inside the container:
 
 ```sh
 Rscript --vanilla scripts/check_saved_results.R --archive
@@ -38,7 +38,7 @@ This extracts only the outer manifest and the original analysis-history ZIP to a
 Rscript --vanilla scripts/prepare_analysis_data.R . outputs_rerun/data_preparation
 ```
 
-Preparation opens `data/Original_Source_Workbooks.zip` automatically, verifies its 23 members against the manifest and `SOURCE_FILES.csv`, and extracts them only to a temporary directory. It reads twelve working measurement spreadsheets and preserves their original root masses separately from recorded working-mass corrections. It rebuilds the full 111-record table, current 96-row input and inclusion flags, and compares them with the publication workbook. The retained diameter is the author-confirmed 3.81 cm. Sample 108 uses the author-approved 104.40 g neighboring-core estimate; neither confirmation independently verifies the original cutting-tip measurement or same-core mass. See [DATA_AVAILABILITY.md](data/DATA_AVAILABILITY.md) for source records, corrections and missing laboratory exports. Preparation creates CSVs and checks, not Word or Excel files.
+Preparation opens `data/Original_Source_Workbooks.zip` automatically, verifies its 23 members against the manifest and `SOURCE_FILES.csv`, and extracts them only to a temporary directory. It reads twelve working measurement spreadsheets and preserves their imported root masses separately from recorded working-mass corrections. These include the 18 annual changes and hedgerow samples 187 = 0.1952 g and 208 = 0.0199 g. The author confirmed the two hedgerow values against the weighing record on 27 October 2026; that record was not independently inspected. Preparation rebuilds the full 111-record table, current 96-row input and inclusion flags, and compares them with the repository workbook. The retained diameter is the author-confirmed 3.81 cm. Sample 108 uses the author-approved 104.40 g neighboring-core estimate; neither confirmation independently verifies the original cutting-tip measurement or same-core mass. See [DATA_AVAILABILITY.md](data/DATA_AVAILABILITY.md) for source records, corrections and missing laboratory exports. Preparation creates CSVs and checks, not Word or Excel files.
 
 Run the annual model before its validation script, which reads the selected saved fits and contrasts:
 
@@ -51,7 +51,7 @@ The annual selected-fit RDS remains active so validation can also run without a 
 
 ## Perennial root density
 
-`analysis/current_perennial_root/` contains 24 orchard observations from six cores and 36 hedgerow observations from nine cores, all through 75 cm. Each system has four no-root-recovery observations. The active input is `input/perennial_root_input.csv`; notebook readbacks and original source cells remain archived. The source trace retains their hashes and locations. The recorded perennial environment is R 4.6.1 (2026-06-24), glmmTMB 1.1.15.2, emmeans 2.0.4, DHARMa 0.5.0 and jsonlite 2.0.0. Its original `source_cells_zero_based` values are `[0, 1, 30]`.
+`analysis/current_perennial_root/` contains 24 orchard observations from six cores and 36 hedgerow observations from nine cores, all through 75 cm. Orchards retain four recorded zeros; corrected hedgerows contain three. The active input is `input/perennial_root_input.csv`; imported raw masses remain separate from working masses. The two hedgerow corrections are included in the working input and current results, while pre-correction results remain historical. The recorded perennial environment is R 4.6.1 (2026-06-24), glmmTMB 1.1.15.2, emmeans 2.0.4, DHARMa 0.5.0 and jsonlite 2.0.0. The original source trace retains notebook hashes/locations and `source_cells_zero_based` values `[0, 1, 30]`.
 
 The response is `1000 * (root_weight + 0.00017) / volume_cm3`, in mg/cm³. The full management-by-depth model uses Gamma(log), a core random intercept, constant dispersion and no zero-inflation component. It is fitted by maximum likelihood. The original mass-scale starting fit and depth-specific conversion to density are retained; nlminb and BFGS use the original controls/agreement thresholds. The selected model is `B_shift_gamma`, not the older Tweedie alternatives named in the source notebook.
 
@@ -77,7 +77,7 @@ result <- run_perennial_root_workflow(
 
 Output must be a new or empty directory outside the module, including aliases through symlinks. The path is checked before fitting and again before writing; supplied inputs/results/provenance are protected. `root_weight_raw` preserves the earlier subtraction, while `root_weight` is the working g mass. Sample `143_MAS2_3_A2` retains the corrected 0.0086 g working value and −1.4427 g raw subtraction, without a new correction or clipping.
 
-Management/depth comparisons average fitted log means equally across intervals/groups. Pairwise effects are ratios of the constant-adjusted response with unadjusted p values and 95% Wald intervals, not integrated root-mass ratios. Five mass additions use 0.1, 0.5, 1, 2 and 10 times 0.00017 g. Conditional DHARMa diagnostics use 1,000 draws without refitting, with seeds 20261116 and 20261117 for orchard and hedgerow. Below-floor predictions are counted without clipping; these checks do not establish model adequacy. [ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md) retains the detailed tables and figure. Original fitted objects/full simulation matrices were not retained; reruns produce new objects separately, while the supplied results remain the reference.
+Management/depth comparisons average fitted log means equally across intervals/groups. Pairwise effects are ratios of the constant-adjusted response with unadjusted p values and 95% Wald intervals, not integrated root-mass ratios. Five mass additions use 0.1, 0.5, 1, 2 and 10 times 0.00017 g. Conditional DHARMa diagnostics use 1,000 draws without refitting, with seeds 20261116 and 20261117 for orchard and hedgerow. Below-floor predictions are counted without clipping. The corrected hedgerow checks completed on 27 October are retained under `analysis/current_perennial_root/saved_results/hedgerow_checks/`, including their saved fit/simulation provenance; orchard checks are unchanged. [ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md) gives the current summaries and preserves the annual tables and diagnostic figure. These checks do not establish model adequacy.
 
 ## C concentration and radiocarbon
 
@@ -104,23 +104,23 @@ Bulk density uses Gaussian(identity) with the same depth-by-group interaction an
 
 The retained July bulk-density driver is `analysis/selected_reference_2026-07-30/code/run_bulk_density_aidee_wald.R`. It creates its `outputs/` folder when needed. Use a separate repository copy: it reproduces the original annual/orchard rows and the older 100 cm hedgerow reference, which must not replace current hedgerow results. The earlier three-response hedgerow checkpoint included a cumulative-stock profile fit; that is historical, not the current stock method.
 
-## Observed carbon-stock endpoints
+## Overall observed carbon-stock comparisons
 
-The current endpoint module uses one observed total per core: annual 0–100 cm, orchard 0–75 cm and hedgerow 0–20/0–75 cm, with three cores per group. These author-selected comparisons fit no stock-profile or sensitivity model:
+The selected module uses one observed total per core at 0–100 cm for annual fields and 0–75 cm for orchards and hedgerows, with three cores per field or margin. It supplies one overall Welch ANOVA per system and allows unequal variances:
 
 ```sh
-Rscript --vanilla analysis/stock_endpoints_2026-10-20/run_stock_endpoints.R --run-analysis outputs_rerun/stock_endpoints
+Rscript --vanilla analysis/stock_omnibus_2026-10-21/run_stock_omnibus.R --run-analysis outputs_rerun/stock_omnibus
 ```
 
-The script checks identities, endpoint depths, core counts, twelve source hashes and preserved layer/cumulative-stock arithmetic without changing measurements or supplied stocks. It saves 30 endpoint records, ten three-core group summaries and eight two-sided unpaired Welch comparisons. Differences are first group minus second group, in t C ha⁻¹. All six hedgerow p values share one Holm family; annual/orchard values are unadjusted. Every 95% interval is an unadjusted pointwise interval, not a simultaneous Holm interval.
+The saved results contain 21 core totals, seven group summaries and three overall tests: annual p = 0.0935645, orchard p = 0.3812410 and hedgerow p = 0.4507432. No 0–20 cm hedgerow test, pairwise follow-up or stock Holm adjustment belongs to this selection. With two groups, Welch ANOVA gives the same p-value as the corresponding two-sided Welch t test, so the annual and orchard p-values are unchanged. The author selected this branch on 21 October after reviewing the earlier comparisons; it is not a preplanned analysis or independent confirmation.
 
-`stock_profile_summary.csv` supplies 32 observed means, sample SDs and SEs with source core/sample identifiers. SE is SD/√3; plotted mean ±1SE is descriptive, not a fitted mean or confidence interval. Welch allows unequal variances; independence and approximate normality remain assumptions with three cores per field. One location represents each management category, so these comparisons describe sampled fields/margins rather than replicated field-level management effects. Selecting these endpoints changed no raw measurement, supplied stock calculation, source file, profile model or other analysis. New reruns continue to write `METHOD_SCOPE.txt` in their output directory.
+The earlier `analysis/stock_endpoints_2026-10-20/` module retains its 30 endpoints, ten groups and eight pairwise Welch contrasts as history. Its `stock_profile_summary.csv` still supplies the 32 observed cumulative-profile means, sample SDs and SEs used in the current figures. SE is SD/√3; mean ±1 SE is descriptive, not a fitted mean or 95% confidence interval. Supplied measurements, layer stocks and core totals are unchanged. One location represents each management category, so comparisons concern the sampled fields/margins rather than replicated field-level management effects. Independence and approximate normality of core totals remain assumptions with three cores per group.
 
 ## Figures and archived records
 
 Use [figures/README.md](figures/README.md) for the map and profile renderers. The [diagnostic-results ZIP](archive/Diagnostic_Results_2026-10-21.zip) preserves four annual validation CSVs, the perennial selected-status JSON and current hedgerow bulk-density diagnostics at their original paths. Extract it into a separate repository copy before using the archived saved-residual renderer. [ROOT_MODEL_CHECKS.md](docs/ROOT_MODEL_CHECKS.md) retains the numerical summaries, and the [figure guide](figures/README.md#restore-the-saved-residual-renderer) gives the restoration commands. New annual/perennial/bulk-density runs still write their original diagnostic filenames. Rendering uses supplied tables without fitting models. The five publication images and root diagnostic image remain active; S1's editable drawing source was not located, so its exact image/caption are preserved.
 
-[archive/README.md](archive/README.md) identifies the four inner ZIPs, 187 original records and original module guides. Restore the outer container and then the needed inner ZIP into a separate copy before using optional helpers. The separate orchard covariance/bootstrap workflow remains historical and excluded from the current paper/supplement. Current `reproducibility/PUBLICATION_TARGETS.json` identifies selected results and nested locations; `FILE_CHECKSUMS.csv` is the active integrity list. Dated hashes/source versions remain labeled history. Numerical reproduction checks agreement with supplied results; it does not recover missing original measurements or establish model validity.
+[archive/README.md](archive/README.md) identifies the four inner ZIPs, 187 original records and original module guides. Restore the outer container and then the needed inner ZIP into a separate copy before using optional helpers. The separate orchard covariance/bootstrap workflow remains a dated secondary analysis; it is not the selected overall stock test. Current `reproducibility/PUBLICATION_TARGETS.json` identifies selected results and nested locations; `FILE_CHECKSUMS.csv` is the active integrity list. Dated hashes/source versions remain labeled history. Numerical reproduction checks agreement with supplied results; it does not recover missing original measurements or establish model validity.
 
 ## Original source workbook packaging
 
@@ -128,7 +128,7 @@ Use [figures/README.md](figures/README.md) for the map and profile renderers. Th
 
 Preparation and endpoint source checks validate paths, regular files, sizes, SHA-256 and MD5 before using temporary extracted files. Temporary sources are cleaned on exit. Preparation still accepts an explicit loose source directory as its third `RAW_DIR` argument; both scripts also support the original restored directory layout when the source ZIP is absent. For manual inspection, extract the ZIP into a new directory, preserving folders. The loose source directory is then `NEW_DIRECTORY/data/source_measurements/`.
 
-Saved source tables retain original semantic filenames and workbook hashes. A new endpoint run records the current preparation/endpoint code hashes, which differ only because of source-access packaging. The supplied `saved_results/source_sha256.csv` remains the dated selected-run record; current code identities are in `FILE_CHECKSUMS.csv`.
+Saved source tables retain original semantic filenames and workbook hashes. Selected run records describe their dated code/input versions; current code identities are in `FILE_CHECKSUMS.csv`. The original source workbook container remains unchanged. The 30 October synchronization changes analytical root masses only in the working inputs and their dependent outputs, and adds the previously selected overall stock branch.
 
 ## Method records and map sources
 

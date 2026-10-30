@@ -1,0 +1,16 @@
+"system","multiplier","comparison","log_ratio_gap","SE_gap"
+"hedgerows",0.1,"bare field margin / 10-year-old hedgerow",0,0
+"hedgerows",0.1,"bare field margin / 30-year-old hedgerow",0,0
+"hedgerows",0.1,"10-year-old hedgerow / 30-year-old hedgerow",0,1.11022302462516e-16
+"hedgerows",0.5,"bare field margin / 10-year-old hedgerow",0,5.55111512312578e-17
+"hedgerows",0.5,"bare field margin / 30-year-old hedgerow",0,5.55111512312578e-17
+"hedgerows",0.5,"10-year-old hedgerow / 30-year-old hedgerow",0,0
+"hedgerows",1,"bare field margin / 10-year-old hedgerow",0,5.55111512312578e-17
+"hedgerows",1,"bare field margin / 30-year-old hedgerow",0,0
+"hedgerows",1,"10-year-old hedgerow / 30-year-old hedgerow",0,0
+"hedgerows",2,"bare field margin / 10-year-old hedgerow",0,5.55111512312578e-17
+"hedgerows",2,"bare field margin / 30-year-old hedgerow",0,5.55111512312578e-17
+"hedgerows",2,"10-year-old hedgerow / 30-year-old hedgerow",0,5.55111512312578e-17
+"hedgerows",10,"bare field margin / 10-year-old hedgerow",0,0
+"hedgerows",10,"bare field margin / 30-year-old hedgerow",0,0
+"hedgerows",10,"10-year-old hedgerow / 30-year-old hedgerow",0,0

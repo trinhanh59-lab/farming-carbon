@@ -16,9 +16,9 @@ To inspect history or use an optional helper, extract the outer ZIP into a separ
 
 The 23 current source workbooks are preserved in the separate [data/Original_Source_Workbooks.zip](../data/Original_Source_Workbooks.zip). Current CSV inputs, published results and fixed figures remain active. The [root checks](../docs/ROOT_MODEL_CHECKS.md) retain their public resource path. Original project code retains [MIT](../LICENSE), project data/results retain [CC BY 4.0](../DATA_LICENSE), and [third-party terms](../LICENSING.md) remain unchanged.
 
-## Current diagnostic results
+## Diagnostic records preserved on 21 October 2026
 
-[Diagnostic_Results_2026-10-21.zip](Diagnostic_Results_2026-10-21.zip) contains six original supporting results, unchanged, plus a six-row size/SHA-256/MD5 manifest. The current numerical summaries remain in [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md).
+[Diagnostic_Results_2026-10-21.zip](Diagnostic_Results_2026-10-21.zip) contains six original supporting results, unchanged, plus a six-row integrity manifest. The perennial selected-fit status predates the two hedgerow root-mass corrections. Annual validation and hedgerow bulk-density records are unchanged. [ROOT_MODEL_CHECKS.md](../docs/ROOT_MODEL_CHECKS.md) distinguishes these dated records from the corrected hedgerow checks supplied under `analysis/current_perennial_root/saved_results/hedgerow_checks/`.
 
 | Original member path | Bytes |
 | --- | ---: |
@@ -29,4 +29,4 @@ The 23 current source workbooks are preserved in the separate [data/Original_Sou
 | `analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json` | 2299 |
 | `analysis/hedgerow_0_75/current_bulk_density/bulk_density_diagnostics.csv` | 221 |
 
-Extract this ZIP into a separate repository copy, preserving folders, before using the saved-residual helper. It restores the four annual validation CSVs, perennial selected-fit status and current hedgerow bulk-density diagnostics at their original paths. The [figure guide](../figures/README.md#restore-the-saved-residual-renderer) gives the full helper-restoration recipe. Current analysis scripts create these outputs on new runs; no statistical settings changed.
+Extract this ZIP into a separate repository copy, preserving folders, before using the saved-residual helper. It restores the four annual validation CSVs, perennial selected-fit status and current hedgerow bulk-density diagnostics at their original paths. The [figure guide](../figures/README.md#restore-the-saved-residual-renderer) gives the full helper-restoration recipe. New runs write separate outputs. Do not restore the old perennial status over the corrected current results; the statistical method is unchanged, but the two working root masses differ.

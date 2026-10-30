@@ -22,15 +22,15 @@
     "structure": "full",
     "regular": true,
     "boundary": false,
-    "management_chisq": 52.083307684495416,
+    "management_chisq": 69.8380021755151,
     "management_df": 2,
-    "management_p": 4.9006471786999095e-12,
-    "depth_chisq": 19.126092580403427,
+    "management_p": 6.83707767707164e-16,
+    "depth_chisq": 16.1709726724778,
     "depth_df": 3,
-    "depth_p": 0.0002574668241533578,
-    "interaction_chisq": 22.995110374951537,
+    "depth_p": 0.00104603138891039,
+    "interaction_chisq": 16.1285099046445,
     "interaction_df": 6,
-    "interaction_p": 0.0007981179276497154,
+    "interaction_p": 0.0130805741600708,
     "_row": "full B"
   }
 ]

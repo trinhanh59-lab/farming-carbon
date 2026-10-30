@@ -1,6 +1,6 @@
 # Perennial recovered-root density: the full Gamma model reported in the paper.
 # Sourcing this file defines functions only. Fitting and simulation require explicit calls.
-# The original mass correction and all zero observations are retained.
+# Recorded working-mass corrections and all remaining zero observations are retained.
 
 perennial_require_packages <- function(diagnostics = FALSE) {
   needed <- c("glmmTMB", "emmeans", "jsonlite", if (diagnostics) "DHARMa")
@@ -25,6 +25,7 @@ read_perennial_root_input <- function(input_csv) {
   hedgerows = c("bare field margin", "10-year-old hedgerow", "30-year-old hedgerow"))
   expected_n <- c(orchards = 24L, hedgerows = 36L)
   expected_cores <- c(orchards = 6L, hedgerows = 9L)
+  expected_zeros <- c(orchards = 4L, hedgerows = 3L)
   out <- list()
   for (s in names(orders)) {
     z <- d[d$system == s, , drop = FALSE]
@@ -33,7 +34,7 @@ read_perennial_root_input <- function(input_csv) {
     z$depth_factor <- factor(paste(z$top_cm, z$bottom_cm, sep = "-"),
     levels = c("0-10", "10-20", "20-50", "50-75"))
     stopifnot(nrow(z) == expected_n[[s]], nlevels(z$core) == expected_cores[[s]],
-    sum(z$root_weight == 0) == 4L, !anyNA(z$site_type), !anyNA(z$depth_factor),
+    sum(z$root_weight == 0) == expected_zeros[[s]], !anyNA(z$site_type), !anyNA(z$depth_factor),
     all(table(z$site_type, z$depth_factor) == 3L),
     !anyDuplicated(z[c("core", "depth_factor")]))
     volumes <- tapply(z$volume_cm3, z$depth_factor, function(v) length(unique(v)))

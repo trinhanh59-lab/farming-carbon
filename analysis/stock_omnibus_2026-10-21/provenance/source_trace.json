@@ -1,0 +1,61 @@
+{
+  "analysis_selected_date": "2026-10-21",
+  "method": "stats::oneway.test(cumulative_C_stock_t_C_ha ~ management, var.equal=FALSE)",
+  "selection": "The author selected these endpoints and overall tests after reviewing the earlier pairwise comparisons.",
+  "unit_of_analysis": "One observed cumulative C-stock total per core; three cores per field or margin.",
+  "units": "t C ha^-1",
+  "endpoint_scope_cm": {
+    "annual vegetables": [
+      0,
+      100
+    ],
+    "orchards": [
+      0,
+      75
+    ],
+    "hedgerows": [
+      0,
+      75
+    ]
+  },
+  "result_rows": {
+    "observations": 21,
+    "groups": 7,
+    "tests": 3
+  },
+  "intervals": "Group summaries retain distinct SD and SE columns. Profile figure error bars use one SE.",
+  "multiplicity": "One overall test per system, without pairwise contrasts or Holm adjustment in this module.",
+  "historical_module": "analysis/stock_endpoints_2026-10-20 remains unchanged as the earlier pairwise endpoint analysis.",
+  "portable_adapter": "The script reads the exact 21 selected core observations, rather than reselecting them from the earlier 30-row endpoint table. It uses the same Welch ANOVA and group-summary calculations.",
+  "sources": [
+    {
+      "file": "analysis/stock_omnibus_2026-10-21/saved_results/R_session_info.txt",
+      "sha256": "30db3a7ce9bf6fa96c11212a167ab69242eaa002fa686245eb8e5156b269ffc1",
+      "role": "Exact copy of the selected saved output"
+    },
+    {
+      "file": "analysis/stock_omnibus_2026-10-21/saved_results/group_summary.csv",
+      "sha256": "4cf85ea5e20d847be73e6b61cbda37ff09bfdbc1d1a2d9480a51999eb62ec39a",
+      "role": "Exact copy of the selected saved output"
+    },
+    {
+      "file": "analysis/stock_omnibus_2026-10-21/saved_results/stock_omnibus_observations.csv",
+      "sha256": "b47809efbc073c9268614d0c7d255cab08de6e8d2822a2387fc21dfba99d500b",
+      "role": "Exact copy of the selected saved output"
+    },
+    {
+      "file": "analysis/stock_omnibus_2026-10-21/saved_results/welch_anova.csv",
+      "sha256": "6bc02cedf130a6a44cfcf236da524586d3d9eaefa333ef9ab4b3b6dc0d81c35d",
+      "role": "Exact copy of the selected saved output"
+    }
+  ],
+  "input": {
+    "file": "analysis/stock_omnibus_2026-10-21/input/stock_omnibus_observations.csv",
+    "sha256": "b47809efbc073c9268614d0c7d255cab08de6e8d2822a2387fc21dfba99d500b"
+  },
+  "code": {
+    "file": "analysis/stock_omnibus_2026-10-21/run_stock_omnibus.R",
+    "sha256": "d933e7826136b26719184a1e2ac02a6452a43e27d000cc19517bbb07b6ba9ca8"
+  },
+  "verification_scope": "Saved-output identity, endpoint and core-count checks, and syntax review. The ANOVAs were not rerun during synchronization."
+}

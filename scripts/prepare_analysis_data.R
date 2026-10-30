@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 # Data-only preparation from the recorded July 20 working-source transformations.
-# Retains the historical inputs and applies the recorded October 16 annual masses.
+# Retains historical inputs and applies recorded October 16 annual and October 27 hedgerow masses.
 # Reads source XLSX files; writes CSV data and validation records only. No model fits.
 # Reproducing a working value does not independently validate its original field
 # or handwritten record. In particular, the working moisture source already
@@ -515,6 +515,27 @@ assert_true(sum(changed)==18L,"Expected exactly18 annual working-mass correction
 assert_true(sum(annual$root_mass_current_g==0)==9L,"Expected9 recorded no-recovery annual zeros.")
 current_full <- df_full
 current_full$root_weight[old_index] <- annual$root_mass_current_g
+# These two hedgerow masses were confirmed by the author against a weighing
+# record on October 27. The original record was not independently inspected.
+# Match sample identity before changing only the analytical working column.
+hedgerow_corrections <- tibble(
+  sample_id = c(187, 208),
+  sample_code = c("187_HRDY1_2_A1", "208_HRDY2_3_A2"),
+  raw_root_weight_g = c(0, 0.9132),
+  working_root_weight_g = c(0.1952, 0.0199))
+hedgerow_index <- match(hedgerow_corrections$sample_id,
+  as.numeric(as.character(current_full$sample_id)))
+assert_true(!anyNA(hedgerow_index), "A corrected hedgerow sample is missing.")
+assert_true(identical(as.character(current_full$sample_code[hedgerow_index]),
+  hedgerow_corrections$sample_code), "Hedgerow correction identities differ.")
+assert_true(all(abs(current_full$root_weight_raw[hedgerow_index] -
+  hedgerow_corrections$raw_root_weight_g) < 1e-12),
+  "Corrected hedgerow raw masses differ from the retained source records.")
+current_full$root_weight[hedgerow_index] <-
+  hedgerow_corrections$working_root_weight_g
+assert_true(sum(current_full$root_weight[current_full$system == "hedgerows" &
+  current_full$nominal_depth_bottom_cm <= 75] == 0) == 3L,
+  "Expected three no-recovery hedgerow observations after the two corrections.")
 current_analysis <- current_full %>%
   filter(!(system=="orchards" & depth_cm=="75-100")) %>%
   arrange(system,site_name,sampling_point,nominal_depth_top_cm) %>%
@@ -583,7 +604,10 @@ for(i in seq_len(nrow(input_manifest))) {
 }
 correction_ledger <- bind_rows(
   tibble(sample_id=143,raw_root_weight_g=root_correction_raw,working_root_weight_g=root_correction_value,basis="Recorded working replacement of impossible source subtraction; not independent handwritten verification"),
-  annual[changed,] %>% transmute(sample_id,raw_root_weight_g=root_mass_original_g,working_root_weight_g=root_mass_current_g,basis="Author-reviewed October16 annual working-mass record"))
+  annual[changed,] %>% transmute(sample_id,raw_root_weight_g=root_mass_original_g,working_root_weight_g=root_mass_current_g,basis="Author-reviewed October16 annual working-mass record"),
+  hedgerow_corrections %>% transmute(sample_id,raw_root_weight_g,
+    working_root_weight_g,
+    basis="Author confirmed against a weighing record on 2026-10-27; record not independently inspected"))
 # Only after every check passes do we create a fresh output directory.
 OUTPUT_DIR <- protect_output(OUTPUT_DIR)
 assert_true(!file.exists(OUTPUT_DIR) && !dir.exists(OUTPUT_DIR),"Output now exists; choose a new directory.")
@@ -596,6 +620,6 @@ write_csv(correction_ledger,file.path(OUTPUT_DIR,"root_working_correction_ledger
 write_csv(input_manifest,file.path(OUTPUT_DIR,"source_measurement_manifest.csv"),na="")
 write_csv(bind_rows(validation),file.path(OUTPUT_DIR,"preparation_validation.csv"),na="")
 for(name in names(check_exports)) write_csv(check_exports[[name]],file.path(OUTPUT_DIR,name),na="")
-cat("PASS: 12 working source workbooks -> retained111/105 tables and current96 primary input; 19 recorded root working corrections; measurement values, current workbook scope and module inputs match.\n")
+cat("PASS: 12 working source workbooks -> retained111/105 tables and current96 primary input; 21 recorded root working corrections; measurement values, current workbook scope and module inputs match.\n")
 cat("No models, simulations, document creation or workbook creation performed.\n")
 cat("New CSV directory:",OUTPUT_DIR,"\n")

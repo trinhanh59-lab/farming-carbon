@@ -2,12 +2,13 @@
 
 Data and analysis code for *Soil Carbon Stocks and Radiocarbon Profiles in Three Agricultural Systems of California’s Central Valley*.
 
-The paper compares annual fields through 100 cm and orchards and hedgerows through 75 cm. All 111 sample records are preserved; the current paper uses 96 observations.
+The paper compares annual fields through 100 cm and orchards and hedgerows through 75 cm. All 111 sample records are preserved; the current paper uses 96 observations. The 30 October 2026 synchronization incorporates the two author-confirmed hedgerow root-mass corrections, the selected overall stock tests and Figures 2–4 with mean ±1 SE.
 
 ## Start here
 
 - [Publication workbook](data/Supplementary_Data.xlsx): sample data, statistical tables and values used in the figures.
 - [Current analysis input](data/processed/sample_level_analysis_96_current.csv): the 96 paper observations. [Sample inclusion](data/processed/sample_level_scope_111_current.csv) identifies current and historical inclusion across all 111 records.
+- [Selected stock comparisons](analysis/stock_omnibus_2026-10-21/): one overall Welch ANOVA per system. [Root checks](docs/ROOT_MODEL_CHECKS.md) distinguish corrected hedgerow results from earlier records.
 - [File map](COVERAGE_MAP.md): inputs, selected code and saved results for each figure and table.
 - [Rerun instructions](REPRODUCIBILITY.md): software versions and current analysis commands. [Figure instructions](figures/README.md) cover rendering.
 
@@ -24,9 +25,9 @@ These commands check files and saved calculations without fitting models. Run an
 
 ## Source records and history
 
-[Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) contains all 23 supplied source workbooks at their original paths. The [data documentation](data/DATA_AVAILABILITY.md) describes these records, corrections and unavailable laboratory exports. It also explains the author-confirmed diameter and estimated mass for sample 108. Recorded method/environment details are in the [rerun guide](REPRODUCIBILITY.md#method-records-and-map-sources); their five original files remain in a ZIP inside the history/support container. Census sources are bundled separately with the map.
+[Original_Source_Workbooks.zip](data/Original_Source_Workbooks.zip) contains all 23 supplied source workbooks at their original paths. The [data documentation](data/DATA_AVAILABILITY.md) describes these records, analytical corrections and unavailable laboratory exports. Imported root masses are retained separately from working masses. The author confirmed the two hedgerow corrections against the weighing record on 27 October 2026; that record was not independently inspected for this synchronization. The data documentation also explains the author-confirmed diameter and estimated mass for sample 108. Recorded method/environment details are in the [rerun guide](REPRODUCIBILITY.md#method-records-and-map-sources); their five original files remain in a ZIP inside the history/support container. Census sources are bundled separately with the map.
 
-[Earlier analyses and supporting files](archive/README.md) are preserved in one container. It holds the four original history ZIPs, module guides and method/environment ZIP. Six supporting diagnostic records are preserved in [Diagnostic_Results_2026-10-21.zip](archive/Diagnostic_Results_2026-10-21.zip); their numerical summaries remain visible in [root checks](docs/ROOT_MODEL_CHECKS.md). Original source data and current analysis drivers remain in the main folders.
+[Earlier analyses and supporting files](archive/README.md) are preserved in one container. It holds the four original history ZIPs, module guides and method/environment ZIP. Six supporting diagnostic records are preserved in [Diagnostic_Results_2026-10-21.zip](archive/Diagnostic_Results_2026-10-21.zip); its perennial status predates the two root-mass corrections. Current corrected hedgerow checks are supplied in [the perennial module](analysis/current_perennial_root/saved_results/hedgerow_checks/) and summarized in [root checks](docs/ROOT_MODEL_CHECKS.md). Original source data and current analysis drivers remain in the main folders.
 
 ## License and citation
 

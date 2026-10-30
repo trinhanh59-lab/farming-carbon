@@ -1,5 +1,5 @@
 {
-  "revision_date": "2026-10-20",
+  "revision_date": "2026-10-30",
   "title": "Soil Carbon Stocks and Radiocarbon Profiles in Three Agricultural Systems of California’s Central Valley",
   "reference_PDF": {
     "filename": "Farming_Carbon_EarthArXiv.pdf",
@@ -13,24 +13,24 @@
   },
   "workbook": {
     "path": "data/Supplementary_Data.xlsx",
-    "sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
-    "note_revision": "Current endpoint Welch table and observed stock summaries; raw measurements and native workbook features preserved.",
-    "bytes": 141361
+    "bytes": 298898,
+    "sha256": "84e2eeb53e1ebb4eedab4f470711d83e0167eca2a6732464cb8b046a5d72ab1a",
+    "note_revision": "Corrected working roots, 128 figure means, 74 within-depth results, three overall stock tests, correction/model-check records and retained historical results."
   },
   "selected_methods": {
     "annual_root": "Corrected Gamma full interaction: 1000 * (root mass in g + 0.00017 g) / volume in cm3. Half/original/double sensitivity; six-test Holm results separate from unadjusted contrasts.",
-    "perennial_root": "B_shift_gamma full interaction at 0–75 cm, recorded zeros retained; five constant scenarios, conditional residual diagnostics and predictive-floor checks.",
+    "perennial_root": "Gamma(log) full management-by-depth interaction and core random intercept at 0-75 cm; corrected working masses187=.1952g and208=.0199g; original imported masses retained. Five added-mass settings and conditional residual checks supplied.",
     "nonroot": "Six retained Type III Wald GLMMs for C concentration and bulk radiocarbon; supporting bulk-density models remain unchanged.",
     "hedgerow_scope_cm": [
       0,
       75
     ],
-    "cumulative_C_stock": "Welch endpoints: annual0–100, orchard0–75, hedgerow0–20/75; one core value per endpoint, unadjusted pointwise95% CI, Holm adjustment across all six hedgerow pairwise tests."
+    "cumulative_C_stock": "One overall Welch ANOVA per system using one cumulative value per core: annual0-100cm; orchard/hedgerow0-75cm;21values,7groups,3tests."
   },
   "no_new_analysis_selected": false,
-  "fresh_selected_analysis_rerun_completed": true,
+  "fresh_selected_analysis_rerun_completed": false,
   "exact_original_orchard_bootstrap_replay": false,
-  "paper_reference_result_set": "The author selected cumulative C-stock Welch endpoint comparisons using one value per core: annual fields 0–100 cm, orchards 0–75 cm, and hedgerows 0–20 and 0–75 cm. The six hedgerow pairwise p values are Holm-adjusted as one family. Table 1 separates unchanged non-stock Wald tests in panel A from eight stock endpoint comparisons in panel B. Figures 2–4c show observed means ±1 sample SE with no profile-model stock stars. All measurements, root/C-concentration/radiocarbon results and historical stock analyses are retained.",
+  "paper_reference_result_set": "Current repository results use the corrected hedgerow root model and three overall stock ANOVAs. Figures2-4 show fitted root/C/radiocarbon means and observed stock means, each +/-1SE, with significant unadjusted within-depth pairwise brackets. Earlier endpoint/Holm results and the posted preprint PDF remain dated historical records.",
   "orchard_reference": {
     "run_date": "2026-10-17",
     "classification_file": "analysis/orchard_cumulative_correlation/reproduction_2026-10-17/new_reproduction_all999_fit_audit.csv",
@@ -58,38 +58,11 @@
     "project_data_and_numerical_results": "CC-BY-4.0"
   },
   "presentation_revision": {
-    "date": "2026-10-20",
-    "scope": "Only the last Table1B header changes from p to p value (Holm for hedgerows), with one manual line break and the existing 11-point bold style. All numbers, notes, manuscript prose, scientific results/code, figures, supplement and workbook are unchanged.",
-    "models_refit": 0,
-    "endpoint_Welch_tests_computed": 8,
-    "author_selected_method": true,
-    "PDF_sha256": "d3ade4ff6a749a8fa81bc846ef3af10d6be5af58a5895449bd471d1e1bad9e11",
-    "PDF_pages": 30,
-    "supplement_pages": [
-      29,
-      30
-    ],
-    "workbook_sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
-    "combined_DOCX_sha256": "d9b5c2b702ec389d6dfbc9f9ee0c1740e56b2194769eb5e4942b1d4e80e2248a",
-    "S1_DOCX_sha256": "b9dadb3f4775f5dba38193679f21272c5aaeef7e1fed4a33eb169bfc32daf782",
-    "standalone_supplement_pages": 3,
-    "Table1_panel_A_widths_inches": [
-      2.4,
-      2.2,
-      2.2,
-      2.2
-    ],
-    "Table1_panel_B_widths_inches": [
-      2.25,
-      2.1,
-      1.9,
-      1.35,
-      1.4
-    ],
-    "Table1_body_font_pt": 11,
-    "current_revision_models_refit": 0,
-    "current_revision_tests_computed": 0,
-    "Table1B_p_header": "p value\n(Holm for hedgerows)"
+    "date": "2026-10-30",
+    "scope": "GitHub data, selected saved statistics, publication workbook, figures2-4, portable scripts and documentation synchronized.",
+    "new_model_fits_or_simulations": 0,
+    "approved_colour_and_grayscale_figures_exact": true,
+    "cloud_support_files_changed": false
   },
   "distribution": {
     "repository_visibility": "public",
@@ -101,7 +74,7 @@
     "public_visibility_change_authorized": false,
     "repository_url": "https://github.com/trinhanh59-lab/farming-carbon"
   },
-  "data_code_revision_date": "2026-10-20",
+  "data_code_revision_date": "2026-10-30",
   "data_preparation": {
     "source_workbooks": 23,
     "direct_inputs": 12,
@@ -109,7 +82,7 @@
     "current_analysis_rows": 96,
     "script": "scripts/prepare_analysis_data.R",
     "availability": "data/DATA_AVAILABILITY.md",
-    "changes_publication_results": false,
+    "changes_publication_results": true,
     "missing_native_CN_results": 68,
     "original_handwritten_root_notes_located": false,
     "sample108_original_same_core_confirmed": false,
@@ -126,6 +99,11 @@
       "sample108_original_same_core_measurement_confirmed": false,
       "original_sample108_field_moist_bag_mass_g": 352.68,
       "scientific_values_code_results_and_workbook_changed": false
+    },
+    "root_correction_2026_10_27": {
+      "sample187_g": 0.1952,
+      "sample208_g": 0.0199,
+      "raw_fields_unchanged": true
     }
   },
   "secondary_archived_analyses": {
@@ -218,7 +196,9 @@
     "summary": "Supplemental Material",
     "complete_details": "docs/ROOT_MODEL_CHECKS.md",
     "detailed_tables_and_diagnostic_plot_in_paper": false,
-    "source_results_unchanged": true
+    "source_results_unchanged": false,
+    "corrected_hedgerow_results": "analysis/current_perennial_root/saved_results/hedgerow_checks/",
+    "orchard_annual_checks_unchanged": true
   },
   "historical_presentation_before_statistics_trim_2026_10_19": {
     "date": "2026-10-19",
@@ -2590,5 +2570,90 @@
     "perennial_baseline_same_reported_results_and_decisions": true,
     "Figures1_2_3_4_decoded_pixels_identical": true,
     "source_manifest_and_workbook_hashes_preserved": true
+  },
+  "historical_before_corrections_2026_10_30": {
+    "revision_date": "2026-10-20",
+    "workbook": {
+      "path": "data/Supplementary_Data.xlsx",
+      "sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
+      "note_revision": "Current endpoint Welch table and observed stock summaries; raw measurements and native workbook features preserved.",
+      "bytes": 141361
+    },
+    "selected_methods": {
+      "annual_root": "Corrected Gamma full interaction: 1000 * (root mass in g + 0.00017 g) / volume in cm3. Half/original/double sensitivity; six-test Holm results separate from unadjusted contrasts.",
+      "perennial_root": "Gamma(log) full management-by-depth interaction and core random intercept at 0-75 cm; corrected working masses187=.1952g and208=.0199g; original imported masses retained. Five added-mass settings and conditional residual checks supplied.",
+      "nonroot": "Six retained Type III Wald GLMMs for C concentration and bulk radiocarbon; supporting bulk-density models remain unchanged.",
+      "hedgerow_scope_cm": [
+        0,
+        75
+      ],
+      "cumulative_C_stock": "One overall Welch ANOVA per system using one cumulative value per core: annual0-100cm; orchard/hedgerow0-75cm;21values,7groups,3tests."
+    },
+    "paper_reference_result_set": "The author selected cumulative C-stock Welch endpoint comparisons using one value per core: annual fields 0–100 cm, orchards 0–75 cm, and hedgerows 0–20 and 0–75 cm. The six hedgerow pairwise p values are Holm-adjusted as one family. Table 1 separates unchanged non-stock Wald tests in panel A from eight stock endpoint comparisons in panel B. Figures 2–4c show observed means ±1 sample SE with no profile-model stock stars. All measurements, root/C-concentration/radiocarbon results and historical stock analyses are retained.",
+    "presentation_revision": {
+      "date": "2026-10-20",
+      "scope": "Only the last Table1B header changes from p to p value (Holm for hedgerows), with one manual line break and the existing 11-point bold style. All numbers, notes, manuscript prose, scientific results/code, figures, supplement and workbook are unchanged.",
+      "models_refit": 0,
+      "endpoint_Welch_tests_computed": 8,
+      "author_selected_method": true,
+      "PDF_sha256": "d3ade4ff6a749a8fa81bc846ef3af10d6be5af58a5895449bd471d1e1bad9e11",
+      "PDF_pages": 30,
+      "supplement_pages": [
+        29,
+        30
+      ],
+      "workbook_sha256": "2f99d70b51f1859d6d3c72ed3d17e89bee715baa2671c906d809a95b6e9f339c",
+      "combined_DOCX_sha256": "d9b5c2b702ec389d6dfbc9f9ee0c1740e56b2194769eb5e4942b1d4e80e2248a",
+      "S1_DOCX_sha256": "b9dadb3f4775f5dba38193679f21272c5aaeef7e1fed4a33eb169bfc32daf782",
+      "standalone_supplement_pages": 3,
+      "Table1_panel_A_widths_inches": [
+        2.4,
+        2.2,
+        2.2,
+        2.2
+      ],
+      "Table1_panel_B_widths_inches": [
+        2.25,
+        2.1,
+        1.9,
+        1.35,
+        1.4
+      ],
+      "Table1_body_font_pt": 11,
+      "current_revision_models_refit": 0,
+      "current_revision_tests_computed": 0,
+      "Table1B_p_header": "p value\n(Holm for hedgerows)"
+    },
+    "no_new_analysis_selected": false,
+    "fresh_selected_analysis_rerun_completed": true
+  },
+  "reference_PDF_scope": "The recorded PDF is the earlier preprint reference. This repository synchronization does not replace the public preprint, edit shared V1, or establish online supplement/workbook synchronization.",
+  "stock_omnibus_revision_2026_10_30": {
+    "code": "analysis/stock_omnibus_2026-10-21/run_stock_omnibus.R",
+    "results": "analysis/stock_omnibus_2026-10-21/saved_results/",
+    "comparisons": 3,
+    "endpoint_core_values": 21,
+    "group_summaries": 7,
+    "observed_profile_means": 32,
+    "p_values": [
+      0.09356450053994561,
+      0.38124101306607633,
+      0.4507431716097772
+    ]
+  },
+  "corrected_hedgerow_revision_2026_10_30": {
+    "input": "analysis/current_perennial_root/input/perennial_root_input.csv",
+    "zeros": 3,
+    "observations": 36,
+    "cores": 9,
+    "corrections": {
+      "187": 0.1952,
+      "208": 0.0199
+    },
+    "record_status": "Author confirmed against weighing record on2026-10-27; record not independently inspected.",
+    "raw_archive_unchanged": {
+      "bytes": 535154,
+      "sha256": "e29a7e08077be96866997ff55df90d9edbed678855d0f894302a129d04917a0a"
+    }
   }
 }

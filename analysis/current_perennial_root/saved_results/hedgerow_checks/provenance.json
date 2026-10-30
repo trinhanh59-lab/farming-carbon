@@ -1,0 +1,58 @@
+{
+  "analysis_date": "2026-10-27",
+  "author_confirmation": {
+    "date": "2026-10-27",
+    "status": "Author confirmed both root masses against a weighing record. The record itself was not independently inspected.",
+    "corrections_g": {
+      "187_HRDY1_2_A1": 0.1952,
+      "208_HRDY2_3_A2": 0.0199
+    }
+  },
+  "main_fit_reused_without_refitting": true,
+  "model": "Gamma(log), site_type * depth_factor + (1|core), ML, constant dispersion, no zero inflation.",
+  "selected_addition_g": 0.00017,
+  "sensitivity_multipliers": [
+    0.1,
+    0.5,
+    1,
+    2,
+    10
+  ],
+  "diagnostics": "1000 conditional simulations; refit=FALSE; seed 20261117. Simulated values below the added-response floor were retained.",
+  "software": {
+    "R": "R version 4.6.1 (2026-06-24)",
+    "glmmTMB": "1.1.15.2",
+    "emmeans": "2.0.4",
+    "DHARMa": "0.5.0"
+  },
+  "main_fit": {
+    "file": "analysis/current_perennial_root/saved_results/hedgerow_fit_corrected.rds",
+    "sha256": "c6aeb2a0267a6e59b3fd43ce4a08d65e47055884211c510ab07118ef962b866c",
+    "model": "Gamma(log), site_type * depth_factor + (1|core), ML, constant dispersion, no zero inflation.",
+    "addition_g": 0.00017,
+    "n": 36,
+    "cores": 9,
+    "zeros": 3,
+    "contrasts": "Equal weights across depth intervals on the log scale; ratios are not integrated root stocks."
+  },
+  "source_output_hashes": {
+    "conditional_diagnostics.csv": "1e599c00b559f8c7d2c4c3c8f95b8b0fa701ff92c0125a1ac9a4f33c3479503d",
+    "conditional_residual_diagnostics.pdf": "980a244a61b39dbd1ccacf3654f96d0b1f90ee3861b8e8aabc70d6cbc43f2c9a",
+    "conditional_residual_diagnostics.png": "5936ea4df87836f461932c635032960e2f56cf05956277b7fe48a52700abba80",
+    "conditional_residuals.csv": "4e066e3e9a20209e914cb454b00f32acf3ce1c27f4ac45ab8d52eead6bd6c4b5",
+    "conditional_simulations.rds": "fcf6ef80fdb8269d3e43e39ee210a87898f531acfdd94d658a45ce76f912d62b",
+    "result_summary.json": "7426fd2c0556e190931854a58db082d2b9f2cbd458724273ff7ae40b78998fff",
+    "run_verification.json": "85b51c7d50cc8228ecfdba97714e5e78ec8f330b31f03b20c3d91d23215af50c",
+    "sensitivity_agreement.csv": "cebb4ccd0196529dee9b3b9b6446d27ee30c29a1924f6ffcd24d89c8308602a8",
+    "sensitivity_contrast_checks.csv": "d85051bb0bd0915cbe9c1c5b303b3f9e157413b402346605f1d8e7528a7e96a8",
+    "sensitivity_layers.csv": "18869d090d57de582326302c93fd6044f4b9134b4bb0e191ae181ce5e1f68670",
+    "sensitivity_pairs.csv": "2c6a260e28dbd98cd60810db7b2fcb95296cfce6c6ed3b23d78fd0817e8d2652",
+    "sensitivity_status.csv": "42ce1b32b475394b41af2301188d3ec9326d2075e5ad948315319dd372ae454c",
+    "sensitivity_tests.csv": "b536706eac4d2fc3ee8346f42c5b68ea61e29739c6f9a35328fbf66e852357a7",
+    "session_info.txt": "99686d1ee8bc3be094ec540d9678f72103f61bd47dabc1f6189ea2f222e4e0ac"
+  },
+  "result_summary": "result_summary.json",
+  "verification": "run_verification.json",
+  "portable_replay": "Source analysis/current_perennial_root/run_saved_hedgerow_checks.R, then explicitly call run_saved_hedgerow_checks(module_dir, NEW_OUTPUT_DIR).",
+  "sync_verification": "These completed outputs were copied without rerunning fits or simulations."
+}

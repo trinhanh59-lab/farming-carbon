@@ -12,7 +12,7 @@
     "hedgerows": {
       "observations": 36,
       "cores": 9,
-      "zeros": 4
+      "zeros": 3
     },
     "depth_intervals_cm": [
       "0-10",
@@ -71,25 +71,27 @@
       "output_text_sha256": "51bdc7d42e6f8fe12cc21aa4b18c580d712d82188c3dc98bdf1330b7c0e834c5"
     }
   },
-  "input_origin": "Perennial rows from the source notebook embedded CSV, using effective depth bottoms and excluding hedgerow intervals deeper than 75 cm.",
-  "input_record_check": "The 60 source mass and volume pairs match the retained input/perennial_root_input.csv. The original notebook JSON readback is preserved at its original path inside archive/Additional_Support_2026-10-21.zip, a byte-exact member of archive/History_and_Support_2026-10-21.zip.",
+  "input_origin": "The retained 60-row perennial input preserves original raw masses. Working root_weight changes only for samples 187 and 208 relative to the historical input.",
+  "input_record_check": "All sample IDs, volumes and raw root-mass fields are preserved. Current working masses are 0.1952 g for 187_HRDY1_2_A1 and 0.0199 g for 208_HRDY2_3_A2.",
   "correction_preserved": {
     "sample_code": "143_MAS2_3_A2",
     "root_weight_raw_g": -1.4427,
     "root_weight_used_g": 0.0086,
     "note": "The previously corrected working mass is retained; the negative raw subtraction is preserved for provenance and is not used for modeling."
   },
-  "baseline_saved_results": "Four B_shift_gamma/full JSON files copied byte-for-byte from the archived selected outputs.",
-  "sensitivity_saved_results": "Perennial rows extracted without recomputation from the JSON payload in source cell 26 output.",
-  "diagnostic_saved_results": "Perennial rows extracted without recomputation from the JSON payload in source cell 30 output.",
+  "baseline_saved_results": "Orchard rows remain unchanged from the archived selected outputs. Hedgerow rows in the three B_shift_gamma/full JSON tables use the saved two-correction fit from October 21.",
+  "sensitivity_saved_results": "Orchard rows remain unchanged. Hedgerow rows use the completed October 27 five-addition check outputs; full hedgerow tables are supplied in saved_results/hedgerow_checks.",
+  "diagnostic_saved_results": "Orchard rows remain unchanged. Hedgerow rows use the completed October 27 conditional simulations, with three zeros and seed 20261117.",
   "portable_adaptations": [
     "Read the bundled CSV instead of relying on prior session objects or embedded annual data.",
     "Retain the full Gamma model and mass-scale starting anchor; omit historical additive and Tweedie comparisons.",
     "Restrict sensitivity functions to the two perennial systems and the five original mass additions.",
     "Use the original explicit perennial diagnostic seeds (20261116 and 20261117), retaining conditional simulations and the floor check.",
-    "Define functions without fitting or simulation on source; new results use a separate outputs_rerun directory."
+    "Define functions without fitting or simulation on source; new results use a separate outputs_rerun directory.",
+    "The input reader expects four orchard zeros and three hedgerow zeros after the two documented working-mass corrections.",
+    "run_saved_hedgerow_checks.R can repeat the selected checks from the supplied corrected main fit, writing separate outputs."
   ],
-  "verification_scope": "Source recovery, saved-result readback, input checks and syntax checks only. No model fitting, residual simulation or end-to-end rerun was performed.",
+  "verification_scope": "Saved-output mapping, raw-field preservation and R syntax/input checks. No model fit, residual simulation or statistical test was run during this synchronization.",
   "archived_input_readback": {
     "archive": "archive/History_and_Support_2026-10-21.zip",
     "member": "analysis/current_perennial_root/input/perennial_notebook_input.json",
@@ -107,5 +109,61 @@
     "member": "analysis/current_perennial_root/saved_results/status_B_shift_gamma_full.json",
     "original_result_sha256": "7478c1bd48bd03b55027c9ce1166d8ead8cbb65c8fa4924a9fc0ebed2b55d21e",
     "result_values_unchanged": true
-  }
+  },
+  "historical_scope_before_two_mass_corrections": {
+    "orchards": {
+      "observations": 24,
+      "cores": 6,
+      "zeros": 4
+    },
+    "hedgerows": {
+      "observations": 36,
+      "cores": 9,
+      "zeros": 4
+    },
+    "depth_intervals_cm": [
+      "0-10",
+      "10-20",
+      "20-50",
+      "50-75"
+    ]
+  },
+  "source_cells_role": "Historical notebook readbacks before the two October 27 author-confirmed hedgerow corrections.",
+  "author_confirmed_corrections": {
+    "confirmation_date": "2026-10-27",
+    "basis": "The author checked both masses against a weighing record. The record itself was not independently inspected.",
+    "corrections": [
+      {
+        "sample_code": "187_HRDY1_2_A1",
+        "raw_root_weight_g": 0,
+        "working_root_weight_g": 0.1952
+      },
+      {
+        "sample_code": "208_HRDY2_3_A2",
+        "raw_root_weight_g": 0.9132,
+        "working_root_weight_g": 0.0199
+      }
+    ]
+  },
+  "current_input": {
+    "file": "analysis/current_perennial_root/input/perennial_root_input.csv",
+    "sha256": "0cdfb5bb48020eee9bab5412499243ea65c6f5732cd40e617c0bacbd168fd1b2"
+  },
+  "corrected_hedgerow_fit": {
+    "file": "analysis/current_perennial_root/saved_results/hedgerow_fit_corrected.rds",
+    "sha256": "c6aeb2a0267a6e59b3fd43ce4a08d65e47055884211c510ab07118ef962b866c",
+    "model": "Gamma(log), site_type * depth_factor + (1|core), ML, constant dispersion, no zero inflation.",
+    "addition_g": 0.00017,
+    "n": 36,
+    "cores": 9,
+    "zeros": 3,
+    "contrasts": "Equal weights across depth intervals on the log scale; ratios are not integrated root stocks."
+  },
+  "corrected_output_source_hashes": {
+    "existing_omnibus_tests.csv": "3c98bb9a2fb827af1793ed067b9e8c1eeb13eb3254f387eeec809017d0fe5f56",
+    "existing_overall_contrasts.csv": "14facdc18f5f8b56979323c31b5274bee0fa549246c188ac2042f571f18a244b",
+    "existing_within_depth_contrasts.csv": "0fa6f2a222501d3943b838934455f6c9f762f90219747f49f669d5b6dc61cc4e",
+    "hedgerow_fitted_means_corrected.csv": "59e9b6989e6499bba1f62f5888f15168e87cc63a598af58dd9be2afda7ad8951"
+  },
+  "historical_result_archive_note": "Existing archive ZIPs retain the earlier source data and four-zero outputs unchanged. They are history, not the corrected current hedgerow results."
 }

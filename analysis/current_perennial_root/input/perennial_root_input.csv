@@ -27,7 +27,7 @@ sample_code,system,site_type,core,top_cm,bottom_cm,root_weight_raw,root_weight,v
 183_HRDY1_1_A2,hedgerows,30-year-old hedgerow,HRDY1.1,10,20,0.0017,0.0017,114.009182796937
 184_HRDY1_1_A3,hedgerows,30-year-old hedgerow,HRDY1.1,20,50,0.0772,0.0772,342.027548390811
 185_HRDY1_1_A4,hedgerows,30-year-old hedgerow,HRDY1.1,50,75,0.0128,0.0128,285.0229569923425
-187_HRDY1_2_A1,hedgerows,30-year-old hedgerow,HRDY1.2,0,10,0,0,114.009182796937
+187_HRDY1_2_A1,hedgerows,30-year-old hedgerow,HRDY1.2,0,10,0,0.1952,114.009182796937
 188_HRDY1_2_A2,hedgerows,30-year-old hedgerow,HRDY1.2,10,20,0.3547,0.3547,114.009182796937
 189_HRDY1_2_A3,hedgerows,30-year-old hedgerow,HRDY1.2,20,50,0.3405,0.3405,342.027548390811
 190_HRDY1_2_A4,hedgerows,30-year-old hedgerow,HRDY1.2,50,75,0.0109,0.0109,285.0229569923425
@@ -44,7 +44,7 @@ sample_code,system,site_type,core,top_cm,bottom_cm,root_weight_raw,root_weight,v
 204_HRDY2_2_A3,hedgerows,10-year-old hedgerow,HRDY2.2,20,50,0.0356,0.0356,342.027548390811
 205_HRDY2_2_A4,hedgerows,10-year-old hedgerow,HRDY2.2,50,75,0.0625,0.0625,285.0229569923425
 207_HRDY2_3_A1,hedgerows,10-year-old hedgerow,HRDY2.3,0,10,0.0024,0.0024,114.009182796937
-208_HRDY2_3_A2,hedgerows,10-year-old hedgerow,HRDY2.3,10,20,0.9132,0.9132,114.009182796937
+208_HRDY2_3_A2,hedgerows,10-year-old hedgerow,HRDY2.3,10,20,0.9132,0.0199,114.009182796937
 209_HRDY2_3_A3,hedgerows,10-year-old hedgerow,HRDY2.3,20,50,0.0237,0.0237,342.027548390811
 210_HRDY2_3_A4,hedgerows,10-year-old hedgerow,HRDY2.3,50,75,0.0013,0.0013,285.0229569923425
 212_HRDY3_1_A1,hedgerows,bare field margin,HRDY3.1,0,10,0.0012,0.0012,114.009182796937

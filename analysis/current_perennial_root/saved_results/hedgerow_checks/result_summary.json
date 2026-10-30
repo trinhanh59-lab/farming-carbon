@@ -1,0 +1,56 @@
+{
+  "scope": "Corrected hedgerow roots, 36 observations from nine cores, three zero root masses.",
+  "management_p_range": [
+    5.33301790244614e-16,
+    2.04392240407763e-14
+  ],
+  "depth_p_range": [
+    0.000504801739573521,
+    0.00998175410391541
+  ],
+  "interaction_p_range": [
+    0.00391188926214094,
+    0.168459165571947
+  ],
+  "interaction_p_by_multiplier": {
+    "0.1": 0.00391188926214094,
+    "0.5": 0.00649315734290292,
+    "1": 0.0130805741600708,
+    "2": 0.0308704082654893,
+    "10": 0.168459165571947
+  },
+  "10year_over30year_ratio_range": [
+    0.171031972050715,
+    0.183908700218031
+  ],
+  "10year_over30year_p_range": [
+    4.84443622124824e-05,
+    0.000612637315719037
+  ],
+  "diagnostics": {
+    "system": "hedgerows",
+    "n": "36",
+    "cores": "9",
+    "original_zeros": "3",
+    "simulations": "1000",
+    "seed": "20261117",
+    "uniformity_D": "0.113444444444444",
+    "uniformity_p": "0.743131926077661",
+    "dispersion_ratio": "0.998550029269129",
+    "dispersion_p": "0.654",
+    "outliers": "0",
+    "outlier_p": "1",
+    "analytic_PIT_max_gap": "0.0229297079572243",
+    "expected_below_added_floor": "2.613",
+    "conditional_verified": "TRUE",
+    "simulation_codes_restored": "TRUE",
+    "messages": "",
+    "warnings": ""
+  },
+  "caveats": [
+    "Residual test non-rejections do not establish model adequacy.",
+    "The mean of 2.613 simulated values below the added-response floor per 36 observations remains a physical-support mismatch; this frequency is not a calibrated hypothesis test.",
+    "The interaction is significant at 0.1, 0.5, 1 and 2 times the addition, but not at 10 times; do not retain an across-all-additions interaction-significance claim.",
+    "Sensitivity checks retain the selected Gamma model and do not establish independent field-level replication."
+  ]
+}

@@ -48,11 +48,11 @@ stopifnot(nrow(input$orchards$data) == 24L, nrow(input$hedgerows$data) == 36L)
 diag <- read_table("analysis/current_perennial_root/saved_results/conditional_diagnostics.csv")
 residual <- read_table("analysis/current_perennial_root/saved_results/conditional_residuals.csv")
 stopifnot(nrow(diag) == 2L, nrow(residual) == 60L, all(diag$simulations == 1000L),
-          all(diag$original_zeros == 4L), all(diag$outlier_p == 1))
+          all(diag$original_zeros == ifelse(diag$system == "orchards",4L,3L)), all(diag$outlier_p == 1))
 for (system in c("orchards", "hedgerows")) {
   row <- diag[diag$system == system, ]
   sum_floor <- sum(residual$simulated_probability_below_added_floor[residual$system == system])
-  target <- if (system == "orchards") 1.17 else 3.31
+  target <- if (system == "orchards") 1.17 else 2.613
   stopifnot(abs(sum_floor-target) < 1e-10, abs(row$expected_below_added_floor-target) < 1e-10)
 }
 sensitivity <- read_table("analysis/current_perennial_root/saved_results/constant_sensitivity_tests.csv")
@@ -171,7 +171,55 @@ counts <- publication$stock_endpoint_revision_2026_10_20
 stopifnot(counts$comparisons == 8L, counts$endpoint_core_values == 30L,
   counts$group_summaries == 10L, counts$observed_profile_means == 32L,
   counts$hedgerow_Holm_family_tests == 6L)
-cat("Current endpoint observations, profile means, eight Welch tests and six-test Holm family: PASS\n")
+cat("Historical endpoint observations, profile means, eight Welch tests and six-test Holm family: PASS\n")
+
+# Current selected results, checked without fitting mixed models or simulating.
+working <- read_table("data/processed/sample_level_full_111_current.csv")
+stopifnot(nrow(working)==111L,
+  abs(working$root_weight[working$sample_id==187]-.1952)<1e-12,
+  abs(working$root_weight[working$sample_id==208]-.0199)<1e-12,
+  working$root_weight_raw[working$sample_id==187]==0,
+  abs(working$root_weight_raw[working$sample_id==208]-.9132)<1e-12)
+read_json_rows <- function(relative) {
+  rows <- jsonlite::fromJSON(file.path(repo,relative),simplifyDataFrame=FALSE)
+  do.call(rbind,lapply(rows,function(row) {
+    row[["_row"]] <- NULL
+    as.data.frame(row,stringsAsFactors=FALSE)
+  }))
+}
+root_tests <- read_json_rows("analysis/current_perennial_root/saved_results/tests_B_shift_gamma_full.json")
+hedge <- root_tests[root_tests$system=="hedgerows",]
+stopifnot(nrow(hedge)==1L, abs(hedge$management_chisq-69.8380021755151)<1e-9,
+  abs(hedge$depth_chisq-16.1709726724778)<1e-9,
+  abs(hedge$interaction_chisq-16.1285099046445)<1e-9)
+root_pairs <- read_json_rows("analysis/current_perennial_root/saved_results/pairs_B_shift_gamma_full.json")
+age <- root_pairs[root_pairs$comparison=="10-year-old hedgerow / 30-year-old hedgerow",]
+stopifnot(nrow(age)==1L,abs(age$ratio-.172246918719136)<1e-10,
+  abs(age$lower_95-.0676732953710491)<1e-10,
+  abs(age$upper_95-.438415195322809)<1e-10,
+  abs(age$p_unadjusted-.000224348233580367)<1e-12)
+stock <- read_table("analysis/stock_omnibus_2026-10-21/saved_results/stock_omnibus_observations.csv")
+overall <- read_table("analysis/stock_omnibus_2026-10-21/saved_results/welch_anova.csv")
+stopifnot(nrow(stock)==21L,nrow(overall)==3L,length(unique(stock$core))==21L)
+for(system in overall$system) {
+  z <- stock[stock$system==system,];saved <- overall[overall$system==system,]
+  test <- stats::oneway.test(cumulative_C_stock_t_C_ha ~ management,data=z,var.equal=FALSE)
+  stopifnot(abs(unname(test$statistic)-saved$F_statistic)<1e-10,
+    abs(test$p.value-saved$p_value)<1e-12,
+    identical(sort(as.integer(table(z$management))),rep(3L,length(unique(z$management)))))
+}
+for(system in c("annual","orchard","hedgerow")) {
+  mean <- read_table(paste0("figures/profile_data/",system,"_means1se.csv"))
+  marker <- read_table(paste0("figures/profile_data/",system,"_brackets.csv"))
+  expected <- c(annual=48L,orchard=32L,hedgerow=48L)[[system]]
+  stars <- c(annual=5L,orchard=4L,hedgerow=16L)[[system]]
+  stopifnot(nrow(mean)==expected,
+    max(abs(mean$lower_one_SE-(mean$estimate-mean$SE)))<1e-10,
+    max(abs(mean$upper_one_SE-(mean$estimate+mean$SE)))<1e-10,
+    sum(marker$stars %in% c("*","**","***"))==stars,
+    sum(marker$stars=="overall ns")==1L)
+}
+cat("Corrected working roots, selected root results, three stock ANOVAs and128figure means: PASS\n")
 
 # Historical simulation evidence is optional. Only an explicit --archive call
 # reads the ZIP. Extract the four requested data members and manifest to a new
